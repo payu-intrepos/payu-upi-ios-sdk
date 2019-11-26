@@ -1,0 +1,41 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)
+// swift-module-flags: -target armv7-apple-ios10 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUUPI
+import Foundation
+import PayULogger
+@_exported import PayUUPI
+import PayUUPICore
+import Swift
+import UIKit
+public enum PayUCollectScreenType {
+  case upi
+  case gpayFallback
+  public static func == (a: PayUUPI.PayUCollectScreenType, b: PayUUPI.PayUCollectScreenType) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+@objc public class PayCollectPaymentVC : UIKit.UIViewController {
+  public var availablePaymentOptions: PayUUPICore.PayUUPIPaymentOptions?
+  public var screenType: PayUUPI.PayUCollectScreenType
+  public var paymentParams: PayUUPICore.PayUPaymentParams?
+  @objc override dynamic public func viewDidLoad()
+  @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
+  @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension PayCollectPaymentVC : UIKit.UITableViewDelegate, UIKit.UITableViewDataSource {
+  @objc dynamic public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @objc dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @objc dynamic public func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
+  @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+}
+public class PayUUPI {
+  public class func getCollectPaymentVC() -> PayUUPI.PayCollectPaymentVC
+  @objc deinit
+}
+extension PayUUPI.PayUCollectScreenType : Swift.Equatable {}
+extension PayUUPI.PayUCollectScreenType : Swift.Hashable {}
