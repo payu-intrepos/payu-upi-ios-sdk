@@ -1,0 +1,6 @@
+
+target 'MerchantApp' do
+  use_frameworks!
+  pod 'PayUIndia-UPI'
+
+end
