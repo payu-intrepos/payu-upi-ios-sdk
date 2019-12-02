@@ -96,6 +96,8 @@ class ChoosePaymentOptionVC: UIViewController, UITableViewDelegate, UITableViewD
 
             case .gpayFallback:
                 allPaymentOptionsList.append(.gpayFallback)
+
+            default: break
             }
 
 

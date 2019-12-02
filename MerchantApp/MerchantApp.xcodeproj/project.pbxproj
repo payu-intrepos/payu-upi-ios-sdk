@@ -22,7 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		ADD0DC23238BBB66002B5A0D /* Embed Frameworks */ = {
+		ADE09D97238572A300C93FBA /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
@@ -67,7 +67,6 @@
 			children = (
 				AD6A8E5B238532B100FCB6D3 /* MerchantApp */,
 				AD6A8E5A238532B100FCB6D3 /* Products */,
-				BC5C3569047CFDB501D3025C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,13 +155,6 @@
 			path = "IB Files";
 			sourceTree = "<group>";
 		};
-		BC5C3569047CFDB501D3025C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -173,7 +165,7 @@
 				AD6A8E55238532B100FCB6D3 /* Sources */,
 				AD6A8E56238532B100FCB6D3 /* Frameworks */,
 				AD6A8E57238532B100FCB6D3 /* Resources */,
-				ADD0DC23238BBB66002B5A0D /* Embed Frameworks */,
+				ADE09D97238572A300C93FBA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
