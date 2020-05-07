@@ -1,0 +1,29 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)
+// swift-module-flags: -target x86_64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayULogger
+import Foundation
+@_exported import PayULogger
+import Swift
+public protocol RawComparable : Swift.Comparable, Swift.RawRepresentable where Self.RawValue : Swift.Comparable {
+}
+extension RawComparable {
+  public static func < (lhs: Self, rhs: Self) -> Swift.Bool
+}
+public enum PayULogLevel : Swift.Int, PayULogger.RawComparable {
+  case disable
+  case error
+  case verbose
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class PayULog {
+  public static let shared: PayULogger.PayULog
+  public var logLevel: PayULogger.PayULogLevel
+  public class func error(_ object: Any, filename: Swift.String = #file, line: Swift.Int = #line, funcName: Swift.String = #function)
+  public class func verbose(_ object: Any, filename: Swift.String = #file, line: Swift.Int = #line, column: Swift.Int = #column, funcName: Swift.String = #function)
+  @objc deinit
+}
+extension PayULogger.PayULogLevel : Swift.Hashable {}
