@@ -15,6 +15,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "10.0"
   s.vendored_frameworks = 'Dependencies/PayUUPI.framework'
 
-  s.dependency            'PayUIndia-UPICore', '1.0.0'
+  s.dependency            'PayUIndia-UPICore', '1.0.2'
 
 end
