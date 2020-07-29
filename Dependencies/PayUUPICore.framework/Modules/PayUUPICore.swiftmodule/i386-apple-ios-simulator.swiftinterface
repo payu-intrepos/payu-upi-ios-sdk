@@ -1,0 +1,360 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)
+// swift-module-flags: -target i386-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUUPICore
+import Foundation
+import PayULogger
+import PayUNetworking
+@_exported import PayUUPICore
+import SocketIO
+import Swift
+import UIKit
+public enum PayUPaymentApp {
+  case phonepe(withAppData: PayUUPICore.PayUSupportedCollectApp)
+  case gpay(withAppData: PayUUPICore.PayUSupportedCollectApp)
+  case paytm(withAppData: PayUUPICore.PayUSupportedCollectApp)
+  case bhim(withAppData: PayUUPICore.PayUSupportedCollectApp)
+  case gpayOmni
+  case new
+  case unknown
+  public static let PHONEPE: Swift.String
+  public static let GPAY: Swift.String
+  public static let PAYTM: Swift.String
+  public static let BHIM: Swift.String
+}
+extension PayUPaymentApp {
+  public static func from(collectApp: PayUUPICore.PayUSupportedCollectApp) -> PayUUPICore.PayUPaymentApp?
+}
+extension PayUPaymentApp {
+  public var checkoutDisplayName: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var loaderDisplayName: Swift.String {
+    get
+  }
+  public var iconImage: UIKit.UIImage {
+    get
+  }
+  public var suffixList: [Swift.String] {
+    get
+  }
+  public var validationRegex: Swift.String {
+    get
+  }
+  public var isVPAValidationRequired: Swift.Bool {
+    get
+  }
+}
+extension PayUPaymentApp : Swift.Equatable {
+  public static func == (lhs: PayUUPICore.PayUPaymentApp, rhs: PayUUPICore.PayUPaymentApp) -> Swift.Bool
+}
+public enum PayUPaymentType : Swift.Equatable {
+  case upiCollect
+  case intent(withApp: PayUUPICore.PayUSupportedIntentApp)
+  case gpayFallback
+  public static func == (lhs: PayUUPICore.PayUPaymentType, rhs: PayUUPICore.PayUPaymentType) -> Swift.Bool
+}
+public struct PayUPureS2SModel : Swift.Codable {
+  public var status: Swift.Int?
+  public var referenceId: Swift.String
+  public var pushServiceUrl: Swift.String
+  public var upiServicePollInterval: Swift.String
+  public var sdkUpiPushExpiry: Swift.String
+  public var sdkUpiVerificationInterval: Swift.String
+  public var intentURIData: Swift.String?
+  public var appName: Swift.String?
+  public var amount: Swift.String?
+  public var txnId: Swift.String?
+  public var token: Swift.String?
+  public var returnUrl: Swift.String?
+  public var merchantName: Swift.String?
+  public var merchantVpa: Swift.String?
+  public var vpaRegex: Swift.String?
+  public var result: Swift.String?
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public typealias PayUResponseType = Swift.Result<Swift.Dictionary<Swift.String, Any>, PayUUPICore.PayUError>
+public enum PayUValidationError {
+}
+public enum PayUSDKError {
+  public static let socketURLError: Swift.String
+  public static let decodingError: Swift.String
+  public static let dataUnavailable: Swift.String
+  public static let backButtonTxnCancelled: Swift.String
+  public static let unknownErrorMsg: Swift.String
+  public static let internetUnavailable: Swift.String
+}
+public enum PayUError : Foundation.LocalizedError {
+  case error(_: Swift.String)
+  case unknownError
+  case noInternet
+  public var description: Swift.String {
+    get
+  }
+  public static func == (lhs: PayUUPICore.PayUError, rhs: PayUUPICore.PayUError) -> Swift.Bool
+}
+@_hasMissingDesignatedInitializers public class PayUUPIAnalytics {
+  public static let shared: PayUUPICore.PayUUPIAnalytics
+  public var analyticsString: Swift.String?
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class PayUUPICore {
+  public static let shared: PayUUPICore.PayUUPICore
+  public var environment: PayUUPICore.NetworkEnvironment
+  public var logLevel: PayULogger.PayULogLevel {
+    get
+    set
+  }
+  public var paymentCompletion: ((PayUUPICore.PayUResponseType) -> Swift.Void)?
+  public var backPressed: (() -> Swift.Void)?
+  public var onEnteringVPA: ((Swift.String, @escaping ((Swift.Result<PayUUPICore.PayUPaymentParams, PayUUPICore.PayUError>) -> ())) -> Swift.Void)?
+  public var upiSdkVersion: Swift.String?
+  public var txnStartTime: Foundation.Date?
+  public class func getInstalledAppsList(forUpiOptions options: PayUUPICore.PayUUPIPaymentOptions) -> [PayUUPICore.PayUSupportedIntentApp]
+  public class func getURI(forApp app: PayUUPICore.PayUSupportedIntentApp, fromModel model: PayUUPICore.PayUPureS2SModel) -> Foundation.URL?
+  public class func getPayUCollectLoaderScreen() -> PayUUPICore.PayULoaderUPIAuthorisation
+  public class func getPayUIntentPLoaderScreen() -> PayUUPICore.PayULoaderIntentPayment
+  public class func getScheme(ofApp appName: Swift.String, withAllUpiOptions options: PayUUPICore.PayUUPIPaymentOptions) -> Swift.String
+  public class func canUseIntent(forApp app: PayUUPICore.PayUSupportedIntentApp, withUpiOptions options: PayUUPICore.PayUUPIPaymentOptions) -> Swift.Bool
+  public class func canUseUpiCollect(withPaymentOptions options: PayUUPICore.PayUUPIPaymentOptions) -> Swift.Bool
+  public class func canUseGpayOmni(withPaymentOptions options: PayUUPICore.PayUUPIPaymentOptions) -> Swift.Bool
+  public class func canUseGpayCollect(withPaymentOptions options: PayUUPICore.PayUUPIPaymentOptions) -> Swift.Bool
+  public class func canUseGpayApp(withPaymentOptions options: PayUUPICore.PayUUPIPaymentOptions) -> Swift.Bool
+  @objc deinit
+}
+public struct PayUTxnVerificationInfo {
+}
+@_hasMissingDesignatedInitializers public class PayUAnalyticsSender {
+  public class func sendOneTimeAnalytics()
+  public class func sendTxnStatus(_ status: Swift.String)
+  public class func sendPaymentMode(_ mode: PayUUPICore.PayUPaymentMode?)
+  public class func sendPaymentVerifidBy(_ verifier: PayUUPICore.PayUPaymentVerificationMode)
+  public class func sendUserAction(_ action: Swift.String)
+  public class func sendAPIfailed(forAPI api: PayUUPICore.PayUCoreAPI)
+  public class func sendTotalTxnTime(_ time: Swift.Int)
+  public class func sendPaymentVerifiedIn(_ time: Swift.Int)
+  @objc deinit
+}
+public struct PayUValidateVPAModel : Swift.Codable {
+  public let status: Swift.String
+  public let msg: Swift.String?
+  public let vpa: Swift.String?
+  public let isVPAValid: Swift.Int?
+  public let payerAccountName: Swift.String?
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension NSRegularExpression {
+  convenience public init(_ pattern: Swift.String)
+  public func matches(_ string: Swift.String) -> Swift.Bool
+}
+@objc @_inheritsConvenienceInitializers public class PayUIntentPaymentVC : PayUUPICore.PayUBaseVC {
+  public var availableUpiOptions: PayUUPICore.PayUUPIPaymentOptions!
+  public var paymentParams: PayUUPICore.PayUPaymentParams!
+  public var paymentApp: PayUUPICore.PayUSupportedIntentApp!
+  @objc override dynamic public func viewDidLoad()
+  @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+@objc @_inheritsConvenienceInitializers open class PayULoaderUPIAuthorisation : PayUUPICore.PayULoaderBaseVC {
+  @objc override dynamic open func viewDidLoad()
+  override public func connectionEstablished(withTxnTimeRemaining timeRemaining: Swift.Int?)
+  @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+public enum PayUPaymentMode : Swift.String {
+  case genericIntent
+  case gpayIntent
+  case gpayOmni
+  case gpayCollect
+  case upiCollect
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+}
+public enum PayUPaymentVerificationMode : Swift.String {
+  case socket
+  case http
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+}
+public enum PayUCoreAPI : Swift.String {
+  case validateVPA
+  case fetchVPAHandles
+  case getPaymentOptions
+  case initiateGpayIntentS2s
+  case initiateGpayOmniS2s
+  case initiateGpayCollectS2s
+  case initiateGenericIntentS2s
+  case initiateUpiCollectS2s
+  case verifyTxn
+  case finishTxn
+  case cancelTxn
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+}
+@_hasMissingDesignatedInitializers public class PayUUPICoreUtils {
+  public class func getVersionOfBundle(_ bundle: Foundation.Bundle) -> Swift.String
+  public class func getDefaultUPICollectAppsWithHandles() -> [PayUUPICore.PayUSupportedCollectApp]
+  @objc deinit
+}
+public struct PayUHashes {
+  public var paymentOptionsHash: Swift.String?
+  public var paymentHash: Swift.String?
+  public var validateVPAHash: Swift.String?
+  public init()
+}
+@objc @_inheritsConvenienceInitializers open class PayUBaseVC : UIKit.UIViewController {
+  @objc override dynamic open func viewDidLoad()
+  open func showActivityIndicator()
+  open func hideActivityIndicator()
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class PayUThirdPartyManager {
+  public class func makePayment(withApp app: PayUUPICore.PayUSupportedIntentApp, withIntentModel model: PayUUPICore.PayUPureS2SModel, appSwitchingStatus: @escaping ((Swift.Bool) -> ()))
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class PayUActivityIndicator : ObjectiveC.NSObject {
+  public func setupActivityIndicatorOn(view: UIKit.UIView)
+  public func startOn(_ view: UIKit.UIView)
+  public func stop()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class PayULoaderIntentPayment : PayUUPICore.PayULoaderBaseVC {
+  @objc override dynamic public func viewDidLoad()
+  @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
+  @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+public struct PayUSupportedCollectApp {
+  public let name: Swift.String
+  public let handles: [Swift.String]
+  public init?(withItem item: PayUUPICore.PayUItemTypeInPaymentHandlesAPI)
+  public init(appName: Swift.String, handles: [Swift.String])
+}
+@objc @_inheritsConvenienceInitializers public class PayUSnackBar : ObjectiveC.NSObject {
+  public func show(withMessage msg: Swift.String = PayUSDKError.internetUnavailable, backgroundColor: UIKit.UIColor = .black, foreGroundColor: UIKit.UIColor = .white)
+  @objc deinit
+  @objc override dynamic public init()
+}
+public struct PayUUPIPaymentOptions : Swift.Codable {
+  public let upi: PayUUPICore.PayUPaymentOption?, tez: PayUUPICore.PayUPaymentOption?, tezOmni: PayUUPICore.PayUPaymentOption?, intent: PayUUPICore.PayUPaymentOption?
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct PayUPaymentOption : Swift.Codable {
+  public let supportedApps: [PayUUPICore.PayUSupportedIntentApp]?
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct PayUSupportedIntentApp : Swift.Equatable {
+  public let name: Swift.String, scheme: Swift.String
+  public static func == (lhs: PayUUPICore.PayUSupportedIntentApp, rhs: PayUUPICore.PayUSupportedIntentApp) -> Swift.Bool
+}
+@_hasMissingDesignatedInitializers public class PayUAnalyticsEvent {
+  public class func transactionStarted()
+  @objc deinit
+}
+public typealias PayUItemTypeInPaymentHandlesAPI = Swift.Dictionary<Swift.String, Swift.Array<Swift.String>>
+public enum NetworkEnvironment : Swift.String {
+  case production
+  case test
+  case mobiletest
+  case mobileDev
+  case sdkTest
+  case bizcheckouttest
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class PayUAPI {
+  public class func getUPIPaymentOptions(withPaymentParams params: PayUUPICore.PayUPaymentParams, completion: @escaping (Swift.Result<PayUUPICore.PayUUPIPaymentOptions, PayUUPICore.PayUError>) -> ())
+  public class func validateVPA(withPaymentParams params: PayUUPICore.PayUPaymentParams, completion: @escaping (Swift.Result<PayUUPICore.PayUValidateVPAModel, PayUUPICore.PayUError>) -> ())
+  public class func getDataForIntentPayment(withPaymentParams params: PayUUPICore.PayUPaymentParams, completion: @escaping (Swift.Result<PayUUPICore.PayUPureS2SModel, PayUUPICore.PayUError>) -> ())
+  public class func getDataForGpayIntentPayment(withPaymentParams params: PayUUPICore.PayUPaymentParams, completion: @escaping (Swift.Result<PayUUPICore.PayUPureS2SModel, PayUUPICore.PayUError>) -> ())
+  public class func getDataForGPayOmniPayment(withPaymentParams params: PayUUPICore.PayUPaymentParams, completion: @escaping (Swift.Result<PayUUPICore.PayUPureS2SModel, PayUUPICore.PayUError>) -> ())
+  public class func getDataForGpayCollectPayment(withPaymentParams params: PayUUPICore.PayUPaymentParams, completion: @escaping (Swift.Result<PayUUPICore.PayUPureS2SModel, PayUUPICore.PayUError>) -> ())
+  public class func getDataForUPICollectPayment(withPaymentParams params: PayUUPICore.PayUPaymentParams, completion: @escaping (Swift.Result<PayUUPICore.PayUPureS2SModel, PayUUPICore.PayUError>) -> ())
+  public class func getUPIHandles(withPaymentParams params: PayUUPICore.PayUPaymentParams, completion: @escaping (Swift.Result<[PayUUPICore.PayUItemTypeInPaymentHandlesAPI], PayUUPICore.PayUError>) -> ())
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class PayUPersistentStore {
+  public class func saveRemainingTxnSecsBeforeMovingToBackground(_ seconds: Swift.Int, txnUniqueId: Swift.String)
+  public class func getRemainingTxnSecsBeforeMovingToBackground(forTxnUniqueId id: Swift.String) -> Swift.Int?
+  public class func removeRemainingTxnSecsBeforeMovingToBackground()
+  public class func saveBackgroundEnteringTimeStamp(_ dateTime: Foundation.Date, txnUniqueId: Swift.String)
+  public class func getBackgroundEnteringTimeStamp(forTxnUniqueId id: Swift.String) -> Foundation.Date?
+  public class func removeBackgroundEnteringTimeStamp()
+  public class func saveSocketConnectionModel(_ model: PayUUPICore.PayUPureS2SModel)
+  public class func getSocketConnectionModel() -> PayUUPICore.PayUPureS2SModel?
+  @objc deinit
+}
+extension UIDevice {
+  public static let payuModelName: Swift.String
+}
+@objc @_inheritsConvenienceInitializers open class PayULoaderBaseVC : UIKit.UIViewController {
+  public var paymentApp: PayUUPICore.PayUPaymentApp?
+  @objc override dynamic public func viewDidLoad()
+  public func setupBackButton(withTitle title: Swift.String, color: UIKit.UIColor)
+  public func connectionEstablished(withTxnTimeRemaining timeRemaining: Swift.Int?)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class PayUValidator {
+  public class func isValidMobile(_ mobile: Swift.String) -> Swift.Bool
+  @objc deinit
+}
+public struct PayUPaymentParams {
+  public var merchantKey: Swift.String
+  public var transactionId: Swift.String
+  public var amount: Swift.String
+  public var productInfo: Swift.String
+  public var firstName: Swift.String
+  public var email: Swift.String
+  public var udf1: Swift.String
+  public var udf2: Swift.String
+  public var udf3: Swift.String
+  public var udf4: Swift.String
+  public var udf5: Swift.String
+  public var vpa: Swift.String?
+  public var userCredentials: Swift.String?
+  public var phoneNumber: Swift.String?
+  public var offerKey: Swift.String?
+  public var hashes: PayUUPICore.PayUHashes?
+  public var surl: Swift.String?
+  public var furl: Swift.String?
+  public init(merchantKey: Swift.String, transactionId: Swift.String, amount: Swift.String, productInfo: Swift.String, firstName: Swift.String, email: Swift.String, udf1: Swift.String, udf2: Swift.String, udf3: Swift.String, udf4: Swift.String, udf5: Swift.String) throws
+}
+extension PayUUPICore.PayUPaymentMode : Swift.Equatable {}
+extension PayUUPICore.PayUPaymentMode : Swift.Hashable {}
+extension PayUUPICore.PayUPaymentMode : Swift.RawRepresentable {}
+extension PayUUPICore.PayUPaymentVerificationMode : Swift.Equatable {}
+extension PayUUPICore.PayUPaymentVerificationMode : Swift.Hashable {}
+extension PayUUPICore.PayUPaymentVerificationMode : Swift.RawRepresentable {}
+extension PayUUPICore.PayUCoreAPI : Swift.Equatable {}
+extension PayUUPICore.PayUCoreAPI : Swift.Hashable {}
+extension PayUUPICore.PayUCoreAPI : Swift.RawRepresentable {}
+extension PayUUPICore.NetworkEnvironment : Swift.Equatable {}
+extension PayUUPICore.NetworkEnvironment : Swift.Hashable {}
+extension PayUUPICore.NetworkEnvironment : Swift.RawRepresentable {}

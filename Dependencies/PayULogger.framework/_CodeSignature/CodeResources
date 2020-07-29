@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/PayULogger-Swift.h</key>
 		<data>
-		cmGty9yfHmAfBcDTzUvAij10qes=
+		YeTHyRESIghQSgXjxbnOFWAxNgU=
 		</data>
 		<key>Headers/PayULogger.h</key>
 		<data>
@@ -14,67 +14,87 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Snr9HpTtx055ccrAutfwFbcvBbY=
+		qAdU1ECMpbkpg0q/Lje4OFnZQ6A=
 		</data>
 		<key>Modules/PayULogger.swiftmodule/Project/arm.swiftsourceinfo</key>
 		<data>
-		hgXVc2FpzGKd3c5eUS8nMhP4s+s=
+		2NP8CFjqdzkZ+jBb0tdolhuIDwQ=
 		</data>
 		<key>Modules/PayULogger.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		llMsQVGkK/EhO0EcFMIyuJkwZq0=
+		6jv+uLDdiZtzEj0zQlRsewqC7k0=
 		</data>
 		<key>Modules/PayULogger.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		llMsQVGkK/EhO0EcFMIyuJkwZq0=
+		6jv+uLDdiZtzEj0zQlRsewqC7k0=
 		</data>
 		<key>Modules/PayULogger.swiftmodule/Project/armv7-apple-ios.swiftsourceinfo</key>
 		<data>
-		hgXVc2FpzGKd3c5eUS8nMhP4s+s=
+		2NP8CFjqdzkZ+jBb0tdolhuIDwQ=
 		</data>
 		<key>Modules/PayULogger.swiftmodule/Project/armv7.swiftsourceinfo</key>
 		<data>
-		hgXVc2FpzGKd3c5eUS8nMhP4s+s=
+		2NP8CFjqdzkZ+jBb0tdolhuIDwQ=
 		</data>
 		<key>Modules/PayULogger.swiftmodule/arm.swiftdoc</key>
 		<data>
-		nEVKUJyLXnBivUAPa2529FcjQmk=
+		IVj02xsakqWRrbpuhJ88VsvUzwc=
+		</data>
+		<key>Modules/PayULogger.swiftmodule/arm.swiftinterface</key>
+		<data>
+		V5n2+dknxKrVYD+4YR8I3BD8uhQ=
 		</data>
 		<key>Modules/PayULogger.swiftmodule/arm.swiftmodule</key>
 		<data>
-		pNpJInZRoY0fdtEmZEGzFB/KXDc=
+		c/Nuzbgti8WOF4vuTnZ4zxKVEFo=
 		</data>
 		<key>Modules/PayULogger.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		xhbYzoowjEAtcupFW7271qj67OM=
+		LIBPJAPoH7SiQ3YDPXDFXY63t2Y=
+		</data>
+		<key>Modules/PayULogger.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<data>
+		b+vdM13VV97ESXHAHnej94LMF9E=
 		</data>
 		<key>Modules/PayULogger.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		e9/O5c8om4t3Xd+xL7Lt4o9LvJU=
+		+ldNQ0tjZ7i9jzKh2vPuRdX505c=
 		</data>
 		<key>Modules/PayULogger.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		xhbYzoowjEAtcupFW7271qj67OM=
+		LIBPJAPoH7SiQ3YDPXDFXY63t2Y=
+		</data>
+		<key>Modules/PayULogger.swiftmodule/arm64.swiftinterface</key>
+		<data>
+		b+vdM13VV97ESXHAHnej94LMF9E=
 		</data>
 		<key>Modules/PayULogger.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		e9/O5c8om4t3Xd+xL7Lt4o9LvJU=
+		+ldNQ0tjZ7i9jzKh2vPuRdX505c=
 		</data>
 		<key>Modules/PayULogger.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<data>
-		nEVKUJyLXnBivUAPa2529FcjQmk=
+		IVj02xsakqWRrbpuhJ88VsvUzwc=
+		</data>
+		<key>Modules/PayULogger.swiftmodule/armv7-apple-ios.swiftinterface</key>
+		<data>
+		V5n2+dknxKrVYD+4YR8I3BD8uhQ=
 		</data>
 		<key>Modules/PayULogger.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<data>
-		pNpJInZRoY0fdtEmZEGzFB/KXDc=
+		c/Nuzbgti8WOF4vuTnZ4zxKVEFo=
 		</data>
 		<key>Modules/PayULogger.swiftmodule/armv7.swiftdoc</key>
 		<data>
-		nEVKUJyLXnBivUAPa2529FcjQmk=
+		IVj02xsakqWRrbpuhJ88VsvUzwc=
+		</data>
+		<key>Modules/PayULogger.swiftmodule/armv7.swiftinterface</key>
+		<data>
+		V5n2+dknxKrVYD+4YR8I3BD8uhQ=
 		</data>
 		<key>Modules/PayULogger.swiftmodule/armv7.swiftmodule</key>
 		<data>
-		pNpJInZRoY0fdtEmZEGzFB/KXDc=
+		c/Nuzbgti8WOF4vuTnZ4zxKVEFo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -87,11 +107,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cmGty9yfHmAfBcDTzUvAij10qes=
+			YeTHyRESIghQSgXjxbnOFWAxNgU=
 			</data>
 			<key>hash2</key>
 			<data>
-			qgDvIZY/ZpomI8I5a+ACc6lJ3cpCNfgrOABbw5OqLjY=
+			H4Cnvghpa2rZInThzcPSRP4nGsd2NoAHcAvYz3TkVFI=
 			</data>
 		</dict>
 		<key>Headers/PayULogger.h</key>
@@ -109,165 +129,220 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hgXVc2FpzGKd3c5eUS8nMhP4s+s=
+			2NP8CFjqdzkZ+jBb0tdolhuIDwQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			HZrlsQHrS9BZ6JQKhbITR1s4Ar2zQK6zGJMvVBhVOeQ=
+			OqHjnwdhc57tApGVOXdTyFK1rJ65bpeXlO9+QlLR/4s=
 			</data>
 		</dict>
 		<key>Modules/PayULogger.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			llMsQVGkK/EhO0EcFMIyuJkwZq0=
+			6jv+uLDdiZtzEj0zQlRsewqC7k0=
 			</data>
 			<key>hash2</key>
 			<data>
-			GiVxe41Cx0QLUTC0TR2nhXDQ7Ad48PWbvO83pVibP+8=
+			7LbvPWZj39MZ7QSs/B5JddSOjhadXsltB7IUYPqqlZg=
 			</data>
 		</dict>
 		<key>Modules/PayULogger.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			llMsQVGkK/EhO0EcFMIyuJkwZq0=
+			6jv+uLDdiZtzEj0zQlRsewqC7k0=
 			</data>
 			<key>hash2</key>
 			<data>
-			GiVxe41Cx0QLUTC0TR2nhXDQ7Ad48PWbvO83pVibP+8=
+			7LbvPWZj39MZ7QSs/B5JddSOjhadXsltB7IUYPqqlZg=
 			</data>
 		</dict>
 		<key>Modules/PayULogger.swiftmodule/Project/armv7-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hgXVc2FpzGKd3c5eUS8nMhP4s+s=
+			2NP8CFjqdzkZ+jBb0tdolhuIDwQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			HZrlsQHrS9BZ6JQKhbITR1s4Ar2zQK6zGJMvVBhVOeQ=
+			OqHjnwdhc57tApGVOXdTyFK1rJ65bpeXlO9+QlLR/4s=
 			</data>
 		</dict>
 		<key>Modules/PayULogger.swiftmodule/Project/armv7.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hgXVc2FpzGKd3c5eUS8nMhP4s+s=
+			2NP8CFjqdzkZ+jBb0tdolhuIDwQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			HZrlsQHrS9BZ6JQKhbITR1s4Ar2zQK6zGJMvVBhVOeQ=
+			OqHjnwdhc57tApGVOXdTyFK1rJ65bpeXlO9+QlLR/4s=
 			</data>
 		</dict>
 		<key>Modules/PayULogger.swiftmodule/arm.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nEVKUJyLXnBivUAPa2529FcjQmk=
+			IVj02xsakqWRrbpuhJ88VsvUzwc=
 			</data>
 			<key>hash2</key>
 			<data>
-			Kbfz1fiUuPevUh5dUP+18TxtYqktn6/qIf4XnQgjMq4=
+			mBptV/NvA+abbTUfXW5mYWLPKqzgwfegI6fX0o0/Cbk=
+			</data>
+		</dict>
+		<key>Modules/PayULogger.swiftmodule/arm.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			V5n2+dknxKrVYD+4YR8I3BD8uhQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			ylOMnSVrmKymC14EuTf4O3IUE2drrD5z+0Ewo4DTRqU=
 			</data>
 		</dict>
 		<key>Modules/PayULogger.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pNpJInZRoY0fdtEmZEGzFB/KXDc=
+			c/Nuzbgti8WOF4vuTnZ4zxKVEFo=
 			</data>
 			<key>hash2</key>
 			<data>
-			8jBnZHdi4G6oKehA5frd4KM19PvglLeP0R51bwpHo3Q=
+			PnbsKdFqynSywewdVnxbeE8lVGaMMdQjBsVx9AOBz4g=
 			</data>
 		</dict>
 		<key>Modules/PayULogger.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xhbYzoowjEAtcupFW7271qj67OM=
+			LIBPJAPoH7SiQ3YDPXDFXY63t2Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			DDJWfqrrzSTf3BNOU9uot/OmAdfzYxQNcYqLAQMLlQ4=
+			3enJv3/qDw+sJ4jM93D4rZIJtKZe+X8fapP1c2L3ZkU=
+			</data>
+		</dict>
+		<key>Modules/PayULogger.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			b+vdM13VV97ESXHAHnej94LMF9E=
+			</data>
+			<key>hash2</key>
+			<data>
+			S/4nK1vbfL33QqUogzgBVlQrZ72u+E1JQRsEd3g2X3Y=
 			</data>
 		</dict>
 		<key>Modules/PayULogger.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			e9/O5c8om4t3Xd+xL7Lt4o9LvJU=
+			+ldNQ0tjZ7i9jzKh2vPuRdX505c=
 			</data>
 			<key>hash2</key>
 			<data>
-			89cpHlTictR5hE+QGoAMSwssn0wj74OjBPSlqSWi22I=
+			DhhfKYIKbZ6bZmw9COMqCZYVSOzRu3X1k/3MZlfhOXQ=
 			</data>
 		</dict>
 		<key>Modules/PayULogger.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xhbYzoowjEAtcupFW7271qj67OM=
+			LIBPJAPoH7SiQ3YDPXDFXY63t2Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			DDJWfqrrzSTf3BNOU9uot/OmAdfzYxQNcYqLAQMLlQ4=
+			3enJv3/qDw+sJ4jM93D4rZIJtKZe+X8fapP1c2L3ZkU=
+			</data>
+		</dict>
+		<key>Modules/PayULogger.swiftmodule/arm64.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			b+vdM13VV97ESXHAHnej94LMF9E=
+			</data>
+			<key>hash2</key>
+			<data>
+			S/4nK1vbfL33QqUogzgBVlQrZ72u+E1JQRsEd3g2X3Y=
 			</data>
 		</dict>
 		<key>Modules/PayULogger.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			e9/O5c8om4t3Xd+xL7Lt4o9LvJU=
+			+ldNQ0tjZ7i9jzKh2vPuRdX505c=
 			</data>
 			<key>hash2</key>
 			<data>
-			89cpHlTictR5hE+QGoAMSwssn0wj74OjBPSlqSWi22I=
+			DhhfKYIKbZ6bZmw9COMqCZYVSOzRu3X1k/3MZlfhOXQ=
 			</data>
 		</dict>
 		<key>Modules/PayULogger.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nEVKUJyLXnBivUAPa2529FcjQmk=
+			IVj02xsakqWRrbpuhJ88VsvUzwc=
 			</data>
 			<key>hash2</key>
 			<data>
-			Kbfz1fiUuPevUh5dUP+18TxtYqktn6/qIf4XnQgjMq4=
+			mBptV/NvA+abbTUfXW5mYWLPKqzgwfegI6fX0o0/Cbk=
+			</data>
+		</dict>
+		<key>Modules/PayULogger.swiftmodule/armv7-apple-ios.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			V5n2+dknxKrVYD+4YR8I3BD8uhQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			ylOMnSVrmKymC14EuTf4O3IUE2drrD5z+0Ewo4DTRqU=
 			</data>
 		</dict>
 		<key>Modules/PayULogger.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pNpJInZRoY0fdtEmZEGzFB/KXDc=
+			c/Nuzbgti8WOF4vuTnZ4zxKVEFo=
 			</data>
 			<key>hash2</key>
 			<data>
-			8jBnZHdi4G6oKehA5frd4KM19PvglLeP0R51bwpHo3Q=
+			PnbsKdFqynSywewdVnxbeE8lVGaMMdQjBsVx9AOBz4g=
 			</data>
 		</dict>
 		<key>Modules/PayULogger.swiftmodule/armv7.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nEVKUJyLXnBivUAPa2529FcjQmk=
+			IVj02xsakqWRrbpuhJ88VsvUzwc=
 			</data>
 			<key>hash2</key>
 			<data>
-			Kbfz1fiUuPevUh5dUP+18TxtYqktn6/qIf4XnQgjMq4=
+			mBptV/NvA+abbTUfXW5mYWLPKqzgwfegI6fX0o0/Cbk=
+			</data>
+		</dict>
+		<key>Modules/PayULogger.swiftmodule/armv7.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			V5n2+dknxKrVYD+4YR8I3BD8uhQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			ylOMnSVrmKymC14EuTf4O3IUE2drrD5z+0Ewo4DTRqU=
 			</data>
 		</dict>
 		<key>Modules/PayULogger.swiftmodule/armv7.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pNpJInZRoY0fdtEmZEGzFB/KXDc=
+			c/Nuzbgti8WOF4vuTnZ4zxKVEFo=
 			</data>
 			<key>hash2</key>
 			<data>
-			8jBnZHdi4G6oKehA5frd4KM19PvglLeP0R51bwpHo3Q=
+			PnbsKdFqynSywewdVnxbeE8lVGaMMdQjBsVx9AOBz4g=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

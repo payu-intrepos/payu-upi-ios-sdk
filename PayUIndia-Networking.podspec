@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                = "PayUIndia-Networking"
-  s.version             = "1.0.3"
+  s.version             = "1.1.0-beta1"
   s.license             = "MIT"
   s.homepage            = "https://app.gitbook.com/@payumobile/s/sdk-integration/v/master/ios/upi-standalone-ios"
   s.author              = { "PayUbiz" => "contact@payu.in"  }
@@ -15,6 +15,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "10.0"
   s.vendored_frameworks = 'Dependencies/PayUNetworking.framework'
 
-  s.dependency            'PayUIndia-Logger', '1.0.3'
+  s.dependency            'PayUIndia-Logger', "1.1.0-beta1"
   
 end
