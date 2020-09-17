@@ -88,7 +88,7 @@ class OrderPageVC: UIViewController {
 
     func setupPaymentParams() -> Bool {
         PayUUPICore.shared.logLevel = .error
-        PayUUPICore.shared.environment = .mobiletest
+        PayUUPICore.shared.environment = .production
         do {
           paymentParams = try PayUPaymentParams(
             merchantKey: PayUUPICore.shared.environment == .production ? "smsplus" : "obScKz", //Your merchant key for the current environment
@@ -215,7 +215,7 @@ extension OrderPageVC {
                     completion(.success(self.paymentParams!))
                 case .failure(let error):
                     print("Could not fetch hashes \(error.description)")
-                    completion(.failure(.noInternet))
+                    completion(.failure(.noInternet()))
                 }
             }
         }
