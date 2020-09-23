@@ -7,8 +7,8 @@
 //
 
 import Foundation
-import PayUUPICore
-import PayUNetworking
+import PayUUPICoreKit
+import PayUNetworkingKit
 
 enum HashAPI {
     case generateHash(params: PayUPaymentParams)

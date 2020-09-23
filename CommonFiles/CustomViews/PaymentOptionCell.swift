@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import PayUUPICore
+import PayUUPICoreKit
 
 enum PaymentType {
     case cards

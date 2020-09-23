@@ -7,8 +7,8 @@
 //
 
 import Foundation
-import PayUUPICore
-import PayUNetworking
+import PayUUPICoreKit
+import PayUNetworkingKit
 
 enum SampleAppError: Error {
     static let internetUnavailable = "Please check you internet connection"

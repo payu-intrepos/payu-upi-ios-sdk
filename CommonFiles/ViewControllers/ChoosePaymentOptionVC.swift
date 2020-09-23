@@ -8,8 +8,8 @@
 
 import UIKit
 
-import PayUUPICore
-import PayUUPI
+import PayUUPICoreKit
+import PayUUPIKit
 
 class ChoosePaymentOptionVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 

@@ -7,9 +7,9 @@
 //
 
 import UIKit
-import PayUUPICore
-import PayUNetworking
-import PayULogger
+import PayUUPICoreKit
+import PayUNetworkingKit
+import PayULoggerKit
 
 class OrderPageVC: UIViewController {
 
