@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)
-// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name PayUUPICoreKit
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-module-flags: -target arm64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUUPICoreKit
 import Foundation
 import PayULoggerKit
 import PayUNetworkingKit
@@ -43,12 +43,12 @@ public typealias PayUItemTypeInPaymentHandlesAPI = Swift.Dictionary<Swift.String
 }
 public typealias PayUResponseType = Swift.Result<Swift.Dictionary<Swift.String, Any>, PayUUPICoreKit.PayUError>
 @objc @_inheritsConvenienceInitializers @objcMembers public class PayUSDKError : ObjectiveC.NSObject {
-  @objc public static var socketURLError: Swift.String
-  @objc public static var decodingError: Swift.String
-  @objc public static var dataUnavailable: Swift.String
-  @objc public static var backButtonTxnCancelled: Swift.String
-  @objc public static var unknownErrorMsg: Swift.String
-  @objc public static var internetUnavailable: Swift.String
+  @objc public static let socketURLError: Swift.String
+  @objc public static let decodingError: Swift.String
+  @objc public static let dataUnavailable: Swift.String
+  @objc public static let backButtonTxnCancelled: Swift.String
+  @objc public static let unknownErrorMsg: Swift.String
+  @objc public static let internetUnavailable: Swift.String
   @objc deinit
   @objc override dynamic public init()
 }
@@ -75,17 +75,17 @@ public typealias PayUResponseType = Swift.Result<Swift.Dictionary<Swift.String, 
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PayUUPIAnalytics : ObjectiveC.NSObject {
-  @objc public static var shared: PayUUPICoreKit.PayUUPIAnalytics
+  @objc public static let shared: PayUUPICoreKit.PayUUPIAnalytics
   @objc public var analyticsString: Swift.String?
   @objc deinit
   @objc override dynamic public init()
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class PayUUPICore : ObjectiveC.NSObject {
-  @objc public static var shared: PayUUPICoreKit.PayUUPICore
+  @objc public static let shared: PayUUPICoreKit.PayUUPICore
   @objc public var environment: PayUUPICoreKit.NetworkEnvironment
   public var logLevel: PayULoggerKit.PayULogLevel {
     get
-    set(value)
+    set
   }
   public var paymentCompletion: ((PayUUPICoreKit.PayUResponseType) -> Swift.Void)?
   @objc public var backPressed: (() -> Swift.Void)?
@@ -127,10 +127,10 @@ public typealias PayUResponseType = Swift.Result<Swift.Dictionary<Swift.String, 
   }
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class PayUPaymentApp : ObjectiveC.NSObject {
-  @objc public static var PHONEPE: Swift.String
-  @objc public static var GPAY: Swift.String
-  @objc public static var PAYTM: Swift.String
-  @objc public static var BHIM: Swift.String
+  @objc public static let PHONEPE: Swift.String
+  @objc public static let GPAY: Swift.String
+  @objc public static let PAYTM: Swift.String
+  @objc public static let BHIM: Swift.String
   @objc final public let paymentType: PayUUPICoreKit.PayUUPIType
   @objc final public let appData: PayUUPICoreKit.PayUSupportedCollectApp?
   @objc public class func phonepe(withAppData appData: PayUUPICoreKit.PayUSupportedCollectApp) -> PayUUPICoreKit.PayUPaymentApp
@@ -204,8 +204,8 @@ extension PayUPaymentApp {
   @objc final public let handles: [Swift.String]
   @objc public init?(withItem item: PayUUPICoreKit.PayUItemTypeInPaymentHandlesAPI)
   @objc public init(appName: Swift.String, handles: [Swift.String])
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PayUSnackBar : ObjectiveC.NSObject {
   @objc public func show(withMessage msg: Swift.String = PayUSDKError.internetUnavailable, backgroundColor: UIKit.UIColor = .black, foreGroundColor: UIKit.UIColor = .white)
@@ -275,9 +275,9 @@ extension PayUPaymentApp {
   @objc override dynamic public func viewDidLoad()
   public func setupBackButton(withTitle title: Swift.String, color: UIKit.UIColor)
   public func connectionEstablished(withTxnTimeRemaining timeRemaining: Swift.Int?)
-  @objc deinit
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
 }
 @objc @objcMembers public class PayUValidateVPAModel : ObjectiveC.NSObject, Swift.Codable {
   @objc final public let status: Swift.String
@@ -291,7 +291,7 @@ extension PayUPaymentApp {
   public func encode(to encoder: Swift.Encoder) throws
 }
 extension NSRegularExpression {
-  public convenience init(_ pattern: Swift.String)
+  convenience public init(_ pattern: Swift.String)
   public func matches(_ string: Swift.String) -> Swift.Bool
 }
 @objc public enum PayUPaymentVerificationMode : Swift.Int {
@@ -402,8 +402,8 @@ public enum PayUPaymentType : Swift.Equatable {
   @objc public func setupActivityIndicatorOn(view: UIKit.UIView)
   @objc public func startOn(_ view: UIKit.UIView)
   @objc public func stop()
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 public struct PayUHashes {
   public var paymentOptionsHash: Swift.String?
@@ -425,8 +425,8 @@ public struct PayUHashes {
 }
 @objc @objcMembers public class PayUTxnVerificationInfo : ObjectiveC.NSObject {
   @objc public init(urlStr: Swift.String, payuId: Swift.String, token: Swift.String?, returnUrlStr: Swift.String?)
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PayUAnalyticsEvent : ObjectiveC.NSObject {
   @objc public class func transactionStarted()
@@ -442,3 +442,21 @@ public struct PayUHashes {
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
+extension PayUUPICoreKit.NetworkEnvironment : Swift.Equatable {}
+extension PayUUPICoreKit.NetworkEnvironment : Swift.Hashable {}
+extension PayUUPICoreKit.NetworkEnvironment : Swift.RawRepresentable {}
+extension PayUUPICoreKit.PayUErrorType : Swift.Equatable {}
+extension PayUUPICoreKit.PayUErrorType : Swift.Hashable {}
+extension PayUUPICoreKit.PayUErrorType : Swift.RawRepresentable {}
+extension PayUUPICoreKit.PayUUPIType : Swift.Equatable {}
+extension PayUUPICoreKit.PayUUPIType : Swift.Hashable {}
+extension PayUUPICoreKit.PayUUPIType : Swift.RawRepresentable {}
+extension PayUUPICoreKit.PayUPaymentVerificationMode : Swift.Equatable {}
+extension PayUUPICoreKit.PayUPaymentVerificationMode : Swift.Hashable {}
+extension PayUUPICoreKit.PayUPaymentVerificationMode : Swift.RawRepresentable {}
+extension PayUUPICoreKit.PayUCoreAPI : Swift.Equatable {}
+extension PayUUPICoreKit.PayUCoreAPI : Swift.Hashable {}
+extension PayUUPICoreKit.PayUCoreAPI : Swift.RawRepresentable {}
+extension PayUUPICoreKit.PayUPaymentStatusType : Swift.Equatable {}
+extension PayUUPICoreKit.PayUPaymentStatusType : Swift.Hashable {}
+extension PayUUPICoreKit.PayUPaymentStatusType : Swift.RawRepresentable {}
