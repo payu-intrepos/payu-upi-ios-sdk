@@ -32,7 +32,7 @@ createRemoteTag() {
 }
 
 podLibLint() {
-	command="pod lib lint $1"
+	command="pod lib lint $1 --allow-warnings --verbose"
 	echo "Executing ---- ${command}"
 	eval "$command"
 }

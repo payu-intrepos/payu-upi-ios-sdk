@@ -27,6 +27,9 @@ class ChoosePaymentOptionVC: UIViewController, UITableViewDelegate, UITableViewD
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        if #available(iOS 13.0, *) {
+            overrideUserInterfaceStyle = .light
+        }
         tableView.tableFooterView = UIView()
         computeAllAvailablePaymentOptions()
     }

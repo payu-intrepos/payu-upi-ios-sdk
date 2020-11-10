@@ -39,6 +39,9 @@ class OrderPageVC: UIViewController {
     func setupUI() {
         self.amountTextField.text = "1"
         self.mobileTextField.text = "9123456789"
+        if #available(iOS 13.0, *) {
+            overrideUserInterfaceStyle = .light
+        }
     }
 
     @IBAction func openCheckout(_ sender: Any) {
