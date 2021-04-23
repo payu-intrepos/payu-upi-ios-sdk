@@ -411,7 +411,6 @@ SWIFT_CLASS("_TtC14PayUUPICoreKit26PayUPaymentResponseHandler")
 - (void)consumePaymentStatus:(PayUPaymentStatus * _Nonnull)status forVerificationMode:(enum PayUPaymentVerificationMode)mode;
 @end
 
-@class PayUTxnVerificationInfo;
 
 @interface PayUPaymentResponseHandler (SWIFT_EXTENSION(PayUUPICoreKit))
 - (void)checkPaymentStatus;
@@ -422,7 +421,6 @@ SWIFT_CLASS("_TtC14PayUUPICoreKit26PayUPaymentResponseHandler")
 - (void)finishTransactionWithIsMerchantCancelling:(BOOL)isMerchantCancelling;
 - (void)cancelTransactionWithCompletion:(void (^ _Nonnull)(PayUPaymentStatus * _Nonnull))completion;
 - (void)checkPaymentStatusWithForcefully:(BOOL)forcefully completion:(void (^ _Nonnull)(PayUPaymentStatus * _Nonnull))completion;
-- (PayUTxnVerificationInfo * _Nonnull)getTxnRelatedInfoForAPIs SWIFT_WARN_UNUSED_RESULT;
 @end
 
 enum PayUPaymentStatusType : NSInteger;
@@ -464,9 +462,11 @@ SWIFT_CLASS("_TtC14PayUUPICoreKit16PayUPureS2SModel")
 @interface PayUPureS2SModel : NSObject
 @property (nonatomic, copy) NSString * _Nonnull referenceId;
 @property (nonatomic, copy) NSString * _Nonnull pushServiceUrl;
+@property (nonatomic, copy) NSString * _Nonnull pushServiceUrlV2;
 @property (nonatomic, copy) NSString * _Nonnull upiServicePollInterval;
 @property (nonatomic, copy) NSString * _Nonnull sdkUpiPushExpiry;
 @property (nonatomic, copy) NSString * _Nonnull sdkUpiVerificationInterval;
+@property (nonatomic, copy) NSString * _Nonnull encodedPayuId;
 @property (nonatomic, copy) NSString * _Nullable intentURIData;
 @property (nonatomic, copy) NSString * _Nullable appName;
 @property (nonatomic, copy) NSString * _Nullable amount;
@@ -537,7 +537,7 @@ SWIFT_CLASS("_TtC14PayUUPICoreKit21PayUThirdPartyManager")
 
 SWIFT_CLASS("_TtC14PayUUPICoreKit23PayUTxnVerificationInfo")
 @interface PayUTxnVerificationInfo : NSObject
-- (nonnull instancetype)initWithUrlStr:(NSString * _Nonnull)urlStr payuId:(NSString * _Nonnull)payuId token:(NSString * _Nullable)token returnUrlStr:(NSString * _Nullable)returnUrlStr OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithUrlStr:(NSString * _Nonnull)urlStr mihpayid:(NSString * _Nonnull)mihpayid token:(NSString * _Nullable)token returnUrlStr:(NSString * _Nullable)returnUrlStr OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1039,7 +1039,6 @@ SWIFT_CLASS("_TtC14PayUUPICoreKit26PayUPaymentResponseHandler")
 - (void)consumePaymentStatus:(PayUPaymentStatus * _Nonnull)status forVerificationMode:(enum PayUPaymentVerificationMode)mode;
 @end
 
-@class PayUTxnVerificationInfo;
 
 @interface PayUPaymentResponseHandler (SWIFT_EXTENSION(PayUUPICoreKit))
 - (void)checkPaymentStatus;
@@ -1050,7 +1049,6 @@ SWIFT_CLASS("_TtC14PayUUPICoreKit26PayUPaymentResponseHandler")
 - (void)finishTransactionWithIsMerchantCancelling:(BOOL)isMerchantCancelling;
 - (void)cancelTransactionWithCompletion:(void (^ _Nonnull)(PayUPaymentStatus * _Nonnull))completion;
 - (void)checkPaymentStatusWithForcefully:(BOOL)forcefully completion:(void (^ _Nonnull)(PayUPaymentStatus * _Nonnull))completion;
-- (PayUTxnVerificationInfo * _Nonnull)getTxnRelatedInfoForAPIs SWIFT_WARN_UNUSED_RESULT;
 @end
 
 enum PayUPaymentStatusType : NSInteger;
@@ -1092,9 +1090,11 @@ SWIFT_CLASS("_TtC14PayUUPICoreKit16PayUPureS2SModel")
 @interface PayUPureS2SModel : NSObject
 @property (nonatomic, copy) NSString * _Nonnull referenceId;
 @property (nonatomic, copy) NSString * _Nonnull pushServiceUrl;
+@property (nonatomic, copy) NSString * _Nonnull pushServiceUrlV2;
 @property (nonatomic, copy) NSString * _Nonnull upiServicePollInterval;
 @property (nonatomic, copy) NSString * _Nonnull sdkUpiPushExpiry;
 @property (nonatomic, copy) NSString * _Nonnull sdkUpiVerificationInterval;
+@property (nonatomic, copy) NSString * _Nonnull encodedPayuId;
 @property (nonatomic, copy) NSString * _Nullable intentURIData;
 @property (nonatomic, copy) NSString * _Nullable appName;
 @property (nonatomic, copy) NSString * _Nullable amount;
@@ -1165,7 +1165,7 @@ SWIFT_CLASS("_TtC14PayUUPICoreKit21PayUThirdPartyManager")
 
 SWIFT_CLASS("_TtC14PayUUPICoreKit23PayUTxnVerificationInfo")
 @interface PayUTxnVerificationInfo : NSObject
-- (nonnull instancetype)initWithUrlStr:(NSString * _Nonnull)urlStr payuId:(NSString * _Nonnull)payuId token:(NSString * _Nullable)token returnUrlStr:(NSString * _Nullable)returnUrlStr OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithUrlStr:(NSString * _Nonnull)urlStr mihpayid:(NSString * _Nonnull)mihpayid token:(NSString * _Nullable)token returnUrlStr:(NSString * _Nullable)returnUrlStr OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1670,7 +1670,6 @@ SWIFT_CLASS("_TtC14PayUUPICoreKit26PayUPaymentResponseHandler")
 - (void)consumePaymentStatus:(PayUPaymentStatus * _Nonnull)status forVerificationMode:(enum PayUPaymentVerificationMode)mode;
 @end
 
-@class PayUTxnVerificationInfo;
 
 @interface PayUPaymentResponseHandler (SWIFT_EXTENSION(PayUUPICoreKit))
 - (void)checkPaymentStatus;
@@ -1681,7 +1680,6 @@ SWIFT_CLASS("_TtC14PayUUPICoreKit26PayUPaymentResponseHandler")
 - (void)finishTransactionWithIsMerchantCancelling:(BOOL)isMerchantCancelling;
 - (void)cancelTransactionWithCompletion:(void (^ _Nonnull)(PayUPaymentStatus * _Nonnull))completion;
 - (void)checkPaymentStatusWithForcefully:(BOOL)forcefully completion:(void (^ _Nonnull)(PayUPaymentStatus * _Nonnull))completion;
-- (PayUTxnVerificationInfo * _Nonnull)getTxnRelatedInfoForAPIs SWIFT_WARN_UNUSED_RESULT;
 @end
 
 enum PayUPaymentStatusType : NSInteger;
@@ -1723,9 +1721,11 @@ SWIFT_CLASS("_TtC14PayUUPICoreKit16PayUPureS2SModel")
 @interface PayUPureS2SModel : NSObject
 @property (nonatomic, copy) NSString * _Nonnull referenceId;
 @property (nonatomic, copy) NSString * _Nonnull pushServiceUrl;
+@property (nonatomic, copy) NSString * _Nonnull pushServiceUrlV2;
 @property (nonatomic, copy) NSString * _Nonnull upiServicePollInterval;
 @property (nonatomic, copy) NSString * _Nonnull sdkUpiPushExpiry;
 @property (nonatomic, copy) NSString * _Nonnull sdkUpiVerificationInterval;
+@property (nonatomic, copy) NSString * _Nonnull encodedPayuId;
 @property (nonatomic, copy) NSString * _Nullable intentURIData;
 @property (nonatomic, copy) NSString * _Nullable appName;
 @property (nonatomic, copy) NSString * _Nullable amount;
@@ -1796,7 +1796,7 @@ SWIFT_CLASS("_TtC14PayUUPICoreKit21PayUThirdPartyManager")
 
 SWIFT_CLASS("_TtC14PayUUPICoreKit23PayUTxnVerificationInfo")
 @interface PayUTxnVerificationInfo : NSObject
-- (nonnull instancetype)initWithUrlStr:(NSString * _Nonnull)urlStr payuId:(NSString * _Nonnull)payuId token:(NSString * _Nullable)token returnUrlStr:(NSString * _Nullable)returnUrlStr OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithUrlStr:(NSString * _Nonnull)urlStr mihpayid:(NSString * _Nonnull)mihpayid token:(NSString * _Nullable)token returnUrlStr:(NSString * _Nullable)returnUrlStr OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -2298,7 +2298,6 @@ SWIFT_CLASS("_TtC14PayUUPICoreKit26PayUPaymentResponseHandler")
 - (void)consumePaymentStatus:(PayUPaymentStatus * _Nonnull)status forVerificationMode:(enum PayUPaymentVerificationMode)mode;
 @end
 
-@class PayUTxnVerificationInfo;
 
 @interface PayUPaymentResponseHandler (SWIFT_EXTENSION(PayUUPICoreKit))
 - (void)checkPaymentStatus;
@@ -2309,7 +2308,6 @@ SWIFT_CLASS("_TtC14PayUUPICoreKit26PayUPaymentResponseHandler")
 - (void)finishTransactionWithIsMerchantCancelling:(BOOL)isMerchantCancelling;
 - (void)cancelTransactionWithCompletion:(void (^ _Nonnull)(PayUPaymentStatus * _Nonnull))completion;
 - (void)checkPaymentStatusWithForcefully:(BOOL)forcefully completion:(void (^ _Nonnull)(PayUPaymentStatus * _Nonnull))completion;
-- (PayUTxnVerificationInfo * _Nonnull)getTxnRelatedInfoForAPIs SWIFT_WARN_UNUSED_RESULT;
 @end
 
 enum PayUPaymentStatusType : NSInteger;
@@ -2351,9 +2349,11 @@ SWIFT_CLASS("_TtC14PayUUPICoreKit16PayUPureS2SModel")
 @interface PayUPureS2SModel : NSObject
 @property (nonatomic, copy) NSString * _Nonnull referenceId;
 @property (nonatomic, copy) NSString * _Nonnull pushServiceUrl;
+@property (nonatomic, copy) NSString * _Nonnull pushServiceUrlV2;
 @property (nonatomic, copy) NSString * _Nonnull upiServicePollInterval;
 @property (nonatomic, copy) NSString * _Nonnull sdkUpiPushExpiry;
 @property (nonatomic, copy) NSString * _Nonnull sdkUpiVerificationInterval;
+@property (nonatomic, copy) NSString * _Nonnull encodedPayuId;
 @property (nonatomic, copy) NSString * _Nullable intentURIData;
 @property (nonatomic, copy) NSString * _Nullable appName;
 @property (nonatomic, copy) NSString * _Nullable amount;
@@ -2424,7 +2424,7 @@ SWIFT_CLASS("_TtC14PayUUPICoreKit21PayUThirdPartyManager")
 
 SWIFT_CLASS("_TtC14PayUUPICoreKit23PayUTxnVerificationInfo")
 @interface PayUTxnVerificationInfo : NSObject
-- (nonnull instancetype)initWithUrlStr:(NSString * _Nonnull)urlStr payuId:(NSString * _Nonnull)payuId token:(NSString * _Nullable)token returnUrlStr:(NSString * _Nullable)returnUrlStr OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithUrlStr:(NSString * _Nonnull)urlStr mihpayid:(NSString * _Nonnull)mihpayid token:(NSString * _Nullable)token returnUrlStr:(NSString * _Nullable)returnUrlStr OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

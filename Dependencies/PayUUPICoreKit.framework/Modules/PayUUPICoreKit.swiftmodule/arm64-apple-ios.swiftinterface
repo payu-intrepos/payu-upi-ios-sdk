@@ -176,9 +176,11 @@ extension PayUPaymentApp {
   public var status: Swift.Int?
   @objc public var referenceId: Swift.String
   @objc public var pushServiceUrl: Swift.String
+  @objc public var pushServiceUrlV2: Swift.String
   @objc public var upiServicePollInterval: Swift.String
   @objc public var sdkUpiPushExpiry: Swift.String
   @objc public var sdkUpiVerificationInterval: Swift.String
+  @objc public var encodedPayuId: Swift.String
   @objc public var intentURIData: Swift.String?
   @objc public var appName: Swift.String?
   @objc public var amount: Swift.String?
@@ -371,7 +373,6 @@ extension PayUPaymentResponseHandler {
   @objc dynamic public func finishTransaction(isMerchantCancelling: Swift.Bool)
   @objc dynamic public func cancelTransaction(completion: @escaping ((PayUUPICoreKit.PayUPaymentStatus) -> ()))
   @objc dynamic public func checkPaymentStatus(forcefully: Swift.Bool, completion: @escaping ((PayUUPICoreKit.PayUPaymentStatus) -> ()))
-  @objc dynamic public func getTxnRelatedInfoForAPIs() -> PayUUPICoreKit.PayUTxnVerificationInfo
 }
 extension PayUPaymentResponseHandler {
   @objc dynamic public func consumePaymentStatus(_ status: PayUUPICoreKit.PayUPaymentStatus, forVerificationMode mode: PayUUPICoreKit.PayUPaymentVerificationMode)
@@ -424,7 +425,7 @@ public struct PayUHashes {
   @objc override dynamic public init()
 }
 @objc @objcMembers public class PayUTxnVerificationInfo : ObjectiveC.NSObject {
-  @objc public init(urlStr: Swift.String, payuId: Swift.String, token: Swift.String?, returnUrlStr: Swift.String?)
+  @objc public init(urlStr: Swift.String, mihpayid: Swift.String, token: Swift.String?, returnUrlStr: Swift.String?)
   @objc override dynamic public init()
   @objc deinit
 }
