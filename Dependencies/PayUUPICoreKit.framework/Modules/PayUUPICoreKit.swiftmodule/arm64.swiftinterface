@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
-// swift-module-flags: -target arm64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUUPICoreKit
+// swift-compiler-version: Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)
+// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUUPICoreKit
 import Foundation
 import PayULoggerKit
 import PayUNetworkingKit
@@ -176,9 +176,11 @@ extension PayUPaymentApp {
   public var status: Swift.Int?
   @objc public var referenceId: Swift.String
   @objc public var pushServiceUrl: Swift.String
+  @objc public var pushServiceUrlV2: Swift.String
   @objc public var upiServicePollInterval: Swift.String
   @objc public var sdkUpiPushExpiry: Swift.String
   @objc public var sdkUpiVerificationInterval: Swift.String
+  @objc public var encodedPayuId: Swift.String
   @objc public var intentURIData: Swift.String?
   @objc public var appName: Swift.String?
   @objc public var amount: Swift.String?
@@ -371,7 +373,6 @@ extension PayUPaymentResponseHandler {
   @objc dynamic public func finishTransaction(isMerchantCancelling: Swift.Bool)
   @objc dynamic public func cancelTransaction(completion: @escaping ((PayUUPICoreKit.PayUPaymentStatus) -> ()))
   @objc dynamic public func checkPaymentStatus(forcefully: Swift.Bool, completion: @escaping ((PayUUPICoreKit.PayUPaymentStatus) -> ()))
-  @objc dynamic public func getTxnRelatedInfoForAPIs() -> PayUUPICoreKit.PayUTxnVerificationInfo
 }
 extension PayUPaymentResponseHandler {
   @objc dynamic public func consumePaymentStatus(_ status: PayUUPICoreKit.PayUPaymentStatus, forVerificationMode mode: PayUUPICoreKit.PayUPaymentVerificationMode)
@@ -424,7 +425,7 @@ public struct PayUHashes {
   @objc override dynamic public init()
 }
 @objc @objcMembers public class PayUTxnVerificationInfo : ObjectiveC.NSObject {
-  @objc public init(urlStr: Swift.String, payuId: Swift.String, token: Swift.String?, returnUrlStr: Swift.String?)
+  @objc public init(urlStr: Swift.String, mihpayid: Swift.String, token: Swift.String?, returnUrlStr: Swift.String?)
   @objc override dynamic public init()
   @objc deinit
 }
