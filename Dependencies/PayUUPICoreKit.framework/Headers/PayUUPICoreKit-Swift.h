@@ -282,6 +282,7 @@ SWIFT_CLASS("_TtC14PayUUPICoreKit19PayUIntentPaymentVC")
 @property (nonatomic, strong) PayUUPIPaymentOptions * _Null_unspecified availableUpiOptions;
 @property (nonatomic, strong) PayUPaymentParams * _Null_unspecified paymentParams;
 @property (nonatomic, strong) PayUSupportedIntentApp * _Null_unspecified paymentApp;
+@property (nonatomic) BOOL bypassCanOpenAppChecks;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -386,6 +387,8 @@ SWIFT_CLASS("_TtC14PayUUPICoreKit17PayUPaymentParams")
 @property (nonatomic, copy) NSString * _Nullable offerKey;
 @property (nonatomic, copy) NSString * _Nullable surl;
 @property (nonatomic, copy) NSString * _Nullable furl;
+@property (nonatomic, copy) NSString * _Nullable beneficiaryAccountNumber;
+@property (nonatomic, copy) NSString * _Nullable ifscCode;
 - (nullable instancetype)initWithMerchantKey:(NSString * _Nonnull)merchantKey transactionId:(NSString * _Nonnull)transactionId amount:(NSString * _Nonnull)amount productInfo:(NSString * _Nonnull)productInfo firstName:(NSString * _Nonnull)firstName email:(NSString * _Nonnull)email udf1:(NSString * _Nonnull)udf1 udf2:(NSString * _Nonnull)udf2 udf3:(NSString * _Nonnull)udf3 udf4:(NSString * _Nonnull)udf4 udf5:(NSString * _Nonnull)udf5 error:(NSError * _Nullable * _Nullable)error OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -523,6 +526,7 @@ SWIFT_CLASS("_TtC14PayUUPICoreKit22PayUSupportedIntentApp")
 @interface PayUSupportedIntentApp : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull name;
 @property (nonatomic, readonly, copy) NSString * _Nonnull scheme;
+- (nonnull instancetype)initWithName:(NSString * _Nonnull)name scheme:(NSString * _Nonnull)scheme OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -577,6 +581,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PayUUPICore 
 
 SWIFT_CLASS("_TtC14PayUUPICoreKit16PayUUPICoreUtils")
 @interface PayUUPICoreUtils : NSObject
++ (NSDictionary<NSString *, NSString *> * _Nonnull)getMandatoryParamsForUnderscorePaymentFromParams:(PayUPaymentParams * _Nonnull)params SWIFT_WARN_UNUSED_RESULT;
++ (NSDictionary<NSString *, NSString *> * _Nonnull)getMandatoryTPVParamsForUnderscorePaymentFromParams:(PayUPaymentParams * _Nonnull)params SWIFT_WARN_UNUSED_RESULT;
++ (NSURL * _Nonnull)getInfoURL SWIFT_WARN_UNUSED_RESULT;
++ (NSURL * _Nonnull)getSecureURL SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)getVersionOfBundle:(NSBundle * _Nonnull)bundle SWIFT_WARN_UNUSED_RESULT;
 + (NSArray<PayUSupportedCollectApp *> * _Nonnull)getDefaultUPICollectAppsWithHandles SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -910,6 +918,7 @@ SWIFT_CLASS("_TtC14PayUUPICoreKit19PayUIntentPaymentVC")
 @property (nonatomic, strong) PayUUPIPaymentOptions * _Null_unspecified availableUpiOptions;
 @property (nonatomic, strong) PayUPaymentParams * _Null_unspecified paymentParams;
 @property (nonatomic, strong) PayUSupportedIntentApp * _Null_unspecified paymentApp;
+@property (nonatomic) BOOL bypassCanOpenAppChecks;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -1014,6 +1023,8 @@ SWIFT_CLASS("_TtC14PayUUPICoreKit17PayUPaymentParams")
 @property (nonatomic, copy) NSString * _Nullable offerKey;
 @property (nonatomic, copy) NSString * _Nullable surl;
 @property (nonatomic, copy) NSString * _Nullable furl;
+@property (nonatomic, copy) NSString * _Nullable beneficiaryAccountNumber;
+@property (nonatomic, copy) NSString * _Nullable ifscCode;
 - (nullable instancetype)initWithMerchantKey:(NSString * _Nonnull)merchantKey transactionId:(NSString * _Nonnull)transactionId amount:(NSString * _Nonnull)amount productInfo:(NSString * _Nonnull)productInfo firstName:(NSString * _Nonnull)firstName email:(NSString * _Nonnull)email udf1:(NSString * _Nonnull)udf1 udf2:(NSString * _Nonnull)udf2 udf3:(NSString * _Nonnull)udf3 udf4:(NSString * _Nonnull)udf4 udf5:(NSString * _Nonnull)udf5 error:(NSError * _Nullable * _Nullable)error OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1151,6 +1162,7 @@ SWIFT_CLASS("_TtC14PayUUPICoreKit22PayUSupportedIntentApp")
 @interface PayUSupportedIntentApp : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull name;
 @property (nonatomic, readonly, copy) NSString * _Nonnull scheme;
+- (nonnull instancetype)initWithName:(NSString * _Nonnull)name scheme:(NSString * _Nonnull)scheme OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1205,6 +1217,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PayUUPICore 
 
 SWIFT_CLASS("_TtC14PayUUPICoreKit16PayUUPICoreUtils")
 @interface PayUUPICoreUtils : NSObject
++ (NSDictionary<NSString *, NSString *> * _Nonnull)getMandatoryParamsForUnderscorePaymentFromParams:(PayUPaymentParams * _Nonnull)params SWIFT_WARN_UNUSED_RESULT;
++ (NSDictionary<NSString *, NSString *> * _Nonnull)getMandatoryTPVParamsForUnderscorePaymentFromParams:(PayUPaymentParams * _Nonnull)params SWIFT_WARN_UNUSED_RESULT;
++ (NSURL * _Nonnull)getInfoURL SWIFT_WARN_UNUSED_RESULT;
++ (NSURL * _Nonnull)getSecureURL SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)getVersionOfBundle:(NSBundle * _Nonnull)bundle SWIFT_WARN_UNUSED_RESULT;
 + (NSArray<PayUSupportedCollectApp *> * _Nonnull)getDefaultUPICollectAppsWithHandles SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -1541,6 +1557,7 @@ SWIFT_CLASS("_TtC14PayUUPICoreKit19PayUIntentPaymentVC")
 @property (nonatomic, strong) PayUUPIPaymentOptions * _Null_unspecified availableUpiOptions;
 @property (nonatomic, strong) PayUPaymentParams * _Null_unspecified paymentParams;
 @property (nonatomic, strong) PayUSupportedIntentApp * _Null_unspecified paymentApp;
+@property (nonatomic) BOOL bypassCanOpenAppChecks;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -1645,6 +1662,8 @@ SWIFT_CLASS("_TtC14PayUUPICoreKit17PayUPaymentParams")
 @property (nonatomic, copy) NSString * _Nullable offerKey;
 @property (nonatomic, copy) NSString * _Nullable surl;
 @property (nonatomic, copy) NSString * _Nullable furl;
+@property (nonatomic, copy) NSString * _Nullable beneficiaryAccountNumber;
+@property (nonatomic, copy) NSString * _Nullable ifscCode;
 - (nullable instancetype)initWithMerchantKey:(NSString * _Nonnull)merchantKey transactionId:(NSString * _Nonnull)transactionId amount:(NSString * _Nonnull)amount productInfo:(NSString * _Nonnull)productInfo firstName:(NSString * _Nonnull)firstName email:(NSString * _Nonnull)email udf1:(NSString * _Nonnull)udf1 udf2:(NSString * _Nonnull)udf2 udf3:(NSString * _Nonnull)udf3 udf4:(NSString * _Nonnull)udf4 udf5:(NSString * _Nonnull)udf5 error:(NSError * _Nullable * _Nullable)error OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1782,6 +1801,7 @@ SWIFT_CLASS("_TtC14PayUUPICoreKit22PayUSupportedIntentApp")
 @interface PayUSupportedIntentApp : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull name;
 @property (nonatomic, readonly, copy) NSString * _Nonnull scheme;
+- (nonnull instancetype)initWithName:(NSString * _Nonnull)name scheme:(NSString * _Nonnull)scheme OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1836,6 +1856,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PayUUPICore 
 
 SWIFT_CLASS("_TtC14PayUUPICoreKit16PayUUPICoreUtils")
 @interface PayUUPICoreUtils : NSObject
++ (NSDictionary<NSString *, NSString *> * _Nonnull)getMandatoryParamsForUnderscorePaymentFromParams:(PayUPaymentParams * _Nonnull)params SWIFT_WARN_UNUSED_RESULT;
++ (NSDictionary<NSString *, NSString *> * _Nonnull)getMandatoryTPVParamsForUnderscorePaymentFromParams:(PayUPaymentParams * _Nonnull)params SWIFT_WARN_UNUSED_RESULT;
++ (NSURL * _Nonnull)getInfoURL SWIFT_WARN_UNUSED_RESULT;
++ (NSURL * _Nonnull)getSecureURL SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)getVersionOfBundle:(NSBundle * _Nonnull)bundle SWIFT_WARN_UNUSED_RESULT;
 + (NSArray<PayUSupportedCollectApp *> * _Nonnull)getDefaultUPICollectAppsWithHandles SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -2169,6 +2193,7 @@ SWIFT_CLASS("_TtC14PayUUPICoreKit19PayUIntentPaymentVC")
 @property (nonatomic, strong) PayUUPIPaymentOptions * _Null_unspecified availableUpiOptions;
 @property (nonatomic, strong) PayUPaymentParams * _Null_unspecified paymentParams;
 @property (nonatomic, strong) PayUSupportedIntentApp * _Null_unspecified paymentApp;
+@property (nonatomic) BOOL bypassCanOpenAppChecks;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -2273,6 +2298,8 @@ SWIFT_CLASS("_TtC14PayUUPICoreKit17PayUPaymentParams")
 @property (nonatomic, copy) NSString * _Nullable offerKey;
 @property (nonatomic, copy) NSString * _Nullable surl;
 @property (nonatomic, copy) NSString * _Nullable furl;
+@property (nonatomic, copy) NSString * _Nullable beneficiaryAccountNumber;
+@property (nonatomic, copy) NSString * _Nullable ifscCode;
 - (nullable instancetype)initWithMerchantKey:(NSString * _Nonnull)merchantKey transactionId:(NSString * _Nonnull)transactionId amount:(NSString * _Nonnull)amount productInfo:(NSString * _Nonnull)productInfo firstName:(NSString * _Nonnull)firstName email:(NSString * _Nonnull)email udf1:(NSString * _Nonnull)udf1 udf2:(NSString * _Nonnull)udf2 udf3:(NSString * _Nonnull)udf3 udf4:(NSString * _Nonnull)udf4 udf5:(NSString * _Nonnull)udf5 error:(NSError * _Nullable * _Nullable)error OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -2410,6 +2437,7 @@ SWIFT_CLASS("_TtC14PayUUPICoreKit22PayUSupportedIntentApp")
 @interface PayUSupportedIntentApp : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull name;
 @property (nonatomic, readonly, copy) NSString * _Nonnull scheme;
+- (nonnull instancetype)initWithName:(NSString * _Nonnull)name scheme:(NSString * _Nonnull)scheme OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -2464,6 +2492,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PayUUPICore 
 
 SWIFT_CLASS("_TtC14PayUUPICoreKit16PayUUPICoreUtils")
 @interface PayUUPICoreUtils : NSObject
++ (NSDictionary<NSString *, NSString *> * _Nonnull)getMandatoryParamsForUnderscorePaymentFromParams:(PayUPaymentParams * _Nonnull)params SWIFT_WARN_UNUSED_RESULT;
++ (NSDictionary<NSString *, NSString *> * _Nonnull)getMandatoryTPVParamsForUnderscorePaymentFromParams:(PayUPaymentParams * _Nonnull)params SWIFT_WARN_UNUSED_RESULT;
++ (NSURL * _Nonnull)getInfoURL SWIFT_WARN_UNUSED_RESULT;
++ (NSURL * _Nonnull)getSecureURL SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)getVersionOfBundle:(NSBundle * _Nonnull)bundle SWIFT_WARN_UNUSED_RESULT;
 + (NSArray<PayUSupportedCollectApp *> * _Nonnull)getDefaultUPICollectAppsWithHandles SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;

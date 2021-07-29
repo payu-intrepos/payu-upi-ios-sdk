@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
 // swift-module-flags: -target arm64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUUPICoreKit
 import Foundation
 import PayULoggerKit
@@ -176,9 +176,11 @@ extension PayUPaymentApp {
   public var status: Swift.Int?
   @objc public var referenceId: Swift.String
   @objc public var pushServiceUrl: Swift.String
+  @objc public var pushServiceUrlV2: Swift.String
   @objc public var upiServicePollInterval: Swift.String
   @objc public var sdkUpiPushExpiry: Swift.String
   @objc public var sdkUpiVerificationInterval: Swift.String
+  @objc public var encodedPayuId: Swift.String
   @objc public var intentURIData: Swift.String?
   @objc public var appName: Swift.String?
   @objc public var amount: Swift.String?
@@ -213,6 +215,10 @@ extension PayUPaymentApp {
   @objc override dynamic public init()
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PayUUPICoreUtils : ObjectiveC.NSObject {
+  @objc public class func getMandatoryParamsForUnderscorePayment(fromParams params: PayUUPICoreKit.PayUPaymentParams) -> [Swift.String : Swift.String]
+  @objc public class func getMandatoryTPVParamsForUnderscorePayment(fromParams params: PayUUPICoreKit.PayUPaymentParams) -> [Swift.String : Swift.String]
+  @objc public class func getInfoURL() -> Foundation.URL
+  @objc public class func getSecureURL() -> Foundation.URL
   @objc public class func getVersionOfBundle(_ bundle: Foundation.Bundle) -> Swift.String
   @objc public class func getDefaultUPICollectAppsWithHandles() -> [PayUUPICoreKit.PayUSupportedCollectApp]
   @objc deinit
@@ -232,8 +238,9 @@ extension PayUPaymentApp {
   @objc override dynamic public init()
   public func encode(to encoder: Swift.Encoder) throws
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class PayUSupportedIntentApp : ObjectiveC.NSObject {
+@objc @objcMembers public class PayUSupportedIntentApp : ObjectiveC.NSObject {
   @objc final public let name: Swift.String, scheme: Swift.String
+  @objc public init(name: Swift.String, scheme: Swift.String)
   public static func == (lhs: PayUUPICoreKit.PayUSupportedIntentApp, rhs: PayUUPICoreKit.PayUSupportedIntentApp) -> Swift.Bool
   @objc deinit
   @objc override dynamic public init()
@@ -242,6 +249,7 @@ extension PayUPaymentApp {
   @objc public var availableUpiOptions: PayUUPICoreKit.PayUUPIPaymentOptions!
   @objc public var paymentParams: PayUUPICoreKit.PayUPaymentParams!
   @objc public var paymentApp: PayUUPICoreKit.PayUSupportedIntentApp!
+  @objc public var bypassCanOpenAppChecks: Swift.Bool
   @objc override dynamic public func viewDidLoad()
   @objc deinit
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
@@ -266,6 +274,8 @@ extension PayUPaymentApp {
   public var hashes: PayUUPICoreKit.PayUHashes?
   @objc public var surl: Swift.String?
   @objc public var furl: Swift.String?
+  @objc public var beneficiaryAccountNumber: Swift.String?
+  @objc public var ifscCode: Swift.String?
   @objc public init(merchantKey: Swift.String, transactionId: Swift.String, amount: Swift.String, productInfo: Swift.String, firstName: Swift.String, email: Swift.String, udf1: Swift.String, udf2: Swift.String, udf3: Swift.String, udf4: Swift.String, udf5: Swift.String) throws
   @objc deinit
   @objc override dynamic public init()
@@ -371,7 +381,6 @@ extension PayUPaymentResponseHandler {
   @objc dynamic public func finishTransaction(isMerchantCancelling: Swift.Bool)
   @objc dynamic public func cancelTransaction(completion: @escaping ((PayUUPICoreKit.PayUPaymentStatus) -> ()))
   @objc dynamic public func checkPaymentStatus(forcefully: Swift.Bool, completion: @escaping ((PayUUPICoreKit.PayUPaymentStatus) -> ()))
-  @objc dynamic public func getTxnRelatedInfoForAPIs() -> PayUUPICoreKit.PayUTxnVerificationInfo
 }
 extension PayUPaymentResponseHandler {
   @objc dynamic public func consumePaymentStatus(_ status: PayUUPICoreKit.PayUPaymentStatus, forVerificationMode mode: PayUUPICoreKit.PayUPaymentVerificationMode)
@@ -424,7 +433,7 @@ public struct PayUHashes {
   @objc override dynamic public init()
 }
 @objc @objcMembers public class PayUTxnVerificationInfo : ObjectiveC.NSObject {
-  @objc public init(urlStr: Swift.String, payuId: Swift.String, token: Swift.String?, returnUrlStr: Swift.String?)
+  @objc public init(urlStr: Swift.String, mihpayid: Swift.String, token: Swift.String?, returnUrlStr: Swift.String?)
   @objc override dynamic public init()
   @objc deinit
 }

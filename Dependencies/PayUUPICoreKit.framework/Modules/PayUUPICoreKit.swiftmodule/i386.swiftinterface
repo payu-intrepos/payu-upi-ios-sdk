@@ -215,6 +215,10 @@ extension PayUPaymentApp {
   @objc override dynamic public init()
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PayUUPICoreUtils : ObjectiveC.NSObject {
+  @objc public class func getMandatoryParamsForUnderscorePayment(fromParams params: PayUUPICoreKit.PayUPaymentParams) -> [Swift.String : Swift.String]
+  @objc public class func getMandatoryTPVParamsForUnderscorePayment(fromParams params: PayUUPICoreKit.PayUPaymentParams) -> [Swift.String : Swift.String]
+  @objc public class func getInfoURL() -> Foundation.URL
+  @objc public class func getSecureURL() -> Foundation.URL
   @objc public class func getVersionOfBundle(_ bundle: Foundation.Bundle) -> Swift.String
   @objc public class func getDefaultUPICollectAppsWithHandles() -> [PayUUPICoreKit.PayUSupportedCollectApp]
   @objc deinit
@@ -234,8 +238,9 @@ extension PayUPaymentApp {
   @objc override dynamic public init()
   public func encode(to encoder: Swift.Encoder) throws
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class PayUSupportedIntentApp : ObjectiveC.NSObject {
+@objc @objcMembers public class PayUSupportedIntentApp : ObjectiveC.NSObject {
   @objc final public let name: Swift.String, scheme: Swift.String
+  @objc public init(name: Swift.String, scheme: Swift.String)
   public static func == (lhs: PayUUPICoreKit.PayUSupportedIntentApp, rhs: PayUUPICoreKit.PayUSupportedIntentApp) -> Swift.Bool
   @objc deinit
   @objc override dynamic public init()
@@ -244,6 +249,7 @@ extension PayUPaymentApp {
   @objc public var availableUpiOptions: PayUUPICoreKit.PayUUPIPaymentOptions!
   @objc public var paymentParams: PayUUPICoreKit.PayUPaymentParams!
   @objc public var paymentApp: PayUUPICoreKit.PayUSupportedIntentApp!
+  @objc public var bypassCanOpenAppChecks: Swift.Bool
   @objc override dynamic public func viewDidLoad()
   @objc deinit
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
@@ -268,6 +274,8 @@ extension PayUPaymentApp {
   public var hashes: PayUUPICoreKit.PayUHashes?
   @objc public var surl: Swift.String?
   @objc public var furl: Swift.String?
+  @objc public var beneficiaryAccountNumber: Swift.String?
+  @objc public var ifscCode: Swift.String?
   @objc public init(merchantKey: Swift.String, transactionId: Swift.String, amount: Swift.String, productInfo: Swift.String, firstName: Swift.String, email: Swift.String, udf1: Swift.String, udf2: Swift.String, udf3: Swift.String, udf4: Swift.String, udf5: Swift.String) throws
   @objc deinit
   @objc override dynamic public init()

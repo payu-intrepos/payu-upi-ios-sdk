@@ -50,7 +50,7 @@ podTrunkPush() {
 }
 
 podName="PayUIndia-UPICore"
-podVersion="3.0.2"
+podVersion="4.1.0"
 
 podSpec="${podName}.podspec"
 tag="${podName}_${podVersion}"
