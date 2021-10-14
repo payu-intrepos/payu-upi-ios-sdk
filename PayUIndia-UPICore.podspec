@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                = "PayUIndia-UPICore"
-  s.version             = "4.0.0"
+  s.version             = "5.0.0"
   s.license             = "MIT"
   s.homepage            = "https://app.gitbook.com/@payumobile/s/sdk-integration/v/master/ios/upi-standalone-ios"
   s.author              = { "PayUbiz" => "contact@payu.in"  }
@@ -13,9 +13,9 @@ Pod::Spec.new do |s|
                           }
   
   s.ios.deployment_target = "10.0"
-  s.vendored_frameworks = 'Dependencies/PayUUPICoreKit.framework'
+  s.vendored_frameworks = 'Dependencies/PayUUPICoreKit.xcframework'
 
-  s.dependency            'PayUIndia-Networking', '~> 2.0'
+  s.dependency            'PayUIndia-Networking', '~> 4.0'
   s.dependency            'Socket.IO-Client-Swift', '15.1.0'
   
 end
