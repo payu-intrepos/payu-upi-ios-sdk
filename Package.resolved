@@ -2,15 +2,6 @@
   "object": {
     "pins": [
       {
-        "package": "Alamofire",
-        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
-        "state": {
-          "branch": null,
-          "revision": "f82c23a8a7ef8dc1a49a8bfc6a96883e79121864",
-          "version": "5.5.0"
-        }
-      },
-      {
         "package": "PayUIndia-PayUParams",
         "repositoryURL": "https://github.com/payu-intrepos/payu-params-iOS",
         "state": {
@@ -24,8 +15,8 @@
         "repositoryURL": "https://github.com/socketio/socket.io-client-swift",
         "state": {
           "branch": null,
-          "revision": "5dcfe18748f55cc1a001e640fa96ec2a4b098a55",
-          "version": "15.1.0"
+          "revision": "148c30247480cd96a068d38b1594e95a5f7bc1df",
+          "version": "15.0.0"
         }
       },
       {

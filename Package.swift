@@ -24,8 +24,7 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         .package(name: "PayUIndia-PayUParams",url: "https://github.com/payu-intrepos/payu-params-iOS", from: "3.1.0"),
-            .package(url: "https://github.com/socketio/socket.io-client-swift", .exact("15.1.0")),
-            .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.5.0"))
+            .package(url: "https://github.com/socketio/socket.io-client-swift", .upToNextMinor(from: "15.0.0"))
         
     ],
     targets: [
@@ -59,7 +58,6 @@ let package = Package(
                 .target(name: "PayUIndia-UPI", condition: .when(platforms: [.iOS])),
                 .product(name: "PayUIndia-PayUParams", package: "PayUIndia-PayUParams"),
                 .product(name: "SocketIO", package: "socket.io-client-swift"),
-                .product(name: "Alamofire", package: "Alamofire"),
                 "PayUIndia-Networking",
                 "PayUIndia-Logger",
                 "PayUIndia-UPICore"
