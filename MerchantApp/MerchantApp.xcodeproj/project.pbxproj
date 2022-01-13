@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,13 @@
 		ADE09D862385708F00C93FBA /* PaymentOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE09D7A2385708F00C93FBA /* PaymentOptionCell.swift */; };
 		ADE09D872385708F00C93FBA /* Initial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE09D7C2385708F00C93FBA /* Initial.storyboard */; };
 		ADE09D882385708F00C93FBA /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE09D7D2385708F00C93FBA /* Launch Screen.storyboard */; };
+		E87EBADD27907FC300A3F5E6 /* PayUIndia-PG-SDK in Frameworks */ = {isa = PBXBuildFile; productRef = E87EBADC27907FC300A3F5E6 /* PayUIndia-PG-SDK */; };
+		E87EBAE027907FD400A3F5E6 /* PayUIndia-Logger in Frameworks */ = {isa = PBXBuildFile; productRef = E87EBADF27907FD400A3F5E6 /* PayUIndia-Logger */; };
+		E87EBAE227907FD400A3F5E6 /* PayUIndia-Networking in Frameworks */ = {isa = PBXBuildFile; productRef = E87EBAE127907FD400A3F5E6 /* PayUIndia-Networking */; };
+		E87EBAE427907FD400A3F5E6 /* PayUIndia-UPI in Frameworks */ = {isa = PBXBuildFile; productRef = E87EBAE327907FD400A3F5E6 /* PayUIndia-UPI */; };
+		E87EBAE627907FD400A3F5E6 /* PayUIndia-UPICore in Frameworks */ = {isa = PBXBuildFile; productRef = E87EBAE527907FD400A3F5E6 /* PayUIndia-UPICore */; };
+		E87EBAE9279080C000A3F5E6 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E87EBAE8279080C000A3F5E6 /* FirebaseAnalytics */; };
+		E87EBAEB279080C000A3F5E6 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E87EBAEA279080C000A3F5E6 /* FirebaseAuth */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,6 +63,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E87EBAE627907FD400A3F5E6 /* PayUIndia-UPICore in Frameworks */,
+				E87EBAE427907FD400A3F5E6 /* PayUIndia-UPI in Frameworks */,
+				E87EBAE9279080C000A3F5E6 /* FirebaseAnalytics in Frameworks */,
+				E87EBADD27907FC300A3F5E6 /* PayUIndia-PG-SDK in Frameworks */,
+				E87EBAE227907FD400A3F5E6 /* PayUIndia-Networking in Frameworks */,
+				E87EBAEB279080C000A3F5E6 /* FirebaseAuth in Frameworks */,
+				E87EBAE027907FD400A3F5E6 /* PayUIndia-Logger in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,7 +81,6 @@
 			children = (
 				AD6A8E5B238532B100FCB6D3 /* MerchantApp */,
 				AD6A8E5A238532B100FCB6D3 /* Products */,
-				B3903A47E7A0B65D43F937E7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,13 +169,6 @@
 			path = "IB Files";
 			sourceTree = "<group>";
 		};
-		B3903A47E7A0B65D43F937E7 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -180,6 +186,15 @@
 			dependencies = (
 			);
 			name = MerchantApp;
+			packageProductDependencies = (
+				E87EBADC27907FC300A3F5E6 /* PayUIndia-PG-SDK */,
+				E87EBADF27907FD400A3F5E6 /* PayUIndia-Logger */,
+				E87EBAE127907FD400A3F5E6 /* PayUIndia-Networking */,
+				E87EBAE327907FD400A3F5E6 /* PayUIndia-UPI */,
+				E87EBAE527907FD400A3F5E6 /* PayUIndia-UPICore */,
+				E87EBAE8279080C000A3F5E6 /* FirebaseAnalytics */,
+				E87EBAEA279080C000A3F5E6 /* FirebaseAuth */,
+			);
 			productName = MerchantApp;
 			productReference = AD6A8E59238532B100FCB6D3 /* MerchantApp.app */;
 			productType = "com.apple.product-type.application";
@@ -208,6 +223,11 @@
 				Base,
 			);
 			mainGroup = AD6A8E50238532B100FCB6D3;
+			packageReferences = (
+				E87EBADB27907FC300A3F5E6 /* XCRemoteSwiftPackageReference "iOS-SDK" */,
+				E87EBADE27907FD400A3F5E6 /* XCRemoteSwiftPackageReference "payu-upi-ios-sdk" */,
+				E87EBAE7279080C000A3F5E6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = AD6A8E5A238532B100FCB6D3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -426,6 +446,71 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E87EBADB27907FC300A3F5E6 /* XCRemoteSwiftPackageReference "iOS-SDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/payu-intrepos/iOS-SDK";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		E87EBADE27907FD400A3F5E6 /* XCRemoteSwiftPackageReference "payu-upi-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/payu-intrepos/payu-upi-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		E87EBAE7279080C000A3F5E6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E87EBADC27907FC300A3F5E6 /* PayUIndia-PG-SDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E87EBADB27907FC300A3F5E6 /* XCRemoteSwiftPackageReference "iOS-SDK" */;
+			productName = "PayUIndia-PG-SDK";
+		};
+		E87EBADF27907FD400A3F5E6 /* PayUIndia-Logger */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E87EBADE27907FD400A3F5E6 /* XCRemoteSwiftPackageReference "payu-upi-ios-sdk" */;
+			productName = "PayUIndia-Logger";
+		};
+		E87EBAE127907FD400A3F5E6 /* PayUIndia-Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E87EBADE27907FD400A3F5E6 /* XCRemoteSwiftPackageReference "payu-upi-ios-sdk" */;
+			productName = "PayUIndia-Networking";
+		};
+		E87EBAE327907FD400A3F5E6 /* PayUIndia-UPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E87EBADE27907FD400A3F5E6 /* XCRemoteSwiftPackageReference "payu-upi-ios-sdk" */;
+			productName = "PayUIndia-UPI";
+		};
+		E87EBAE527907FD400A3F5E6 /* PayUIndia-UPICore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E87EBADE27907FD400A3F5E6 /* XCRemoteSwiftPackageReference "payu-upi-ios-sdk" */;
+			productName = "PayUIndia-UPICore";
+		};
+		E87EBAE8279080C000A3F5E6 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E87EBAE7279080C000A3F5E6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		E87EBAEA279080C000A3F5E6 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E87EBAE7279080C000A3F5E6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AD6A8E51238532B100FCB6D3 /* Project object */;
 }

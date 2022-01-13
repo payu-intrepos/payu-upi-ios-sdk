@@ -46,7 +46,8 @@ let package = Package(
                 .target(name: "PayUIndia-UPICore", condition: .when(platforms: [.iOS])),
                 .product(name: "PayUIndia-PayUParams", package: "PayUIndia-PayUParams"),
                 .product(name: "SocketIO", package: "SocketIO"),
-                "PayUIndia-NetworkingTarget"
+                "PayUIndia-Networking",
+                "PayUIndia-Logger"
             ],
             path: "Wrappers/PayUIndia-UPICoreWrapper"
         ),
@@ -55,7 +56,10 @@ let package = Package(
             dependencies: [
                 .target(name: "PayUIndia-UPI", condition: .when(platforms: [.iOS])),
                 .product(name: "PayUIndia-PayUParams", package: "PayUIndia-PayUParams"),
-               "PayUIndia-UPICoreTarget"
+                .product(name: "SocketIO", package: "SocketIO"),
+                "PayUIndia-Networking",
+                "PayUIndia-Logger",
+                "PayUIndia-UPICore"
             ],
             path: "Wrappers/PayUIndia-UPIWrapper"
         ),
