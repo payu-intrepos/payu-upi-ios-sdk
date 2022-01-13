@@ -7,18 +7,13 @@
 //
 
 import UIKit
-//import Firebase
-import Alamofire
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-//        FirebaseApp.configure()
-        AF.session.dataTask(with: URL(string: "www.google.com")!) { data, respo, error in
-            print(error)
-        }
         return true
     }
 }
