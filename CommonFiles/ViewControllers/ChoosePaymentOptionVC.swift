@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import PayUParamsKit
 import PayUUPICoreKit
 import PayUUPIKit
 
@@ -18,7 +18,7 @@ class ChoosePaymentOptionVC: UIViewController, UITableViewDelegate, UITableViewD
 
     let activityIndicator = ActivityIndicator()
 
-    var paymentParams: PayUPaymentParams?
+    var paymentParams: PayUPaymentParam?
     var allUpiPaymentOptions: PayUUPIPaymentOptions?
     var intentModel: PayUPureS2SModel?
 
@@ -27,9 +27,11 @@ class ChoosePaymentOptionVC: UIViewController, UITableViewDelegate, UITableViewD
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         if #available(iOS 13.0, *) {
             overrideUserInterfaceStyle = .light
         }
+        
         tableView.tableFooterView = UIView()
         computeAllAvailablePaymentOptions()
     }
@@ -170,7 +172,7 @@ extension ChoosePaymentOptionVC {
     }
 
     func initiateIntentPayment(withApp app: PayUSupportedIntentApp,
-                               paymentParams params: PayUPaymentParams,
+                               paymentParams params: PayUPaymentParam,
                                availableUpiOptions upiOptions: PayUUPIPaymentOptions) {
 
         let paymentVC = PayUIntentPaymentVC()
@@ -182,7 +184,7 @@ extension ChoosePaymentOptionVC {
     }
 
     func initiateCollectPayment(withScreenType type: PayUCollectScreenType,
-                                paymentParams params: PayUPaymentParams,
+                                paymentParams params: PayUPaymentParam,
                                 availableUOptions upiOptions: PayUUPIPaymentOptions) {
         let collectVC = PayUUPI.getCollectPaymentVC()
         collectVC.paymentParams = params

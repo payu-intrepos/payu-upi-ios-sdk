@@ -10,20 +10,32 @@ import UIKit
 import PayUUPICoreKit
 import PayUNetworkingKit
 import PayULoggerKit
+import PayUParamsKit
 
 class OrderPageVC: UIViewController {
 
     @IBOutlet weak var amountTextField: UITextField!
     @IBOutlet weak var mobileTextField: UITextField!
-
+    
+    @IBOutlet weak var tpvTxnSwitch: UISwitch!
+    @IBOutlet weak var tpvElementsView: UIView!
+    
+    @IBOutlet weak var accNoTextField: UITextField!
+    @IBOutlet weak var ifscTextField: UITextField!
+    
+    
     var availablePaymentOptions: PayUUPIPaymentOptions?
-    var paymentParams: PayUPaymentParams?
+    var paymentParams: PayUPaymentParam?
     let activityIndicator = ActivityIndicator()
     var snackBar = PayUSnackBar()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        
+        if #available(iOS 13.0, *) {
+            overrideUserInterfaceStyle = .light
+        }
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -39,10 +51,97 @@ class OrderPageVC: UIViewController {
     func setupUI() {
         self.amountTextField.text = "1"
         self.mobileTextField.text = "9123456789"
-        if #available(iOS 13.0, *) {
-            overrideUserInterfaceStyle = .light
-        }
     }
+
+    func setupPayUCallbackHandlers() {
+        setupPaymentCompletionHandler()
+        setupOnEnteringVPAHandler()
+        setupBackpressHandler()
+    }
+
+    func setupPaymentParams() -> Bool {
+        PayUUPICore.shared.logLevel = .verbose
+        PayUUPICore.shared.environment = .bizcheckouttest
+        paymentParams = PayUPaymentParam(
+            key: "ibibogames", //Your merchant key for the current environment
+            transactionId: randomString(length: 6), //Your unique ID for this trasaction
+            amount: self.amountTextField.text ?? "1", //Amount of transaction
+            productInfo: "iPhone", // Description of the product
+            firstName: "Vipin", // First name of the user
+            email: "johnappleseed@apple.com", // Email of the useer
+            phone: "9123456789", // "10 digit phone number here"
+            surl: "https://payu.herokuapp.com/ios_success", // Success URL. Not used but required due to mandatory check in API.
+            furl: "https://payu.herokuapp.com/ios_failure", // Failure URL. Not used but required due to mandatory check in API.
+            environment: .production // Production or Test . Not used but required due to mandatory parameter.
+        )
+        //User defined parameters.
+        //You can save additional details with each txn if you need them for your business logic.
+        //You will get these details back in payment response and transaction verify API
+        //Like, you can add SKUs for which payment is made.
+        //You can keep all udf fields blank if you do not have any requirement to save your custom txn specific data at PayU's end
+        paymentParams?.udfs = PayUUserDefines()
+        paymentParams?.udfs?.udf1 = ""
+        paymentParams?.udfs?.udf2 = ""
+        paymentParams?.udfs?.udf3 = ""
+        paymentParams?.udfs?.udf4 = ""
+        paymentParams?.udfs?.udf5 = ""
+        
+        paymentParams?.userCredential = "yIlrx4:myUserEmail@payu.in" // "merchantKey:user'sUniqueIdentifier"
+        let upi = UPI()
+        if tpvTxnSwitch.isOn {
+            upi.beneficiaryAccountNumber = accNoTextField.text
+            upi.beneficiaryAccountIFSC = ifscTextField.text
+        } else {
+            upi.beneficiaryAccountNumber = nil
+            upi.beneficiaryAccountIFSC = nil
+        }
+        paymentParams?.paymentOption = upi
+        return paymentParams != nil
+    }
+
+    func fetchHashes(withParams params: PayUPaymentParam,
+                                      completion: @escaping(Result<Bool, SampleAppError> )->()) {
+        paymentParams?.hashes = Helper.getHashes(params: params, salt: "fb66f9b6152aa8566f3cfb0a6ab1a7626639efee1cb5281e208ef6905d3db111")
+        
+        completion(.success(true))
+
+//        APIManager().getHashes(params: paymentParams!) {[weak self] (hashes, error) in
+//            guard let self = self else { return }
+//
+//            if let error = error {
+//                completion(.failure(error))
+//            }
+//
+//            if let hashes = hashes {
+//                print(hashes)
+//                self.paymentParams?.hashes = self.getPayUHashesModel(fromHashes: hashes)
+//
+//                completion(.success(true))
+//
+//            } else {
+//                completion(.failure(.error(SampleAppError.hashError)))
+//            }
+//        }
+    }
+
+    func fetchPaymentOptions(withParams params: PayUPaymentParam,
+                             completion: @escaping( (Result<Bool, SampleAppError>)->() )) {
+
+        PayUAPI.getUPIPaymentOptions(withPaymentParams: self.paymentParams!, completion: { [weak self] result in
+            switch result {
+            case .success(let paymentOptions):
+                self?.availablePaymentOptions = paymentOptions
+                completion(.success(true))
+            case .failure(let payuError):
+                print(payuError)
+                completion(.failure(.error(payuError.description)))
+            }
+        })
+
+    }
+
+    // MARK: - Actions -
+    
 
     @IBAction func openCheckout(_ sender: Any) {
         // get available payment options to help populated checout with only available payment options
@@ -82,85 +181,11 @@ class OrderPageVC: UIViewController {
             }
         }
     }
-
-    func setupPayUCallbackHandlers() {
-        setupPaymentCompletionHandler()
-        setupOnEnteringVPAHandler()
-        setupBackpressHandler()
+    
+    @IBAction func tpvSwitchValueChanged(_ sender: Any) {
+        tpvElementsView.isHidden = !tpvTxnSwitch.isOn
     }
-
-    func setupPaymentParams() -> Bool {
-        PayUUPICore.shared.logLevel = .error
-        PayUUPICore.shared.environment = .production
-        do {
-          paymentParams = try PayUPaymentParams(
-            merchantKey: PayUUPICore.shared.environment == .production ? "smsplus" : "obScKz", //Your merchant key for the current environment
-            transactionId: randomString(length: 6), //Your unique ID for this trasaction
-            amount: self.amountTextField.text ?? "1", //Amount of transaction
-            productInfo: "iPhone", // Description of the product
-            firstName: "Vipin", // First name of the user
-            email: "johnappleseed@apple.com", // Email of the useer
-            //User defined parameters.
-            //You can save additional details with each txn if you need them for your business logic.
-            //You will get these details back in payment response and transaction verify API
-            //Like, you can add SKUs for which payment is made.
-            udf1: "",
-            //You can keep all udf fields blank if you do not have any requirement to save your custom txn specific data at PayU's end
-            udf2: "",
-            udf3: "",
-            udf4: "",
-            udf5: "")
-          paymentParams?.userCredentials = "smsplus:myUserEmail@payu.in" // "merchantKey:user'sUniqueIdentifier"
-          paymentParams?.surl = "https://payu.herokuapp.com/ios_success" // Success URL. Not used but required due to mandatory check in API.
-          paymentParams?.furl = "https://payu.herokuapp.com/ios_failure" // Failure URL. Not used but required due to mandatory check in API.
-          paymentParams?.phoneNumber = mobileTextField.text ?? "9123456789" // "10 digit phone number here"
-          return true
-        } catch let error as PayUError {
-            Helper.showAlert("Could not create post params due to: \(error.description)", onController: self)
-            return false
-        } catch {
-            Helper.showAlert("Could not create post params due to: \(error.localizedDescription)", onController: self)
-            return false
-        }
-    }
-
-    func fetchHashes(withParams params: PayUPaymentParams,
-                                      completion: @escaping(Result<Bool, SampleAppError> )->()) {
-
-        APIManager().getHashes(params: paymentParams!) {[weak self] (hashes, error) in
-            guard let self = self else { return }
-
-            if let error = error {
-                completion(.failure(error))
-            }
-
-            if let hashes = hashes {
-                print(hashes)
-                self.paymentParams?.hashes = self.getPayUHashesModel(fromHashes: hashes)
-
-                completion(.success(true))
-
-            } else {
-                completion(.failure(.error(SampleAppError.hashError)))
-            }
-        }
-    }
-
-    func fetchPaymentOptions(withParams params: PayUPaymentParams,
-                             completion: @escaping( (Result<Bool, SampleAppError>)->() )) {
-
-        PayUAPI.getUPIPaymentOptions(withPaymentParams: self.paymentParams!, completion: { [weak self] result in
-            switch result {
-            case .success(let paymentOptions):
-                self?.availablePaymentOptions = paymentOptions
-                completion(.success(true))
-            case .failure(let payuError):
-                print(payuError)
-                completion(.failure(.error(payuError.description)))
-            }
-        })
-
-    }
+    
 
     // MARK: - Helper
     func randomString(length: Int) -> String {
@@ -177,8 +202,8 @@ class OrderPageVC: UIViewController {
         }
     }
 
-    func getPayUHashesModel(fromHashes hashes: Hashes) -> PayUHashes{
-        var payuHashes = PayUHashes()
+    func getPayUHashesModel(fromHashes hashes: Hashes) -> PPKHashes{
+        var payuHashes = PPKHashes()
         payuHashes.paymentOptionsHash = hashes.paymentOptionsHash
         payuHashes.paymentHash = hashes.paymentHash
         payuHashes.validateVPAHash = hashes.validateVPAHash
@@ -210,8 +235,7 @@ extension OrderPageVC {
     fileprivate func setupOnEnteringVPAHandler() {
         PayUUPICore.shared.onEnteringVPA = {[weak self] vpa, completion in
             guard let self = self else { return }
-
-            self.paymentParams?.vpa = vpa
+            (self.paymentParams?.paymentOption as? UPI)?.vpa = vpa
             self.fetchHashes(withParams: self.paymentParams!) { result in
                 switch result {
                 case .success:

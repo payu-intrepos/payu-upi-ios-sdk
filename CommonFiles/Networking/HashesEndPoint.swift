@@ -9,9 +9,10 @@
 import Foundation
 import PayUUPICoreKit
 import PayUNetworkingKit
+import PayUParamsKit
 
 enum HashAPI {
-    case generateHash(params: PayUPaymentParams)
+    case generateHash(params: PayUPaymentParam)
 }
 
 extension HashAPI: PayUEndPointType {
@@ -34,20 +35,26 @@ extension HashAPI: PayUEndPointType {
     var task: PayUHTTPTask {
         switch self {
         case .generateHash(let params):
+            let udf1 = params.udfs?.udf1 ?? ""
+            let udf2 = params.udfs?.udf2 ?? ""
+            let udf3 = params.udfs?.udf3 ?? ""
+            let udf4 = params.udfs?.udf4 ?? ""
+            let udf5 = params.udfs?.udf5 ?? ""
+            let paymentOption = params.paymentOption as? UPI
             return .requestParameters(bodyParameters: nil,
-                                      urlParameters: ["key": params.merchantKey,
+                                      urlParameters: ["key": params.key,
                                                       "txnid": params.transactionId,
                                                       "amount": params.amount,
                                                       "productinfo": params.productInfo,
                                                       "firstname": params.firstName,
                                                       "email": params.email,
-                                                      "udf1": params.udf1,
-                                                      "udf2": params.udf2,
-                                                      "udf3": params.udf3,
-                                                      "udf4": params.udf4,
-                                                      "udf5": params.udf5,
-                                                      "user_credentials": params.userCredentials ?? "",
-                                                      "vpa": params.vpa ?? ""])
+                                                      "udf1": udf1,
+                                                      "udf2": udf2,
+                                                      "udf3": udf3,
+                                                      "udf4": udf4,
+                                                      "udf5": udf5,
+                                                      "user_credentials": params.userCredential ?? "",
+                                                      "vpa": paymentOption?.vpa ?? ""])
         }
     }
 

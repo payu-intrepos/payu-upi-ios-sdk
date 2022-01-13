@@ -26,6 +26,7 @@
 		E87EBAE627907FD400A3F5E6 /* PayUIndia-UPICore in Frameworks */ = {isa = PBXBuildFile; productRef = E87EBAE527907FD400A3F5E6 /* PayUIndia-UPICore */; };
 		E87EBAE9279080C000A3F5E6 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E87EBAE8279080C000A3F5E6 /* FirebaseAnalytics */; };
 		E87EBAEB279080C000A3F5E6 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E87EBAEA279080C000A3F5E6 /* FirebaseAuth */; };
+		E8F91FF427908AA7009CD4C5 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = E8F91FF327908AA7009CD4C5 /* SocketIO */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -64,6 +65,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E87EBAE627907FD400A3F5E6 /* PayUIndia-UPICore in Frameworks */,
+				E8F91FF427908AA7009CD4C5 /* SocketIO in Frameworks */,
 				E87EBAE427907FD400A3F5E6 /* PayUIndia-UPI in Frameworks */,
 				E87EBAE9279080C000A3F5E6 /* FirebaseAnalytics in Frameworks */,
 				E87EBADD27907FC300A3F5E6 /* PayUIndia-PG-SDK in Frameworks */,
@@ -194,6 +196,7 @@
 				E87EBAE527907FD400A3F5E6 /* PayUIndia-UPICore */,
 				E87EBAE8279080C000A3F5E6 /* FirebaseAnalytics */,
 				E87EBAEA279080C000A3F5E6 /* FirebaseAuth */,
+				E8F91FF327908AA7009CD4C5 /* SocketIO */,
 			);
 			productName = MerchantApp;
 			productReference = AD6A8E59238532B100FCB6D3 /* MerchantApp.app */;
@@ -227,6 +230,7 @@
 				E87EBADB27907FC300A3F5E6 /* XCRemoteSwiftPackageReference "iOS-SDK" */,
 				E87EBADE27907FD400A3F5E6 /* XCRemoteSwiftPackageReference "payu-upi-ios-sdk" */,
 				E87EBAE7279080C000A3F5E6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				E8F91FF227908AA7009CD4C5 /* XCRemoteSwiftPackageReference "socket" */,
 			);
 			productRefGroup = AD6A8E5A238532B100FCB6D3 /* Products */;
 			projectDirPath = "";
@@ -392,7 +396,7 @@
 				DEVELOPMENT_TEAM = 3T2M5UN5C5;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = MerchantApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -401,6 +405,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -412,7 +417,7 @@
 				DEVELOPMENT_TEAM = 3T2M5UN5C5;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = MerchantApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -421,6 +426,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
@@ -472,6 +478,14 @@
 				minimumVersion = 8.0.0;
 			};
 		};
+		E8F91FF227908AA7009CD4C5 /* XCRemoteSwiftPackageReference "socket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift";
+			requirement = {
+				kind = exactVersion;
+				version = 15.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -509,6 +523,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E87EBAE7279080C000A3F5E6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
+		};
+		E8F91FF327908AA7009CD4C5 /* SocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8F91FF227908AA7009CD4C5 /* XCRemoteSwiftPackageReference "socket" */;
+			productName = SocketIO;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

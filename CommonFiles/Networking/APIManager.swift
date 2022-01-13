@@ -9,6 +9,7 @@
 import Foundation
 import PayUUPICoreKit
 import PayUNetworkingKit
+import PayUParamsKit
 
 enum SampleAppError: Error {
     static let internetUnavailable = "Please check you internet connection"
@@ -27,7 +28,7 @@ enum SampleAppError: Error {
 
 struct APIManager {
 
-    func getHashes(params: PayUPaymentParams, completion: @escaping(_ hashes: Hashes?, _ error: SampleAppError?) ->()) {
+    func getHashes(params: PayUPaymentParam, completion: @escaping(_ hashes: Hashes?, _ error: SampleAppError?) ->()) {
         let router = PayURouter<HashAPI>()
         router.request(.generateHash(params: params)) { (data, error) in
             guard let data = data, error == nil else {

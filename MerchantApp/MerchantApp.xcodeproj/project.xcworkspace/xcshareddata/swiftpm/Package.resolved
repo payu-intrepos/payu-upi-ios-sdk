@@ -78,7 +78,7 @@
         "repositoryURL": "https://github.com/payu-intrepos/iOS-SDK",
         "state": {
           "branch": "master",
-          "revision": "431f9569ece4568aa6bd30c73d61ad851f55d826",
+          "revision": "9826c758557a87a65869baff1a174c51db81935c",
           "version": null
         }
       },
@@ -114,7 +114,7 @@
         "repositoryURL": "https://github.com/payu-intrepos/payu-upi-ios-sdk",
         "state": {
           "branch": "master",
-          "revision": "de6b75e3442e6a1667c72444d9c6e7da876eb379",
+          "revision": "ce94ba3431a2fe295166fca224e49ffbf9f16ca7",
           "version": null
         }
       },
