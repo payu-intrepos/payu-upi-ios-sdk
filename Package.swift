@@ -23,7 +23,7 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         .package(name: "PayUIndia-PayUParams",url: "https://github.com/payu-intrepos/payu-params-iOS", from: "3.1.0"),
-            .package(name: "SocketIO",url: "https://github.com/socketio/socket.io-client-swift", from: "v15.1.0")
+            .package(name: "SocketIO",url: "https://github.com/socketio/socket.io-client-swift", from: "15.1.0")
         
     ],
     targets: [
