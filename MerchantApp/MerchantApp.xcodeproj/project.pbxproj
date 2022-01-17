@@ -20,10 +20,10 @@
 		ADE09D872385708F00C93FBA /* Initial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE09D7C2385708F00C93FBA /* Initial.storyboard */; };
 		ADE09D882385708F00C93FBA /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE09D7D2385708F00C93FBA /* Launch Screen.storyboard */; };
 		E87EBADD27907FC300A3F5E6 /* PayUIndia-PG-SDK in Frameworks */ = {isa = PBXBuildFile; productRef = E87EBADC27907FC300A3F5E6 /* PayUIndia-PG-SDK */; };
-		E87EBAE027907FD400A3F5E6 /* PayUIndia-Logger in Frameworks */ = {isa = PBXBuildFile; productRef = E87EBADF27907FD400A3F5E6 /* PayUIndia-Logger */; };
-		E87EBAE227907FD400A3F5E6 /* PayUIndia-Networking in Frameworks */ = {isa = PBXBuildFile; productRef = E87EBAE127907FD400A3F5E6 /* PayUIndia-Networking */; };
-		E87EBAE427907FD400A3F5E6 /* PayUIndia-UPI in Frameworks */ = {isa = PBXBuildFile; productRef = E87EBAE327907FD400A3F5E6 /* PayUIndia-UPI */; };
-		E87EBAE627907FD400A3F5E6 /* PayUIndia-UPICore in Frameworks */ = {isa = PBXBuildFile; productRef = E87EBAE527907FD400A3F5E6 /* PayUIndia-UPICore */; };
+		E8A7BDD22795518F00D3C0F2 /* PayUIndia-Logger in Frameworks */ = {isa = PBXBuildFile; productRef = E8A7BDD12795518F00D3C0F2 /* PayUIndia-Logger */; };
+		E8A7BDD42795518F00D3C0F2 /* PayUIndia-Networking in Frameworks */ = {isa = PBXBuildFile; productRef = E8A7BDD32795518F00D3C0F2 /* PayUIndia-Networking */; };
+		E8A7BDD62795518F00D3C0F2 /* PayUIndia-UPI in Frameworks */ = {isa = PBXBuildFile; productRef = E8A7BDD52795518F00D3C0F2 /* PayUIndia-UPI */; };
+		E8A7BDD82795518F00D3C0F2 /* PayUIndia-UPICore in Frameworks */ = {isa = PBXBuildFile; productRef = E8A7BDD72795518F00D3C0F2 /* PayUIndia-UPICore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -61,11 +61,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E87EBAE627907FD400A3F5E6 /* PayUIndia-UPICore in Frameworks */,
-				E87EBAE427907FD400A3F5E6 /* PayUIndia-UPI in Frameworks */,
+				E8A7BDD82795518F00D3C0F2 /* PayUIndia-UPICore in Frameworks */,
+				E8A7BDD62795518F00D3C0F2 /* PayUIndia-UPI in Frameworks */,
 				E87EBADD27907FC300A3F5E6 /* PayUIndia-PG-SDK in Frameworks */,
-				E87EBAE227907FD400A3F5E6 /* PayUIndia-Networking in Frameworks */,
-				E87EBAE027907FD400A3F5E6 /* PayUIndia-Logger in Frameworks */,
+				E8A7BDD42795518F00D3C0F2 /* PayUIndia-Networking in Frameworks */,
+				E8A7BDD22795518F00D3C0F2 /* PayUIndia-Logger in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,10 +184,10 @@
 			name = MerchantApp;
 			packageProductDependencies = (
 				E87EBADC27907FC300A3F5E6 /* PayUIndia-PG-SDK */,
-				E87EBADF27907FD400A3F5E6 /* PayUIndia-Logger */,
-				E87EBAE127907FD400A3F5E6 /* PayUIndia-Networking */,
-				E87EBAE327907FD400A3F5E6 /* PayUIndia-UPI */,
-				E87EBAE527907FD400A3F5E6 /* PayUIndia-UPICore */,
+				E8A7BDD12795518F00D3C0F2 /* PayUIndia-Logger */,
+				E8A7BDD32795518F00D3C0F2 /* PayUIndia-Networking */,
+				E8A7BDD52795518F00D3C0F2 /* PayUIndia-UPI */,
+				E8A7BDD72795518F00D3C0F2 /* PayUIndia-UPICore */,
 			);
 			productName = MerchantApp;
 			productReference = AD6A8E59238532B100FCB6D3 /* MerchantApp.app */;
@@ -219,7 +219,7 @@
 			mainGroup = AD6A8E50238532B100FCB6D3;
 			packageReferences = (
 				E87EBADB27907FC300A3F5E6 /* XCRemoteSwiftPackageReference "iOS-SDK" */,
-				E87EBADE27907FD400A3F5E6 /* XCRemoteSwiftPackageReference "payu-upi-ios-sdk" */,
+				E8A7BDD02795518F00D3C0F2 /* XCRemoteSwiftPackageReference "payu-upi-ios-sdk" */,
 			);
 			productRefGroup = AD6A8E5A238532B100FCB6D3 /* Products */;
 			projectDirPath = "";
@@ -382,6 +382,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 199;
 				DEVELOPMENT_TEAM = 3T2M5UN5C5;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = MerchantApp/Info.plist;
@@ -390,7 +391,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.payu.MerchantApp;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.payu.OnePayUSwiftSampleApp1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -403,6 +405,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 199;
 				DEVELOPMENT_TEAM = 3T2M5UN5C5;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = MerchantApp/Info.plist;
@@ -411,7 +414,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.payu.MerchantApp;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.payu.OnePayUSwiftSampleApp1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -451,7 +455,7 @@
 				kind = branch;
 			};
 		};
-		E87EBADE27907FD400A3F5E6 /* XCRemoteSwiftPackageReference "payu-upi-ios-sdk" */ = {
+		E8A7BDD02795518F00D3C0F2 /* XCRemoteSwiftPackageReference "payu-upi-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/payu-intrepos/payu-upi-ios-sdk";
 			requirement = {
@@ -467,24 +471,24 @@
 			package = E87EBADB27907FC300A3F5E6 /* XCRemoteSwiftPackageReference "iOS-SDK" */;
 			productName = "PayUIndia-PG-SDK";
 		};
-		E87EBADF27907FD400A3F5E6 /* PayUIndia-Logger */ = {
+		E8A7BDD12795518F00D3C0F2 /* PayUIndia-Logger */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E87EBADE27907FD400A3F5E6 /* XCRemoteSwiftPackageReference "payu-upi-ios-sdk" */;
+			package = E8A7BDD02795518F00D3C0F2 /* XCRemoteSwiftPackageReference "payu-upi-ios-sdk" */;
 			productName = "PayUIndia-Logger";
 		};
-		E87EBAE127907FD400A3F5E6 /* PayUIndia-Networking */ = {
+		E8A7BDD32795518F00D3C0F2 /* PayUIndia-Networking */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E87EBADE27907FD400A3F5E6 /* XCRemoteSwiftPackageReference "payu-upi-ios-sdk" */;
+			package = E8A7BDD02795518F00D3C0F2 /* XCRemoteSwiftPackageReference "payu-upi-ios-sdk" */;
 			productName = "PayUIndia-Networking";
 		};
-		E87EBAE327907FD400A3F5E6 /* PayUIndia-UPI */ = {
+		E8A7BDD52795518F00D3C0F2 /* PayUIndia-UPI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E87EBADE27907FD400A3F5E6 /* XCRemoteSwiftPackageReference "payu-upi-ios-sdk" */;
+			package = E8A7BDD02795518F00D3C0F2 /* XCRemoteSwiftPackageReference "payu-upi-ios-sdk" */;
 			productName = "PayUIndia-UPI";
 		};
-		E87EBAE527907FD400A3F5E6 /* PayUIndia-UPICore */ = {
+		E8A7BDD72795518F00D3C0F2 /* PayUIndia-UPICore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E87EBADE27907FD400A3F5E6 /* XCRemoteSwiftPackageReference "payu-upi-ios-sdk" */;
+			package = E8A7BDD02795518F00D3C0F2 /* XCRemoteSwiftPackageReference "payu-upi-ios-sdk" */;
 			productName = "PayUIndia-UPICore";
 		};
 /* End XCSwiftPackageProductDependency section */
