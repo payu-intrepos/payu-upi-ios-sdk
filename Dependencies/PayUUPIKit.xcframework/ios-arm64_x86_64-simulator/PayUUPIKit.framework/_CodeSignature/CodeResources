@@ -6,7 +6,39 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		DZovn9fYJMUx9Iweuc4o9gMbg1k=
+		j5ZVSMc58JNdH1vPtt8MPtdT9sw=
+		</data>
+		<key>Frameworks/SocketIO_-2903F955F7A4D9F7_PackageProduct.framework/Frameworks/Starscream_-28B45D6D6158F1E1_PackageProduct.framework/Info.plist</key>
+		<data>
+		k20TORTrCb5Gk/gsaE+59s1m77g=
+		</data>
+		<key>Frameworks/SocketIO_-2903F955F7A4D9F7_PackageProduct.framework/Frameworks/Starscream_-28B45D6D6158F1E1_PackageProduct.framework/Starscream_-28B45D6D6158F1E1_PackageProduct</key>
+		<data>
+		rT555ivwUyonOAc06TvpuOaZJ38=
+		</data>
+		<key>Frameworks/SocketIO_-2903F955F7A4D9F7_PackageProduct.framework/Info.plist</key>
+		<data>
+		wt5ryv56D8f54JOavk/UOOqbFvQ=
+		</data>
+		<key>Frameworks/SocketIO_-2903F955F7A4D9F7_PackageProduct.framework/SocketIO_-2903F955F7A4D9F7_PackageProduct</key>
+		<data>
+		/gOzjn7h3k4toVtwG1IyoXJo2eY=
+		</data>
+		<key>Frameworks/SocketIO_-2903F955F7A4D9F7_PackageProduct.framework/_CodeSignature/CodeResources</key>
+		<data>
+		s9pMhrq/78+AM09cj0kmovhlojE=
+		</data>
+		<key>Frameworks/Starscream_-28B45D6D6158F1E1_PackageProduct.framework/Info.plist</key>
+		<data>
+		k20TORTrCb5Gk/gsaE+59s1m77g=
+		</data>
+		<key>Frameworks/Starscream_-28B45D6D6158F1E1_PackageProduct.framework/Starscream_-28B45D6D6158F1E1_PackageProduct</key>
+		<data>
+		w9hR3CTybbl5epC8Utvl6mDa0fM=
+		</data>
+		<key>Frameworks/Starscream_-28B45D6D6158F1E1_PackageProduct.framework/_CodeSignature/CodeResources</key>
+		<data>
+		0W3gGu7w4KEAWrMS2jYEx8h3w7A=
 		</data>
 		<key>Headers/PayUUPIKit-Swift.h</key>
 		<data>
@@ -30,7 +62,7 @@
 		</data>
 		<key>Modules/PayUUPIKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		/UPeSYpKinY082BTJPboSUXe450=
+		MtAim/8Imc+YiNffEkXHVPmZVVU=
 		</data>
 		<key>Modules/PayUUPIKit.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -42,7 +74,7 @@
 		</data>
 		<key>Modules/PayUUPIKit.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		/UPeSYpKinY082BTJPboSUXe450=
+		MtAim/8Imc+YiNffEkXHVPmZVVU=
 		</data>
 		<key>Modules/PayUUPIKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,7 +86,7 @@
 		</data>
 		<key>Modules/PayUUPIKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		eXfmVv8Y1+sPPnes2+Pbr4A5W2s=
+		mLa6xZD1KxL9/+uQYz6MN4SRTco=
 		</data>
 		<key>Modules/PayUUPIKit.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -66,7 +98,7 @@
 		</data>
 		<key>Modules/PayUUPIKit.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		eXfmVv8Y1+sPPnes2+Pbr4A5W2s=
+		mLa6xZD1KxL9/+uQYz6MN4SRTco=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -91,7 +123,63 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7mG28CIzMoXOMtjSoHTegzxvD7561wEVV4DcY4hgtAI=
+			IYt1JvFB1WS4DWuc12LqjSRa+PM9njHkIg6G0xRa3PI=
+			</data>
+		</dict>
+		<key>Frameworks/SocketIO_-2903F955F7A4D9F7_PackageProduct.framework/Frameworks/Starscream_-28B45D6D6158F1E1_PackageProduct.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0+Gqc8SE9vk/KIFamUg9dG1hu1JRABfLww8d11m4u0E=
+			</data>
+		</dict>
+		<key>Frameworks/SocketIO_-2903F955F7A4D9F7_PackageProduct.framework/Frameworks/Starscream_-28B45D6D6158F1E1_PackageProduct.framework/Starscream_-28B45D6D6158F1E1_PackageProduct</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			e4vrFrvCxU1RSYlT3+Di9nNTLYNe7Y25pj892BD1ZV0=
+			</data>
+		</dict>
+		<key>Frameworks/SocketIO_-2903F955F7A4D9F7_PackageProduct.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			E/lU622TeP9DT4SNdkiHZiwtujejJx5dcCP/Zzlces8=
+			</data>
+		</dict>
+		<key>Frameworks/SocketIO_-2903F955F7A4D9F7_PackageProduct.framework/SocketIO_-2903F955F7A4D9F7_PackageProduct</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			edJsqtA3f98j5Mcf+jDSVb4xjHutlBkd/1iqRps0Ufc=
+			</data>
+		</dict>
+		<key>Frameworks/SocketIO_-2903F955F7A4D9F7_PackageProduct.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Oc58gv8uI0qbUiu9n+6Q/sgdfPP1LnAX7i27WQdM1Q8=
+			</data>
+		</dict>
+		<key>Frameworks/Starscream_-28B45D6D6158F1E1_PackageProduct.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0+Gqc8SE9vk/KIFamUg9dG1hu1JRABfLww8d11m4u0E=
+			</data>
+		</dict>
+		<key>Frameworks/Starscream_-28B45D6D6158F1E1_PackageProduct.framework/Starscream_-28B45D6D6158F1E1_PackageProduct</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RRXeF2WjczGv0VxKtQJygK5ZGMWkKy9TvbXyMNObm1w=
+			</data>
+		</dict>
+		<key>Frameworks/Starscream_-28B45D6D6158F1E1_PackageProduct.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			G8Jn44iP+DUJ+S9AEkbSKQv/hedUEyVB9gvj1GnYeCU=
 			</data>
 		</dict>
 		<key>Headers/PayUUPIKit-Swift.h</key>
@@ -126,7 +214,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mFN4/fKCLCvJVJkHFLpHgqwFbWSsQik1vz+tQuhl64w=
+			f255b6sMTabrZ8FkyQhrqct9RbGs6MhwaW6fSFrkEbU=
 			</data>
 		</dict>
 		<key>Modules/PayUUPIKit.swiftmodule/arm64.swiftdoc</key>
@@ -147,7 +235,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mFN4/fKCLCvJVJkHFLpHgqwFbWSsQik1vz+tQuhl64w=
+			f255b6sMTabrZ8FkyQhrqct9RbGs6MhwaW6fSFrkEbU=
 			</data>
 		</dict>
 		<key>Modules/PayUUPIKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -168,7 +256,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Lxo6Rsgjl87bKWyhlR1Q0RKplTVKHQXnFw7AU2aMXkk=
+			tSaQ9zmYg3/AGxLXno8ZDG33ogKo0rR5EkK2R4G6Gzc=
 			</data>
 		</dict>
 		<key>Modules/PayUUPIKit.swiftmodule/x86_64.swiftdoc</key>
@@ -189,7 +277,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Lxo6Rsgjl87bKWyhlR1Q0RKplTVKHQXnFw7AU2aMXkk=
+			tSaQ9zmYg3/AGxLXno8ZDG33ogKo0rR5EkK2R4G6Gzc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
