@@ -12,13 +12,13 @@ let package = Package(
             name: "PayUIndia-Logger",
             targets: ["PayUIndia-Logger"]),
         .library(
-            name: "PayUIndia-Networking", type: .dynamic,
+            name: "PayUIndia-Networking",
             targets: ["PayUIndia-NetworkingTarget"]),
         .library(
-            name: "PayUIndia-UPICore", type: .dynamic,
+            name: "PayUIndia-UPICore", 
             targets: ["PayUIndia-UPICoreTarget"]),
         .library(
-            name: "PayUIndia-UPI", type: .dynamic,
+            name: "PayUIndia-UPI", 
             targets: ["PayUIndia-UPITarget"])
     ],
     dependencies: [
