@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
                             :tag => "#{s.name}_#{s.version}"
                           }
   
-  s.ios.deployment_target = "10.0"
+  s.ios.deployment_target = "11.0"
   s.vendored_frameworks = 'Dependencies/PayUUPIKit.xcframework'
 
   s.dependency            'PayUIndia-UPICore', '~> 6.0.0'
