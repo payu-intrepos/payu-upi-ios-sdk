@@ -9,24 +9,6 @@
           "revision": "731685185033b93f893e6194019ca15f6e79ad90",
           "version": "3.1.0"
         }
-      },
-      {
-        "package": "SocketIO",
-        "repositoryURL": "https://github.com/ShubhGar/socket.io-client-swift.git",
-        "state": {
-          "branch": null,
-          "revision": "5044cefc9f326b2db89ceed9cb8fe51f429cf289",
-          "version": "18.0.0"
-        }
-      },
-      {
-        "package": "Starscream",
-        "repositoryURL": "https://github.com/ShubhGar/Starscream",
-        "state": {
-          "branch": null,
-          "revision": "12202be2d18098d2c29e1433a921675f35522a20",
-          "version": "5.0.0"
-        }
       }
     ]
   },

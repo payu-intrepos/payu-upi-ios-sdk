@@ -24,7 +24,7 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         .package(name: "PayUIndia-PayUParams",url: "https://github.com/payu-intrepos/payu-params-iOS.git", from: "3.1.0"),
-        .package(name: "SocketIO", url: "https://github.com/ShubhGar/socket.io-client-swift.git", .exact("18.0.0"))
+//        .package(name: "SocketIO", url: "https://github.com/ShubhGar/socket.io-client-swift.git", .exact("18.0.0"))
         
     ],
     targets: [
@@ -32,6 +32,8 @@ let package = Package(
         .binaryTarget(name: "PayUIndia-Networking", path: "./Dependencies/PayUNetworkingKit.xcframework"),
         .binaryTarget(name: "PayUIndia-UPICore", path: "./Dependencies/PayUUPICoreKit.xcframework"),
         .binaryTarget(name: "PayUIndia-UPI", path: "./Dependencies/PayUUPIKit.xcframework"),
+        .binaryTarget(name: "Starscream", path: "./Dependencies/Starscream.xcframework"),
+        .binaryTarget(name: "SocketIO", path: "./Dependencies/SocketIO.xcframework"),
             .target(
                 name: "PayUIndia-NetworkingTarget",
                 dependencies: [
@@ -48,18 +50,21 @@ let package = Package(
                 .product(name: "PayUIndia-PayUParams", package: "PayUIndia-PayUParams"),
                 "SocketIO",
                 "PayUIndia-Networking",
-                "PayUIndia-Logger"
             ],
             path: "Wrappers/PayUIndia-UPICoreWrapper"
+        ),
+        .target(
+            name: "SocketIOTarget",
+            dependencies: [
+                .target(name: "SocketIO", condition: .when(platforms: [.iOS])),
+                "Starscream"
+            ],
+            path: "Wrappers/SocketIOWrapper"
         ),
         .target(
             name: "PayUIndia-UPITarget",
             dependencies: [
                 .target(name: "PayUIndia-UPI", condition: .when(platforms: [.iOS])),
-                .product(name: "PayUIndia-PayUParams", package: "PayUIndia-PayUParams"),
-                "SocketIO",
-                "PayUIndia-Networking",
-                "PayUIndia-Logger",
                 "PayUIndia-UPICore"
             ],
             path: "Wrappers/PayUIndia-UPIWrapper"
