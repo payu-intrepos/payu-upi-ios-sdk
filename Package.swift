@@ -12,19 +12,21 @@ let package = Package(
             name: "PayUIndia-Logger",
             targets: ["PayUIndia-Logger"]),
         .library(
-            name: "PayUIndia-Networking", type: .dynamic,
+            name: "PayUIndia-Networking",
             targets: ["PayUIndia-NetworkingTarget"]),
         .library(
-            name: "PayUIndia-UPICore", type: .dynamic,
+            name: "PayUIndia-UPICore", 
             targets: ["PayUIndia-UPICoreTarget"]),
         .library(
-            name: "PayUIndia-UPI", type: .dynamic,
+            name: "PayUIndia-UPI", 
             targets: ["PayUIndia-UPITarget"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-        .package(name: "PayUIndia-PayUParams",url: "https://github.com/payu-intrepos/payu-params-iOS.git", from: "3.1.0"),
 //        .package(name: "SocketIO", url: "https://github.com/ShubhGar/socket.io-client-swift.git", .exact("18.0.0"))
+
+        .package(name: "PayUIndia-PayUParams",url: "https://github.com/payu-intrepos/payu-params-iOS.git", from: "3.2.0"),
+
         
     ],
     targets: [
