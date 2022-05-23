@@ -1,70 +1,50 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "PayUIndia-PG-SDK",
-        "repositoryURL": "https://github.com/payu-intrepos/iOS-SDK",
-        "state": {
-          "branch": "master",
-          "revision": "9826c758557a87a65869baff1a174c51db81935c",
-          "version": null
-        }
-      },
-      {
-        "package": "PayUIndia-PayUParams",
-        "repositoryURL": "https://github.com/payu-intrepos/payu-params-iOS",
-        "state": {
-          "branch": null,
-          "revision": "731685185033b93f893e6194019ca15f6e79ad90",
-          "version": "3.1.0"
-        }
-      },
-      {
-        "package": "PayUIndia-UPIKit",
-        "repositoryURL": "https://github.com/payu-intrepos/payu-upi-ios-sdk",
-        "state": {
-          "branch": "master",
-          "revision": "49bac84bf6ac4aff21ea1b51982b7bc7bca21b1b",
-          "version": null
-        }
-      },
-      {
-        "package": "PayUIndia-CrashReporter",
-        "repositoryURL": "https://github.com/payu-intrepos/PayUCrashReporter-iOS",
-        "state": {
-          "branch": null,
-          "revision": "a4ffe60807d35a830a06196dab83e07d09e10612",
-          "version": "2.0.0"
-        }
-      },
-      {
-        "package": "PayUIndia-NetworkReachability",
-        "repositoryURL": "https://github.com/payu-intrepos/PayUNetworkReachability-iOS",
-        "state": {
-          "branch": null,
-          "revision": "4c023a01a4e1cd03641b538c3495a496724effec",
-          "version": "2.0.0"
-        }
-      },
-      {
-        "package": "SocketIO",
-        "repositoryURL": "https://github.com/ShubhGar/socket.io-client-swift",
-        "state": {
-          "branch": null,
-          "revision": "5044cefc9f326b2db89ceed9cb8fe51f429cf289",
-          "version": "17.0.0"
-        }
-      },
-      {
-        "package": "Starscream",
-        "repositoryURL": "https://github.com/ShubhGar/Starscream",
-        "state": {
-          "branch": null,
-          "revision": "12202be2d18098d2c29e1433a921675f35522a20",
-          "version": "5.0.0"
-        }
+  "pins" : [
+    {
+      "identity" : "ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/payu-intrepos/iOS-SDK",
+      "state" : {
+        "revision" : "325883dd58d0c77ff37784d6abd6cbfc27a19e01",
+        "version" : "8.3.0"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "payu-params-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/payu-intrepos/payu-params-iOS",
+      "state" : {
+        "revision" : "cc0017f0c0b1d10b69cbfb2d48eaea8819cfe3f6",
+        "version" : "3.4.0"
+      }
+    },
+    {
+      "identity" : "payu-upi-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/payu-intrepos/payu-upi-ios-sdk",
+      "state" : {
+        "revision" : "9ab16f11df9a0ee1c0cae34defccc41aca3856dc",
+        "version" : "6.1.0"
+      }
+    },
+    {
+      "identity" : "payucrashreporter-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/payu-intrepos/PayUCrashReporter-iOS",
+      "state" : {
+        "revision" : "b342e44234a247752a5fa945851f9107e5efaf99",
+        "version" : "2.0.1"
+      }
+    },
+    {
+      "identity" : "payunetworkreachability-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/payu-intrepos/PayUNetworkReachability-iOS",
+      "state" : {
+        "revision" : "c477d6c84e609c24193e4fb76cadc40935d1838b",
+        "version" : "2.0.1"
+      }
+    }
+  ],
+  "version" : 2
 }

@@ -31,9 +31,12 @@ class PaymentListViewController: UIViewController {
 
                     switch result {
                     case .success(let response):
+                        print(response)
                         Helper.showAlert(title: "Success", message: "\(response)", vc: self)
                     case .failure(let error):
-                        Helper.showAlert(title: "Error", message: error.localizedDescription ?? "", vc: self)
+                        print(error.localizedDescription)
+                        print((error as PayUError).message ?? error.localizedDescription)
+                        Helper.showAlert(title: "Error", message: ((error as PayUError).message ?? error.localizedDescription), vc: self)
                     }
                 }
         }
@@ -151,12 +154,28 @@ extension PaymentListViewController: UITableViewDelegate, UITableViewDataSource 
 //            count += 1
 //        }
         if paymentOptions?.intent != nil, indexPath.row == count {
+            // For Custom UI
+//            if let paymentOptions = paymentOptions {
+//                let installedApp = PayUUPICore.getInstalledAppsList(forUpiOptions: paymentOptions)
+//                if installedApp.count > 0 {
+//                    upiPayment.makePayment(with: paymentParam!, upiSupportedApp: installedApp.first!)
+//                } else {
+//                    print("No apps available for intent flow")
+//                }
+//            } else {
+//                print("Invalid params")
+//            }
+
+            // For Default UI
             let paymentVC = PayUIntentPaymentVC()
             paymentVC.availableUpiOptions = paymentOptions
-//             paymentVC.paymentApp = app //object of type 'PayUSupportedIntentApp'
+
+            let installedApp = PayUUPICore.getInstalledAppsList(forUpiOptions: paymentOptions!)
+
+            paymentVC.paymentApp = installedApp.first //object of type 'PayUSupportedIntentApp'
             paymentVC.paymentParams = self.paymentParam
 
-             navigationController?.pushViewController(paymentVC, animated: false)
+            navigationController?.pushViewController(paymentVC, animated: false)
         }
         
         

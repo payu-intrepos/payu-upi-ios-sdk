@@ -9,8 +9,8 @@
 import UIKit
 import PayUParamsKit
 import UIKit
-
 import PayUUPICoreKit
+
 class MerchantViewController: UIViewController {
     // MARK: - Outlets -
     @IBOutlet weak var keyTextField: UITextField!
@@ -54,18 +54,10 @@ class MerchantViewController: UIViewController {
     @IBOutlet weak var merchantResponseTimeoutTextField: UITextField!
     
     // MARK: - Variables -
-    let keySalt = [["AjeWXt", "2ZfAsRnh", Environment.production],
-                   ["V2yqBC", "dEzD8BBD", Environment.production],
-                   ["0MQaQP", "13p0PXZk", Environment.production],
-                   ["smsplus", "1b1b0", Environment.production],
-                   ["ol4Spy", "J0ZXw2z9", Environment.production],
-                   ["obScKz", "Ml7XBCdR", Environment.test],
-                   ["gtKFFx", "eCwWELxi", Environment.test],
-                   ["Rl8Pdr", "wsl9kqyy", Environment.test],
-                   ["smsplus", "350", Environment.test]]
+    let keySalt = [["3TnMpV", "<Enter_your_salt_here>", Environment.production]]
 
-    let indexKeySalt = 3
-    var amount: String = "10"
+    let indexKeySalt = 0
+    var amount: String = "1"
     var productInfo: String = "Nokia"
     var surl: String = "https://payu.herokuapp.com/ios_success"
     var furl: String = "https://payu.herokuapp.com/ios_failure"
@@ -266,9 +258,9 @@ extension MerchantViewController {
         paymentParam?.udfs?.udf4 = ""
         paymentParam?.udfs?.udf5 = ""
         paymentParam?.userCredential = "yIlrx4:myUserEmail@payu.in" // "merchantKey:user'sUniqueIdentifier"
-                let upi = UPI()
-                upi.beneficiaryAccountNumber = "111111111" //for tpv transaction
-                upi.beneficiaryAccountIFSC = "UTIB000007"//for tpv transaction
+        let upi = UPI()
+        upi.beneficiaryAccountNumber = "" //for tpv transaction
+        upi.beneficiaryAccountIFSC = ""//for tpv transaction
         paymentParam?.paymentOption = upi
         Helper.getHashes(params: paymentParam!, salt: saltTextField.text ?? "")
 
