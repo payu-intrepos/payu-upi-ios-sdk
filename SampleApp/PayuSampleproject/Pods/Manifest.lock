@@ -1,0 +1,51 @@
+PODS:
+  - PayUIndia-Logger (4.0.0)
+  - PayUIndia-Networking (4.0.0):
+    - PayUIndia-Logger (= 4.0.0)
+  - PayUIndia-PayUParams (3.4.0)
+  - PayUIndia-UPICore (6.1.0):
+    - PayUIndia-Networking (~> 4.0)
+    - PayUIndia-PayUParams (~> 3.4)
+    - Socket.IO-Client-Swift (= 15.1.0)
+  - Sentry (4.3.1):
+    - Sentry/Core (= 4.3.1)
+  - Sentry/Core (4.3.1)
+  - Socket.IO-Client-Swift (15.1.0):
+    - Starscream (~> 3.1)
+  - Starscream (3.1.1)
+
+DEPENDENCIES:
+  - PayUIndia-UPICore
+  - Sentry (from `https://github.com/getsentry/sentry-cocoa.git`, tag `4.3.1`)
+
+SPEC REPOS:
+  trunk:
+    - PayUIndia-Logger
+    - PayUIndia-Networking
+    - PayUIndia-PayUParams
+    - PayUIndia-UPICore
+    - Socket.IO-Client-Swift
+    - Starscream
+
+EXTERNAL SOURCES:
+  Sentry:
+    :git: https://github.com/getsentry/sentry-cocoa.git
+    :tag: 4.3.1
+
+CHECKOUT OPTIONS:
+  Sentry:
+    :git: https://github.com/getsentry/sentry-cocoa.git
+    :tag: 4.3.1
+
+SPEC CHECKSUMS:
+  PayUIndia-Logger: e353d9dd576bac593e428dfbadedf337cbb48b78
+  PayUIndia-Networking: bf53f743484256303e24d4e763e6097f04af769c
+  PayUIndia-PayUParams: 81c76293f298364edae7da1753e0aeefcbd76386
+  PayUIndia-UPICore: f209918f9add093618c4923531c9c52efd885006
+  Sentry: 5267d493a398663538317e4dcc438c12c66202ed
+  Socket.IO-Client-Swift: 7cb44c0ffb86e158cee32d0642d30ec5fdcf8f61
+  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
+
+PODFILE CHECKSUM: 74063151e3b3f8ff397fb3d9274385db90264d58
+
+COCOAPODS: 1.11.3

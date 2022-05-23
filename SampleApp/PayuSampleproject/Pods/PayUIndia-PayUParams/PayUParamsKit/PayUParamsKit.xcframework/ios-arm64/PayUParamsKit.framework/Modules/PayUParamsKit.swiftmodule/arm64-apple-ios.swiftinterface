@@ -1,0 +1,714 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUParamsKit
+import Foundation
+@_exported import PayUParamsKit
+import Swift
+import UIKit
+import _Concurrency
+@objc @_inheritsConvenienceInitializers @objcMembers public class PaymentOption : ObjectiveC.NSObject {
+  @objc public var title: Swift.String?
+  @objc public var unavailableReason: Swift.String?
+  @objc public var offerDetail: Swift.String?
+  @objc public var paymentOptionID: Swift.String?
+  @objc public var isDown: Swift.Bool
+  @objc public var customObj: Any?
+  public var convienienceFee: Swift.Double?
+  public var taxAmount: Swift.Double?
+  public var taxInPercentage: Swift.Double?
+  @objc public var txnS2SFlow: Swift.String?
+  @objc public var beneficiaryAccountNumber: Swift.String?
+  @objc public var beneficiaryAccountIFSC: Swift.String?
+  @objc public var paymentType: PayUParamsKit.PaymentType {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class NetBanking : PayUParamsKit.PaymentOption {
+  @objc public var maskedAccountNumber: Swift.String?
+  @objc public var beneficiaryParams: PayUParamsKit.PayUBeneficiaryParams?
+  @objc public var verificationModes: [Swift.String]?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class NeftRtgs : PayUParamsKit.PaymentOption {
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class Sodexo : PayUParamsKit.CCDC {
+  @objc public var sourceId: Swift.String?
+  public var cardBalance: Swift.Double?
+  @objc public var cardType: Swift.String?
+  @objc public var isNewCard: Swift.Bool
+  @objc public var apiStatus: PayUParamsKit.ApiStatus
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class CCDC : PayUParamsKit.PaymentOption, Foundation.NSCopying {
+  @objc public var cardNumber: Swift.String?
+  @objc public var expiryMonth: Foundation.NSNumber?
+  @objc public var expiryYear: Foundation.NSNumber?
+  @objc public var cvv: Swift.String?
+  @objc public var nameOnCard: Swift.String?
+  @objc public var cardAlias: Swift.String?
+  @objc public var shouldSaveCard: Swift.Bool
+  @objc public var cardBinInfo: PayUParamsKit.CardBinInfo?
+  public var offerAmount: Swift.Double?
+  @objc public var offerCurrency: Swift.String?
+  public var offerExchangeRate: Swift.Double?
+  @objc public var merchantOrderId: Swift.String?
+  @objc public var lookupId: Swift.String?
+  @objc public var isOneTap: Swift.Bool
+  override public var taxAmount: Swift.Double? {
+    get
+    set
+  }
+  override public var taxInPercentage: Swift.Double? {
+    get
+    set
+  }
+  override public var convienienceFee: Swift.Double? {
+    get
+    set
+  }
+  @objc override public var isDown: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class SavedCard : PayUParamsKit.CCDC {
+  @objc public var cardToken: Swift.String?
+  @objc public var cardTokenType: Swift.String?
+  @objc public var additionalInfo: PayUParamsKit.AdditionalInfo?
+  @objc override public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class UPI : PayUParamsKit.PaymentOption {
+  public var isCollect: Swift.Bool?
+  @objc public var vpa: Swift.String?
+  @objc public var scheme: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @objcMembers public class EMI : PayUParamsKit.CCDC {
+  public var month: Swift.Int?
+  @objc public var bankShortName: Swift.String
+  @objc public var supportedBins: [Swift.String]?
+  @objc public var minimumTxnAmount: Swift.Double
+  public var emiValue: Swift.Double?
+  public var interestRate: Swift.Double?
+  public var interestCharged: Swift.Double?
+  @objc public var type: PayUParamsKit.EMIType
+  @objc public var subventionAmount: Swift.String?
+  @objc public var isCardlessEMI: Swift.Bool
+  @objc public var isNoCostEMI: Swift.Bool
+  public init(month: Swift.Int? = nil, bankShortName: Swift.String, title: Swift.String, paymentOptionId: Swift.String, type: PayUParamsKit.EMIType)
+  @objc public init(bankShortName: Swift.String, type: PayUParamsKit.EMIType)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class Wallet : PayUParamsKit.CCDC {
+  @objc public var maskedAccountNumber: Swift.String?
+  @objc public var phoneNumber: Swift.String?
+  @objc public var twidCustomerHash: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class CardBinInfo : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  public var taxInPercentage: Swift.Double?
+  public var taxAmount: Swift.Double?
+  public var convienienceFee: Swift.Double?
+  @objc public var isDown: Swift.Bool
+  public var cardScheme: PayUParamsKit.CardScheme?
+  @objc public var cardSchemeRawValue: Swift.String?
+  public var cardType: PayUParamsKit.CardType?
+  @objc public var cardTypeRawValue: Swift.String?
+  public var isDomestic: Swift.Bool?
+  @objc public var bankName: Swift.String?
+  @objc public var bin: Swift.String?
+  public var isAtmPinCard: Swift.Bool?
+  public var isSISupported: Swift.Bool?
+  public var isZeroRedirectSupported: Swift.Bool?
+  @objc deinit
+}
+@objc public enum CardType : Swift.Int {
+  case cc
+  case dc
+  case sodexo
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum CardScheme : Swift.Int {
+  case masterCard
+  case visa
+  case jcb
+  case amex
+  case maestro
+  case rupay
+  case discover
+  case dinersClub
+  case laser
+  case stateBankMaestro
+  case unknown
+  case sodexo
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum PaymentType : Swift.Int {
+  case ccdc
+  case netBanking
+  case upi
+  case wallet
+  case emi
+  case savedCard
+  case neftRtgs
+  case sodexo
+  case other
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum EMIType : Swift.Int {
+  case cc
+  case dc
+  case cardless
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum ApiStatus : Swift.Int {
+  case success
+  case failed
+  case inProgress
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @objcMembers public class AdditionalInfo : ObjectiveC.NSObject {
+  @objc public var last4Digits: Swift.String
+  @objc public var tavv: Swift.String
+  @objc public var trid: Swift.String
+  @objc public var tokenRefNo: Swift.String
+  @objc public init(last4Digits: Swift.String, tavv: Swift.String, trid: Swift.String, tokenRefNo: Swift.String)
+  @objc deinit
+}
+@objc @objcMembers public class PaymentMode : ObjectiveC.NSObject, Foundation.NSCopying {
+  @objc public var modeName: Swift.String?
+  @objc public var subHeading: Swift.String?
+  @objc public var offerDetail: Swift.String?
+  @objc public var paymentType: PayUParamsKit.PaymentType
+  @objc public var options: [PayUParamsKit.PaymentOption]?
+  @objc public var isDirectPaymentMode: Swift.Bool
+  @objc public var modes: [PayUParamsKit.PaymentMode]?
+  @objc public var iconName: Swift.String?
+  public var isDown: Swift.Bool?
+  @objc public init(modeName: Swift.String? = nil, subHeading: Swift.String? = nil, offerDetail: Swift.String? = nil, paymentType: PayUParamsKit.PaymentType, options: [PayUParamsKit.PaymentOption]? = nil, modes: [PayUParamsKit.PaymentMode]? = nil, iconName: Swift.String? = nil)
+  @objc convenience public init(paymentType: PayUParamsKit.PaymentType, paymentOptionID: Swift.String? = nil)
+  @objc public class func getPaymentModeFrom(paymentModes: [PayUParamsKit.PaymentMode]?, paymentType: PayUParamsKit.PaymentType) -> PayUParamsKit.PaymentMode?
+  @objc public class func getAllPaymentOptionsFrom(paymentModes: [PayUParamsKit.PaymentMode]?, paymentType: PayUParamsKit.PaymentType) -> [PayUParamsKit.PaymentOption]?
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers open class PayUAddressDetails : ObjectiveC.NSObject {
+  @objc public var firstName: Swift.String?
+  @objc public var lastName: Swift.String?
+  @objc public var phoneNumber: Swift.String?
+  @objc public var address1: Swift.String?
+  @objc public var address2: Swift.String?
+  @objc public var city: Swift.String?
+  @objc public var state: Swift.String?
+  @objc public var country: Swift.String?
+  @objc public var zipcode: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers open class PayUModelMCPConversion : ObjectiveC.NSObject {
+  @objc public var offerAmount: Foundation.NSNumber?
+  @objc public var offerCurrency: Swift.String?
+  @objc public var offerExchangeRate: Foundation.NSNumber?
+  @objc public var merchantOrderId: Swift.String?
+  @objc public var lookupId: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class PPKValidator : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum PayUErrorType : Swift.Int {
+  case error
+  case unknownError
+  case noInternet
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objcMembers public class PayUError : Foundation.LocalizedError {
+  @objc final public let errorType: PayUParamsKit.PayUErrorType
+  @objc final public let message: Swift.String?
+  final public let errorCode: Swift.Int?
+  @objc final public let image: UIKit.UIImage?
+  @objc public var description: Swift.String {
+    @objc get
+  }
+  public static func == (lhs: PayUParamsKit.PayUError, rhs: PayUParamsKit.PayUError) -> Swift.Bool
+  public class func noInternet() -> PayUParamsKit.PayUError
+  public class func unknownError() -> PayUParamsKit.PayUError
+  public class func error(_ message: Swift.String) -> PayUParamsKit.PayUError
+  public class func error(message: Swift.String?, image: UIKit.UIImage?) -> PayUParamsKit.PayUError
+  public class func error(message: Swift.String?, code: Swift.Int?) -> PayUParamsKit.PayUError
+  @objc deinit
+}
+@objc public class PayUBeneficiaryParams : ObjectiveC.NSObject, Foundation.NSCopying {
+  @objc public var beneficiaryName: Swift.String
+  @objc public var beneficiaryAccountNumber: Swift.String
+  @objc public var beneficiaryIFSC: Swift.String
+  @objc public var beneficiaryAccountType: PayUParamsKit.BeneficiaryAccountType
+  @objc public var verficationMode: Swift.String?
+  @objc public init(beneficiaryName: Swift.String, beneficiaryAccountNumber: Swift.String, beneficiaryIFSC: Swift.String, beneficiaryAccountType: PayUParamsKit.BeneficiaryAccountType, verficationMode: Swift.String? = nil)
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc deinit
+}
+@objc public enum BeneficiaryAccountType : Swift.Int, Swift.CaseIterable {
+  case savings
+  case current
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [PayUParamsKit.BeneficiaryAccountType]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [PayUParamsKit.BeneficiaryAccountType] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum VerificationModeType : Swift.Int, Swift.CaseIterable {
+  case debitCard
+  case netBanking
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [PayUParamsKit.VerificationModeType]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [PayUParamsKit.VerificationModeType] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @objcMembers open class PayUModelIFSCInfo : ObjectiveC.NSObject {
+  @objc public var bank: Swift.String?
+  @objc public var branch: Swift.String?
+  @objc public var city: Swift.String?
+  @objc public var ifsc: Swift.String?
+  @objc public var micr: Swift.String?
+  @objc public var state: Swift.String?
+  @objc public var office: Swift.String?
+  @objc public var address: Swift.String?
+  @objc public var contact: Swift.String?
+  @objc public var district: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers open class PayUModelMultiCurrencyPayment : ObjectiveC.NSObject {
+  @objc public var supportedCardSchemes: [Swift.String]?
+  @objc public var mcpConversionBeans: [PayUParamsKit.PayUModelMCPConversion]?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class PayUPaymentCreateRequest : ObjectiveC.NSObject {
+  public typealias completionBlockForCreateRequestWithPaymentParam = (_ request: Foundation.NSMutableURLRequest?, _ postParam: Swift.String?, _ error: Swift.String?) -> Swift.Void
+  @objc public func createRequest(paymentParam: PayUParamsKit.PayUPaymentParam, isEscapingNeeded: Swift.Bool, completion: (_ request: Foundation.NSMutableURLRequest?, _ postParam: Swift.String?, _ error: Swift.String?) -> Swift.Void)
+  public func getURLRequest(postParam: Swift.String?, requestURL: Foundation.URL?, httpHeaderField: [Swift.String : Swift.String]?, httpMethod: Swift.String?) -> Foundation.NSMutableURLRequest?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public class PayUSIParams : ObjectiveC.NSObject, Foundation.NSCopying {
+  @objc public var billingAmount: Swift.String
+  @objc public var paymentStartDate: Foundation.Date
+  @objc public var paymentEndDate: Foundation.Date
+  @objc public var billingCycle: PayUParamsKit.PayUBillingCycle
+  @objc public var billingInterval: Foundation.NSNumber
+  @objc public var isFreeTrial: Swift.Bool
+  @objc public var remarks: Swift.String?
+  @objc public var billingLimit: Swift.String?
+  @objc public var billingRule: Swift.String?
+  @objc public init(billingAmount: Swift.String, paymentStartDate: Foundation.Date, paymentEndDate: Foundation.Date, billingCycle: PayUParamsKit.PayUBillingCycle, billingInterval: Foundation.NSNumber)
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc deinit
+}
+@objc public enum PayUBillingCycle : Swift.Int, Swift.CaseIterable {
+  case once
+  case daily
+  case weekly
+  case monthly
+  case yearly
+  case adhoc
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [PayUParamsKit.PayUBillingCycle]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [PayUParamsKit.PayUBillingCycle] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class PPKValidatorHelper : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension Swift.Dictionary {
+  public static func += (lhs: inout [Key : Value], rhs: [Key : Value])
+}
+@_inheritsConvenienceInitializers @objc public class PPKUtils : ObjectiveC.NSObject {
+  @objc public class func billingCycleToString(_ billingCycle: PayUParamsKit.PayUBillingCycle) -> Swift.String
+  @objc public class func beneficiaryAccountTypeToString(_ beneficiaryAccountType: PayUParamsKit.BeneficiaryAccountType) -> Swift.String
+  @objc public class func dateFrom(_ dateString: Swift.String) -> Foundation.Date?
+  @objc public class func dateStringFrom(_ date: Foundation.Date, formater: Swift.String = Constants.yyyyMMdd) -> Swift.String?
+  @objc public class func getJSONIndividualObject(forKey key: Swift.String?, value: Swift.String?) -> Swift.String
+  @objc public class func getJSONString(from json: [Swift.String : Any]) -> Swift.String?
+  @objc public class func convertJsonToPostParam(_ json: [Swift.String : Swift.String]) -> Swift.String
+  @objc public class func isSITransaction(_ params: PayUParamsKit.PayUPaymentParam) -> Swift.Bool
+  @objc public class func getSIPostParams(_ siParam: PayUParamsKit.PayUSIParams?) -> [Swift.String : Swift.String]
+  @objc public class func getSIDetailsPostParams(_ siParam: PayUParamsKit.PayUSIParams?) -> Swift.String
+  @objc public class func getDeviceRelatedParam() -> [Swift.String : Swift.String]
+  @objc public class func getAnalyticsParams(_ paymentParam: PayUParamsKit.PayUPaymentParam) -> [Swift.String : Swift.String]
+  @objc public class func escape(_ string: Swift.String) -> Swift.String
+  @objc public class func mappedValueOfPaymentType(_ paymentType: Swift.String?) -> Swift.String?
+  @objc public class func query(_ parameters: [Swift.String : Any], shouldEscape: Swift.Bool) -> Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class Constants : ObjectiveC.NSObject {
+  @objc public static var yyyyMMdd: Swift.String
+  @objc public static var ddMMyyyy: Swift.String
+  @objc public static let MINIMUM_AMOUNT: Swift.Double
+  @objc public static let SURL: Swift.String
+  @objc public static let FURL: Swift.String
+  @objc public static let PAYMENT: Swift.String
+  @objc public static let INSTRUMENT_TYPE: Swift.String
+  @objc public static let DEVICE_TYPE_IOS: Swift.String
+  @_inheritsConvenienceInitializers @objc public class Params : ObjectiveC.NSObject {
+    @objc public static let PG: Swift.String
+    @objc public static let BANK_CODE: Swift.String
+    @objc public static let SDK_PLATFORM: Swift.String
+    @objc public static let KEY: Swift.String
+    @objc public static let OFFER_KEY: Swift.String
+    @objc public static let TXNID: Swift.String
+    @objc public static let AMOUNT: Swift.String
+    @objc public static let PRODUCT_INFO: Swift.String
+    @objc public static let FIRST_NAME: Swift.String
+    @objc public static let EMAIL: Swift.String
+    @objc public static let PHONE: Swift.String
+    @objc public static let SURL: Swift.String
+    @objc public static let FURL: Swift.String
+    @objc public static let HASH: Swift.String
+    @objc public static let CCNUM: Swift.String
+    @objc public static let CCNAME: Swift.String
+    @objc public static let CCVV: Swift.String
+    @objc public static let CC_EXP_MON: Swift.String
+    @objc public static let CC_EXP_YR: Swift.String
+    @objc public static let LOOKUP_ID: Swift.String
+    @objc public static let DEVICE_TYPE: Swift.String
+    @objc public static let INSTRUMENT_TYPE: Swift.String
+    @objc public static let INSTRUMENT_ID: Swift.String
+    @objc public static let TXN_S2S_FLOW: Swift.String
+    @objc public static let USER_CREDENTIALS: Swift.String
+    @objc public static let UDF_1: Swift.String
+    @objc public static let UDF_2: Swift.String
+    @objc public static let UDF_3: Swift.String
+    @objc public static let UDF_4: Swift.String
+    @objc public static let UDF_5: Swift.String
+    @objc public static let UDF_6: Swift.String
+    @objc public static let FREE_TRIAL: Swift.String
+    @objc public static let API_VERSION: Swift.String
+    @objc public static let SI: Swift.String
+    @objc public static let SI_DETAILS: Swift.String
+    @objc public static let BILLING_AMOUNT: Swift.String
+    @objc public static let BILLING_CURRENCY: Swift.String
+    @objc public static let BILLING_CYCLE: Swift.String
+    @objc public static let BILLING_INTERVAL: Swift.String
+    @objc public static let PAYMENT_START_DATE: Swift.String
+    @objc public static let PAYMENT_END_DATE: Swift.String
+    @objc public static let REMARKS: Swift.String
+    @objc public static let STORE_CARD: Swift.String
+    @objc public static let STORE_CARD_NAME: Swift.String
+    @objc public static let USER_CONSENT: Swift.String
+    @objc public static let ONE_CLICK: Swift.String
+    @objc public static let ONE_CLICK_DETAILS: Swift.String
+    @objc public static let USER_DEVICE_ID: Swift.String
+    @objc public static let VSC_AUTH_CODE: Swift.String
+    @objc public static let MERCHANT_APP_ID: Swift.String
+    @objc public static let PARTNER_ORIGINAL_TRANSACTION_ID: Swift.String
+    @objc public static let CARD_ALIAS: Swift.String
+    @objc public static let PARTNER_TOKEN: Swift.String
+    @objc public static let payu_sdk_name: Swift.String
+    @objc public static let payu_sdk_version: Swift.String
+    @objc public static let platform: Swift.String
+    @objc public static let name: Swift.String
+    @objc public static let BILLING_RULE: Swift.String
+    @objc public static let BILLING_LIMIT: Swift.String
+    @objc public static let NOTIFYURL: Swift.String
+    @objc public static let ADDRESS_1: Swift.String
+    @objc public static let ADDRESS_2: Swift.String
+    @objc public static let CITY: Swift.String
+    @objc public static let STATE: Swift.String
+    @objc public static let COUNTRY: Swift.String
+    @objc public static let ZIPCODE: Swift.String
+    @objc public static let SHIPPING_FIRSTNAME: Swift.String
+    @objc public static let SHIPPING_LASTNAME: Swift.String
+    @objc public static let SHIPPING_ADDRESS_1: Swift.String
+    @objc public static let SHIPPING_ADDRESS_2: Swift.String
+    @objc public static let SHIPPING_CITY: Swift.String
+    @objc public static let SHIPPING_STATE: Swift.String
+    @objc public static let SHIPPING_COUNTRY: Swift.String
+    @objc public static let SHIPPING_ZIPCODE: Swift.String
+    @objc public static let SHIPPING_PHONE: Swift.String
+    @objc public static let CURL: Swift.String
+    @objc public static let CODURL: Swift.String
+    @objc public static let DROP_CATEGORY: Swift.String
+    @objc public static let ENFORCE_PAY_METHOD: Swift.String
+    @objc public static let CUSTOM_NOTE: Swift.String
+    @objc public static let SPLIT_REQUEST: Swift.String
+    @objc public static let NOTE_CATEGORY: Swift.String
+    @objc public static let ONE_CLICK_CHECKOUT: Swift.String
+    @objc public static let BENEFICIARY_NAME: Swift.String
+    @objc public static let BENEFICIARY_ACCOUNT_TYPE: Swift.String
+    @objc public static let IFSC_CODE: Swift.String
+    @objc public static let VERIFICATION_MODE: Swift.String
+    @objc public static let BENEFICIARYDETAIL: Swift.String
+    @objc public static let BENEFICIARYACCOUNTNUMBER: Swift.String
+    @objc public static let VPA: Swift.String
+    @objc public static let SALT_VERSION: Swift.String
+    @objc public static let TWID_CUSTOMER_HASH: Swift.String
+    @objc public static let SUBVENTION_AMOUNT: Swift.String
+    @objc public static let PGID: Swift.String
+    @objc public static let SAVE_SODEXO_CARD: Swift.String
+    @objc public static let SOURCE_ID: Swift.String
+    @objc public static let CARD_MERCHANT_PARAM: Swift.String
+    @objc public static let STORED_CARD_TOKEN: Swift.String
+    @objc public static let STORED_CARD_TOKEN_TYPE: Swift.String
+    @objc public static let ADDITIONAL_INFO: Swift.String
+    @objc public static let LAST_4_DIGITS: Swift.String
+    @objc public static let TAVV: Swift.String
+    @objc public static let TRID: Swift.String
+    @objc public static let TOKEN_REF_NO: Swift.String
+    @objc public static let SDK_RETRY: Swift.String
+    @objc override dynamic public init()
+    @objc deinit
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class PayUUserDefines : ObjectiveC.NSObject {
+  @objc public var udf1: Swift.String?
+  @objc public var udf2: Swift.String?
+  @objc public var udf3: Swift.String?
+  @objc public var udf4: Swift.String?
+  @objc public var udf5: Swift.String?
+  @objc public var udf6: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @objcMembers public class PayUPaymentParam : ObjectiveC.NSObject, Foundation.NSCopying {
+  @objc public var key: Swift.String
+  @objc public var transactionId: Swift.String
+  @objc public var amount: Swift.String
+  @objc public var productInfo: Swift.String
+  @objc public var firstName: Swift.String
+  @objc public var email: Swift.String
+  @objc public var phone: Swift.String
+  @objc public var surl: Swift.String
+  @objc public var furl: Swift.String
+  @objc public var userCredential: Swift.String?
+  @objc public var additionalParam: [Swift.String : Any]
+  @objc public var paymentEnvironment: PayUParamsKit.Environment
+  @objc public var siParam: PayUParamsKit.PayUSIParams?
+  @objc public var paymentOption: PayUParamsKit.PaymentOption?
+  @objc public var hashes: PayUParamsKit.PPKHashes?
+  @objc public var udfs: PayUParamsKit.PayUUserDefines?
+  public var skipCVV: Swift.Bool?
+  public var enableNativeOTP: Swift.Bool?
+  public var enableOneClick: Swift.Bool?
+  @objc public var vscParams: PayUParamsKit.PayUVSCParams?
+  @objc public var notifyURL: Swift.String?
+  @objc public var address: PayUParamsKit.PayUAddressDetails?
+  @objc public var shippingAddress: PayUParamsKit.PayUAddressDetails?
+  @objc public var codURL: Swift.String?
+  @objc public var cURL: Swift.String?
+  @objc public var dropCategory: Swift.String?
+  @objc public var enforcePayMethod: Swift.String?
+  @objc public var customNote: Swift.String?
+  @objc public var noteCategory: Swift.String?
+  @objc public var splitPaymentDetails: Swift.String?
+  @objc public var isRetryPayment: Swift.Bool
+  @objc public init(key: Swift.String, transactionId: Swift.String, amount: Swift.String, productInfo: Swift.String, firstName: Swift.String, email: Swift.String, phone: Swift.String, surl: Swift.String, furl: Swift.String, environment: PayUParamsKit.Environment)
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc deinit
+}
+@objc public enum Environment : Swift.Int {
+  case production = 0
+  case test
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class PPKHashes : ObjectiveC.NSObject {
+  @objc public var paymentOptionsHash: Swift.String?
+  @objc public var paymentHash: Swift.String?
+  @objc public var validateVPAHash: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class PayUVerifyPayment : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var binData: PayUParamsKit.PayUBinData?
+  @objc public var metaData: PayUParamsKit.PayUMetaData?
+  @objc public var result: PayUParamsKit.PayUResult?
+  @objc public var status: Swift.String?
+  @objc public var message: Swift.String?
+  @objc public var error: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class PayUBinData : ObjectiveC.NSObject, Swift.Codable {
+  public var pureS2SSupported: Swift.Bool?
+  @objc public var issuingBank: Swift.String?
+  @objc public var category: Swift.String?
+  @objc public var cardType: Swift.String?
+  public var isDomestic: Swift.Bool?
+  @objc override dynamic public init()
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class PayUMetaData : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var resendOtp: PayUParamsKit.PayUResendOtp?
+  @objc public var submitOtp: PayUParamsKit.PayUSubmitOtp?
+  @objc public var oneClick: PayUParamsKit.PayUOneClick?
+  @objc public var txnStatus: Swift.String?
+  @objc public var referenceId: Swift.String?
+  @objc public var txnId: Swift.String?
+  @objc public var unmappedStatus: Swift.String?
+  @objc public var message: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class PayUResendOtp : ObjectiveC.NSObject, Swift.Codable {
+  public var attemptsLeft: Swift.Int?
+  public var isSupported: Swift.Bool?
+  @objc public var status: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class PayUSubmitOtp : ObjectiveC.NSObject, Swift.Codable {
+  public var attemptsLeft: Swift.Int?
+  @objc public var status: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class PayUOneClick : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var consentStatus: Swift.String?
+  public var attempted: Swift.Bool?
+  public var approved: Swift.Bool?
+  @objc override dynamic public init()
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class PayUResult : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var otpPostUrl: Swift.String?
+  @objc public var acsTemplate: Swift.String?
+  @objc public var issuerUrl: Swift.String?
+  @objc public var postToBank: PayUParamsKit.PayUPostToBank?
+  @objc public var mihpayid: Swift.String?
+  @objc public var mode: Swift.String?, status: Swift.String?, key: Swift.String?, txnid: Swift.String?, amount: Swift.String?, addedon: Swift.String?, productinfo: Swift.String?, firstname: Swift.String?, lastname: Swift.String?, address1: Swift.String?
+  @objc public var address2: Swift.String?, city: Swift.String?, state: Swift.String?, country: Swift.String?, zipcode: Swift.String?, email: Swift.String?, phone: Swift.String?, udf1: Swift.String?, udf2: Swift.String?, udf3: Swift.String?, udf4: Swift.String?, udf5: Swift.String?, udf6: Swift.String?, udf7: Swift.String?, udf8: Swift.String?, udf9: Swift.String?, udf10: Swift.String?, card_token: Swift.String?, card_no: Swift.String?, field1: Swift.String?, field2: Swift.String?, field3: Swift.String?, field4: Swift.String?, field5: Swift.String?, field6: Swift.String?, field7: Swift.String?, field8: Swift.String?, field9: Swift.String?, field10: Swift.String?, payment_source: Swift.String?, PG_TYPE: Swift.String?, error: Swift.String?, error_Message: Swift.String?, net_amount_debit: Swift.String?, unmappedstatus: Swift.String?, bank_ref_no: Swift.String?, bank_ref_num: Swift.String?, bankcode: Swift.String?, surl: Swift.String?, curl: Swift.String?, furl: Swift.String?, card_hash: Swift.String?, partnerToken: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class PayUPostToBank : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var md: Swift.String?
+  @objc public var paReq: Swift.String?
+  @objc public var termUrl: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class PayUPaymentValidations : ObjectiveC.NSObject {
+  public func validatePaymentDetails(_ paymentParam: PayUParamsKit.PayUPaymentParam) -> (isValidDetails: Swift.Bool, errorMessage: Swift.String)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc open class PayUVSCParams : ObjectiveC.NSObject {
+  @objc public var userConsent: Swift.String?
+  @objc public var userDeviceID: Swift.String?
+  @objc public var vscAuthCode: Swift.String?
+  @objc public var merchantAppID: Swift.String?
+  @objc public var transactionID: Swift.String?
+  @objc public var cardAlias: Swift.String?
+  @objc public var partnerToken: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension PayUParamsKit.CardType : Swift.Equatable {}
+extension PayUParamsKit.CardType : Swift.Hashable {}
+extension PayUParamsKit.CardType : Swift.RawRepresentable {}
+extension PayUParamsKit.CardScheme : Swift.Equatable {}
+extension PayUParamsKit.CardScheme : Swift.Hashable {}
+extension PayUParamsKit.CardScheme : Swift.RawRepresentable {}
+extension PayUParamsKit.PaymentType : Swift.Equatable {}
+extension PayUParamsKit.PaymentType : Swift.Hashable {}
+extension PayUParamsKit.PaymentType : Swift.RawRepresentable {}
+extension PayUParamsKit.EMIType : Swift.Equatable {}
+extension PayUParamsKit.EMIType : Swift.Hashable {}
+extension PayUParamsKit.EMIType : Swift.RawRepresentable {}
+extension PayUParamsKit.ApiStatus : Swift.Equatable {}
+extension PayUParamsKit.ApiStatus : Swift.Hashable {}
+extension PayUParamsKit.ApiStatus : Swift.RawRepresentable {}
+extension PayUParamsKit.PayUErrorType : Swift.Equatable {}
+extension PayUParamsKit.PayUErrorType : Swift.Hashable {}
+extension PayUParamsKit.PayUErrorType : Swift.RawRepresentable {}
+extension PayUParamsKit.BeneficiaryAccountType : Swift.Equatable {}
+extension PayUParamsKit.BeneficiaryAccountType : Swift.Hashable {}
+extension PayUParamsKit.BeneficiaryAccountType : Swift.RawRepresentable {}
+extension PayUParamsKit.VerificationModeType : Swift.Equatable {}
+extension PayUParamsKit.VerificationModeType : Swift.Hashable {}
+extension PayUParamsKit.VerificationModeType : Swift.RawRepresentable {}
+extension PayUParamsKit.PayUBillingCycle : Swift.Equatable {}
+extension PayUParamsKit.PayUBillingCycle : Swift.Hashable {}
+extension PayUParamsKit.PayUBillingCycle : Swift.RawRepresentable {}
+extension PayUParamsKit.Environment : Swift.Equatable {}
+extension PayUParamsKit.Environment : Swift.Hashable {}
+extension PayUParamsKit.Environment : Swift.RawRepresentable {}

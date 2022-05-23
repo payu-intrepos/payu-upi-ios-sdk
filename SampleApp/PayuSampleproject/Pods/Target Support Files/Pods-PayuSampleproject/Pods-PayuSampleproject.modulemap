@@ -1,0 +1,6 @@
+framework module Pods_PayuSampleproject {
+  umbrella header "Pods-PayuSampleproject-umbrella.h"
+
+  export *
+  module * { export * }
+}

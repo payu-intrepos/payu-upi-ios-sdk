@@ -1,0 +1,11 @@
+framework module PayUParamsKit {
+  umbrella header "PayUParamsKit.h"
+
+  export *
+  module * { export * }
+}
+
+module PayUParamsKit.Swift {
+    header "PayUParamsKit-Swift.h"
+    requires objc
+}
