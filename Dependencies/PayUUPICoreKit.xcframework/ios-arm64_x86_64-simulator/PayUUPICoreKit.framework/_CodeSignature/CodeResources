@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4lcy+pBtFDvQkehmiFdK5vP0OGw=
+		Ok7rwGjja5Wt2PQ/JV21K6ZTp28=
 		</data>
 		<key>Modules/PayUUPICoreKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/PayUUPICoreKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		pv9lvjOEB4uD/p/MnldpcrTooBw=
+		xoOa2QijnkuSsfcrZ/eDfNaF4xA=
 		</data>
 		<key>Modules/PayUUPICoreKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/PayUUPICoreKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		4V+2JwyrEZlnWV+sqKFoQfQEbP0=
+		7hAchDgT1+rUFvgk3/vKGMELkBo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -110,7 +110,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RPeIlHEqONVxB6GqXJ4ZGQJ26MSBjUPhG34gfGeAFAQ=
+			8uPleAoxjzAavpkwCzAYiLhX03CaEJMW1Io3fYeHKi4=
 			</data>
 		</dict>
 		<key>Modules/PayUUPICoreKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -131,7 +131,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			haMta13iYIYmdVT18h4AR4JSqLWtY+cIHv6fNl9jfdc=
+			pksMdT5sZhXX5XBLsABMeLr/e14iEd6CoOgg8I8C9Gs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
