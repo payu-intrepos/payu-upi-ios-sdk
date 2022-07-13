@@ -72,6 +72,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>SocketIOTarget</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>SocketIOWrapper</key>
 		<dict>
 			<key>primary</key>
