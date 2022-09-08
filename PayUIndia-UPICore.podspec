@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                = "PayUIndia-UPICore"
-  s.version             = "7.0.0"
+  s.version             = "7.0.1"
   s.license             = "MIT"
   s.homepage            = "https://app.gitbook.com/@payumobile/s/sdk-integration/v/master/ios/upi-standalone-ios"
   s.author              = { "PayUbiz" => "contact@payu.in"  }
