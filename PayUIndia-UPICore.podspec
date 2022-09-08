@@ -16,6 +16,5 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'Dependencies/PayUUPICoreKit.xcframework'
   s.dependency            'PayUIndia-PayUParams', '~> 4.3'
   s.dependency            'PayUIndia-Networking', '~> 4.0'
-  s.dependency            'Socket.IO-Client-Swift', '15.1.0'
   
 end
