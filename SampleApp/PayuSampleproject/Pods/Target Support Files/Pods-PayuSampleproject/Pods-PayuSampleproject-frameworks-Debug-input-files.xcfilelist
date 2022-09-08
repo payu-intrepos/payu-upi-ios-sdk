@@ -1,7 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-PayuSampleproject/Pods-PayuSampleproject-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Sentry/Sentry.framework
-${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework
-${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-Logger/PayULoggerKit.framework/PayULoggerKit
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-Networking/PayUNetworkingKit.framework/PayUNetworkingKit
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-PayUParams/PayUParamsKit.framework/PayUParamsKit

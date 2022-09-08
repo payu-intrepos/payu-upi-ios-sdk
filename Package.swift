@@ -51,7 +51,7 @@ let package = Package(
             name: "PayUIndia-UPITarget",
             dependencies: [
                 "PayUUPIKit",
-                "PayUUPICoreKit"
+                "PayUIndia-UPICoreTarget"
             ],
             path: "Wrappers/PayUIndia-UPIWrapper"
         ),

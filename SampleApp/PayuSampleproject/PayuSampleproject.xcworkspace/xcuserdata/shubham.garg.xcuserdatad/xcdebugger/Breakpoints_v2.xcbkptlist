@@ -130,6 +130,38 @@
             endingLineNumber = "185"
             landmarkName = "sendPaymentCompletion(response:verificationMode:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "ADCCDA5A-7C83-43BB-A1CB-F01B4D79C39D - 18cd38aa82498e84"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PayuSampleproject.UPIPayment.sendPaymentCompletion(response: Swift.Result&lt;Swift.Dictionary&lt;Swift.String, Any&gt;, PayUParamsKit.PayUError&gt;, verificationMode: Swift.Optional&lt;PayUUPICoreKit.PayUPaymentVerificationMode&gt;) -&gt; ()"
+                  moduleName = "PayuSampleproject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shubham.garg/Documents/githubPayU/payu-upi-ios-sdk/SampleApp/PayuSampleproject/PayuSampleproject/UPIPayment.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "185"
+                  endingLineNumber = "185"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "ADCCDA5A-7C83-43BB-A1CB-F01B4D79C39D - 18cd38aa82498e84"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PayuSampleproject.UPIPayment.sendPaymentCompletion(response: Swift.Result&lt;Swift.Dictionary&lt;Swift.String, Any&gt;, PayUParamsKit.PayUError&gt;, verificationMode: Swift.Optional&lt;PayUUPICoreKit.PayUPaymentVerificationMode&gt;) -&gt; ()"
+                  moduleName = "PayuSampleproject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shubham.garg/Documents/githubPayU/payu-upi-ios-sdk/SampleApp/PayuSampleproject/PayuSampleproject/UPIPayment.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "185"
+                  endingLineNumber = "185"
+                  offsetFromSymbolStart = "154">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

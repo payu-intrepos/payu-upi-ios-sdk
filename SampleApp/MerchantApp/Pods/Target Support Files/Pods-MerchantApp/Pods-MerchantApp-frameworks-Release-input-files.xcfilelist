@@ -1,0 +1,9 @@
+${PODS_ROOT}/Target Support Files/Pods-MerchantApp/Pods-MerchantApp-frameworks.sh
+${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-CrashReporter/PayUCrashReporter.framework/PayUCrashReporter
+${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-Logger/PayULoggerKit.framework/PayULoggerKit
+${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-NetworkReachability/PayUNetworkReachability.framework/PayUNetworkReachability
+${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-Networking/PayUNetworkingKit.framework/PayUNetworkingKit
+${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-PG-SDK/PayUBizCoreKit.framework/PayUBizCoreKit
+${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-PayUParams/PayUParamsKit.framework/PayUParamsKit
+${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-UPI/PayUUPIKit.framework/PayUUPIKit
+${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-UPICore/PayUUPICoreKit.framework/PayUUPICoreKit

@@ -1,0 +1,45 @@
+PODS:
+  - PayUIndia-CrashReporter (2.1.0)
+  - PayUIndia-Logger (4.0.0)
+  - PayUIndia-Networking (4.0.0):
+    - PayUIndia-Logger (= 4.0.0)
+  - PayUIndia-NetworkReachability (1.0.1)
+  - PayUIndia-PayUParams (4.3.0)
+  - PayUIndia-PG-SDK (8.6.0):
+    - PayUIndia-CrashReporter (~> 2.1)
+    - PayUIndia-NetworkReachability (~> 1.0)
+    - PayUIndia-PayUParams (~> 4.2)
+  - PayUIndia-UPI (7.0.0):
+    - PayUIndia-UPICore (~> 7.0)
+  - PayUIndia-UPICore (7.0.1):
+    - PayUIndia-Networking (~> 4.0)
+    - PayUIndia-PayUParams (~> 4.3)
+
+DEPENDENCIES:
+  - PayUIndia-PG-SDK
+  - PayUIndia-UPI
+
+SPEC REPOS:
+  trunk:
+    - PayUIndia-CrashReporter
+    - PayUIndia-Logger
+    - PayUIndia-Networking
+    - PayUIndia-NetworkReachability
+    - PayUIndia-PayUParams
+    - PayUIndia-PG-SDK
+    - PayUIndia-UPI
+    - PayUIndia-UPICore
+
+SPEC CHECKSUMS:
+  PayUIndia-CrashReporter: 597caf134e85f9b3bde7d2045cae2def1b86c544
+  PayUIndia-Logger: e353d9dd576bac593e428dfbadedf337cbb48b78
+  PayUIndia-Networking: bf53f743484256303e24d4e763e6097f04af769c
+  PayUIndia-NetworkReachability: 99e69781b3be99d7b713075ab7b73e6d73a153e4
+  PayUIndia-PayUParams: ef686041feae62f907491c1cc7b4f50fbe4375c9
+  PayUIndia-PG-SDK: edfd636f3b7647f320145ef8d48ae70a4a96297a
+  PayUIndia-UPI: 5d6d936f294ff85e4afe1d5d03355a2f0ecca7db
+  PayUIndia-UPICore: a0d959c31b7ebf54bf26519f27efee2e7982a932
+
+PODFILE CHECKSUM: 5d5828ab34f9a4e4bc0fe9de41c14bb1807201a1
+
+COCOAPODS: 1.11.3

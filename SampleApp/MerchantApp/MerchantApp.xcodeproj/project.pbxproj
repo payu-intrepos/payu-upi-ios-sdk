@@ -3,15 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A716CC832816B58400623343 /* PayUIndia-PG-SDK in Frameworks */ = {isa = PBXBuildFile; productRef = A716CC822816B58400623343 /* PayUIndia-PG-SDK */; };
-		A716CC862816B59600623343 /* PayUIndia-Logger in Frameworks */ = {isa = PBXBuildFile; productRef = A716CC852816B59600623343 /* PayUIndia-Logger */; };
-		A716CC882816B59600623343 /* PayUIndia-Networking in Frameworks */ = {isa = PBXBuildFile; productRef = A716CC872816B59600623343 /* PayUIndia-Networking */; };
-		A716CC8A2816B59600623343 /* PayUIndia-UPI in Frameworks */ = {isa = PBXBuildFile; productRef = A716CC892816B59600623343 /* PayUIndia-UPI */; };
-		A716CC8C2816B59600623343 /* PayUIndia-UPICore in Frameworks */ = {isa = PBXBuildFile; productRef = A716CC8B2816B59600623343 /* PayUIndia-UPICore */; };
+		473E07459A12855451A9A50A /* Pods_MerchantApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D46A82C395465652D09B92CB /* Pods_MerchantApp.framework */; };
 		AD6A8E5D238532B100FCB6D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6A8E5C238532B100FCB6D3 /* AppDelegate.swift */; };
 		ADE09D7E2385708F00C93FBA /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE09D6E2385708F00C93FBA /* APIManager.swift */; };
 		ADE09D7F2385708F00C93FBA /* HashesEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE09D6F2385708F00C93FBA /* HashesEndPoint.swift */; };
@@ -40,6 +36,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		983FB8402A592F2BF22DD034 /* Pods-MerchantApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MerchantApp.release.xcconfig"; path = "Target Support Files/Pods-MerchantApp/Pods-MerchantApp.release.xcconfig"; sourceTree = "<group>"; };
 		AD6A8E59238532B100FCB6D3 /* MerchantApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MerchantApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD6A8E5C238532B100FCB6D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD6A8E6A238532B400FCB6D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +51,8 @@
 		ADE09D7A2385708F00C93FBA /* PaymentOptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentOptionCell.swift; sourceTree = "<group>"; };
 		ADE09D7C2385708F00C93FBA /* Initial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Initial.storyboard; sourceTree = "<group>"; };
 		ADE09D7D2385708F00C93FBA /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		BA81B30D18960BE7E9040090 /* Pods-MerchantApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MerchantApp.debug.xcconfig"; path = "Target Support Files/Pods-MerchantApp/Pods-MerchantApp.debug.xcconfig"; sourceTree = "<group>"; };
+		D46A82C395465652D09B92CB /* Pods_MerchantApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MerchantApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,20 +60,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A716CC8C2816B59600623343 /* PayUIndia-UPICore in Frameworks */,
-				A716CC8A2816B59600623343 /* PayUIndia-UPI in Frameworks */,
-				A716CC832816B58400623343 /* PayUIndia-PG-SDK in Frameworks */,
-				A716CC882816B59600623343 /* PayUIndia-Networking in Frameworks */,
-				A716CC862816B59600623343 /* PayUIndia-Logger in Frameworks */,
+				473E07459A12855451A9A50A /* Pods_MerchantApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		262261BA6EB8A8A6E2491672 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA81B30D18960BE7E9040090 /* Pods-MerchantApp.debug.xcconfig */,
+				983FB8402A592F2BF22DD034 /* Pods-MerchantApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A716CC7E2816B20900623343 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D46A82C395465652D09B92CB /* Pods_MerchantApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -85,6 +90,7 @@
 				AD6A8E5B238532B100FCB6D3 /* MerchantApp */,
 				AD6A8E5A238532B100FCB6D3 /* Products */,
 				A716CC7E2816B20900623343 /* Frameworks */,
+				262261BA6EB8A8A6E2491672 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -180,23 +186,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD6A8E6D238532B400FCB6D3 /* Build configuration list for PBXNativeTarget "MerchantApp" */;
 			buildPhases = (
+				19C231BEADBA9126780256E5 /* [CP] Check Pods Manifest.lock */,
 				AD6A8E55238532B100FCB6D3 /* Sources */,
 				AD6A8E56238532B100FCB6D3 /* Frameworks */,
 				AD6A8E57238532B100FCB6D3 /* Resources */,
 				ADE09D97238572A300C93FBA /* Embed Frameworks */,
+				16E457962C38482E6402EC00 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = MerchantApp;
-			packageProductDependencies = (
-				A716CC822816B58400623343 /* PayUIndia-PG-SDK */,
-				A716CC852816B59600623343 /* PayUIndia-Logger */,
-				A716CC872816B59600623343 /* PayUIndia-Networking */,
-				A716CC892816B59600623343 /* PayUIndia-UPI */,
-				A716CC8B2816B59600623343 /* PayUIndia-UPICore */,
-			);
 			productName = MerchantApp;
 			productReference = AD6A8E59238532B100FCB6D3 /* MerchantApp.app */;
 			productType = "com.apple.product-type.application";
@@ -225,10 +226,6 @@
 				Base,
 			);
 			mainGroup = AD6A8E50238532B100FCB6D3;
-			packageReferences = (
-				A716CC812816B58400623343 /* XCRemoteSwiftPackageReference "iOS-SDK" */,
-				A716CC842816B59600623343 /* XCRemoteSwiftPackageReference "payu-upi-ios-sdk" */,
-			);
 			productRefGroup = AD6A8E5A238532B100FCB6D3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -250,6 +247,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16E457962C38482E6402EC00 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MerchantApp/Pods-MerchantApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MerchantApp/Pods-MerchantApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MerchantApp/Pods-MerchantApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		19C231BEADBA9126780256E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MerchantApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AD6A8E55238532B100FCB6D3 /* Sources */ = {
@@ -387,6 +426,7 @@
 		};
 		AD6A8E6E238532B400FCB6D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA81B30D18960BE7E9040090 /* Pods-MerchantApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -410,6 +450,7 @@
 		};
 		AD6A8E6F238532B400FCB6D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 983FB8402A592F2BF22DD034 /* Pods-MerchantApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -453,53 +494,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		A716CC812816B58400623343 /* XCRemoteSwiftPackageReference "iOS-SDK" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/payu-intrepos/iOS-SDK";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 8.0.0;
-			};
-		};
-		A716CC842816B59600623343 /* XCRemoteSwiftPackageReference "payu-upi-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/payu-intrepos/payu-upi-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		A716CC822816B58400623343 /* PayUIndia-PG-SDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A716CC812816B58400623343 /* XCRemoteSwiftPackageReference "iOS-SDK" */;
-			productName = "PayUIndia-PG-SDK";
-		};
-		A716CC852816B59600623343 /* PayUIndia-Logger */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A716CC842816B59600623343 /* XCRemoteSwiftPackageReference "payu-upi-ios-sdk" */;
-			productName = "PayUIndia-Logger";
-		};
-		A716CC872816B59600623343 /* PayUIndia-Networking */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A716CC842816B59600623343 /* XCRemoteSwiftPackageReference "payu-upi-ios-sdk" */;
-			productName = "PayUIndia-Networking";
-		};
-		A716CC892816B59600623343 /* PayUIndia-UPI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A716CC842816B59600623343 /* XCRemoteSwiftPackageReference "payu-upi-ios-sdk" */;
-			productName = "PayUIndia-UPI";
-		};
-		A716CC8B2816B59600623343 /* PayUIndia-UPICore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A716CC842816B59600623343 /* XCRemoteSwiftPackageReference "payu-upi-ios-sdk" */;
-			productName = "PayUIndia-UPICore";
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AD6A8E51238532B100FCB6D3 /* Project object */;
 }
