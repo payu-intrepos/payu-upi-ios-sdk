@@ -1,12 +1,14 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUUPICoreKit
+import CommonCrypto
+import CoreFoundation
+import Dispatch
 import Foundation
 import PayULoggerKit
 import PayUNetworkingKit
 import PayUParamsKit
 @_exported import PayUUPICoreKit
-import SocketIO
 import Swift
 import UIKit
 import _Concurrency
@@ -16,6 +18,51 @@ import _Concurrency
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers final public class PayUSocketAnyEvent : ObjectiveC.NSObject {
+  @objc final public let event: Swift.String
+  @objc final public let items: [Any]?
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public protocol PayUSocketEngineSpec {
+  @objc var client: PayUUPICoreKit.PayUSocketEngineClient? { get set }
+  @objc var closed: Swift.Bool { get }
+  @objc var connected: Swift.Bool { get }
+  @objc var connectParams: [Swift.String : Any]? { get set }
+  @objc var cookies: [Foundation.HTTPCookie]? { get }
+  @objc var engineQueue: Dispatch.DispatchQueue { get }
+  @objc var extraHeaders: [Swift.String : Swift.String]? { get set }
+  @objc var fastUpgrade: Swift.Bool { get }
+  @objc var forcePolling: Swift.Bool { get }
+  @objc var forceWebsockets: Swift.Bool { get }
+  @objc var polling: Swift.Bool { get }
+  @objc var probing: Swift.Bool { get }
+  @objc var sid: Swift.String { get }
+  @objc var socketPath: Swift.String { get }
+  @objc var urlPolling: Foundation.URL { get }
+  @objc var urlWebSocket: Foundation.URL { get }
+  @objc var ws: PayUUPICoreKit.PayUWebSocket? { get }
+  @objc func connect()
+  @objc func didError(reason: Swift.String)
+  @objc func disconnect(reason: Swift.String)
+  @objc func doFastUpgrade()
+  @objc func flushWaitingForPostToWebSocket()
+  @objc func parseEngineData(_ data: Foundation.Data)
+  @objc func parseEngineMessage(_ message: Swift.String)
+  @objc func write(_ msg: Swift.String, withType type: PayUUPICoreKit.PayUSocketEnginePacketType, withData data: [Foundation.Data], completion: (() -> ())?)
+}
+@objc public protocol PayUSocketEngineClient {
+  @objc func engineDidError(reason: Swift.String)
+  @objc func engineDidClose(reason: Swift.String)
+  @objc func engineDidOpen(reason: Swift.String)
+  @objc func engineDidReceivePong()
+  @objc func engineDidSendPing()
+  @objc func parseEngineMessage(_ msg: Swift.String)
+  @objc func parseEngineBinaryData(_ data: Foundation.Data)
+  @objc func engineDidWebsocketUpgrade(headers: [Swift.String : Swift.String])
 }
 public typealias PayUItemTypeInPaymentHandlesAPI = Swift.Dictionary<Swift.String, Swift.Array<Swift.String>>
 @objc public enum NetworkEnvironment : Swift.Int {
@@ -42,6 +89,181 @@ public typealias PayUItemTypeInPaymentHandlesAPI = Swift.Dictionary<Swift.String
   public class func getUPIHandles(withPaymentParams params: PayUParamsKit.PayUPaymentParam, completion: @escaping (Swift.Result<[PayUUPICoreKit.PayUItemTypeInPaymentHandlesAPI], PayUParamsKit.PayUError>) -> ())
   @objc override dynamic public init()
   @objc deinit
+}
+public enum PayUCloseCode : Swift.UInt16 {
+  case normal
+  case goingAway
+  case protocolError
+  case protocolUnhandledType
+  case noStatusReceived
+  case encoding
+  case policyViolated
+  case messageTooBig
+  public init?(rawValue: Swift.UInt16)
+  public typealias RawValue = Swift.UInt16
+  public var rawValue: Swift.UInt16 {
+    get
+  }
+}
+public enum PayUErrorType : Swift.Error {
+  case outputStreamWriteError
+  case compressionError
+  case invalidSSLError
+  case writeTimeoutError
+  case protocolError
+  case upgradeError
+  case closeError
+  public static func == (a: PayUUPICoreKit.PayUErrorType, b: PayUUPICoreKit.PayUErrorType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct PayUWSError : Swift.Error {
+  public let type: PayUUPICoreKit.PayUErrorType
+  public let message: Swift.String
+  public let code: Swift.Int
+}
+public protocol PayUWebSocketClient : AnyObject {
+  var delegate: PayUUPICoreKit.PayUWebSocketDelegate? { get set }
+  var pongDelegate: PayUUPICoreKit.PayUWebSocketPongDelegate? { get set }
+  var disableSSLCertValidation: Swift.Bool { get set }
+  var desiredTrustHostname: Swift.String? { get set }
+  var enabledSSLCipherSuites: [Security.SSLCipherSuite]? { get set }
+  var isConnected: Swift.Bool { get }
+  func connect()
+  func disconnect(forceTimeout: Foundation.TimeInterval?, closeCode: Swift.UInt16)
+  func write(string: Swift.String, completion: (() -> ())?)
+  func write(data: Foundation.Data, completion: (() -> ())?)
+}
+public struct PayUSSLSettings {
+  public let useSSL: Swift.Bool
+  public let disableCertValidation: Swift.Bool
+  public var desiredTrustHostname: Swift.String?
+  public let cipherSuites: [Security.SSLCipherSuite]?
+}
+public protocol PayUWSStream {
+  func connect(url: Foundation.URL, port: Swift.Int, timeout: Foundation.TimeInterval, ssl: PayUUPICoreKit.PayUSSLSettings, completion: @escaping ((Swift.Error?) -> Swift.Void))
+  func write(data: Foundation.Data) -> Swift.Int
+  func cleanup()
+  func sslTrust() -> (trust: Security.SecTrust?, domain: Swift.String?)
+}
+@objc @_inheritsConvenienceInitializers public class PayUFoundationStream : ObjectiveC.NSObject, PayUUPICoreKit.PayUWSStream, Foundation.StreamDelegate {
+  public var enableSOCKSProxy: Swift.Bool
+  public func connect(url: Foundation.URL, port: Swift.Int, timeout: Foundation.TimeInterval, ssl: PayUUPICoreKit.PayUSSLSettings, completion: @escaping ((Swift.Error?) -> Swift.Void))
+  public func write(data: Foundation.Data) -> Swift.Int
+  public func cleanup()
+  public func sslTrust() -> (trust: Security.SecTrust?, domain: Swift.String?)
+  @objc override dynamic public init()
+  @objc deinit
+}
+public protocol PayUWebSocketDelegate : AnyObject {
+  func websocketDidConnect(socket: PayUUPICoreKit.PayUWebSocketClient)
+  func websocketDidDisconnect(socket: PayUUPICoreKit.PayUWebSocketClient, error: Swift.Error?)
+  func websocketDidReceiveMessage(socket: PayUUPICoreKit.PayUWebSocketClient, text: Swift.String)
+  func websocketDidReceiveData(socket: PayUUPICoreKit.PayUWebSocketClient, data: Foundation.Data)
+}
+public protocol PayUWebSocketPongDelegate : AnyObject {
+  func websocketDidReceivePong(socket: PayUUPICoreKit.PayUWebSocketClient, data: Foundation.Data?)
+}
+public protocol PayUWebSocketAdvancedDelegate : AnyObject {
+  func websocketDidConnect(socket: PayUUPICoreKit.PayUWebSocket)
+  func websocketDidDisconnect(socket: PayUUPICoreKit.PayUWebSocket, error: Swift.Error?)
+  func websocketDidReceiveMessage(socket: PayUUPICoreKit.PayUWebSocket, text: Swift.String, response: PayUUPICoreKit.PayUWebSocket.WSResponse)
+  func websocketDidReceiveData(socket: PayUUPICoreKit.PayUWebSocket, data: Foundation.Data, response: PayUUPICoreKit.PayUWebSocket.WSResponse)
+  func websocketHttpUpgrade(socket: PayUUPICoreKit.PayUWebSocket, request: Swift.String)
+  func websocketHttpUpgrade(socket: PayUUPICoreKit.PayUWebSocket, response: Swift.String)
+}
+@objc public class PayUWebSocket : ObjectiveC.NSObject, Foundation.StreamDelegate, PayUUPICoreKit.PayUWebSocketClient {
+  public enum OpCode : Swift.UInt8 {
+    case continueFrame
+    case textFrame
+    case binaryFrame
+    case connectionClose
+    case ping
+    case pong
+    public init?(rawValue: Swift.UInt8)
+    public typealias RawValue = Swift.UInt8
+    public var rawValue: Swift.UInt8 {
+      get
+    }
+  }
+  public static let ErrorDomain: Swift.String
+  public var callbackQueue: Dispatch.DispatchQueue
+  @_hasMissingDesignatedInitializers public class WSResponse {
+    public var code: PayUUPICoreKit.PayUWebSocket.OpCode
+    public var frameCount: Swift.Int
+    public var buffer: Foundation.NSMutableData?
+    final public let firstFrame: Foundation.Date
+    @objc deinit
+  }
+  weak public var delegate: PayUUPICoreKit.PayUWebSocketDelegate?
+  weak public var advancedDelegate: PayUUPICoreKit.PayUWebSocketAdvancedDelegate?
+  weak public var pongDelegate: PayUUPICoreKit.PayUWebSocketPongDelegate?
+  public var onConnect: (() -> Swift.Void)?
+  public var onDisconnect: ((Swift.Error?) -> Swift.Void)?
+  public var onText: ((Swift.String) -> Swift.Void)?
+  public var onData: ((Foundation.Data) -> Swift.Void)?
+  public var onPong: ((Foundation.Data?) -> Swift.Void)?
+  public var onHttpResponseHeaders: (([Swift.String : Swift.String]) -> Swift.Void)?
+  public var disableSSLCertValidation: Swift.Bool
+  public var desiredTrustHostname: Swift.String?
+  public var enabledSSLCipherSuites: [Security.SSLCipherSuite]?
+  public var isConnected: Swift.Bool {
+    get
+  }
+  public var request: Foundation.URLRequest
+  public var currentURL: Foundation.URL {
+    get
+  }
+  public var respondToPingWithPong: Swift.Bool
+  public init(request: Foundation.URLRequest, protocols: [Swift.String]? = nil, stream: PayUUPICoreKit.PayUWSStream = PayUFoundationStream())
+  public func connect()
+  public func disconnect(forceTimeout: Foundation.TimeInterval? = nil, closeCode: Swift.UInt16 = PayUCloseCode.normal.rawValue)
+  public func write(string: Swift.String, completion: (() -> ())? = nil)
+  public func write(data: Foundation.Data, completion: (() -> ())? = nil)
+  @objc deinit
+}
+public protocol PayUSocketIOData {
+  func socketRepresentation() throws -> PayUUPICoreKit.PayUSocketIOData
+}
+extension PayUUPICoreKit.PayUSocketIOData {
+  public func socketRepresentation() -> PayUUPICoreKit.PayUSocketIOData
+}
+extension Swift.Array : PayUUPICoreKit.PayUSocketIOData {
+}
+extension Swift.Bool : PayUUPICoreKit.PayUSocketIOData {
+}
+extension Swift.Dictionary : PayUUPICoreKit.PayUSocketIOData {
+}
+extension Swift.Double : PayUUPICoreKit.PayUSocketIOData {
+}
+extension Swift.Int : PayUUPICoreKit.PayUSocketIOData {
+}
+extension Foundation.NSArray : PayUUPICoreKit.PayUSocketIOData {
+}
+extension Foundation.Data : PayUUPICoreKit.PayUSocketIOData {
+}
+extension Foundation.NSData : PayUUPICoreKit.PayUSocketIOData {
+}
+extension Foundation.NSDictionary : PayUUPICoreKit.PayUSocketIOData {
+}
+extension Foundation.NSString : PayUUPICoreKit.PayUSocketIOData {
+}
+extension Foundation.NSNull : PayUUPICoreKit.PayUSocketIOData {
+}
+extension Swift.String : PayUUPICoreKit.PayUSocketIOData {
+}
+public typealias PayUNormalCallback = ([Any], PayUUPICoreKit.PayUSocketAckEmitter) -> ()
+public typealias PayUPost = (msg: Swift.String, completion: (() -> ())?)
+public protocol PayUSocketLogger : AnyObject {
+  var log: Swift.Bool { get set }
+  func log(_ message: @autoclosure () -> Swift.String, type: Swift.String)
+  func error(_ message: @autoclosure () -> Swift.String, type: Swift.String)
+}
+extension PayUUPICoreKit.PayUSocketLogger {
+  public func log(_ message: @autoclosure () -> Swift.String, type: Swift.String)
+  public func error(_ message: @autoclosure () -> Swift.String, type: Swift.String)
 }
 public typealias PayUResponseType = Swift.Result<Swift.Dictionary<Swift.String, Any>, PayUParamsKit.PayUError>
 @objc @_inheritsConvenienceInitializers @objcMembers public class PayUSDKError : ObjectiveC.NSObject {
@@ -91,6 +313,57 @@ public typealias PayUResponseType = Swift.Result<Swift.Dictionary<Swift.String, 
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
+}
+@objc final public class PayUSocketAckEmitter : ObjectiveC.NSObject {
+  final public var expected: Swift.Bool {
+    get
+  }
+  public init(socket: PayUUPICoreKit.PayUSocketIOClient, ackNum: Swift.Int)
+  @objc deinit
+}
+public protocol PayUSocketIOClientSpec : AnyObject {
+  var anyHandler: ((PayUUPICoreKit.PayUSocketAnyEvent) -> ())? { get }
+  var handlers: [PayUUPICoreKit.PayUSocketEventHandler] { get }
+  var manager: PayUUPICoreKit.PayUSocketManagerSpec? { get }
+  var nsp: Swift.String { get }
+  var status: PayUUPICoreKit.PayUSocketIOStatus { get }
+  func connect()
+  func connect(timeoutAfter: Swift.Double, withHandler handler: (() -> ())?)
+  func didConnect(toNamespace namespace: Swift.String)
+  func didDisconnect(reason: Swift.String)
+  func didError(reason: Swift.String)
+  func disconnect()
+  func emit(_ event: Swift.String, _ items: PayUUPICoreKit.PayUSocketIOData..., completion: (() -> ())?)
+  func emitAck(_ ack: Swift.Int, with items: [Any])
+  func handleAck(_ ack: Swift.Int, data: [Any])
+  func handleClientEvent(_ event: PayUUPICoreKit.PayUSocketClientEvent, data: [Any])
+  func handleEvent(_ event: Swift.String, data: [Any], isInternalMessage: Swift.Bool, withAck ack: Swift.Int)
+  func handlePacket(_ packet: PayUUPICoreKit.PayUSocketPacket)
+  func leaveNamespace()
+  func joinNamespace()
+  func on(_ event: Swift.String, callback: @escaping PayUUPICoreKit.PayUNormalCallback) -> Foundation.UUID
+  func on(clientEvent event: PayUUPICoreKit.PayUSocketClientEvent, callback: @escaping PayUUPICoreKit.PayUNormalCallback) -> Foundation.UUID
+  func onAny(_ handler: @escaping (PayUUPICoreKit.PayUSocketAnyEvent) -> ())
+  func setReconnecting(reason: Swift.String)
+}
+extension PayUUPICoreKit.PayUSocketIOClientSpec {
+  public func didError(reason: Swift.String)
+}
+public enum PayUSocketClientEvent : Swift.String {
+  case connect
+  case disconnect
+  case error
+  case ping
+  case pong
+  case reconnect
+  case reconnectAttempt
+  case statusChange
+  case websocketUpgrade
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
 }
 @objc public enum PayUUPIType : Swift.Int {
   case phonepe
@@ -151,6 +424,12 @@ extension PayUUPICoreKit.PayUPaymentApp {
 extension PayUUPICoreKit.PayUPaymentApp {
   public static func == (lhs: PayUUPICoreKit.PayUPaymentApp, rhs: PayUUPICoreKit.PayUPaymentApp) -> Swift.Bool
 }
+public struct PayUSocketEventHandler {
+  public let event: Swift.String
+  public let id: Foundation.UUID
+  public let callback: PayUUPICoreKit.PayUNormalCallback
+  public func executeCallback(with items: [Any], withAck ack: Swift.Int, withSocket socket: PayUUPICoreKit.PayUSocketIOClient)
+}
 @objc @objcMembers public class PayUPureS2SModel : ObjectiveC.NSObject, Swift.Codable {
   public var status: Swift.Int?
   @objc public var referenceId: Swift.String
@@ -178,6 +457,12 @@ extension PayUUPICoreKit.PayUPaymentApp {
   @objc public class func isValidMobile(_ mobile: Swift.String) -> Swift.Bool
   @objc override dynamic public init()
   @objc deinit
+}
+public protocol PayUSocketEngineWebsocket : PayUUPICoreKit.PayUSocketEngineSpec {
+  func sendWebSocketMessage(_ str: Swift.String, withType type: PayUUPICoreKit.PayUSocketEnginePacketType, withData datas: [Foundation.Data], completion: (() -> ())?)
+}
+extension PayUUPICoreKit.PayUSocketEngineWebsocket {
+  public func sendWebSocketMessage(_ str: Swift.String, withType type: PayUUPICoreKit.PayUSocketEnginePacketType, withData data: [Foundation.Data], completion: (() -> ())?)
 }
 @objc @objcMembers public class PayUSupportedCollectApp : ObjectiveC.NSObject {
   @objc final public let name: Swift.String
@@ -229,6 +514,20 @@ extension PayUUPICoreKit.PayUPaymentApp {
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
+@objc public enum PayUSocketEnginePacketType : Swift.Int {
+  case open
+  case close
+  case ping
+  case pong
+  case message
+  case upgrade
+  case noop
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class PayULoaderBaseVC : UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) public var paymentApp: PayUUPICoreKit.PayUPaymentApp?
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
@@ -247,6 +546,111 @@ extension PayUUPICoreKit.PayUPaymentApp {
   required public init(from decoder: Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
+}
+public enum PayUSocketIOClientOption {
+  case connectParams([Swift.String : Any])
+  case path(Swift.String)
+  case reconnects(Swift.Bool)
+  case reconnectAttempts(Swift.Int)
+  case reconnectWait(Swift.Int)
+  case secure(Swift.Bool)
+  public var description: Swift.String {
+    get
+  }
+  public static func == (lhs: PayUUPICoreKit.PayUSocketIOClientOption, rhs: PayUUPICoreKit.PayUSocketIOClientOption) -> Swift.Bool
+}
+public struct PayUSocketIOClientConfiguration : Swift.ExpressibleByArrayLiteral, Swift.Collection, Swift.MutableCollection {
+  public typealias Element = PayUUPICoreKit.PayUSocketIOClientOption
+  public typealias Index = Swift.Array<PayUUPICoreKit.PayUSocketIOClientOption>.Index
+  public typealias Iterator = Swift.Array<PayUUPICoreKit.PayUSocketIOClientOption>.Iterator
+  public typealias SubSequence = Swift.Array<PayUUPICoreKit.PayUSocketIOClientOption>.SubSequence
+  public var startIndex: PayUUPICoreKit.PayUSocketIOClientConfiguration.Index {
+    get
+  }
+  public var endIndex: PayUUPICoreKit.PayUSocketIOClientConfiguration.Index {
+    get
+  }
+  public var isEmpty: Swift.Bool {
+    get
+  }
+  public var count: PayUUPICoreKit.PayUSocketIOClientConfiguration.Index.Stride {
+    get
+  }
+  public var first: PayUUPICoreKit.PayUSocketIOClientConfiguration.Element? {
+    get
+  }
+  public subscript(position: PayUUPICoreKit.PayUSocketIOClientConfiguration.Index) -> PayUUPICoreKit.PayUSocketIOClientConfiguration.Element {
+    get
+    set
+  }
+  public subscript(bounds: Swift.Range<PayUUPICoreKit.PayUSocketIOClientConfiguration.Index>) -> PayUUPICoreKit.PayUSocketIOClientConfiguration.SubSequence {
+    get
+    set
+  }
+  public init(arrayLiteral elements: PayUUPICoreKit.PayUSocketIOClientConfiguration.Element...)
+  public func makeIterator() -> PayUUPICoreKit.PayUSocketIOClientConfiguration.Iterator
+  public func index(after i: PayUUPICoreKit.PayUSocketIOClientConfiguration.Index) -> PayUUPICoreKit.PayUSocketIOClientConfiguration.Index
+  public mutating func insert(_ element: PayUUPICoreKit.PayUSocketIOClientConfiguration.Element, replacing replace: Swift.Bool = true)
+  public typealias ArrayLiteralElement = PayUUPICoreKit.PayUSocketIOClientConfiguration.Element
+  public typealias Indices = Swift.DefaultIndices<PayUUPICoreKit.PayUSocketIOClientConfiguration>
+}
+public protocol PayUConfigSettable {
+  mutating func setConfigs(_ config: PayUUPICoreKit.PayUSocketIOClientConfiguration)
+}
+public protocol PayUSocketEnginePollable : PayUUPICoreKit.PayUSocketEngineSpec {
+  var invalidated: Swift.Bool { get }
+  var postWait: [PayUUPICoreKit.PayUPost] { get set }
+  var session: Foundation.URLSession? { get }
+  var waitingForPoll: Swift.Bool { get set }
+  var waitingForPost: Swift.Bool { get set }
+  func doPoll()
+  func sendPollMessage(_ message: Swift.String, withType type: PayUUPICoreKit.PayUSocketEnginePacketType, withData datas: [Foundation.Data], completion: (() -> ())?)
+  func stopPolling()
+}
+extension PayUUPICoreKit.PayUSocketEnginePollable {
+  public func doPoll()
+  public func sendPollMessage(_ message: Swift.String, withType type: PayUUPICoreKit.PayUSocketEnginePacketType, withData datas: [Foundation.Data], completion: (() -> ())? = nil)
+  public func stopPolling()
+}
+@objc public class PayUSocketIOClient : ObjectiveC.NSObject, PayUUPICoreKit.PayUSocketIOClientSpec {
+  @objc final public let nsp: Swift.String
+  @objc public var sid: Swift.String {
+    @objc get
+  }
+  public var anyHandler: ((PayUUPICoreKit.PayUSocketAnyEvent) -> ())? {
+    get
+  }
+  public var handlers: [PayUUPICoreKit.PayUSocketEventHandler] {
+    get
+  }
+  @objc weak public var manager: PayUUPICoreKit.PayUSocketManagerSpec? {
+    get
+  }
+  @objc public var status: PayUUPICoreKit.PayUSocketIOStatus {
+    @objc get
+  }
+  @objc public init(manager: PayUUPICoreKit.PayUSocketManagerSpec, nsp: Swift.String)
+  @objc deinit
+  @objc public func connect()
+  @objc public func connect(timeoutAfter: Swift.Double, withHandler handler: (() -> ())?)
+  public func didConnect(toNamespace namespace: Swift.String)
+  public func didDisconnect(reason: Swift.String)
+  @objc public func disconnect()
+  public func emit(_ event: Swift.String, _ items: PayUUPICoreKit.PayUSocketIOData..., completion: (() -> ())? = nil)
+  @objc public func emit(_ event: Swift.String, with items: [Any], completion: (() -> ())? = nil)
+  public func emitAck(_ ack: Swift.Int, with items: [Any])
+  @objc public func handleAck(_ ack: Swift.Int, data: [Any])
+  public func handleClientEvent(_ event: PayUUPICoreKit.PayUSocketClientEvent, data: [Any])
+  @objc public func handleEvent(_ event: Swift.String, data: [Any], isInternalMessage: Swift.Bool, withAck ack: Swift.Int = -1)
+  public func handlePacket(_ packet: PayUUPICoreKit.PayUSocketPacket)
+  @objc public func leaveNamespace()
+  @objc public func joinNamespace()
+  @discardableResult
+  @objc public func on(_ event: Swift.String, callback: @escaping PayUUPICoreKit.PayUNormalCallback) -> Foundation.UUID
+  @discardableResult
+  public func on(clientEvent event: PayUUPICoreKit.PayUSocketClientEvent, callback: @escaping PayUUPICoreKit.PayUNormalCallback) -> Foundation.UUID
+  @objc public func onAny(_ handler: @escaping (PayUUPICoreKit.PayUSocketAnyEvent) -> ())
+  @objc public func setReconnecting(reason: Swift.String)
 }
 extension Foundation.NSRegularExpression {
   convenience public init(_ pattern: Swift.String)
@@ -298,6 +702,27 @@ public enum PayUCoreAPI : Swift.String {
   public class func complete(withResponse response: Swift.Result<Swift.Dictionary<Swift.String, Any>, PayUParamsKit.PayUError>?) -> PayUUPICoreKit.PayUPaymentStatus
   @objc deinit
 }
+public protocol PayUSocketParsable : AnyObject {
+  func parseBinaryData(_ data: Foundation.Data) -> PayUUPICoreKit.PayUSocketPacket?
+  func parseSocketMessage(_ message: Swift.String) -> PayUUPICoreKit.PayUSocketPacket?
+}
+public enum PayUSocketParsableError : Swift.Error {
+  case invalidDataArray
+  case invalidPacket
+  case invalidPacketType
+  public static func == (a: PayUUPICoreKit.PayUSocketParsableError, b: PayUUPICoreKit.PayUSocketParsableError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol PayUSocketDataBufferable : AnyObject {
+  var waitingPackets: [PayUUPICoreKit.PayUSocketPacket] { get set }
+}
+extension PayUUPICoreKit.PayUSocketParsable where Self : PayUUPICoreKit.PayUSocketDataBufferable, Self : PayUUPICoreKit.PayUSocketManagerSpec {
+  public func parseSocketMessage(_ message: Swift.String) -> PayUUPICoreKit.PayUSocketPacket?
+  public func parseBinaryData(_ data: Foundation.Data) -> PayUUPICoreKit.PayUSocketPacket?
+}
 @objc @objcMembers public class PayUPaymentResponseHandler : ObjectiveC.NSObject {
   public var responseCallback: ((PayUUPICoreKit.PayUResponseType, PayUUPICoreKit.PayUPaymentVerificationMode) -> ())?
   @objc public var remainingSecondsCallback: ((_ secsRemaining: Swift.Int) -> ())?
@@ -331,11 +756,159 @@ extension PayUUPICoreKit.PayUPaymentResponseHandler {
 extension PayUUPICoreKit.PayUPaymentResponseHandler {
   @objc dynamic public func consumePaymentStatus(_ status: PayUUPICoreKit.PayUPaymentStatus, forVerificationMode mode: PayUUPICoreKit.PayUPaymentVerificationMode)
 }
+@objc public enum PayUSocketIOStatus : Swift.Int, Swift.CustomStringConvertible {
+  case notConnected
+  case disconnected
+  case connecting
+  case connected
+  public var active: Swift.Bool {
+    get
+  }
+  public var description: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public class PayUSocketManager : ObjectiveC.NSObject, PayUUPICoreKit.PayUSocketManagerSpec, PayUUPICoreKit.PayUSocketParsable, PayUUPICoreKit.PayUSocketDataBufferable, PayUUPICoreKit.PayUConfigSettable {
+  @objc final public let socketURL: Foundation.URL
+  public var config: PayUUPICoreKit.PayUSocketIOClientConfiguration {
+    get
+    set
+  }
+  @objc public var engine: PayUUPICoreKit.PayUSocketEngineSpec?
+  @objc public var forceNew: Swift.Bool
+  @objc public var handleQueue: Dispatch.DispatchQueue
+  @objc public var nsps: [Swift.String : PayUUPICoreKit.PayUSocketIOClient]
+  @objc public var reconnects: Swift.Bool
+  @objc public var reconnectWait: Swift.Int
+  @objc public var reconnectWaitMax: Swift.Int
+  @objc public var randomizationFactor: Swift.Double
+  @objc public var status: PayUUPICoreKit.PayUSocketIOStatus {
+    @objc get
+  }
+  public var waitingPackets: [PayUUPICoreKit.PayUSocketPacket]
+  public init(socketURL: Foundation.URL, config: PayUUPICoreKit.PayUSocketIOClientConfiguration = [])
+  @objc deinit
+  @objc public func connect()
+  @objc public func connectSocket(_ socket: PayUUPICoreKit.PayUSocketIOClient)
+  @objc public func didDisconnect(reason: Swift.String)
+  @objc public func disconnectSocket(_ socket: PayUUPICoreKit.PayUSocketIOClient)
+  @objc public func engineDidClose(reason: Swift.String)
+  @objc public func engineDidError(reason: Swift.String)
+  @objc public func engineDidOpen(reason: Swift.String)
+  @objc public func engineDidReceivePong()
+  @objc public func engineDidSendPing()
+  @objc public func engineDidWebsocketUpgrade(headers: [Swift.String : Swift.String])
+  @objc public func parseEngineMessage(_ msg: Swift.String)
+  @objc public func parseEngineBinaryData(_ data: Foundation.Data)
+  public func setConfigs(_ config: PayUUPICoreKit.PayUSocketIOClientConfiguration)
+  public func socket(forNamespace nsp: Swift.String) -> PayUUPICoreKit.PayUSocketIOClient
+}
 public enum PayUPaymentType : Swift.Equatable {
   case upiCollect
   case intent(withApp: PayUUPICoreKit.PayUSupportedIntentApp)
   case gpayFallback
   public static func == (lhs: PayUUPICoreKit.PayUPaymentType, rhs: PayUUPICoreKit.PayUPaymentType) -> Swift.Bool
+}
+public struct PayUSocketPacket : Swift.CustomStringConvertible {
+  public let nsp: Swift.String
+  public let id: Swift.Int
+  public var binary: [Foundation.Data] {
+    get
+  }
+  public var data: [Any] {
+    get
+  }
+  public var args: [Any] {
+    get
+  }
+  public var description: Swift.String {
+    get
+  }
+  public var event: Swift.String {
+    get
+  }
+  public var packetString: Swift.String {
+    get
+  }
+}
+@objc public class PayUSocketEngine : ObjectiveC.NSObject, Foundation.URLSessionDelegate, PayUUPICoreKit.PayUSocketEnginePollable, PayUUPICoreKit.PayUSocketEngineWebsocket, PayUUPICoreKit.PayUConfigSettable {
+  @objc final public let engineQueue: Dispatch.DispatchQueue
+  @objc public var connectParams: [Swift.String : Any]? {
+    @objc get
+    @objc set
+  }
+  @objc public var extraHeaders: [Swift.String : Swift.String]?
+  public var postWait: [PayUUPICoreKit.PayUPost]
+  public var waitingForPoll: Swift.Bool
+  public var waitingForPost: Swift.Bool
+  @objc public var closed: Swift.Bool {
+    get
+  }
+  @objc public var connected: Swift.Bool {
+    get
+  }
+  @objc public var cookies: [Foundation.HTTPCookie]? {
+    get
+  }
+  @objc public var fastUpgrade: Swift.Bool {
+    get
+  }
+  @objc public var forcePolling: Swift.Bool {
+    get
+  }
+  @objc public var forceWebsockets: Swift.Bool {
+    get
+  }
+  public var invalidated: Swift.Bool {
+    get
+  }
+  @objc public var polling: Swift.Bool {
+    get
+  }
+  @objc public var probing: Swift.Bool {
+    get
+  }
+  public var session: Foundation.URLSession? {
+    get
+  }
+  @objc public var sid: Swift.String {
+    get
+  }
+  @objc public var socketPath: Swift.String {
+    get
+  }
+  @objc public var urlPolling: Foundation.URL {
+    get
+  }
+  @objc public var urlWebSocket: Foundation.URL {
+    get
+  }
+  public var websocket: Swift.Bool {
+    get
+  }
+  public var enableSOCKSProxy: Swift.Bool {
+    get
+  }
+  @objc public var ws: PayUUPICoreKit.PayUWebSocket? {
+    get
+  }
+  @objc weak public var client: PayUUPICoreKit.PayUSocketEngineClient?
+  public init(client: PayUUPICoreKit.PayUSocketEngineClient, url: Foundation.URL, config: PayUUPICoreKit.PayUSocketIOClientConfiguration)
+  @objc deinit
+  @objc public func connect()
+  @objc public func didError(reason: Swift.String)
+  @objc public func disconnect(reason: Swift.String)
+  @objc public func doFastUpgrade()
+  @objc public func flushWaitingForPostToWebSocket()
+  @objc public func parseEngineData(_ data: Foundation.Data)
+  @objc public func parseEngineMessage(_ message: Swift.String)
+  public func setConfigs(_ config: PayUUPICoreKit.PayUSocketIOClientConfiguration)
+  @objc public func write(_ msg: Swift.String, withType type: PayUUPICoreKit.PayUSocketEnginePacketType, withData data: [Foundation.Data], completion: (() -> ())? = nil)
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PayUThirdPartyManager : ObjectiveC.NSObject {
   @objc public class func makePayment(withApp app: PayUUPICoreKit.PayUSupportedIntentApp, withIntentModel model: PayUUPICoreKit.PayUPureS2SModel, appSwitchingStatus: @escaping ((Swift.Bool) -> ()))
@@ -372,6 +945,22 @@ public enum PayUPaymentType : Swift.Equatable {
   @objc override dynamic public init()
   @objc deinit
 }
+@objc public protocol PayUSocketManagerSpec : PayUUPICoreKit.PayUSocketEngineClient {
+  @objc var engine: PayUUPICoreKit.PayUSocketEngineSpec? { get set }
+  @objc var forceNew: Swift.Bool { get set }
+  @objc var handleQueue: Dispatch.DispatchQueue { get set }
+  @objc var nsps: [Swift.String : PayUUPICoreKit.PayUSocketIOClient] { get set }
+  @objc var reconnects: Swift.Bool { get set }
+  @objc var reconnectWait: Swift.Int { get set }
+  @objc var reconnectWaitMax: Swift.Int { get set }
+  @objc var randomizationFactor: Swift.Double { get set }
+  @objc var socketURL: Foundation.URL { get }
+  @objc var status: PayUUPICoreKit.PayUSocketIOStatus { get }
+  @objc func connect()
+  @objc func connectSocket(_ socket: PayUUPICoreKit.PayUSocketIOClient)
+  @objc func didDisconnect(reason: Swift.String)
+  @objc func disconnectSocket(_ socket: PayUUPICoreKit.PayUSocketIOClient)
+}
 @objc @objcMembers public class PayUTxnVerificationInfo : ObjectiveC.NSObject {
   @objc public init(urlStr: Swift.String, mihpayid: Swift.String, token: Swift.String?, returnUrlStr: Swift.String?)
   @objc deinit
@@ -393,9 +982,25 @@ public enum PayUPaymentType : Swift.Equatable {
 extension PayUUPICoreKit.NetworkEnvironment : Swift.Equatable {}
 extension PayUUPICoreKit.NetworkEnvironment : Swift.Hashable {}
 extension PayUUPICoreKit.NetworkEnvironment : Swift.RawRepresentable {}
+extension PayUUPICoreKit.PayUCloseCode : Swift.Equatable {}
+extension PayUUPICoreKit.PayUCloseCode : Swift.Hashable {}
+extension PayUUPICoreKit.PayUCloseCode : Swift.RawRepresentable {}
+extension PayUUPICoreKit.PayUErrorType : Swift.Equatable {}
+extension PayUUPICoreKit.PayUErrorType : Swift.Hashable {}
+extension PayUUPICoreKit.PayUWebSocket.OpCode : Swift.Equatable {}
+extension PayUUPICoreKit.PayUWebSocket.OpCode : Swift.Hashable {}
+extension PayUUPICoreKit.PayUWebSocket.OpCode : Swift.RawRepresentable {}
+extension PayUUPICoreKit.PayUSocketClientEvent : Swift.Equatable {}
+extension PayUUPICoreKit.PayUSocketClientEvent : Swift.Hashable {}
+extension PayUUPICoreKit.PayUSocketClientEvent : Swift.RawRepresentable {}
 extension PayUUPICoreKit.PayUUPIType : Swift.Equatable {}
 extension PayUUPICoreKit.PayUUPIType : Swift.Hashable {}
 extension PayUUPICoreKit.PayUUPIType : Swift.RawRepresentable {}
+extension PayUUPICoreKit.PayUSocketEnginePacketType : Swift.Equatable {}
+extension PayUUPICoreKit.PayUSocketEnginePacketType : Swift.Hashable {}
+extension PayUUPICoreKit.PayUSocketEnginePacketType : Swift.RawRepresentable {}
+extension PayUUPICoreKit.PayUSocketIOClientOption : Swift.Equatable {}
+extension PayUUPICoreKit.PayUSocketIOClientOption : Swift.CustomStringConvertible {}
 extension PayUUPICoreKit.PayUPaymentVerificationMode : Swift.Equatable {}
 extension PayUUPICoreKit.PayUPaymentVerificationMode : Swift.Hashable {}
 extension PayUUPICoreKit.PayUPaymentVerificationMode : Swift.RawRepresentable {}
@@ -405,3 +1010,8 @@ extension PayUUPICoreKit.PayUCoreAPI : Swift.RawRepresentable {}
 extension PayUUPICoreKit.PayUPaymentStatusType : Swift.Equatable {}
 extension PayUUPICoreKit.PayUPaymentStatusType : Swift.Hashable {}
 extension PayUUPICoreKit.PayUPaymentStatusType : Swift.RawRepresentable {}
+extension PayUUPICoreKit.PayUSocketParsableError : Swift.Equatable {}
+extension PayUUPICoreKit.PayUSocketParsableError : Swift.Hashable {}
+extension PayUUPICoreKit.PayUSocketIOStatus : Swift.Equatable {}
+extension PayUUPICoreKit.PayUSocketIOStatus : Swift.Hashable {}
+extension PayUUPICoreKit.PayUSocketIOStatus : Swift.RawRepresentable {}
