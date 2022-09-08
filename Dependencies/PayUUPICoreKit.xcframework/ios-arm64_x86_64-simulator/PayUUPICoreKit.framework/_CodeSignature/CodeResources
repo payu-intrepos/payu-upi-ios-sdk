@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		8fmgyOQWdCD0ekIH2NgMy/83+4I=
+		tlvRUNgqn2Z5B+YAnZ4YYC5Ua78=
 		</data>
 		<key>Headers/PayUUPICoreKit-Swift.h</key>
 		<data>
-		gWYzcbpDfjIqxnK2Bv/VSLEryhk=
+		aNLiNMliMGUF5+ZfO2bhu3epDmA=
 		</data>
 		<key>Headers/PayUUPICoreKit.h</key>
 		<data>
@@ -18,31 +18,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		mvNGHI2v7JRKtkUG2DXmz22AWLE=
+		K78qudeDRzO0WBt2Pr9WyphxqeI=
 		</data>
 		<key>Modules/PayUUPICoreKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		XTEIlgbKkpHFD2l1M8PzwzRbDUc=
+		TpnEf2yyVo8HFzvsxzS4/EoxeCI=
 		</data>
 		<key>Modules/PayUUPICoreKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		kxlWovcf1f8MgtJqZAF0qZ49nao=
+		qHD8r8hAWo89hnUl3Dza/5pkqUg=
 		</data>
 		<key>Modules/PayUUPICoreKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		bYi9FVu3hB+7giqFfldgIssle/c=
+		p9sJ3lbk3I068v7VzbVhT9qZQRM=
 		</data>
 		<key>Modules/PayUUPICoreKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		KCfZ878TvbsRttGLt3wrVAswYyM=
+		xdKCUeEZfp8O4IcmGaxUogWSUFA=
 		</data>
 		<key>Modules/PayUUPICoreKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ZQiWEu38idLSQ3fA0YqbPx7ULWc=
+		sGAKjBAKnzum1m8VBNLyipA3c/k=
 		</data>
 		<key>Modules/PayUUPICoreKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		OyeYeJw9w67H30KR5t5aHl1G3Tk=
+		IMhHa1vGXzoIGi6wo8vSWVb0w10=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>PayUUPICore.storyboardc/krh-nD-nvf-view-upj-yj-b9R.nib</key>
 		<data>
-		HmqCvfagGqSQpYzjmYqFQWzeUfg=
+		0ZsGUsHOLzKN2QS6gV/CX0DpAVc=
 		</data>
 		<key>PayUUPICore.storyboardc/shK-At-oVI-view-711-5Q-CaN.nib</key>
 		<data>
-		SDPN8qVtmlImgxWtKPThdn+DQNk=
+		kkb/PzVKvR839Iy53HRxLNrEKRk=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -75,14 +75,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bd1/lKQ5bx2TQt/AfP85X7I7xfpk7IZlfiYgScV81+E=
+			lTrtSdFKJ7JDAxWfbcccmdUaFh/4JfH3PzIrPMgSu6c=
 			</data>
 		</dict>
 		<key>Headers/PayUUPICoreKit-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VPz9mLtKn++pnRGUwYYNlaQBAYa/Gkw0usi/6DZcXQE=
+			5FfADpUflGhmIu9A1oGVT2P8hwFxC+c1voJlSjSjB8s=
 			</data>
 		</dict>
 		<key>Headers/PayUUPICoreKit.h</key>
@@ -96,42 +96,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tXnqMwxv2KD3uhzvYKmO3e1Qy/PKGm53cS9q03kiyb4=
+			E35of4ZqaAV+BuQaic9n5spNod6z74cwGUwcTCI/4Q8=
 			</data>
 		</dict>
 		<key>Modules/PayUUPICoreKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jXskCdoW1aM1Vfe2jnQ3mTDTfHtQi2Nnb3EMGdDb4e0=
+			dEvDvE5oSBH2JbofwLNFktfzrVHvICUf6N9fCGS+fuM=
 			</data>
 		</dict>
 		<key>Modules/PayUUPICoreKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IBxKffv9TQDOwdpaGf/AmO/A9rrf1q0+LIxwDM9/vhU=
+			DykAbMND3lN70eZ+h0X9kW2/6jk9CnUQcHkZihJ7Vnw=
 			</data>
 		</dict>
 		<key>Modules/PayUUPICoreKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Fv2GAUAcA58Ce6yGB7Uzt+QIzoudl1k8mIndWqYMhTQ=
+			LVt7r5vR2koo/hFOMnwekezxoq7QJ29i3WvNmwlOvh0=
 			</data>
 		</dict>
 		<key>Modules/PayUUPICoreKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sQ1T73kvsT8g1QvUv7EDwsbebcfDqYj676MGLTduAHo=
+			2psScRj+4TFZXoiGuRVGqpi9FNNp1ovkbPCSmTgK87E=
 			</data>
 		</dict>
 		<key>Modules/PayUUPICoreKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+lQDoNwcO3HtV7mw00iEpK6ueta9oSpmfADSdZNyul8=
+			eUFUDgO2QCMc8G7SnpH2BRZXiKslFCWE/O8O/6UQINQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -166,14 +166,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xHHGvGauBvC8rs/lf100wNI3CGRDIDN8O6Of4gsDqN4=
+			kK8iSLip1oo5e71a1IdN1oKiaOapzoXiE1IY9kSWSgE=
 			</data>
 		</dict>
 		<key>PayUUPICore.storyboardc/shK-At-oVI-view-711-5Q-CaN.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5IPnrzQmYjHA3Fqgxc29ffIsef5xyIWHczjitcjR2Qo=
+			nnlWimKeclmP7uJBoQ19WPHmgzitCwl/kjRlvYWh5QY=
 			</data>
 		</dict>
 	</dict>

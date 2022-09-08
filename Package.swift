@@ -23,15 +23,13 @@ let package = Package(
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-        .package(name: "PayUIndia-PayUParams",url: "https://github.com/payu-intrepos/payu-params-iOS.git", from: "4.1.0"),
+        .package(name: "PayUIndia-PayUParams",url: "https://github.com/payu-intrepos/payu-params-iOS.git", from: "4.3.0"),
     ],
     targets: [
         .binaryTarget(name: "PayULoggerKit", path: "./Dependencies/PayULoggerKit.xcframework"),
         .binaryTarget(name: "PayUNetworkingKit", path: "./Dependencies/PayUNetworkingKit.xcframework"),
         .binaryTarget(name: "PayUUPICoreKit", path: "./Dependencies/PayUUPICoreKit.xcframework"),
         .binaryTarget(name: "PayUUPIKit", path: "./Dependencies/PayUUPIKit.xcframework"),
-        .binaryTarget(name: "Starscream", path: "./Dependencies/Starscream.xcframework"),
-        .binaryTarget(name: "SocketIO", path: "./Dependencies/SocketIO.xcframework"),
         .target(
             name: "PayUIndia-NetworkingTarget",
             dependencies: [
@@ -44,19 +42,10 @@ let package = Package(
             name: "PayUIndia-UPICoreTarget",
             dependencies: [
                 .product(name: "PayUIndia-PayUParams", package: "PayUIndia-PayUParams"),
-                "SocketIOTarget",
                 "PayUIndia-NetworkingTarget",
                 "PayUUPICoreKit"
             ],
             path: "Wrappers/PayUIndia-UPICoreWrapper"
-        ),
-        .target(
-            name: "SocketIOTarget",
-            dependencies: [
-                "SocketIO",
-                "Starscream"
-            ],
-            path: "Wrappers/SocketIOWrapper"
         ),
         .target(
             name: "PayUIndia-UPITarget",
