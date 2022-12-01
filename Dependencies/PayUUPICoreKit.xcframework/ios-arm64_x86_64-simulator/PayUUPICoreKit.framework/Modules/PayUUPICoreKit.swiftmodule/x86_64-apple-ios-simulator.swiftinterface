@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUUPICoreKit
 import CommonCrypto
 import CoreFoundation
@@ -514,6 +514,13 @@ extension PayUUPICoreKit.PayUSocketEngineWebsocket {
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
+@objc @_inheritsConvenienceInitializers public class PayUUPIHybridIntentHandler : ObjectiveC.NSObject {
+  public func initiateIntentPayment(withApp app: PayUUPICoreKit.PayUSupportedIntentApp, paymentParams params: PayUParamsKit.PayUPaymentParam, fromVC: UIKit.UIViewController)
+  public func getIntentApps() -> [Swift.String]
+  public func validatePaymentParam(paramDict: Foundation.NSDictionary) -> (paymentParam: PayUParamsKit.PayUPaymentParam?, intentApp: PayUUPICoreKit.PayUSupportedIntentApp?, error: [Swift.String : Swift.String]?)
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc public enum PayUSocketEnginePacketType : Swift.Int {
   case open
   case close
@@ -683,6 +690,54 @@ public enum PayUCoreAPI : Swift.String {
     get
   }
 }
+public enum PayUUPIConstant {
+  public static let payuResponse: Swift.String
+  public static let merchantResponse: Swift.String
+  public enum keys {
+    public static let environment: Swift.String
+    public static let key: Swift.String
+    public static let transaction_id: Swift.String
+    public static let amount: Swift.String
+    public static let product_info: Swift.String
+    public static let first_name: Swift.String
+    public static let email: Swift.String
+    public static let phone: Swift.String
+    public static let ios_surl: Swift.String
+    public static let ios_furl: Swift.String
+    public static let user_credential: Swift.String
+    public static let additional_param: Swift.String
+    public static let udf1: Swift.String
+    public static let udf2: Swift.String
+    public static let udf3: Swift.String
+    public static let udf4: Swift.String
+    public static let udf5: Swift.String
+    public static let udf6: Swift.String
+    public static let billing_amount: Swift.String
+    public static let billing_cycle: Swift.String
+    public static let payment_end_date: Swift.String
+    public static let payment_start_date: Swift.String
+    public static let billing_rule: Swift.String
+    public static let billing_limit: Swift.String
+    public static let is_free_trial: Swift.String
+    public static let billing_interval: Swift.String
+    public static let beneficiary_account_number: Swift.String
+    public static let beneficiary_ifsc: Swift.String
+    public static let payment: Swift.String
+    public static let validate_vpa: Swift.String
+    public static let bank_code: Swift.String
+    public static let vpa: Swift.String
+    public static let payu_payment_params: Swift.String
+    public static let si_params: Swift.String
+    public static let si_details: Swift.String
+    public static let hashes: Swift.String
+    public static let intent_app: Swift.String
+    public static let sdkName: Swift.String
+    public static let resourceName: Swift.String
+    public static let platform: Swift.String
+    public static let name: Swift.String
+    public static let version: Swift.String
+  }
+}
 @objc public enum PayUPaymentStatusType : Swift.Int {
   case pending
   case error
@@ -700,6 +755,12 @@ public enum PayUCoreAPI : Swift.String {
   @objc public class func pending() -> PayUUPICoreKit.PayUPaymentStatus
   public class func error(_ error: PayUParamsKit.PayUError?) -> PayUUPICoreKit.PayUPaymentStatus
   public class func complete(withResponse response: Swift.Result<Swift.Dictionary<Swift.String, Any>, PayUParamsKit.PayUError>?) -> PayUUPICoreKit.PayUPaymentStatus
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class PayUUPIHybridCollectHandler : ObjectiveC.NSObject {
+  public func validatePaymentParam(paramDict: Foundation.NSDictionary) -> (param: PayUParamsKit.PayUPaymentParam?, error: [Swift.String : Swift.String]?)
+  public func handlePureS2SResult(_ result: Swift.Result<PayUUPICoreKit.PayUPureS2SModel, PayUParamsKit.PayUError>, forApi api: PayUUPICoreKit.PayUCoreAPI, fromVC: UIKit.UIViewController)
+  @objc override dynamic public init()
   @objc deinit
 }
 public protocol PayUSocketParsable : AnyObject {
@@ -915,6 +976,15 @@ public struct PayUSocketPacket : Swift.CustomStringConvertible {
   @objc override dynamic public init()
   @objc deinit
 }
+@objc @_inheritsConvenienceInitializers public class PayUHybridUtils : ObjectiveC.NSObject {
+  public class func stringValue(_ dict: [Swift.String : Any?]?, key: Swift.String) -> Swift.String?
+  public class func anyValue(_ dict: [Swift.String : Any?]?, key: Swift.String) -> Any?
+  public class func paymentParamDictFrom(param: Foundation.NSDictionary?) -> [Swift.String : Any?]?
+  public class func siParamDictFrom(param: Foundation.NSDictionary?) -> [Swift.String : Any?]?
+  public class func stringResponse(for response: Swift.Dictionary<Swift.String, Any>) -> Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @objcMembers public class PayUAnalyticsSender : ObjectiveC.NSObject {
   @objc public class func sendOneTimeAnalytics()
   @objc public class func sendTxnStatus(_ status: Swift.String)
@@ -930,6 +1000,11 @@ public struct PayUSocketPacket : Swift.CustomStringConvertible {
   @objc public func setupActivityIndicatorOn(view: UIKit.UIView)
   @objc public func startOn(_ view: UIKit.UIView)
   @objc public func stop()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class PayUHybridVpaAPIHandler : ObjectiveC.NSObject {
+  public func validateVPA(paramDict: Foundation.NSDictionary, callback: @escaping (Swift.String?, [Swift.String : Swift.String]?) -> ())
   @objc override dynamic public init()
   @objc deinit
 }
@@ -970,6 +1045,21 @@ public struct PayUSocketPacket : Swift.CustomStringConvertible {
   @objc public class func transactionFinished()
   @objc override dynamic public init()
   @objc deinit
+}
+public enum PayUHybridError {
+  case invalidParam(errorMessage: Swift.String?)
+  case bankCodeNotSet
+  case vpaNotSet
+  case beneficiaryAccountNotSet
+  case vpaHashNotSet
+  case apiResponseError
+  case intentAppNotSet
+  case paymentHashNotSet
+  case intentAppNotInstalled
+  case unknown(errorMessage: Swift.String)
+  public var errorObj: [Swift.String : Swift.String] {
+    get
+  }
 }
 @objc @_inheritsConvenienceInitializers @objcMembers @_Concurrency.MainActor(unsafe) public class PayULoaderIntentPayment : PayUUPICoreKit.PayULoaderBaseVC {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
