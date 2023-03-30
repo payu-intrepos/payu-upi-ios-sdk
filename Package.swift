@@ -3,27 +3,31 @@
 
 import PackageDescription
 
+let VERSION_PARAM_KIT: PackageDescription.Version = "4.5.0"
+
 let package = Package(
     name: "PayUIndia-UPIKit",
     platforms: [.iOS(.v11)],
     products: [
-        // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "PayUIndia-Logger",
-            targets: ["PayULoggerKit"]),
+            targets: ["PayULoggerKit"]
+        ),
         .library(
             name: "PayUIndia-Networking",
-            targets: ["PayUIndia-NetworkingTarget"]),
+            targets: ["PayUIndia-NetworkingTarget"]
+        ),
         .library(
             name: "PayUIndia-UPICore",
-            targets: ["PayUIndia-UPICoreTarget"]),
+            targets: ["PayUIndia-UPICoreTarget"]
+        ),
         .library(
             name: "PayUIndia-UPI",
-            targets: ["PayUIndia-UPITarget"])
+            targets: ["PayUIndia-UPITarget"]
+        )
     ],
     dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        .package(name: "PayUIndia-PayUParams",url: "https://github.com/payu-intrepos/payu-params-iOS.git", from: "4.5.0"),
+        .package(name: "PayUIndia-PayUParams", url: "https://github.com/payu-intrepos/payu-params-iOS.git", from: VERSION_PARAM_KIT)
     ],
     targets: [
         .binaryTarget(name: "PayULoggerKit", path: "./Dependencies/PayULoggerKit.xcframework"),
@@ -54,6 +58,6 @@ let package = Package(
                 "PayUIndia-UPICoreTarget"
             ],
             path: "Wrappers/PayUIndia-UPIWrapper"
-        ),
+        )
     ]
 )
