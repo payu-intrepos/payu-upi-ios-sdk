@@ -1,12 +1,27 @@
+require 'httparty'
+require 'colorize'
+
 # Supress warning messages.
 original_verbose, $VERBOSE = $VERBOSE, nil
 
-# Read file
-vars_from_file = File.read("../Dependencies/PayUParamsKit/GitHub/Version.txt")
-eval(vars_from_file)
+# Make the API request
+url = "https://api.github.com/repos/payu-intrepos/payu-params-iOS/contents/Version.txt"
+response = HTTParty.get(url)
+
+# Check if the request was successful
+if response.code == 200
+  # Extract the content from the response
+  content = Base64.decode64(response['content'])
+  # Evaluate the content of the file
+  eval(content)
+else
+  puts "\n==> Failed to retrieve Version.txt file. HTTP status code: #{response.code}".red
+end
 
 # Activate warning messages again.
 $VERBOSE = original_verbose
+
+#Pod
 
 Pod::Spec.new do |s|
   s.name                = "PayUIndia-Logger"
