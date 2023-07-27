@@ -3,7 +3,8 @@
 
 import PackageDescription
 
-let VERSION_PARAM_KIT: PackageDescription.Version = "4.5.0"
+let VERSION_PARAM_KIT: PackageDescription.Version = "5.0.0"
+let VERSION_COMMON_UI: PackageDescription.Version = "1.1.0"
 
 let package = Package(
     name: "PayUIndia-UPIKit",
@@ -27,7 +28,8 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(name: "PayUIndia-PayUParams", url: "https://github.com/payu-intrepos/payu-params-iOS.git", from: VERSION_PARAM_KIT)
+        .package(name: "PayUIndia-PayUParams", url: "https://github.com/payu-intrepos/payu-params-iOS.git", from: VERSION_PARAM_KIT),
+        .package(name: "PayUIndia-CommonUI", url: "https://github.com/payu-intrepos/PayUCommonUI-iOS", from: VERSION_COMMON_UI)
     ],
     targets: [
         .binaryTarget(name: "PayULoggerKit", path: "./Dependencies/PayULoggerKit.xcframework"),

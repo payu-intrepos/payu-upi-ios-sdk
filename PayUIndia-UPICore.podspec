@@ -1,5 +1,3 @@
-
-
 Pod::Spec.new do |s|
   s.name                = "PayUIndia-UPICore"
   s.version             = "8.0.0"
@@ -11,14 +9,13 @@ Pod::Spec.new do |s|
   s.description         = "This SDK helps in paying via UPI Collect and UPI intent payments on iOS"
 
   s.source              = { :git => "https://github.com/payu-intrepos/payu-upi-ios-sdk.git",
-                            :tag => "#{s.name}_#{s.version}"
+                            :tag => "#{s.version}"
                           }
   
   s.ios.deployment_target = "11.0"
   s.vendored_frameworks = 'Dependencies/PayUUPICoreKit.xcframework'
-  
-  UPI_CORE_PODSPEC_DEPENDENCIES.each do |dependency|
-    dependency
-  end
+    s.dependency            'PayUIndia-PayUParams', '~> 5.0'
+  s.dependency            'PayUIndia-Networking', '~> 4.0'
+  s.dependency             'PayUIndia-CommonUI', '~> 1.1'
   
 end
