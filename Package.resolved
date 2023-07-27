@@ -6,7 +6,7 @@
         "repositoryURL": "https://github.com/payu-intrepos/payu-params-iOS.git",
         "state": {
           "branch": null,
-          "revision": "9946ae4c590d182314c4c4fc8e68a5a22407f90c",
+          "revision": "7e6b29ce48af950792e44b9022965c6a9327259c",
           "version": "5.0.0"
         }
       },
@@ -15,7 +15,7 @@
         "repositoryURL": "https://github.com/payu-intrepos/PayUCommonUI-iOS",
         "state": {
           "branch": null,
-          "revision": "622176606dce0b686ba7b76a89af19ede5c4cc80",
+          "revision": "839147c1b5c97236f8e5deb056b4385acad9f066",
           "version": "1.1.0"
         }
       }
