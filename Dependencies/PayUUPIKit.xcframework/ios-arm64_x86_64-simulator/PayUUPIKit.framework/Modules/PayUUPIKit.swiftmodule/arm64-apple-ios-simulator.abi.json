@@ -1,0 +1,1493 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PayUUPICoreKit",
+        "printedName": "PayUUPICoreKit",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PayUUPICoreKit",
+        "printedName": "PayUUPICoreKit",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit"
+      },
+      {
+        "kind": "Import",
+        "name": "PayULoggerKit",
+        "printedName": "PayULoggerKit",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit"
+      },
+      {
+        "kind": "Import",
+        "name": "PayUParamsKit",
+        "printedName": "PayUParamsKit",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PayUUPICoreKit",
+        "printedName": "PayUUPICoreKit",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit"
+      },
+      {
+        "kind": "Import",
+        "name": "PayULoggerKit",
+        "printedName": "PayULoggerKit",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit"
+      },
+      {
+        "kind": "Import",
+        "name": "PayUParamsKit",
+        "printedName": "PayUParamsKit",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit"
+      },
+      {
+        "kind": "Import",
+        "name": "PayUCommonUI",
+        "printedName": "PayUCommonUI",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PayUCollectScreenType",
+        "printedName": "PayUCollectScreenType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "upi",
+            "printedName": "upi",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayUUPIKit.PayUCollectScreenType.Type) -> PayUUPIKit.PayUCollectScreenType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUCollectScreenType",
+                    "printedName": "PayUUPIKit.PayUCollectScreenType",
+                    "usr": "c:@M@PayUUPIKit@E@PayUCollectScreenType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayUUPIKit.PayUCollectScreenType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUCollectScreenType",
+                        "printedName": "PayUUPIKit.PayUCollectScreenType",
+                        "usr": "c:@M@PayUUPIKit@E@PayUCollectScreenType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@PayUUPIKit@E@PayUCollectScreenType@PayUCollectScreenTypeUpi",
+            "mangledName": "$s10PayUUPIKit0A18UCollectScreenTypeO3upiyA2CmF",
+            "moduleName": "PayUUPIKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "gpayFallback",
+            "printedName": "gpayFallback",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayUUPIKit.PayUCollectScreenType.Type) -> PayUUPIKit.PayUCollectScreenType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUCollectScreenType",
+                    "printedName": "PayUUPIKit.PayUCollectScreenType",
+                    "usr": "c:@M@PayUUPIKit@E@PayUCollectScreenType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayUUPIKit.PayUCollectScreenType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUCollectScreenType",
+                        "printedName": "PayUUPIKit.PayUCollectScreenType",
+                        "usr": "c:@M@PayUUPIKit@E@PayUCollectScreenType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@PayUUPIKit@E@PayUCollectScreenType@PayUCollectScreenTypeGpayFallback",
+            "mangledName": "$s10PayUUPIKit0A18UCollectScreenTypeO12gpayFallbackyA2CmF",
+            "moduleName": "PayUUPIKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PayUUPIKit.PayUCollectScreenType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUCollectScreenType",
+                    "printedName": "PayUUPIKit.PayUCollectScreenType",
+                    "usr": "c:@M@PayUUPIKit@E@PayUCollectScreenType"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10PayUUPIKit0A18UCollectScreenTypeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s10PayUUPIKit0A18UCollectScreenTypeO8rawValueACSgSi_tcfc",
+            "moduleName": "PayUUPIKit",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PayUUPIKit0A18UCollectScreenTypeO8rawValueSivp",
+            "mangledName": "$s10PayUUPIKit0A18UCollectScreenTypeO8rawValueSivp",
+            "moduleName": "PayUUPIKit",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PayUUPIKit0A18UCollectScreenTypeO8rawValueSivg",
+                "mangledName": "$s10PayUUPIKit0A18UCollectScreenTypeO8rawValueSivg",
+                "moduleName": "PayUUPIKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@PayUUPIKit@E@PayUCollectScreenType",
+        "mangledName": "$s10PayUUPIKit0A18UCollectScreenTypeO",
+        "moduleName": "PayUUPIKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PayCollectPaymentVC",
+        "printedName": "PayCollectPaymentVC",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "availablePaymentOptions",
+            "printedName": "availablePaymentOptions",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PayUUPICoreKit.PayUUPIPaymentOptions?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUUPIPaymentOptions",
+                    "printedName": "PayUUPICoreKit.PayUUPIPaymentOptions",
+                    "usr": "c:@M@PayUUPICoreKit@objc(cs)PayUUPIPaymentOptions"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUUPIKit@objc(cs)PayCollectPaymentVC(py)availablePaymentOptions",
+            "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC09availableD7Options0A11UUPICoreKit0a11UUPIPaymentG0CSgvp",
+            "moduleName": "PayUUPIKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PayUUPICoreKit.PayUUPIPaymentOptions?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUUPIPaymentOptions",
+                        "printedName": "PayUUPICoreKit.PayUUPIPaymentOptions",
+                        "usr": "c:@M@PayUUPICoreKit@objc(cs)PayUUPIPaymentOptions"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUUPIKit@objc(cs)PayCollectPaymentVC(im)availablePaymentOptions",
+                "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC09availableD7Options0A11UUPICoreKit0a11UUPIPaymentG0CSgvg",
+                "moduleName": "PayUUPIKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PayUUPICoreKit.PayUUPIPaymentOptions?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUUPIPaymentOptions",
+                        "printedName": "PayUUPICoreKit.PayUUPIPaymentOptions",
+                        "usr": "c:@M@PayUUPICoreKit@objc(cs)PayUUPIPaymentOptions"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUUPIKit@objc(cs)PayCollectPaymentVC(im)setAvailablePaymentOptions:",
+                "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC09availableD7Options0A11UUPICoreKit0a11UUPIPaymentG0CSgvs",
+                "moduleName": "PayUUPIKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PayUUPIKit0A16CollectPaymentVCC09availableD7Options0A11UUPICoreKit0a11UUPIPaymentG0CSgvM",
+                "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC09availableD7Options0A11UUPICoreKit0a11UUPIPaymentG0CSgvM",
+                "moduleName": "PayUUPIKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "screenType",
+            "printedName": "screenType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayUCollectScreenType",
+                "printedName": "PayUUPIKit.PayUCollectScreenType",
+                "usr": "c:@M@PayUUPIKit@E@PayUCollectScreenType"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUUPIKit@objc(cs)PayCollectPaymentVC(py)screenType",
+            "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC10screenTypeAA0a14UCollectScreenG0Ovp",
+            "moduleName": "PayUUPIKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUCollectScreenType",
+                    "printedName": "PayUUPIKit.PayUCollectScreenType",
+                    "usr": "c:@M@PayUUPIKit@E@PayUCollectScreenType"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUUPIKit@objc(cs)PayCollectPaymentVC(im)screenType",
+                "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC10screenTypeAA0a14UCollectScreenG0Ovg",
+                "moduleName": "PayUUPIKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUCollectScreenType",
+                    "printedName": "PayUUPIKit.PayUCollectScreenType",
+                    "usr": "c:@M@PayUUPIKit@E@PayUCollectScreenType"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUUPIKit@objc(cs)PayCollectPaymentVC(im)setScreenType:",
+                "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC10screenTypeAA0a14UCollectScreenG0Ovs",
+                "moduleName": "PayUUPIKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PayUUPIKit0A16CollectPaymentVCC10screenTypeAA0a14UCollectScreenG0OvM",
+                "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC10screenTypeAA0a14UCollectScreenG0OvM",
+                "moduleName": "PayUUPIKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "paymentParams",
+            "printedName": "paymentParams",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PayUParamsKit.PayUPaymentParam?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUPaymentParam",
+                    "printedName": "PayUParamsKit.PayUPaymentParam",
+                    "usr": "c:@M@PayUParamsKit@objc(cs)PayUPaymentParam"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUUPIKit@objc(cs)PayCollectPaymentVC(py)paymentParams",
+            "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC13paymentParams0A10UParamsKit0A13UPaymentParamCSgvp",
+            "moduleName": "PayUUPIKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PayUParamsKit.PayUPaymentParam?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUPaymentParam",
+                        "printedName": "PayUParamsKit.PayUPaymentParam",
+                        "usr": "c:@M@PayUParamsKit@objc(cs)PayUPaymentParam"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUUPIKit@objc(cs)PayCollectPaymentVC(im)paymentParams",
+                "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC13paymentParams0A10UParamsKit0A13UPaymentParamCSgvg",
+                "moduleName": "PayUUPIKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PayUParamsKit.PayUPaymentParam?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUPaymentParam",
+                        "printedName": "PayUParamsKit.PayUPaymentParam",
+                        "usr": "c:@M@PayUParamsKit@objc(cs)PayUPaymentParam"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUUPIKit@objc(cs)PayCollectPaymentVC(im)setPaymentParams:",
+                "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC13paymentParams0A10UParamsKit0A13UPaymentParamCSgvs",
+                "moduleName": "PayUUPIKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PayUUPIKit0A16CollectPaymentVCC13paymentParams0A10UParamsKit0A13UPaymentParamCSgvM",
+                "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC13paymentParams0A10UParamsKit0A13UPaymentParamCSgvM",
+                "moduleName": "PayUUPIKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidLoad",
+            "printedName": "viewDidLoad()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PayUUPIKit@objc(cs)PayCollectPaymentVC(im)viewDidLoad",
+            "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC11viewDidLoadyyF",
+            "moduleName": "PayUUPIKit",
+            "overriding": true,
+            "objc_name": "viewDidLoad",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "viewWillAppear",
+            "printedName": "viewWillAppear(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PayUUPIKit@objc(cs)PayCollectPaymentVC(im)viewWillAppear:",
+            "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC14viewWillAppearyySbF",
+            "moduleName": "PayUUPIKit",
+            "overriding": true,
+            "objc_name": "viewWillAppear:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "viewWillDisappear",
+            "printedName": "viewWillDisappear(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PayUUPIKit@objc(cs)PayCollectPaymentVC(im)viewWillDisappear:",
+            "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC17viewWillDisappearyySbF",
+            "moduleName": "PayUUPIKit",
+            "overriding": true,
+            "objc_name": "viewWillDisappear:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nibName:bundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayCollectPaymentVC",
+                "printedName": "PayUUPIKit.PayCollectPaymentVC",
+                "usr": "c:@M@PayUUPIKit@objc(cs)PayCollectPaymentVC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PayUUPIKit@objc(cs)PayCollectPaymentVC(im)initWithNibName:bundle:",
+            "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+            "moduleName": "PayUUPIKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNibName:bundle:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PayUUPIKit.PayCollectPaymentVC?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayCollectPaymentVC",
+                    "printedName": "PayUUPIKit.PayCollectPaymentVC",
+                    "usr": "c:@M@PayUUPIKit@objc(cs)PayCollectPaymentVC"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PayUUPIKit@objc(cs)PayCollectPaymentVC(im)initWithCoder:",
+            "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "PayUUPIKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "tableView",
+            "printedName": "tableView(_:numberOfRowsInSection:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITableView",
+                "printedName": "UIKit.UITableView",
+                "usr": "c:objc(cs)UITableView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PayUUPIKit@objc(cs)PayCollectPaymentVC(im)tableView:numberOfRowsInSection:",
+            "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC9tableView_21numberOfRowsInSectionSiSo07UITableG0C_SitF",
+            "moduleName": "PayUUPIKit",
+            "objc_name": "tableView:numberOfRowsInSection:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "tableView",
+            "printedName": "tableView(_:cellForRowAt:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UITableViewCell",
+                "printedName": "UIKit.UITableViewCell",
+                "usr": "c:objc(cs)UITableViewCell"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITableView",
+                "printedName": "UIKit.UITableView",
+                "usr": "c:objc(cs)UITableView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IndexPath",
+                "printedName": "Foundation.IndexPath",
+                "usr": "s:10Foundation9IndexPathV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PayUUPIKit@objc(cs)PayCollectPaymentVC(im)tableView:cellForRowAtIndexPath:",
+            "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC9tableView_12cellForRowAtSo07UITableG4CellCSo0lG0C_10Foundation9IndexPathVtF",
+            "moduleName": "PayUUPIKit",
+            "objc_name": "tableView:cellForRowAtIndexPath:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "numberOfSections",
+            "printedName": "numberOfSections(in:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITableView",
+                "printedName": "UIKit.UITableView",
+                "usr": "c:objc(cs)UITableView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PayUUPIKit@objc(cs)PayCollectPaymentVC(im)numberOfSectionsInTableView:",
+            "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC16numberOfSections2inSiSo11UITableViewC_tF",
+            "moduleName": "PayUUPIKit",
+            "objc_name": "numberOfSectionsInTableView:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "tableView",
+            "printedName": "tableView(_:didSelectRowAt:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITableView",
+                "printedName": "UIKit.UITableView",
+                "usr": "c:objc(cs)UITableView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IndexPath",
+                "printedName": "Foundation.IndexPath",
+                "usr": "s:10Foundation9IndexPathV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PayUUPIKit@objc(cs)PayCollectPaymentVC(im)tableView:didSelectRowAtIndexPath:",
+            "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC9tableView_14didSelectRowAtySo07UITableG0C_10Foundation9IndexPathVtF",
+            "moduleName": "PayUUPIKit",
+            "objc_name": "tableView:didSelectRowAtIndexPath:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PayUUPIKit@objc(cs)PayCollectPaymentVC",
+        "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC",
+        "moduleName": "PayUUPIKit",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIViewController",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PayUUPI",
+        "printedName": "PayUUPI",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "getCollectPaymentVC",
+            "printedName": "getCollectPaymentVC()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayCollectPaymentVC",
+                "printedName": "PayUUPIKit.PayCollectPaymentVC",
+                "usr": "c:@M@PayUUPIKit@objc(cs)PayCollectPaymentVC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PayUUPIKit@objc(cs)PayUUPI(cm)getCollectPaymentVC",
+            "mangledName": "$s10PayUUPIKit0A4UUPIC19getCollectPaymentVCAA0aefG0CyFZ",
+            "moduleName": "PayUUPIKit",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayUUPI",
+                "printedName": "PayUUPIKit.PayUUPI",
+                "usr": "c:@M@PayUUPIKit@objc(cs)PayUUPI"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PayUUPIKit@objc(cs)PayUUPI(im)init",
+            "mangledName": "$s10PayUUPIKit0A4UUPICACycfc",
+            "moduleName": "PayUUPIKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PayUUPIKit@objc(cs)PayUUPI",
+        "mangledName": "$s10PayUUPIKit0A4UUPIC",
+        "moduleName": "PayUUPIKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PayUUPICoreKit",
+        "printedName": "PayUUPICoreKit",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit"
+      },
+      {
+        "kind": "Import",
+        "name": "PayULoggerKit",
+        "printedName": "PayULoggerKit",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit"
+      },
+      {
+        "kind": "Import",
+        "name": "PayUParamsKit",
+        "printedName": "PayUParamsKit",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/PayUUPIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 269,
+      "length": 4,
+      "value": "39.0"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "FloatLiteral",
+      "offset": 232,
+      "length": 4,
+      "value": "40.0"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "FloatLiteral",
+      "offset": 279,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "StringLiteral",
+      "offset": 392,
+      "length": 16,
+      "value": "\"PayUUPIKit.PayUDropDownView\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 332,
+      "length": 12,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 332,
+      "length": 12,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 835,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "Array",
+      "offset": 1035,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1283,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 279,
+      "length": 17,
+      "value": "\"upi_sdk_version\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 325,
+      "length": 13,
+      "value": "\"user_action\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 444,
+      "length": 12,
+      "value": "\"tapped_upi\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 487,
+      "length": 22,
+      "value": "\"tapped_gpay_fallback\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 539,
+      "length": 21,
+      "value": "\"tapped_gpay_collect\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 587,
+      "length": 18,
+      "value": "\"tapped_gpay_omni\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 636,
+      "length": 22,
+      "value": "\"tapped_paytm_collect\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 691,
+      "length": 23,
+      "value": "\"tapped_phonpe_collect\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 744,
+      "length": 21,
+      "value": "\"tapped_bhim_collect\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 793,
+      "length": 19,
+      "value": "\"tapped_verify_vpa\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 838,
+      "length": 16,
+      "value": "\"tapped_proceed\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 444,
+      "length": 12,
+      "value": "\"tapped_upi\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 487,
+      "length": 22,
+      "value": "\"tapped_gpay_fallback\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 539,
+      "length": 21,
+      "value": "\"tapped_gpay_collect\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 587,
+      "length": 18,
+      "value": "\"tapped_gpay_omni\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 636,
+      "length": 22,
+      "value": "\"tapped_paytm_collect\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 691,
+      "length": 23,
+      "value": "\"tapped_phonpe_collect\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 744,
+      "length": 21,
+      "value": "\"tapped_bhim_collect\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 793,
+      "length": 19,
+      "value": "\"tapped_verify_vpa\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 838,
+      "length": 16,
+      "value": "\"tapped_proceed\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 2070,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 2422,
+      "length": 3,
+      "value": "\"@\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 2181,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 17743,
+      "length": 2,
+      "value": "\"\""
+    }
+  ]
+}

@@ -6,6 +6,6 @@ framework module PayUUPIKit {
 }
 
 module PayUUPIKit.Swift {
-    header "PayUUPIKit-Swift.h"
-    requires objc
+  header "PayUUPIKit-Swift.h"
+  requires objc
 }
