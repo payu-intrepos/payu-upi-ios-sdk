@@ -46692,27 +46692,6 @@
       "value": "\"^[5-9][0-9]{9}$\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1467,
-      "length": 98,
-      "value": "\"The billing amount shouldn't be greater than Rs \""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1564,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1647,
-      "length": 4,
-      "value": "5000"
-    },
-    {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/PayUSocket\/Parse\/PayUSocketPacket.swift",
       "kind": "StringLiteral",
       "offset": 1393,
