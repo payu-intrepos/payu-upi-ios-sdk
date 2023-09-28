@@ -2802,7 +2802,7 @@
           {
             "kind": "Function",
             "name": "getDataForIntentPayment",
-            "printedName": "getDataForIntentPayment(withPaymentParams:completion:)",
+            "printedName": "getDataForIntentPayment(withPaymentParams:supportedApp:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2814,6 +2814,12 @@
                 "name": "PayUPaymentParam",
                 "printedName": "PayUParamsKit.PayUPaymentParam",
                 "usr": "c:@M@PayUParamsKit@objc(cs)PayUPaymentParam"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PayUSupportedIntentApp",
+                "printedName": "PayUUPICoreKit.PayUSupportedIntentApp",
+                "usr": "c:@M@PayUUPICoreKit@objc(cs)PayUSupportedIntentApp"
               },
               {
                 "kind": "TypeFunc",
@@ -2849,8 +2855,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:14PayUUPICoreKit0A4UAPIC23getDataForIntentPayment04withI6Params10completiony0a7UParamsC00A13UPaymentParamC_ys6ResultOyAA0A13UPureS2SModelCAG0A6UErrorCGctFZ",
-            "mangledName": "$s14PayUUPICoreKit0A4UAPIC23getDataForIntentPayment04withI6Params10completiony0a7UParamsC00A13UPaymentParamC_ys6ResultOyAA0A13UPureS2SModelCAG0A6UErrorCGctFZ",
+            "usr": "s:14PayUUPICoreKit0A4UAPIC23getDataForIntentPayment04withI6Params12supportedApp10completiony0a7UParamsC00A13UPaymentParamC_AA0a10USupportedhM0Cys6ResultOyAA0A13UPureS2SModelCAH0A6UErrorCGctFZ",
+            "mangledName": "$s14PayUUPICoreKit0A4UAPIC23getDataForIntentPayment04withI6Params12supportedApp10completiony0a7UParamsC00A13UPaymentParamC_AA0a10USupportedhM0Cys6ResultOyAA0A13UPureS2SModelCAH0A6UErrorCGctFZ",
             "moduleName": "PayUUPICoreKit",
             "static": true,
             "declAttributes": [
@@ -2862,7 +2868,7 @@
           {
             "kind": "Function",
             "name": "getDataForGpayIntentPayment",
-            "printedName": "getDataForGpayIntentPayment(withPaymentParams:completion:)",
+            "printedName": "getDataForGpayIntentPayment(withPaymentParams:supportedApp:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2874,6 +2880,12 @@
                 "name": "PayUPaymentParam",
                 "printedName": "PayUParamsKit.PayUPaymentParam",
                 "usr": "c:@M@PayUParamsKit@objc(cs)PayUPaymentParam"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PayUSupportedIntentApp",
+                "printedName": "PayUUPICoreKit.PayUSupportedIntentApp",
+                "usr": "c:@M@PayUUPICoreKit@objc(cs)PayUSupportedIntentApp"
               },
               {
                 "kind": "TypeFunc",
@@ -2909,8 +2921,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:14PayUUPICoreKit0A4UAPIC27getDataForGpayIntentPayment04withJ6Params10completiony0a7UParamsC00A13UPaymentParamC_ys6ResultOyAA0A13UPureS2SModelCAG0A6UErrorCGctFZ",
-            "mangledName": "$s14PayUUPICoreKit0A4UAPIC27getDataForGpayIntentPayment04withJ6Params10completiony0a7UParamsC00A13UPaymentParamC_ys6ResultOyAA0A13UPureS2SModelCAG0A6UErrorCGctFZ",
+            "usr": "s:14PayUUPICoreKit0A4UAPIC27getDataForGpayIntentPayment04withJ6Params12supportedApp10completiony0a7UParamsC00A13UPaymentParamC_AA0a10USupportediN0Cys6ResultOyAA0A13UPureS2SModelCAH0A6UErrorCGctFZ",
+            "mangledName": "$s14PayUUPICoreKit0A4UAPIC27getDataForGpayIntentPayment04withJ6Params12supportedApp10completiony0a7UParamsC00A13UPaymentParamC_AA0a10USupportediN0Cys6ResultOyAA0A13UPureS2SModelCAH0A6UErrorCGctFZ",
             "moduleName": "PayUUPICoreKit",
             "static": true,
             "declAttributes": [
@@ -45010,20 +45022,6 @@
       "offset": 10428,
       "length": 13,
       "value": "\"PayUUPICoreKit.PayUWebSocket\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Extensions\/PayUExtensions.swift",
-      "kind": "StringLiteral",
-      "offset": 703,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Extensions\/PayUExtensions.swift",
-      "kind": "IntegerLiteral",
-      "offset": 795,
-      "length": 1,
-      "value": "0"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/PayUSocket\/Util\/PayUSocketLogger.swift",

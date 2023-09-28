@@ -11,12 +11,21 @@
         }
       },
       {
+        "package": "PayUIndia-Analytics",
+        "repositoryURL": "https://github.com/payu-intrepos/PayUAnalytics-iOS.git",
+        "state": {
+          "branch": null,
+          "revision": "c89dd006e97392919aaf3cd7393fde753e4f8ec6",
+          "version": "3.0.0"
+        }
+      },
+      {
         "package": "PayUIndia-CommonUI",
         "repositoryURL": "https://github.com/payu-intrepos/PayUCommonUI-iOS",
         "state": {
           "branch": null,
-          "revision": "839147c1b5c97236f8e5deb056b4385acad9f066",
-          "version": "1.1.0"
+          "revision": "398605ddbbabe8cc05a97613b3c011b5993bcc3d",
+          "version": "1.2.0"
         }
       }
     ]
