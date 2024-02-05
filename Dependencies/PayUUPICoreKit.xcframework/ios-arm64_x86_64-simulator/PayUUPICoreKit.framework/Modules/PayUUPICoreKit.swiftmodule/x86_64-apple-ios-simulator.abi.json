@@ -14283,6 +14283,47 @@
           },
           {
             "kind": "Var",
+            "name": "credPay",
+            "printedName": "credPay",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayUUPICoreKit.PayUUPIType.Type) -> PayUUPICoreKit.PayUUPIType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUUPIType",
+                    "printedName": "PayUUPICoreKit.PayUUPIType",
+                    "usr": "c:@M@PayUUPICoreKit@E@PayUUPIType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayUUPICoreKit.PayUUPIType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUUPIType",
+                        "printedName": "PayUUPICoreKit.PayUUPIType",
+                        "usr": "c:@M@PayUUPICoreKit@E@PayUUPIType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@PayUUPICoreKit@E@PayUUPIType@PayUUPITypeCredPay",
+            "mangledName": "$s14PayUUPICoreKit0A8UUPITypeO04credA0yA2CmF",
+            "moduleName": "PayUUPICoreKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
             "name": "gpayOmni",
             "printedName": "gpayOmni",
             "children": [
@@ -14320,7 +14361,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 4
+            "fixedbinaryorder": 5
           },
           {
             "kind": "Var",
@@ -14361,7 +14402,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 5
+            "fixedbinaryorder": 6
           },
           {
             "kind": "Var",
@@ -14402,7 +14443,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 6
+            "fixedbinaryorder": 7
           },
           {
             "kind": "Constructor",
@@ -14745,6 +14786,59 @@
           },
           {
             "kind": "Var",
+            "name": "CREDPAY",
+            "printedName": "CREDPAY",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUUPICoreKit@objc(cs)PayUPaymentApp(cpy)CREDPAY",
+            "mangledName": "$s14PayUUPICoreKit0A11UPaymentAppC7CREDPAYSSvpZ",
+            "moduleName": "PayUUPICoreKit",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUUPICoreKit@objc(cs)PayUPaymentApp(cm)CREDPAY",
+                "mangledName": "$s14PayUUPICoreKit0A11UPaymentAppC7CREDPAYSSvgZ",
+                "moduleName": "PayUUPICoreKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "paymentType",
             "printedName": "paymentType",
             "children": [
@@ -14968,6 +15062,35 @@
             "declKind": "Func",
             "usr": "c:@M@PayUUPICoreKit@objc(cs)PayUPaymentApp(cm)bhimWithAppData:",
             "mangledName": "$s14PayUUPICoreKit0A11UPaymentAppC4bhim04withE4DataAcA0a17USupportedCollectE0C_tFZ",
+            "moduleName": "PayUUPICoreKit",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "credPay",
+            "printedName": "credPay(withAppData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayUPaymentApp",
+                "printedName": "PayUUPICoreKit.PayUPaymentApp",
+                "usr": "c:@M@PayUUPICoreKit@objc(cs)PayUPaymentApp"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PayUSupportedCollectApp",
+                "printedName": "PayUUPICoreKit.PayUSupportedCollectApp",
+                "usr": "c:@M@PayUUPICoreKit@objc(cs)PayUSupportedCollectApp"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PayUUPICoreKit@objc(cs)PayUPaymentApp(cm)credPayWithAppData:",
+            "mangledName": "$s14PayUUPICoreKit0A11UPaymentAppC04credA004withE4DataAcA0a17USupportedCollectE0C_tFZ",
             "moduleName": "PayUUPICoreKit",
             "static": true,
             "declAttributes": [
@@ -19559,12 +19682,11 @@
             "mangledName": "$s14PayUUPICoreKit0A14UPaymentOptionC13supportedAppsSayAA0A19USupportedIntentAppCGSgvp",
             "moduleName": "PayUUPICoreKit",
             "declAttributes": [
-              "Final",
+              "HasInitialValue",
               "HasStorage",
               "AccessControl",
               "ObjC"
             ],
-            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -19601,10 +19723,70 @@
                 "moduleName": "PayUUPICoreKit",
                 "implicit": true,
                 "declAttributes": [
-                  "Final",
                   "ObjC"
                 ],
                 "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[PayUUPICoreKit.PayUSupportedIntentApp]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[PayUUPICoreKit.PayUSupportedIntentApp]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PayUSupportedIntentApp",
+                            "printedName": "PayUUPICoreKit.PayUSupportedIntentApp",
+                            "usr": "c:@M@PayUUPICoreKit@objc(cs)PayUSupportedIntentApp"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUUPICoreKit@objc(cs)PayUPaymentOption(im)setSupportedApps:",
+                "mangledName": "$s14PayUUPICoreKit0A14UPaymentOptionC13supportedAppsSayAA0A19USupportedIntentAppCGSgvs",
+                "moduleName": "PayUUPICoreKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PayUUPICoreKit0A14UPaymentOptionC13supportedAppsSayAA0A19USupportedIntentAppCGSgvM",
+                "mangledName": "$s14PayUUPICoreKit0A14UPaymentOptionC13supportedAppsSayAA0A19USupportedIntentAppCGSgvM",
+                "moduleName": "PayUUPICoreKit",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -45181,14 +45363,14 @@
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "IntegerLiteral",
       "offset": 597,
-      "length": 8,
+      "length": 7,
       "value": "4"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "IntegerLiteral",
-      "offset": 615,
-      "length": 7,
+      "offset": 614,
+      "length": 8,
       "value": "5"
     },
     {
@@ -45197,6 +45379,13 @@
       "offset": 632,
       "length": 7,
       "value": "6"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
+      "kind": "IntegerLiteral",
+      "offset": 649,
+      "length": 7,
+      "value": "7"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
@@ -45223,14 +45412,14 @@
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "IntegerLiteral",
       "offset": 597,
-      "length": 8,
+      "length": 7,
       "value": "4"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "IntegerLiteral",
-      "offset": 615,
-      "length": 7,
+      "offset": 614,
+      "length": 8,
       "value": "5"
     },
     {
@@ -45242,36 +45431,50 @@
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
+      "kind": "IntegerLiteral",
+      "offset": 649,
+      "length": 7,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
-      "offset": 746,
+      "offset": 763,
       "length": 9,
       "value": "\"phonepe\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
-      "offset": 785,
+      "offset": 802,
       "length": 6,
       "value": "\"gpay\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
-      "offset": 822,
+      "offset": 839,
       "length": 7,
       "value": "\"paytm\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
-      "offset": 859,
+      "offset": 876,
       "length": 6,
       "value": "\"bhim\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
-      "offset": 669,
+      "offset": 915,
+      "length": 9,
+      "value": "\"credPay\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
+      "kind": "StringLiteral",
+      "offset": 686,
       "length": 14,
       "value": "\"PayUUPICoreKit.PayUPaymentApp\""
     },

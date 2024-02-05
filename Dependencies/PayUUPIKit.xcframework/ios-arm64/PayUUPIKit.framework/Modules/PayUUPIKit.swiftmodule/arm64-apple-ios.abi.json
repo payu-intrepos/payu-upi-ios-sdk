@@ -1387,14 +1387,21 @@
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
       "kind": "StringLiteral",
-      "offset": 793,
+      "offset": 798,
+      "length": 24,
+      "value": "\"tapped_credPay_collect\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 850,
       "length": 19,
       "value": "\"tapped_verify_vpa\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
       "kind": "StringLiteral",
-      "offset": 838,
+      "offset": 895,
       "length": 16,
       "value": "\"tapped_proceed\""
     },
@@ -1450,14 +1457,21 @@
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
       "kind": "StringLiteral",
-      "offset": 793,
+      "offset": 798,
+      "length": 24,
+      "value": "\"tapped_credPay_collect\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 850,
       "length": 19,
       "value": "\"tapped_verify_vpa\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
       "kind": "StringLiteral",
-      "offset": 838,
+      "offset": 895,
       "length": 16,
       "value": "\"tapped_proceed\""
     },
@@ -1485,7 +1499,7 @@
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
       "kind": "StringLiteral",
-      "offset": 17743,
+      "offset": 17307,
       "length": 2,
       "value": "\"\""
     }

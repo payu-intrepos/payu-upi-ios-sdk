@@ -374,6 +374,7 @@ public enum PayUSocketClientEvent : Swift.String {
   case gpay
   case paytm
   case bhim
+  case credPay
   case gpayOmni
   case newType
   case unknown
@@ -388,12 +389,14 @@ public enum PayUSocketClientEvent : Swift.String {
   @objc public static let GPAY: Swift.String
   @objc public static let PAYTM: Swift.String
   @objc public static let BHIM: Swift.String
+  @objc public static let CREDPAY: Swift.String
   @objc final public let paymentType: PayUUPICoreKit.PayUUPIType
   @objc final public let appData: PayUUPICoreKit.PayUSupportedCollectApp?
   @objc public class func phonepe(withAppData appData: PayUUPICoreKit.PayUSupportedCollectApp) -> PayUUPICoreKit.PayUPaymentApp
   @objc public class func gpay(withAppData appData: PayUUPICoreKit.PayUSupportedCollectApp) -> PayUUPICoreKit.PayUPaymentApp
   @objc public class func paytm(withAppData appData: PayUUPICoreKit.PayUSupportedCollectApp) -> PayUUPICoreKit.PayUPaymentApp
   @objc public class func bhim(withAppData appData: PayUUPICoreKit.PayUSupportedCollectApp) -> PayUUPICoreKit.PayUPaymentApp
+  @objc public class func credPay(withAppData appData: PayUUPICoreKit.PayUSupportedCollectApp) -> PayUUPICoreKit.PayUPaymentApp
   @objc public class func gpayOmni() -> PayUUPICoreKit.PayUPaymentApp
   @objc public class func unknown() -> PayUUPICoreKit.PayUPaymentApp
   @objc public class func newType() -> PayUUPICoreKit.PayUPaymentApp
@@ -497,7 +500,7 @@ extension PayUUPICoreKit.PayUSocketEngineWebsocket {
   public func encode(to encoder: Swift.Encoder) throws
 }
 @objc @objcMembers public class PayUPaymentOption : ObjectiveC.NSObject, Swift.Codable {
-  @objc final public let supportedApps: [PayUUPICoreKit.PayUSupportedIntentApp]?
+  @objc public var supportedApps: [PayUUPICoreKit.PayUSupportedIntentApp]?
   required public init(from decoder: Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws

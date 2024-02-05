@@ -389,12 +389,15 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)PAYTM SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull BHIM;)
 + (NSString * _Nonnull)BHIM SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull CREDPAY;)
++ (NSString * _Nonnull)CREDPAY SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly) enum PayUUPIType paymentType;
 @property (nonatomic, readonly, strong) PayUSupportedCollectApp * _Nullable appData;
 + (PayUPaymentApp * _Nonnull)phonepeWithAppData:(PayUSupportedCollectApp * _Nonnull)appData SWIFT_WARN_UNUSED_RESULT;
 + (PayUPaymentApp * _Nonnull)gpayWithAppData:(PayUSupportedCollectApp * _Nonnull)appData SWIFT_WARN_UNUSED_RESULT;
 + (PayUPaymentApp * _Nonnull)paytmWithAppData:(PayUSupportedCollectApp * _Nonnull)appData SWIFT_WARN_UNUSED_RESULT;
 + (PayUPaymentApp * _Nonnull)bhimWithAppData:(PayUSupportedCollectApp * _Nonnull)appData SWIFT_WARN_UNUSED_RESULT;
++ (PayUPaymentApp * _Nonnull)credPayWithAppData:(PayUSupportedCollectApp * _Nonnull)appData SWIFT_WARN_UNUSED_RESULT;
 + (PayUPaymentApp * _Nonnull)gpayOmni SWIFT_WARN_UNUSED_RESULT;
 + (PayUPaymentApp * _Nonnull)unknown SWIFT_WARN_UNUSED_RESULT;
 + (PayUPaymentApp * _Nonnull)newType SWIFT_WARN_UNUSED_RESULT;
@@ -423,7 +426,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 
 SWIFT_CLASS("_TtC14PayUUPICoreKit17PayUPaymentOption")
 @interface PayUPaymentOption : NSObject
-@property (nonatomic, readonly, copy) NSArray<PayUSupportedIntentApp *> * _Nullable supportedApps;
+@property (nonatomic, copy) NSArray<PayUSupportedIntentApp *> * _Nullable supportedApps;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1137,9 +1140,10 @@ typedef SWIFT_ENUM(NSInteger, PayUUPIType, open) {
   PayUUPITypeGpay = 1,
   PayUUPITypePaytm = 2,
   PayUUPITypeBhim = 3,
-  PayUUPITypeGpayOmni = 4,
-  PayUUPITypeNewType = 5,
-  PayUUPITypeUnknown = 6,
+  PayUUPITypeCredPay = 4,
+  PayUUPITypeGpayOmni = 5,
+  PayUUPITypeNewType = 6,
+  PayUUPITypeUnknown = 7,
 };
 
 
