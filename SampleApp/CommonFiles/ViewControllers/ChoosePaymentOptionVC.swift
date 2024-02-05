@@ -62,14 +62,14 @@ class ChoosePaymentOptionVC: UIViewController, UITableViewDelegate, UITableViewD
 
         if let intentApps = allUpiPaymentOptions?.intent?.supportedApps {
             for app in intentApps {
-                if app.name == "phonepe" && PayUUPICore.canUseIntent(forApp: app, withUpiOptions: allUpiPaymentOptions!) {
-                    options.append(.intent(withApp: app))
-                }
-
-                if app.name == "gpay" && PayUUPICore.canUseGpayApp(withPaymentOptions: allUpiPaymentOptions!) {
-                    if let index = options.firstIndex(of: .gpayFallback) { //Do not use fallback if gpay app options is available
-                        options.remove(at: index)
+                if app.name == "gpay" {
+                    if PayUUPICore.canUseGpayApp(withPaymentOptions: allUpiPaymentOptions!) {
+                        if let index = options.firstIndex(of: .gpayFallback) { //Do not use fallback if gpay app options is available
+                            options.remove(at: index)
+                        }
+                        options.append(.intent(withApp: app))
                     }
+                } else if PayUUPICore.canUseIntent(forApp: app, withUpiOptions: allUpiPaymentOptions!) {
                     options.append(.intent(withApp: app))
                 }
             }
@@ -80,7 +80,7 @@ class ChoosePaymentOptionVC: UIViewController, UITableViewDelegate, UITableViewD
 
 
     func getAllPaymentOptions() -> [PaymentType] {
-
+        
         var allPaymentOptionsList: [PaymentType] = dummyPaymentOptions
         let upiOptions = getPayUUPIOPtions()
 
@@ -92,11 +92,21 @@ class ChoosePaymentOptionVC: UIViewController, UITableViewDelegate, UITableViewD
                 allPaymentOptionsList.append(.upiCollect)
 
             case .intent(let app):
-                if app.name == "gpay" {
+                if app.name.lowercased() == "gpay" {
                     allPaymentOptionsList.append(.gpay(appData: app))
                 }
-                if app.name == "phonepe" {
+                if app.name.lowercased() == "phonepe" {
                     allPaymentOptionsList.append(.phonepe(appData: app))
+                }
+                if app.name.lowercased() == "bhim" {
+                    allPaymentOptionsList.append(.bhim(appData: app))
+                }
+                if app.name.lowercased().contains("cred") {
+                    allPaymentOptionsList.append(.credPay(appData: app))
+                }
+
+                if app.name.lowercased() == "paytm" {
+                    allPaymentOptionsList.append(.paytm(appData: app))
                 }
 
             case .gpayFallback:
@@ -136,9 +146,8 @@ extension ChoosePaymentOptionVC {
         let selectedPaymentOption = allPaymentOptions[indexPath.row]
 
         switch selectedPaymentOption {
-        case .gpay, .gpayFallback, .phonepe, .upiCollect:
+        case .gpay, .gpayFallback, .phonepe, .upiCollect, .bhim, .paytm, .credPay:
             initiateUpiPayment(withType: selectedPaymentOption)
-
         default:
             showAlertForTraditionalPaymentOption(allPaymentOptions[indexPath.row])
         }
@@ -150,7 +159,7 @@ extension ChoosePaymentOptionVC {
 
             guard let self = self else {return}
             switch paymentType {
-            case .phonepe(let app), .gpay(let app):
+            case .phonepe(let app), .gpay(let app), .bhim(let app), .paytm(let app), .credPay(let app):
                 self.initiateIntentPayment(withApp: app,
                                             paymentParams: self.paymentParams!,
                                             availableUpiOptions: self.allUpiPaymentOptions!)

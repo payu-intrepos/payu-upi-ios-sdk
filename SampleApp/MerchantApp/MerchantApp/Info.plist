@@ -23,6 +23,7 @@
 		<string>phonepe</string>
 		<string>tez</string>
 		<string>paytm</string>
+		<string>credpay</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>

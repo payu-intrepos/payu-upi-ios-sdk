@@ -1,11 +1,17 @@
 PODS:
+  - PayUIndia-Analytics (3.0.0):
+    - PayUIndia-NetworkReachability (~> 1.0)
+  - PayUIndia-CommonUI (1.2.0):
+    - PayUIndia-Analytics (= 3.0)
   - PayUIndia-Logger (4.0.0)
-  - PayUIndia-Networking (4.0.0):
+  - PayUIndia-Networking (4.1.0):
     - PayUIndia-Logger (= 4.0.0)
-  - PayUIndia-PayUParams (4.3.0)
-  - PayUIndia-UPICore (7.0.1):
-    - PayUIndia-Networking (~> 4.0)
-    - PayUIndia-PayUParams (~> 4.3)
+  - PayUIndia-NetworkReachability (1.0.1)
+  - PayUIndia-PayUParams (5.2.0)
+  - PayUIndia-UPICore (9.1.0):
+    - PayUIndia-CommonUI (~> 1.2)
+    - PayUIndia-Networking (~> 4.1)
+    - PayUIndia-PayUParams (~> 5.2)
   - Sentry (4.3.1):
     - Sentry/Core (= 4.3.1)
   - Sentry/Core (4.3.1)
@@ -16,8 +22,11 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - PayUIndia-Analytics
+    - PayUIndia-CommonUI
     - PayUIndia-Logger
     - PayUIndia-Networking
+    - PayUIndia-NetworkReachability
     - PayUIndia-PayUParams
     - PayUIndia-UPICore
 
@@ -32,12 +41,15 @@ CHECKOUT OPTIONS:
     :tag: 4.3.1
 
 SPEC CHECKSUMS:
+  PayUIndia-Analytics: a23768b29283ef781783f38a99c1cf2235020d58
+  PayUIndia-CommonUI: 474ece97366ff21dbc6aa7566443ad5a9cf897d4
   PayUIndia-Logger: e353d9dd576bac593e428dfbadedf337cbb48b78
-  PayUIndia-Networking: bf53f743484256303e24d4e763e6097f04af769c
-  PayUIndia-PayUParams: ef686041feae62f907491c1cc7b4f50fbe4375c9
-  PayUIndia-UPICore: a0d959c31b7ebf54bf26519f27efee2e7982a932
+  PayUIndia-Networking: 10487dda397cc9b221361a862b2c8ab3510c4408
+  PayUIndia-NetworkReachability: 99e69781b3be99d7b713075ab7b73e6d73a153e4
+  PayUIndia-PayUParams: 1d3e578357821536c65757db506a6c33abe5c69e
+  PayUIndia-UPICore: db64f99ae86994efee62e0126382d33318613b07
   Sentry: 5267d493a398663538317e4dcc438c12c66202ed
 
 PODFILE CHECKSUM: 74063151e3b3f8ff397fb3d9274385db90264d58
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.15.0

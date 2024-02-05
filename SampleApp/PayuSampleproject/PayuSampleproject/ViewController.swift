@@ -59,8 +59,8 @@ class MerchantViewController: UIViewController {
     let indexKeySalt = 0
     var amount: String = "1"
     var productInfo: String = "Nokia"
-    var surl: String = "https://payu.herokuapp.com/ios_success"
-    var furl: String = "https://payu.herokuapp.com/ios_failure"
+    var surl: String = "https://cbjs.payu.in/sdk/success"
+    var furl: String = "https://cbjs.payu.in/sdk/failure"
     var firstName: String = "Umang"
     var email: String = "umang@arya.com"
     var phoneNumber: String = "9876543210"

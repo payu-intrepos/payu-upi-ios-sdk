@@ -18,6 +18,9 @@ enum PaymentType {
     case gpay(appData: PayUSupportedIntentApp)
     case gpayFallback
     case phonepe(appData: PayUSupportedIntentApp)
+    case paytm(appData: PayUSupportedIntentApp)
+    case bhim(appData: PayUSupportedIntentApp)
+    case credPay(appData: PayUSupportedIntentApp)
 
     var description: String {
         switch self {
@@ -28,6 +31,9 @@ enum PaymentType {
         case .upiCollect: return "UPI"
         case .gpay, .gpayFallback: return "Google Pay"
         case .phonepe: return "PhonePe"
+        case .paytm: return "Paytm"
+        case .bhim: return "Bhim"
+        case .credPay: return "Cred"
         }
     }
 }
@@ -65,6 +71,9 @@ class PaymentOptionCell: UITableViewCell {
         case .upiCollect: image = UIImage(named: "upiIcon")
         case .gpay, .gpayFallback: image = UIImage(named: "gpayIcon")
         case .phonepe: image = UIImage(named: "phonepeIcon")
+        case .paytm: image = UIImage(named: "paytm")
+        case .bhim: image = UIImage(named: "bhim")
+        case .credPay: image = UIImage(named: "cred")
         }
 
         iconImageView.image = image

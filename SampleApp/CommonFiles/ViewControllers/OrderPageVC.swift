@@ -61,17 +61,17 @@ class OrderPageVC: UIViewController {
 
     func setupPaymentParams() -> Bool {
         PayUUPICore.shared.logLevel = .verbose
-        PayUUPICore.shared.environment = .bizcheckouttest
+        PayUUPICore.shared.environment = .production
         paymentParams = PayUPaymentParam(
-            key: "ibibogames", //Your merchant key for the current environment
+            key: "<key>", //Your merchant key for the current environment
             transactionId: randomString(length: 6), //Your unique ID for this trasaction
             amount: self.amountTextField.text ?? "1", //Amount of transaction
             productInfo: "iPhone", // Description of the product
             firstName: "Vipin", // First name of the user
             email: "johnappleseed@apple.com", // Email of the useer
-            phone: "9123456789", // "10 digit phone number here"
-            surl: "https://payu.herokuapp.com/ios_success", // Success URL. Not used but required due to mandatory check in API.
-            furl: "https://payu.herokuapp.com/ios_failure", // Failure URL. Not used but required due to mandatory check in API.
+            phone: "9528340384", // "10 digit phone number here"
+            surl: "https://cbjs.payu.in/sdk/success", // Success URL. Not used but required due to mandatory check in API.
+            furl: "https://cbjs.payu.in/sdk/failure", // Failure URL. Not used but required due to mandatory check in API.
             environment: .production // Production or Test . Not used but required due to mandatory parameter.
         )
         //User defined parameters.
@@ -101,7 +101,11 @@ class OrderPageVC: UIViewController {
 
     func fetchHashes(withParams params: PayUPaymentParam,
                                       completion: @escaping(Result<Bool, SampleAppError> )->()) {
-        paymentParams?.hashes = Helper.getHashes(params: params, salt: "fb66f9b6152aa8566f3cfb0a6ab1a7626639efee1cb5281e208ef6905d3db111")
+        let payuHashes = PPKHashes()
+        payuHashes.paymentOptionsHash = "<paymentOptionsHash>"// Helper.paymentOptionsHash(params: params) calculate sha512 hash on server side using your salt
+        payuHashes.paymentHash = "<paymentHash>" // Helper.paymentHash(params: params) calculate sha512 hash on server side using your salt
+        payuHashes.validateVPAHash = "<validateVPAHash>" // Helper.vpaHash(params: params) calculate sha512 hash on server side using your salt
+        paymentParams?.hashes = payuHashes
         
         completion(.success(true))
 
