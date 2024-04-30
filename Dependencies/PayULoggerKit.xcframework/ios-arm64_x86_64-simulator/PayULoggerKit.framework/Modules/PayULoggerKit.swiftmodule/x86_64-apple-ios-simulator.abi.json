@@ -1,0 +1,749 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayULoggerKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RawComparable",
+        "printedName": "RawComparable",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "<",
+            "printedName": "<(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PayULoggerKit13RawComparablePAAE1loiySbx_xtFZ",
+            "mangledName": "$s13PayULoggerKit13RawComparablePAAE1loiySbx_xtFZ",
+            "moduleName": "PayULoggerKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : PayULoggerKit.RawComparable>",
+            "sugared_genericSig": "<Self where Self : PayULoggerKit.RawComparable>",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:13PayULoggerKit13RawComparableP",
+        "mangledName": "$s13PayULoggerKit13RawComparableP",
+        "moduleName": "PayULoggerKit",
+        "genericSig": "<τ_0_0 : Swift.Comparable, τ_0_0 : Swift.RawRepresentable, τ_0_0.RawValue : Swift.Comparable>",
+        "sugared_genericSig": "<Self : Swift.Comparable, Self : Swift.RawRepresentable, Self.RawValue : Swift.Comparable>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Comparable",
+            "printedName": "Comparable",
+            "usr": "s:SL",
+            "mangledName": "$sSL"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PayULogLevel",
+        "printedName": "PayULogLevel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "disable",
+            "printedName": "disable",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayULoggerKit.PayULogLevel.Type) -> PayULoggerKit.PayULogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayULogLevel",
+                    "printedName": "PayULoggerKit.PayULogLevel",
+                    "usr": "s:13PayULoggerKit0A9ULogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayULoggerKit.PayULogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayULogLevel",
+                        "printedName": "PayULoggerKit.PayULogLevel",
+                        "usr": "s:13PayULoggerKit0A9ULogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13PayULoggerKit0A9ULogLevelO7disableyA2CmF",
+            "mangledName": "$s13PayULoggerKit0A9ULogLevelO7disableyA2CmF",
+            "moduleName": "PayULoggerKit"
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayULoggerKit.PayULogLevel.Type) -> PayULoggerKit.PayULogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayULogLevel",
+                    "printedName": "PayULoggerKit.PayULogLevel",
+                    "usr": "s:13PayULoggerKit0A9ULogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayULoggerKit.PayULogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayULogLevel",
+                        "printedName": "PayULoggerKit.PayULogLevel",
+                        "usr": "s:13PayULoggerKit0A9ULogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13PayULoggerKit0A9ULogLevelO5erroryA2CmF",
+            "mangledName": "$s13PayULoggerKit0A9ULogLevelO5erroryA2CmF",
+            "moduleName": "PayULoggerKit"
+          },
+          {
+            "kind": "Var",
+            "name": "verbose",
+            "printedName": "verbose",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayULoggerKit.PayULogLevel.Type) -> PayULoggerKit.PayULogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayULogLevel",
+                    "printedName": "PayULoggerKit.PayULogLevel",
+                    "usr": "s:13PayULoggerKit0A9ULogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayULoggerKit.PayULogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayULogLevel",
+                        "printedName": "PayULoggerKit.PayULogLevel",
+                        "usr": "s:13PayULoggerKit0A9ULogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13PayULoggerKit0A9ULogLevelO7verboseyA2CmF",
+            "mangledName": "$s13PayULoggerKit0A9ULogLevelO7verboseyA2CmF",
+            "moduleName": "PayULoggerKit"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PayULoggerKit.PayULogLevel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayULogLevel",
+                    "printedName": "PayULoggerKit.PayULogLevel",
+                    "usr": "s:13PayULoggerKit0A9ULogLevelO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13PayULoggerKit0A9ULogLevelO8rawValueACSgSi_tcfc",
+            "mangledName": "$s13PayULoggerKit0A9ULogLevelO8rawValueACSgSi_tcfc",
+            "moduleName": "PayULoggerKit",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13PayULoggerKit0A9ULogLevelO8rawValueSivp",
+            "mangledName": "$s13PayULoggerKit0A9ULogLevelO8rawValueSivp",
+            "moduleName": "PayULoggerKit",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PayULoggerKit0A9ULogLevelO8rawValueSivg",
+                "mangledName": "$s13PayULoggerKit0A9ULogLevelO8rawValueSivg",
+                "moduleName": "PayULoggerKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:13PayULoggerKit0A9ULogLevelO",
+        "mangledName": "$s13PayULoggerKit0A9ULogLevelO",
+        "moduleName": "PayULoggerKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawComparable",
+            "printedName": "RawComparable",
+            "usr": "s:13PayULoggerKit13RawComparableP",
+            "mangledName": "$s13PayULoggerKit13RawComparableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Comparable",
+            "printedName": "Comparable",
+            "usr": "s:SL",
+            "mangledName": "$sSL"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PayULog",
+        "printedName": "PayULog",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayULog",
+                "printedName": "PayULoggerKit.PayULog",
+                "usr": "s:13PayULoggerKit0A4ULogC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13PayULoggerKit0A4ULogC6sharedACvpZ",
+            "mangledName": "$s13PayULoggerKit0A4ULogC6sharedACvpZ",
+            "moduleName": "PayULoggerKit",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayULog",
+                    "printedName": "PayULoggerKit.PayULog",
+                    "usr": "s:13PayULoggerKit0A4ULogC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PayULoggerKit0A4ULogC6sharedACvgZ",
+                "mangledName": "$s13PayULoggerKit0A4ULogC6sharedACvgZ",
+                "moduleName": "PayULoggerKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "logLevel",
+            "printedName": "logLevel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayULogLevel",
+                "printedName": "PayULoggerKit.PayULogLevel",
+                "usr": "s:13PayULoggerKit0A9ULogLevelO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13PayULoggerKit0A4ULogC8logLevelAA0adF0Ovp",
+            "mangledName": "$s13PayULoggerKit0A4ULogC8logLevelAA0adF0Ovp",
+            "moduleName": "PayULoggerKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayULogLevel",
+                    "printedName": "PayULoggerKit.PayULogLevel",
+                    "usr": "s:13PayULoggerKit0A9ULogLevelO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PayULoggerKit0A4ULogC8logLevelAA0adF0Ovg",
+                "mangledName": "$s13PayULoggerKit0A4ULogC8logLevelAA0adF0Ovg",
+                "moduleName": "PayULoggerKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayULogLevel",
+                    "printedName": "PayULoggerKit.PayULogLevel",
+                    "usr": "s:13PayULoggerKit0A9ULogLevelO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PayULoggerKit0A4ULogC8logLevelAA0adF0Ovs",
+                "mangledName": "$s13PayULoggerKit0A4ULogC8logLevelAA0adF0Ovs",
+                "moduleName": "PayULoggerKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PayULoggerKit0A4ULogC8logLevelAA0adF0OvM",
+                "mangledName": "$s13PayULoggerKit0A4ULogC8logLevelAA0adF0OvM",
+                "moduleName": "PayULoggerKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "error",
+            "printedName": "error(_:filename:line:funcName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PayULoggerKit0A4ULogC5error_8filename4line8funcNameyyp_SSSiSStFZ",
+            "mangledName": "$s13PayULoggerKit0A4ULogC5error_8filename4line8funcNameyyp_SSSiSStFZ",
+            "moduleName": "PayULoggerKit",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "verbose",
+            "printedName": "verbose(_:filename:line:column:funcName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13PayULoggerKit0A4ULogC7verbose_8filename4line6column8funcNameyyp_SSS2iSStFZ",
+            "mangledName": "$s13PayULoggerKit0A4ULogC7verbose_8filename4line6column8funcNameyyp_SSS2iSStFZ",
+            "moduleName": "PayULoggerKit",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13PayULoggerKit0A4ULogC",
+        "mangledName": "$s13PayULoggerKit0A4ULogC",
+        "moduleName": "PayULoggerKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
+      "kind": "IntegerLiteral",
+      "offset": 745,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
+      "kind": "IntegerLiteral",
+      "offset": 756,
+      "length": 5,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
+      "kind": "IntegerLiteral",
+      "offset": 771,
+      "length": 7,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
+      "kind": "IntegerLiteral",
+      "offset": 745,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
+      "kind": "IntegerLiteral",
+      "offset": 756,
+      "length": 5,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
+      "kind": "IntegerLiteral",
+      "offset": 771,
+      "length": 7,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
+      "kind": "IntegerLiteral",
+      "offset": 745,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
+      "kind": "IntegerLiteral",
+      "offset": 756,
+      "length": 5,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
+      "kind": "IntegerLiteral",
+      "offset": 771,
+      "length": 7,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1777,
+      "length": 74,
+      "value": "\"[\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1816,
+      "length": 1,
+      "value": "\"]:\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1825,
+      "length": 1,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1837,
+      "length": 2,
+      "value": "\" -> \""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1850,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2423,
+      "length": 74,
+      "value": "\"[\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2462,
+      "length": 1,
+      "value": "\"]:\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2471,
+      "length": 1,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2483,
+      "length": 2,
+      "value": "\" -> \""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2496,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2798,
+      "length": 3,
+      "value": "\"\/\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2839,
+      "length": 2,
+      "value": "\"\""
+    }
+  ]
+}

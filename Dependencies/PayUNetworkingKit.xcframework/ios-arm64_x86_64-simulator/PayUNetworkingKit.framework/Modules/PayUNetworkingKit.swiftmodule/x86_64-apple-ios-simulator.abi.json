@@ -2012,116 +2012,564 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUParameterEncoding.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUURLParameterEncoder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 716,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUURLParameterEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 834,
+      "length": 3,
+      "value": "\"&\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUURLParameterEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 843,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUURLParameterEncoder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 881,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUURLParameterEncoder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1111,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUURLParameterEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 1182,
+      "length": 14,
+      "value": "\"Content-Type\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUURLParameterEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 1239,
+      "length": 50,
+      "value": "\"application\/x-www-form-urlencoded; charset=utf-8\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUURLParameterEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 1311,
+      "length": 14,
+      "value": "\"Content-Type\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUURLParameterEncoder.swift",
+      "kind": "Array",
+      "offset": 1477,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUURLParameterEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 1666,
+      "length": 10,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUURLParameterEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 1675,
+      "length": 4,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUURLParameterEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 1741,
+      "length": 10,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUURLParameterEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 1750,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUURLParameterEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 1810,
+      "length": 13,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUURLParameterEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 1816,
+      "length": 1,
+      "value": "\"=\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUURLParameterEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 1822,
+      "length": 23,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUURLParameterEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 1844,
+      "length": 3,
+      "value": "\"&\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUURLParameterEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 2125,
+      "length": 13,
+      "value": "\";\/?:@&=+$, \""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUParameterEncoding.swift",
       "kind": "StringLiteral",
       "offset": 738,
       "length": 22,
       "value": "\"Parameters were nil.\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUParameterEncoding.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUParameterEncoding.swift",
       "kind": "StringLiteral",
       "offset": 787,
       "length": 28,
       "value": "\"Parameter encoding failed.\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUParameterEncoding.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUParameterEncoding.swift",
       "kind": "StringLiteral",
       "offset": 838,
       "length": 13,
       "value": "\"URL is nil.\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUParameterEncoding.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUParameterEncoding.swift",
       "kind": "StringLiteral",
       "offset": 738,
       "length": 22,
       "value": "\"Parameters were nil.\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUParameterEncoding.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUParameterEncoding.swift",
       "kind": "StringLiteral",
       "offset": 787,
       "length": 28,
       "value": "\"Parameter encoding failed.\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUParameterEncoding.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUParameterEncoding.swift",
       "kind": "StringLiteral",
       "offset": 838,
       "length": 13,
       "value": "\"URL is nil.\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayUHTTPMethod.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayUHTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 236,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayUHTTPMethod.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayUHTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 258,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayUHTTPMethod.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayUHTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 280,
       "length": 5,
       "value": "\"PUT\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayUHTTPMethod.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayUHTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 303,
       "length": 7,
       "value": "\"PATCH\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayUHTTPMethod.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayUHTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 329,
       "length": 8,
       "value": "\"DELETE\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayUHTTPMethod.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayUHTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 236,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayUHTTPMethod.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayUHTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 258,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayUHTTPMethod.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayUHTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 280,
       "length": 5,
       "value": "\"PUT\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayUHTTPMethod.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayUHTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 303,
       "length": 7,
       "value": "\"PATCH\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayUHTTPMethod.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayUHTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 329,
       "length": 8,
       "value": "\"DELETE\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayUEndPointType.swift",
+      "kind": "StringLiteral",
+      "offset": 535,
+      "length": 12,
+      "value": "\"User-Agent\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Extensions\/UIDevice.swift",
+      "kind": "StringLiteral",
+      "offset": 425,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Extensions\/UIDevice.swift",
+      "kind": "IntegerLiteral",
+      "offset": 517,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Extensions\/UIDevice.swift",
+      "kind": "BooleanLiteral",
+      "offset": 921,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Extensions\/UIDevice.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2146,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Extensions\/UIDevice.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3352,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUJSONParameterEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 688,
+      "length": 14,
+      "value": "\"Content-Type\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUJSONParameterEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 749,
+      "length": 18,
+      "value": "\"application\/json\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUJSONParameterEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 789,
+      "length": 14,
+      "value": "\"Content-Type\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 419,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 475,
+      "length": 28,
+      "value": "\"CFBundleShortVersionString\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 519,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 538,
+      "length": 150,
+      "value": "\"iOS\/\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 559,
+      "length": 1,
+      "value": "\"\/\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 572,
+      "length": 1,
+      "value": "\"\/Total \""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 617,
+      "length": 1,
+      "value": "\"\/ Free \""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 661,
+      "length": 1,
+      "value": "\"\/\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 673,
+      "length": 1,
+      "value": "\"\/\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 687,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "StringLiteral",
+      "offset": 533,
+      "length": 51,
+      "value": "\"Request URL:\n \""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "StringLiteral",
+      "offset": 583,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "StringLiteral",
+      "offset": 614,
+      "length": 58,
+      "value": "\"HTTP Method:\n \""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "StringLiteral",
+      "offset": 671,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "FloatLiteral",
+      "offset": 2116,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "StringLiteral",
+      "offset": 2284,
+      "length": 18,
+      "value": "\"application\/json\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "StringLiteral",
+      "offset": 2324,
+      "length": 14,
+      "value": "\"Content-Type\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3424,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3430,
+      "length": 3,
+      "value": "299"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3451,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3470,
+      "length": 3,
+      "value": "401"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3476,
+      "length": 3,
+      "value": "403"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3547,
+      "length": 3,
+      "value": "404"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3615,
+      "length": 3,
+      "value": "405"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3621,
+      "length": 3,
+      "value": "500"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3684,
+      "length": 3,
+      "value": "501"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3690,
+      "length": 3,
+      "value": "599"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3752,
+      "length": 3,
+      "value": "600"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "StringLiteral",
+      "offset": 4276,
+      "length": 43,
+      "value": "\"JSON Body Parameters:\n \""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "StringLiteral",
+      "offset": 4318,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "StringLiteral",
+      "offset": 4516,
+      "length": 36,
+      "value": "\"URL Parameters:\n \""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "StringLiteral",
+      "offset": 4551,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "StringLiteral",
+      "offset": 5427,
+      "length": 36,
+      "value": "\"You need to be authenticated first\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "StringLiteral",
+      "offset": 5507,
+      "length": 18,
+      "value": "\"HTTP 404 occured\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "StringLiteral",
+      "offset": 5564,
+      "length": 14,
+      "value": "\"Server Error\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayUEncodingDestination.swift",
+      "kind": "BooleanLiteral",
+      "offset": 696,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayUEncodingDestination.swift",
+      "kind": "BooleanLiteral",
+      "offset": 739,
+      "length": 5,
+      "value": "false"
     }
   ]
 }
