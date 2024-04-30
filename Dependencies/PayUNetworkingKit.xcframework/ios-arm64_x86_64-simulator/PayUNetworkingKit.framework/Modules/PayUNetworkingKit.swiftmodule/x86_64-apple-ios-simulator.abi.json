@@ -1,0 +1,2330 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayUNetworkingKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PayUURLParameterEncoder",
+        "printedName": "PayUURLParameterEncoder",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(urlRequest:with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "paramValueOwnership": "InOut",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17PayUNetworkingKit0A20UURLParameterEncoderV6encode10urlRequest4withy10Foundation10URLRequestVz_SDySSypGtKF",
+            "mangledName": "$s17PayUNetworkingKit0A20UURLParameterEncoderV6encode10urlRequest4withy10Foundation10URLRequestVz_SDySSypGtKF",
+            "moduleName": "PayUNetworkingKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:17PayUNetworkingKit0A20UURLParameterEncoderV",
+        "mangledName": "$s17PayUNetworkingKit0A20UURLParameterEncoderV",
+        "moduleName": "PayUNetworkingKit",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayUNetworkingKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PayUNetworkError",
+        "printedName": "PayUNetworkError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "parametersNil",
+            "printedName": "parametersNil",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayUNetworkingKit.PayUNetworkError.Type) -> PayUNetworkingKit.PayUNetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUNetworkError",
+                    "printedName": "PayUNetworkingKit.PayUNetworkError",
+                    "usr": "s:17PayUNetworkingKit0A13UNetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayUNetworkingKit.PayUNetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUNetworkError",
+                        "printedName": "PayUNetworkingKit.PayUNetworkError",
+                        "usr": "s:17PayUNetworkingKit0A13UNetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17PayUNetworkingKit0A13UNetworkErrorO13parametersNilyA2CmF",
+            "mangledName": "$s17PayUNetworkingKit0A13UNetworkErrorO13parametersNilyA2CmF",
+            "moduleName": "PayUNetworkingKit"
+          },
+          {
+            "kind": "Var",
+            "name": "encodingFailed",
+            "printedName": "encodingFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayUNetworkingKit.PayUNetworkError.Type) -> PayUNetworkingKit.PayUNetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUNetworkError",
+                    "printedName": "PayUNetworkingKit.PayUNetworkError",
+                    "usr": "s:17PayUNetworkingKit0A13UNetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayUNetworkingKit.PayUNetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUNetworkError",
+                        "printedName": "PayUNetworkingKit.PayUNetworkError",
+                        "usr": "s:17PayUNetworkingKit0A13UNetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17PayUNetworkingKit0A13UNetworkErrorO14encodingFailedyA2CmF",
+            "mangledName": "$s17PayUNetworkingKit0A13UNetworkErrorO14encodingFailedyA2CmF",
+            "moduleName": "PayUNetworkingKit"
+          },
+          {
+            "kind": "Var",
+            "name": "missingURL",
+            "printedName": "missingURL",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayUNetworkingKit.PayUNetworkError.Type) -> PayUNetworkingKit.PayUNetworkError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUNetworkError",
+                    "printedName": "PayUNetworkingKit.PayUNetworkError",
+                    "usr": "s:17PayUNetworkingKit0A13UNetworkErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayUNetworkingKit.PayUNetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUNetworkError",
+                        "printedName": "PayUNetworkingKit.PayUNetworkError",
+                        "usr": "s:17PayUNetworkingKit0A13UNetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17PayUNetworkingKit0A13UNetworkErrorO10missingURLyA2CmF",
+            "mangledName": "$s17PayUNetworkingKit0A13UNetworkErrorO10missingURLyA2CmF",
+            "moduleName": "PayUNetworkingKit"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PayUNetworkingKit.PayUNetworkError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUNetworkError",
+                    "printedName": "PayUNetworkingKit.PayUNetworkError",
+                    "usr": "s:17PayUNetworkingKit0A13UNetworkErrorO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17PayUNetworkingKit0A13UNetworkErrorO8rawValueACSgSS_tcfc",
+            "mangledName": "$s17PayUNetworkingKit0A13UNetworkErrorO8rawValueACSgSS_tcfc",
+            "moduleName": "PayUNetworkingKit",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17PayUNetworkingKit0A13UNetworkErrorO8rawValueSSvp",
+            "mangledName": "$s17PayUNetworkingKit0A13UNetworkErrorO8rawValueSSvp",
+            "moduleName": "PayUNetworkingKit",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PayUNetworkingKit0A13UNetworkErrorO8rawValueSSvg",
+                "mangledName": "$s17PayUNetworkingKit0A13UNetworkErrorO8rawValueSSvg",
+                "moduleName": "PayUNetworkingKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17PayUNetworkingKit0A13UNetworkErrorO",
+        "mangledName": "$s17PayUNetworkingKit0A13UNetworkErrorO",
+        "moduleName": "PayUNetworkingKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayUNetworkingKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PayUHTTPMethod",
+        "printedName": "PayUHTTPMethod",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "get",
+            "printedName": "get",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayUNetworkingKit.PayUHTTPMethod.Type) -> PayUNetworkingKit.PayUHTTPMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUHTTPMethod",
+                    "printedName": "PayUNetworkingKit.PayUHTTPMethod",
+                    "usr": "s:17PayUNetworkingKit0A11UHTTPMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayUNetworkingKit.PayUHTTPMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUHTTPMethod",
+                        "printedName": "PayUNetworkingKit.PayUHTTPMethod",
+                        "usr": "s:17PayUNetworkingKit0A11UHTTPMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17PayUNetworkingKit0A11UHTTPMethodO3getyA2CmF",
+            "mangledName": "$s17PayUNetworkingKit0A11UHTTPMethodO3getyA2CmF",
+            "moduleName": "PayUNetworkingKit"
+          },
+          {
+            "kind": "Var",
+            "name": "post",
+            "printedName": "post",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayUNetworkingKit.PayUHTTPMethod.Type) -> PayUNetworkingKit.PayUHTTPMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUHTTPMethod",
+                    "printedName": "PayUNetworkingKit.PayUHTTPMethod",
+                    "usr": "s:17PayUNetworkingKit0A11UHTTPMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayUNetworkingKit.PayUHTTPMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUHTTPMethod",
+                        "printedName": "PayUNetworkingKit.PayUHTTPMethod",
+                        "usr": "s:17PayUNetworkingKit0A11UHTTPMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17PayUNetworkingKit0A11UHTTPMethodO4postyA2CmF",
+            "mangledName": "$s17PayUNetworkingKit0A11UHTTPMethodO4postyA2CmF",
+            "moduleName": "PayUNetworkingKit"
+          },
+          {
+            "kind": "Var",
+            "name": "put",
+            "printedName": "put",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayUNetworkingKit.PayUHTTPMethod.Type) -> PayUNetworkingKit.PayUHTTPMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUHTTPMethod",
+                    "printedName": "PayUNetworkingKit.PayUHTTPMethod",
+                    "usr": "s:17PayUNetworkingKit0A11UHTTPMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayUNetworkingKit.PayUHTTPMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUHTTPMethod",
+                        "printedName": "PayUNetworkingKit.PayUHTTPMethod",
+                        "usr": "s:17PayUNetworkingKit0A11UHTTPMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17PayUNetworkingKit0A11UHTTPMethodO3putyA2CmF",
+            "mangledName": "$s17PayUNetworkingKit0A11UHTTPMethodO3putyA2CmF",
+            "moduleName": "PayUNetworkingKit"
+          },
+          {
+            "kind": "Var",
+            "name": "patch",
+            "printedName": "patch",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayUNetworkingKit.PayUHTTPMethod.Type) -> PayUNetworkingKit.PayUHTTPMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUHTTPMethod",
+                    "printedName": "PayUNetworkingKit.PayUHTTPMethod",
+                    "usr": "s:17PayUNetworkingKit0A11UHTTPMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayUNetworkingKit.PayUHTTPMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUHTTPMethod",
+                        "printedName": "PayUNetworkingKit.PayUHTTPMethod",
+                        "usr": "s:17PayUNetworkingKit0A11UHTTPMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17PayUNetworkingKit0A11UHTTPMethodO5patchyA2CmF",
+            "mangledName": "$s17PayUNetworkingKit0A11UHTTPMethodO5patchyA2CmF",
+            "moduleName": "PayUNetworkingKit"
+          },
+          {
+            "kind": "Var",
+            "name": "delete",
+            "printedName": "delete",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayUNetworkingKit.PayUHTTPMethod.Type) -> PayUNetworkingKit.PayUHTTPMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUHTTPMethod",
+                    "printedName": "PayUNetworkingKit.PayUHTTPMethod",
+                    "usr": "s:17PayUNetworkingKit0A11UHTTPMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayUNetworkingKit.PayUHTTPMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUHTTPMethod",
+                        "printedName": "PayUNetworkingKit.PayUHTTPMethod",
+                        "usr": "s:17PayUNetworkingKit0A11UHTTPMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17PayUNetworkingKit0A11UHTTPMethodO6deleteyA2CmF",
+            "mangledName": "$s17PayUNetworkingKit0A11UHTTPMethodO6deleteyA2CmF",
+            "moduleName": "PayUNetworkingKit"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PayUNetworkingKit.PayUHTTPMethod?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUHTTPMethod",
+                    "printedName": "PayUNetworkingKit.PayUHTTPMethod",
+                    "usr": "s:17PayUNetworkingKit0A11UHTTPMethodO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17PayUNetworkingKit0A11UHTTPMethodO8rawValueACSgSS_tcfc",
+            "mangledName": "$s17PayUNetworkingKit0A11UHTTPMethodO8rawValueACSgSS_tcfc",
+            "moduleName": "PayUNetworkingKit",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17PayUNetworkingKit0A11UHTTPMethodO8rawValueSSvp",
+            "mangledName": "$s17PayUNetworkingKit0A11UHTTPMethodO8rawValueSSvp",
+            "moduleName": "PayUNetworkingKit",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PayUNetworkingKit0A11UHTTPMethodO8rawValueSSvg",
+                "mangledName": "$s17PayUNetworkingKit0A11UHTTPMethodO8rawValueSSvg",
+                "moduleName": "PayUNetworkingKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17PayUNetworkingKit0A11UHTTPMethodO",
+        "mangledName": "$s17PayUNetworkingKit0A11UHTTPMethodO",
+        "moduleName": "PayUNetworkingKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayUNetworkingKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PayUHTTPTask",
+        "printedName": "PayUHTTPTask",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "request",
+            "printedName": "request",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayUNetworkingKit.PayUHTTPTask.Type) -> PayUNetworkingKit.PayUHTTPTask",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUHTTPTask",
+                    "printedName": "PayUNetworkingKit.PayUHTTPTask",
+                    "usr": "s:17PayUNetworkingKit0A9UHTTPTaskO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayUNetworkingKit.PayUHTTPTask.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUHTTPTask",
+                        "printedName": "PayUNetworkingKit.PayUHTTPTask",
+                        "usr": "s:17PayUNetworkingKit0A9UHTTPTaskO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17PayUNetworkingKit0A9UHTTPTaskO7requestyA2CmF",
+            "mangledName": "$s17PayUNetworkingKit0A9UHTTPTaskO7requestyA2CmF",
+            "moduleName": "PayUNetworkingKit"
+          },
+          {
+            "kind": "Var",
+            "name": "requestParameters",
+            "printedName": "requestParameters",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayUNetworkingKit.PayUHTTPTask.Type) -> ([Swift.String : Any]?, [Swift.String : Any]?) -> PayUNetworkingKit.PayUHTTPTask",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([Swift.String : Any]?, [Swift.String : Any]?) -> PayUNetworkingKit.PayUHTTPTask",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUHTTPTask",
+                        "printedName": "PayUNetworkingKit.PayUHTTPTask",
+                        "usr": "s:17PayUNetworkingKit0A9UHTTPTaskO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(bodyParameters: [Swift.String : Any]?, urlParameters: [Swift.String : Any]?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "[Swift.String : Any]?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Dictionary",
+                                "printedName": "[Swift.String : Any]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "ProtocolComposition",
+                                    "printedName": "Any"
+                                  }
+                                ],
+                                "usr": "s:SD"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "[Swift.String : Any]?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Dictionary",
+                                "printedName": "[Swift.String : Any]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "ProtocolComposition",
+                                    "printedName": "Any"
+                                  }
+                                ],
+                                "usr": "s:SD"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayUNetworkingKit.PayUHTTPTask.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUHTTPTask",
+                        "printedName": "PayUNetworkingKit.PayUHTTPTask",
+                        "usr": "s:17PayUNetworkingKit0A9UHTTPTaskO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17PayUNetworkingKit0A9UHTTPTaskO17requestParametersyACSDySSypGSg_AFtcACmF",
+            "mangledName": "$s17PayUNetworkingKit0A9UHTTPTaskO17requestParametersyACSDySSypGSg_AFtcACmF",
+            "moduleName": "PayUNetworkingKit"
+          },
+          {
+            "kind": "Var",
+            "name": "requestParametersAndHeaders",
+            "printedName": "requestParametersAndHeaders",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayUNetworkingKit.PayUHTTPTask.Type) -> ([Swift.String : Any]?, [Swift.String : Any]?, [Swift.String : Swift.String]?) -> PayUNetworkingKit.PayUHTTPTask",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([Swift.String : Any]?, [Swift.String : Any]?, [Swift.String : Swift.String]?) -> PayUNetworkingKit.PayUHTTPTask",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUHTTPTask",
+                        "printedName": "PayUNetworkingKit.PayUHTTPTask",
+                        "usr": "s:17PayUNetworkingKit0A9UHTTPTaskO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(bodyParameters: [Swift.String : Any]?, urlParameters: [Swift.String : Any]?, additionalHeaders: [Swift.String : Swift.String]?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "[Swift.String : Any]?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Dictionary",
+                                "printedName": "[Swift.String : Any]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "ProtocolComposition",
+                                    "printedName": "Any"
+                                  }
+                                ],
+                                "usr": "s:SD"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "[Swift.String : Any]?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Dictionary",
+                                "printedName": "[Swift.String : Any]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "ProtocolComposition",
+                                    "printedName": "Any"
+                                  }
+                                ],
+                                "usr": "s:SD"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "[Swift.String : Swift.String]?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Dictionary",
+                                "printedName": "[Swift.String : Swift.String]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:SD"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayUNetworkingKit.PayUHTTPTask.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUHTTPTask",
+                        "printedName": "PayUNetworkingKit.PayUHTTPTask",
+                        "usr": "s:17PayUNetworkingKit0A9UHTTPTaskO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17PayUNetworkingKit0A9UHTTPTaskO27requestParametersAndHeadersyACSDySSypGSg_AFSDyS2SGSgtcACmF",
+            "mangledName": "$s17PayUNetworkingKit0A9UHTTPTaskO27requestParametersAndHeadersyACSDySSypGSg_AFSDyS2SGSgtcACmF",
+            "moduleName": "PayUNetworkingKit"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17PayUNetworkingKit0A9UHTTPTaskO",
+        "mangledName": "$s17PayUNetworkingKit0A9UHTTPTaskO",
+        "moduleName": "PayUNetworkingKit",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayUNetworkingKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PayUEndPointType",
+        "printedName": "PayUEndPointType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "baseURL",
+            "printedName": "baseURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17PayUNetworkingKit0A13UEndPointTypeP7baseURL10Foundation0H0Vvp",
+            "mangledName": "$s17PayUNetworkingKit0A13UEndPointTypeP7baseURL10Foundation0H0Vvp",
+            "moduleName": "PayUNetworkingKit",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PayUNetworkingKit0A13UEndPointTypeP7baseURL10Foundation0H0Vvg",
+                "mangledName": "$s17PayUNetworkingKit0A13UEndPointTypeP7baseURL10Foundation0H0Vvg",
+                "moduleName": "PayUNetworkingKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : PayUNetworkingKit.PayUEndPointType>",
+                "sugared_genericSig": "<Self where Self : PayUNetworkingKit.PayUEndPointType>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "path",
+            "printedName": "path",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17PayUNetworkingKit0A13UEndPointTypeP4pathSSvp",
+            "mangledName": "$s17PayUNetworkingKit0A13UEndPointTypeP4pathSSvp",
+            "moduleName": "PayUNetworkingKit",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PayUNetworkingKit0A13UEndPointTypeP4pathSSvg",
+                "mangledName": "$s17PayUNetworkingKit0A13UEndPointTypeP4pathSSvg",
+                "moduleName": "PayUNetworkingKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : PayUNetworkingKit.PayUEndPointType>",
+                "sugared_genericSig": "<Self where Self : PayUNetworkingKit.PayUEndPointType>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "httpMethod",
+            "printedName": "httpMethod",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayUHTTPMethod",
+                "printedName": "PayUNetworkingKit.PayUHTTPMethod",
+                "usr": "s:17PayUNetworkingKit0A11UHTTPMethodO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17PayUNetworkingKit0A13UEndPointTypeP10httpMethodAA0A11UHTTPMethodOvp",
+            "mangledName": "$s17PayUNetworkingKit0A13UEndPointTypeP10httpMethodAA0A11UHTTPMethodOvp",
+            "moduleName": "PayUNetworkingKit",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUHTTPMethod",
+                    "printedName": "PayUNetworkingKit.PayUHTTPMethod",
+                    "usr": "s:17PayUNetworkingKit0A11UHTTPMethodO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PayUNetworkingKit0A13UEndPointTypeP10httpMethodAA0A11UHTTPMethodOvg",
+                "mangledName": "$s17PayUNetworkingKit0A13UEndPointTypeP10httpMethodAA0A11UHTTPMethodOvg",
+                "moduleName": "PayUNetworkingKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : PayUNetworkingKit.PayUEndPointType>",
+                "sugared_genericSig": "<Self where Self : PayUNetworkingKit.PayUEndPointType>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "task",
+            "printedName": "task",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayUHTTPTask",
+                "printedName": "PayUNetworkingKit.PayUHTTPTask",
+                "usr": "s:17PayUNetworkingKit0A9UHTTPTaskO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17PayUNetworkingKit0A13UEndPointTypeP4taskAA0A9UHTTPTaskOvp",
+            "mangledName": "$s17PayUNetworkingKit0A13UEndPointTypeP4taskAA0A9UHTTPTaskOvp",
+            "moduleName": "PayUNetworkingKit",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUHTTPTask",
+                    "printedName": "PayUNetworkingKit.PayUHTTPTask",
+                    "usr": "s:17PayUNetworkingKit0A9UHTTPTaskO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PayUNetworkingKit0A13UEndPointTypeP4taskAA0A9UHTTPTaskOvg",
+                "mangledName": "$s17PayUNetworkingKit0A13UEndPointTypeP4taskAA0A9UHTTPTaskOvg",
+                "moduleName": "PayUNetworkingKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : PayUNetworkingKit.PayUEndPointType>",
+                "sugared_genericSig": "<Self where Self : PayUNetworkingKit.PayUEndPointType>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "headers",
+            "printedName": "headers",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17PayUNetworkingKit0A13UEndPointTypeP7headersSDyS2SGSgvp",
+            "mangledName": "$s17PayUNetworkingKit0A13UEndPointTypeP7headersSDyS2SGSgvp",
+            "moduleName": "PayUNetworkingKit",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PayUNetworkingKit0A13UEndPointTypeP7headersSDyS2SGSgvg",
+                "mangledName": "$s17PayUNetworkingKit0A13UEndPointTypeP7headersSDyS2SGSgvg",
+                "moduleName": "PayUNetworkingKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : PayUNetworkingKit.PayUEndPointType>",
+                "sugared_genericSig": "<Self where Self : PayUNetworkingKit.PayUEndPointType>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "destination",
+            "printedName": "destination",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PayUNetworkingKit.PayUEncodingDestination?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUEncodingDestination",
+                    "printedName": "PayUNetworkingKit.PayUEncodingDestination",
+                    "usr": "s:17PayUNetworkingKit0A20UEncodingDestinationO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17PayUNetworkingKit0A13UEndPointTypeP11destinationAA0A20UEncodingDestinationOSgvp",
+            "mangledName": "$s17PayUNetworkingKit0A13UEndPointTypeP11destinationAA0A20UEncodingDestinationOSgvp",
+            "moduleName": "PayUNetworkingKit",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PayUNetworkingKit.PayUEncodingDestination?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUEncodingDestination",
+                        "printedName": "PayUNetworkingKit.PayUEncodingDestination",
+                        "usr": "s:17PayUNetworkingKit0A20UEncodingDestinationO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PayUNetworkingKit0A13UEndPointTypeP11destinationAA0A20UEncodingDestinationOSgvg",
+                "mangledName": "$s17PayUNetworkingKit0A13UEndPointTypeP11destinationAA0A20UEncodingDestinationOSgvg",
+                "moduleName": "PayUNetworkingKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : PayUNetworkingKit.PayUEndPointType>",
+                "sugared_genericSig": "<Self where Self : PayUNetworkingKit.PayUEndPointType>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "headers",
+            "printedName": "headers",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17PayUNetworkingKit0A13UEndPointTypePAAE7headersSDyS2SGSgvp",
+            "mangledName": "$s17PayUNetworkingKit0A13UEndPointTypePAAE7headersSDyS2SGSgvp",
+            "moduleName": "PayUNetworkingKit",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PayUNetworkingKit0A13UEndPointTypePAAE7headersSDyS2SGSgvg",
+                "mangledName": "$s17PayUNetworkingKit0A13UEndPointTypePAAE7headersSDyS2SGSgvg",
+                "moduleName": "PayUNetworkingKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : PayUNetworkingKit.PayUEndPointType>",
+                "sugared_genericSig": "<Self where Self : PayUNetworkingKit.PayUEndPointType>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "destination",
+            "printedName": "destination",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PayUNetworkingKit.PayUEncodingDestination?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUEncodingDestination",
+                    "printedName": "PayUNetworkingKit.PayUEncodingDestination",
+                    "usr": "s:17PayUNetworkingKit0A20UEncodingDestinationO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17PayUNetworkingKit0A13UEndPointTypePAAE11destinationAA0A20UEncodingDestinationOSgvp",
+            "mangledName": "$s17PayUNetworkingKit0A13UEndPointTypePAAE11destinationAA0A20UEncodingDestinationOSgvp",
+            "moduleName": "PayUNetworkingKit",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PayUNetworkingKit.PayUEncodingDestination?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUEncodingDestination",
+                        "printedName": "PayUNetworkingKit.PayUEncodingDestination",
+                        "usr": "s:17PayUNetworkingKit0A20UEncodingDestinationO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PayUNetworkingKit0A13UEndPointTypePAAE11destinationAA0A20UEncodingDestinationOSgvg",
+                "mangledName": "$s17PayUNetworkingKit0A13UEndPointTypePAAE11destinationAA0A20UEncodingDestinationOSgvg",
+                "moduleName": "PayUNetworkingKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : PayUNetworkingKit.PayUEndPointType>",
+                "sugared_genericSig": "<Self where Self : PayUNetworkingKit.PayUEndPointType>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:17PayUNetworkingKit0A13UEndPointTypeP",
+        "mangledName": "$s17PayUNetworkingKit0A13UEndPointTypeP",
+        "moduleName": "PayUNetworkingKit",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayUNetworkingKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PayUJSONParameterEncoder",
+        "printedName": "PayUJSONParameterEncoder",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(urlRequest:with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "paramValueOwnership": "InOut",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17PayUNetworkingKit0A21UJSONParameterEncoderV6encode10urlRequest4withy10Foundation10URLRequestVz_SDySSypGtKF",
+            "mangledName": "$s17PayUNetworkingKit0A21UJSONParameterEncoderV6encode10urlRequest4withy10Foundation10URLRequestVz_SDySSypGtKF",
+            "moduleName": "PayUNetworkingKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:17PayUNetworkingKit0A21UJSONParameterEncoderV",
+        "mangledName": "$s17PayUNetworkingKit0A21UJSONParameterEncoderV",
+        "moduleName": "PayUNetworkingKit",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayUNetworkingKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PayULoggerKit",
+        "printedName": "PayULoggerKit",
+        "declKind": "Import",
+        "moduleName": "PayUNetworkingKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PayURouter",
+        "printedName": "PayURouter",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayURouter",
+                "printedName": "PayUNetworkingKit.PayURouter<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:17PayUNetworkingKit0A7URouterC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17PayUNetworkingKit0A7URouterCACyxGycfc",
+            "mangledName": "$s17PayUNetworkingKit0A7URouterCACyxGycfc",
+            "moduleName": "PayUNetworkingKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : PayUNetworkingKit.PayUEndPointType>",
+            "sugared_genericSig": "<EndPoint where EndPoint : PayUNetworkingKit.PayUEndPointType>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.Data?, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.Data?, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.Data?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17PayUNetworkingKit0A7URouterC7request_10completionyx_y10Foundation4DataVSg_s5Error_pSgtctF",
+            "mangledName": "$s17PayUNetworkingKit0A7URouterC7request_10completionyx_y10Foundation4DataVSg_s5Error_pSgtctF",
+            "moduleName": "PayUNetworkingKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : PayUNetworkingKit.PayUEndPointType>",
+            "sugared_genericSig": "<EndPoint where EndPoint : PayUNetworkingKit.PayUEndPointType>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:17PayUNetworkingKit0A7URouterC",
+        "mangledName": "$s17PayUNetworkingKit0A7URouterC",
+        "moduleName": "PayUNetworkingKit",
+        "genericSig": "<τ_0_0 where τ_0_0 : PayUNetworkingKit.PayUEndPointType>",
+        "sugared_genericSig": "<EndPoint where EndPoint : PayUNetworkingKit.PayUEndPointType>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayUNetworkingKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PayUEncodingDestination",
+        "printedName": "PayUEncodingDestination",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "queryString",
+            "printedName": "queryString",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayUNetworkingKit.PayUEncodingDestination.Type) -> PayUNetworkingKit.PayUEncodingDestination",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUEncodingDestination",
+                    "printedName": "PayUNetworkingKit.PayUEncodingDestination",
+                    "usr": "s:17PayUNetworkingKit0A20UEncodingDestinationO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayUNetworkingKit.PayUEncodingDestination.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUEncodingDestination",
+                        "printedName": "PayUNetworkingKit.PayUEncodingDestination",
+                        "usr": "s:17PayUNetworkingKit0A20UEncodingDestinationO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17PayUNetworkingKit0A20UEncodingDestinationO11queryStringyA2CmF",
+            "mangledName": "$s17PayUNetworkingKit0A20UEncodingDestinationO11queryStringyA2CmF",
+            "moduleName": "PayUNetworkingKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "httpBody",
+            "printedName": "httpBody",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayUNetworkingKit.PayUEncodingDestination.Type) -> PayUNetworkingKit.PayUEncodingDestination",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUEncodingDestination",
+                    "printedName": "PayUNetworkingKit.PayUEncodingDestination",
+                    "usr": "s:17PayUNetworkingKit0A20UEncodingDestinationO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayUNetworkingKit.PayUEncodingDestination.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUEncodingDestination",
+                        "printedName": "PayUNetworkingKit.PayUEncodingDestination",
+                        "usr": "s:17PayUNetworkingKit0A20UEncodingDestinationO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17PayUNetworkingKit0A20UEncodingDestinationO8httpBodyyA2CmF",
+            "mangledName": "$s17PayUNetworkingKit0A20UEncodingDestinationO8httpBodyyA2CmF",
+            "moduleName": "PayUNetworkingKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PayUEncodingDestination",
+                "printedName": "PayUNetworkingKit.PayUEncodingDestination",
+                "usr": "s:17PayUNetworkingKit0A20UEncodingDestinationO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PayUEncodingDestination",
+                "printedName": "PayUNetworkingKit.PayUEncodingDestination",
+                "usr": "s:17PayUNetworkingKit0A20UEncodingDestinationO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17PayUNetworkingKit0A20UEncodingDestinationO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s17PayUNetworkingKit0A20UEncodingDestinationO2eeoiySbAC_ACtFZ",
+            "moduleName": "PayUNetworkingKit",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17PayUNetworkingKit0A20UEncodingDestinationO9hashValueSivp",
+            "mangledName": "$s17PayUNetworkingKit0A20UEncodingDestinationO9hashValueSivp",
+            "moduleName": "PayUNetworkingKit",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17PayUNetworkingKit0A20UEncodingDestinationO9hashValueSivg",
+                "mangledName": "$s17PayUNetworkingKit0A20UEncodingDestinationO9hashValueSivg",
+                "moduleName": "PayUNetworkingKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17PayUNetworkingKit0A20UEncodingDestinationO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s17PayUNetworkingKit0A20UEncodingDestinationO4hash4intoys6HasherVz_tF",
+            "moduleName": "PayUNetworkingKit",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17PayUNetworkingKit0A20UEncodingDestinationO",
+        "mangledName": "$s17PayUNetworkingKit0A20UEncodingDestinationO",
+        "moduleName": "PayUNetworkingKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayUNetworkingKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUURLParameterEncoder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 716,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUURLParameterEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 834,
+      "length": 3,
+      "value": "\"&\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUURLParameterEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 843,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUURLParameterEncoder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 881,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUURLParameterEncoder.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1111,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUURLParameterEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 1182,
+      "length": 14,
+      "value": "\"Content-Type\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUURLParameterEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 1239,
+      "length": 50,
+      "value": "\"application\/x-www-form-urlencoded; charset=utf-8\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUURLParameterEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 1311,
+      "length": 14,
+      "value": "\"Content-Type\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUURLParameterEncoder.swift",
+      "kind": "Array",
+      "offset": 1477,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUURLParameterEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 1666,
+      "length": 10,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUURLParameterEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 1675,
+      "length": 4,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUURLParameterEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 1741,
+      "length": 10,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUURLParameterEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 1750,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUURLParameterEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 1810,
+      "length": 13,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUURLParameterEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 1816,
+      "length": 1,
+      "value": "\"=\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUURLParameterEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 1822,
+      "length": 23,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUURLParameterEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 1844,
+      "length": 3,
+      "value": "\"&\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUURLParameterEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 2125,
+      "length": 13,
+      "value": "\";\/?:@&=+$, \""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUParameterEncoding.swift",
+      "kind": "StringLiteral",
+      "offset": 738,
+      "length": 22,
+      "value": "\"Parameters were nil.\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUParameterEncoding.swift",
+      "kind": "StringLiteral",
+      "offset": 787,
+      "length": 28,
+      "value": "\"Parameter encoding failed.\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUParameterEncoding.swift",
+      "kind": "StringLiteral",
+      "offset": 838,
+      "length": 13,
+      "value": "\"URL is nil.\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUParameterEncoding.swift",
+      "kind": "StringLiteral",
+      "offset": 738,
+      "length": 22,
+      "value": "\"Parameters were nil.\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUParameterEncoding.swift",
+      "kind": "StringLiteral",
+      "offset": 787,
+      "length": 28,
+      "value": "\"Parameter encoding failed.\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUParameterEncoding.swift",
+      "kind": "StringLiteral",
+      "offset": 838,
+      "length": 13,
+      "value": "\"URL is nil.\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayUHTTPMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 236,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayUHTTPMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 258,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayUHTTPMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 280,
+      "length": 5,
+      "value": "\"PUT\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayUHTTPMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 303,
+      "length": 7,
+      "value": "\"PATCH\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayUHTTPMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 329,
+      "length": 8,
+      "value": "\"DELETE\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayUHTTPMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 236,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayUHTTPMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 258,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayUHTTPMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 280,
+      "length": 5,
+      "value": "\"PUT\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayUHTTPMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 303,
+      "length": 7,
+      "value": "\"PATCH\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayUHTTPMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 329,
+      "length": 8,
+      "value": "\"DELETE\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayUEndPointType.swift",
+      "kind": "Dictionary",
+      "offset": 534,
+      "length": 43,
+      "value": "[(\"User-Agent\", \"upiSdk-iOS\/Mobile\/,iPhone\")]"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUJSONParameterEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 688,
+      "length": 14,
+      "value": "\"Content-Type\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUJSONParameterEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 749,
+      "length": 18,
+      "value": "\"application\/json\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Encoding\/PayUJSONParameterEncoder.swift",
+      "kind": "StringLiteral",
+      "offset": 789,
+      "length": 14,
+      "value": "\"Content-Type\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "StringLiteral",
+      "offset": 533,
+      "length": 51,
+      "value": "\"Request URL:\n \""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "StringLiteral",
+      "offset": 583,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "StringLiteral",
+      "offset": 614,
+      "length": 58,
+      "value": "\"HTTP Method:\n \""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "StringLiteral",
+      "offset": 671,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "FloatLiteral",
+      "offset": 2116,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "StringLiteral",
+      "offset": 2284,
+      "length": 18,
+      "value": "\"application\/json\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "StringLiteral",
+      "offset": 2324,
+      "length": 14,
+      "value": "\"Content-Type\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3424,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3430,
+      "length": 3,
+      "value": "299"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3451,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3470,
+      "length": 3,
+      "value": "401"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3476,
+      "length": 3,
+      "value": "403"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3547,
+      "length": 3,
+      "value": "404"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3615,
+      "length": 3,
+      "value": "405"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3621,
+      "length": 3,
+      "value": "500"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3684,
+      "length": 3,
+      "value": "501"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3690,
+      "length": 3,
+      "value": "599"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3752,
+      "length": 3,
+      "value": "600"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "StringLiteral",
+      "offset": 4276,
+      "length": 43,
+      "value": "\"JSON Body Parameters:\n \""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "StringLiteral",
+      "offset": 4318,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "StringLiteral",
+      "offset": 4516,
+      "length": 36,
+      "value": "\"URL Parameters:\n \""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "StringLiteral",
+      "offset": 4551,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "StringLiteral",
+      "offset": 5427,
+      "length": 36,
+      "value": "\"You need to be authenticated first\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "StringLiteral",
+      "offset": 5507,
+      "length": 18,
+      "value": "\"HTTP 404 occured\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayURouter.swift",
+      "kind": "StringLiteral",
+      "offset": 5564,
+      "length": 14,
+      "value": "\"Server Error\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayUEncodingDestination.swift",
+      "kind": "BooleanLiteral",
+      "offset": 696,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUNetworking\/PayUNetworkingKit\/Service\/PayUEncodingDestination.swift",
+      "kind": "BooleanLiteral",
+      "offset": 739,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}

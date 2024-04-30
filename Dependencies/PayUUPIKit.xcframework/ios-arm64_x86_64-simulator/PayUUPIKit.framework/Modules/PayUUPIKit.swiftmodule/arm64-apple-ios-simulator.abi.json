@@ -1,0 +1,3355 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PayUUPICoreKit",
+        "printedName": "PayUUPICoreKit",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PayUUPICoreKit",
+        "printedName": "PayUUPICoreKit",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit"
+      },
+      {
+        "kind": "Import",
+        "name": "PayULoggerKit",
+        "printedName": "PayULoggerKit",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit"
+      },
+      {
+        "kind": "Import",
+        "name": "PayUParamsKit",
+        "printedName": "PayUParamsKit",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PayUUPICoreKit",
+        "printedName": "PayUUPICoreKit",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit"
+      },
+      {
+        "kind": "Import",
+        "name": "PayULoggerKit",
+        "printedName": "PayULoggerKit",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit"
+      },
+      {
+        "kind": "Import",
+        "name": "PayUParamsKit",
+        "printedName": "PayUParamsKit",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PayUCollectScreenType",
+        "printedName": "PayUCollectScreenType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "upi",
+            "printedName": "upi",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayUUPIKit.PayUCollectScreenType.Type) -> PayUUPIKit.PayUCollectScreenType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUCollectScreenType",
+                    "printedName": "PayUUPIKit.PayUCollectScreenType",
+                    "usr": "c:@M@PayUUPIKit@E@PayUCollectScreenType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayUUPIKit.PayUCollectScreenType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUCollectScreenType",
+                        "printedName": "PayUUPIKit.PayUCollectScreenType",
+                        "usr": "c:@M@PayUUPIKit@E@PayUCollectScreenType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@PayUUPIKit@E@PayUCollectScreenType@PayUCollectScreenTypeUpi",
+            "mangledName": "$s10PayUUPIKit0A18UCollectScreenTypeO3upiyA2CmF",
+            "moduleName": "PayUUPIKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "gpayFallback",
+            "printedName": "gpayFallback",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayUUPIKit.PayUCollectScreenType.Type) -> PayUUPIKit.PayUCollectScreenType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUCollectScreenType",
+                    "printedName": "PayUUPIKit.PayUCollectScreenType",
+                    "usr": "c:@M@PayUUPIKit@E@PayUCollectScreenType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayUUPIKit.PayUCollectScreenType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUCollectScreenType",
+                        "printedName": "PayUUPIKit.PayUCollectScreenType",
+                        "usr": "c:@M@PayUUPIKit@E@PayUCollectScreenType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@PayUUPIKit@E@PayUCollectScreenType@PayUCollectScreenTypeGpayFallback",
+            "mangledName": "$s10PayUUPIKit0A18UCollectScreenTypeO12gpayFallbackyA2CmF",
+            "moduleName": "PayUUPIKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PayUUPIKit.PayUCollectScreenType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUCollectScreenType",
+                    "printedName": "PayUUPIKit.PayUCollectScreenType",
+                    "usr": "c:@M@PayUUPIKit@E@PayUCollectScreenType"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10PayUUPIKit0A18UCollectScreenTypeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s10PayUUPIKit0A18UCollectScreenTypeO8rawValueACSgSi_tcfc",
+            "moduleName": "PayUUPIKit",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PayUUPIKit0A18UCollectScreenTypeO8rawValueSivp",
+            "mangledName": "$s10PayUUPIKit0A18UCollectScreenTypeO8rawValueSivp",
+            "moduleName": "PayUUPIKit",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PayUUPIKit0A18UCollectScreenTypeO8rawValueSivg",
+                "mangledName": "$s10PayUUPIKit0A18UCollectScreenTypeO8rawValueSivg",
+                "moduleName": "PayUUPIKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@PayUUPIKit@E@PayUCollectScreenType",
+        "mangledName": "$s10PayUUPIKit0A18UCollectScreenTypeO",
+        "moduleName": "PayUUPIKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PayCollectPaymentVC",
+        "printedName": "PayCollectPaymentVC",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "availablePaymentOptions",
+            "printedName": "availablePaymentOptions",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PayUUPICoreKit.PayUUPIPaymentOptions?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUUPIPaymentOptions",
+                    "printedName": "PayUUPICoreKit.PayUUPIPaymentOptions",
+                    "usr": "c:@M@PayUUPICoreKit@objc(cs)PayUUPIPaymentOptions"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUUPIKit@objc(cs)PayCollectPaymentVC(py)availablePaymentOptions",
+            "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC09availableD7Options0A11UUPICoreKit0a11UUPIPaymentG0CSgvp",
+            "moduleName": "PayUUPIKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PayUUPICoreKit.PayUUPIPaymentOptions?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUUPIPaymentOptions",
+                        "printedName": "PayUUPICoreKit.PayUUPIPaymentOptions",
+                        "usr": "c:@M@PayUUPICoreKit@objc(cs)PayUUPIPaymentOptions"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUUPIKit@objc(cs)PayCollectPaymentVC(im)availablePaymentOptions",
+                "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC09availableD7Options0A11UUPICoreKit0a11UUPIPaymentG0CSgvg",
+                "moduleName": "PayUUPIKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PayUUPICoreKit.PayUUPIPaymentOptions?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUUPIPaymentOptions",
+                        "printedName": "PayUUPICoreKit.PayUUPIPaymentOptions",
+                        "usr": "c:@M@PayUUPICoreKit@objc(cs)PayUUPIPaymentOptions"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUUPIKit@objc(cs)PayCollectPaymentVC(im)setAvailablePaymentOptions:",
+                "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC09availableD7Options0A11UUPICoreKit0a11UUPIPaymentG0CSgvs",
+                "moduleName": "PayUUPIKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PayUUPIKit0A16CollectPaymentVCC09availableD7Options0A11UUPICoreKit0a11UUPIPaymentG0CSgvM",
+                "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC09availableD7Options0A11UUPICoreKit0a11UUPIPaymentG0CSgvM",
+                "moduleName": "PayUUPIKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "screenType",
+            "printedName": "screenType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayUCollectScreenType",
+                "printedName": "PayUUPIKit.PayUCollectScreenType",
+                "usr": "c:@M@PayUUPIKit@E@PayUCollectScreenType"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUUPIKit@objc(cs)PayCollectPaymentVC(py)screenType",
+            "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC10screenTypeAA0a14UCollectScreenG0Ovp",
+            "moduleName": "PayUUPIKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUCollectScreenType",
+                    "printedName": "PayUUPIKit.PayUCollectScreenType",
+                    "usr": "c:@M@PayUUPIKit@E@PayUCollectScreenType"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUUPIKit@objc(cs)PayCollectPaymentVC(im)screenType",
+                "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC10screenTypeAA0a14UCollectScreenG0Ovg",
+                "moduleName": "PayUUPIKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUCollectScreenType",
+                    "printedName": "PayUUPIKit.PayUCollectScreenType",
+                    "usr": "c:@M@PayUUPIKit@E@PayUCollectScreenType"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUUPIKit@objc(cs)PayCollectPaymentVC(im)setScreenType:",
+                "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC10screenTypeAA0a14UCollectScreenG0Ovs",
+                "moduleName": "PayUUPIKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PayUUPIKit0A16CollectPaymentVCC10screenTypeAA0a14UCollectScreenG0OvM",
+                "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC10screenTypeAA0a14UCollectScreenG0OvM",
+                "moduleName": "PayUUPIKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "paymentParams",
+            "printedName": "paymentParams",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PayUParamsKit.PayUPaymentParam?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUPaymentParam",
+                    "printedName": "PayUParamsKit.PayUPaymentParam",
+                    "usr": "c:@M@PayUParamsKit@objc(cs)PayUPaymentParam"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUUPIKit@objc(cs)PayCollectPaymentVC(py)paymentParams",
+            "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC13paymentParams0A10UParamsKit0A13UPaymentParamCSgvp",
+            "moduleName": "PayUUPIKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PayUParamsKit.PayUPaymentParam?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUPaymentParam",
+                        "printedName": "PayUParamsKit.PayUPaymentParam",
+                        "usr": "c:@M@PayUParamsKit@objc(cs)PayUPaymentParam"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUUPIKit@objc(cs)PayCollectPaymentVC(im)paymentParams",
+                "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC13paymentParams0A10UParamsKit0A13UPaymentParamCSgvg",
+                "moduleName": "PayUUPIKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PayUParamsKit.PayUPaymentParam?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUPaymentParam",
+                        "printedName": "PayUParamsKit.PayUPaymentParam",
+                        "usr": "c:@M@PayUParamsKit@objc(cs)PayUPaymentParam"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUUPIKit@objc(cs)PayCollectPaymentVC(im)setPaymentParams:",
+                "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC13paymentParams0A10UParamsKit0A13UPaymentParamCSgvs",
+                "moduleName": "PayUUPIKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PayUUPIKit0A16CollectPaymentVCC13paymentParams0A10UParamsKit0A13UPaymentParamCSgvM",
+                "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC13paymentParams0A10UParamsKit0A13UPaymentParamCSgvM",
+                "moduleName": "PayUUPIKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidLoad",
+            "printedName": "viewDidLoad()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PayUUPIKit@objc(cs)PayCollectPaymentVC(im)viewDidLoad",
+            "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC11viewDidLoadyyF",
+            "moduleName": "PayUUPIKit",
+            "overriding": true,
+            "objc_name": "viewDidLoad",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "viewWillAppear",
+            "printedName": "viewWillAppear(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PayUUPIKit@objc(cs)PayCollectPaymentVC(im)viewWillAppear:",
+            "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC14viewWillAppearyySbF",
+            "moduleName": "PayUUPIKit",
+            "overriding": true,
+            "objc_name": "viewWillAppear:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "viewWillDisappear",
+            "printedName": "viewWillDisappear(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PayUUPIKit@objc(cs)PayCollectPaymentVC(im)viewWillDisappear:",
+            "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC17viewWillDisappearyySbF",
+            "moduleName": "PayUUPIKit",
+            "overriding": true,
+            "objc_name": "viewWillDisappear:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nibName:bundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayCollectPaymentVC",
+                "printedName": "PayUUPIKit.PayCollectPaymentVC",
+                "usr": "c:@M@PayUUPIKit@objc(cs)PayCollectPaymentVC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PayUUPIKit@objc(cs)PayCollectPaymentVC(im)initWithNibName:bundle:",
+            "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+            "moduleName": "PayUUPIKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNibName:bundle:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PayUUPIKit.PayCollectPaymentVC?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayCollectPaymentVC",
+                    "printedName": "PayUUPIKit.PayCollectPaymentVC",
+                    "usr": "c:@M@PayUUPIKit@objc(cs)PayCollectPaymentVC"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PayUUPIKit@objc(cs)PayCollectPaymentVC(im)initWithCoder:",
+            "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "PayUUPIKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "tableView",
+            "printedName": "tableView(_:numberOfRowsInSection:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITableView",
+                "printedName": "UIKit.UITableView",
+                "usr": "c:objc(cs)UITableView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PayUUPIKit@objc(cs)PayCollectPaymentVC(im)tableView:numberOfRowsInSection:",
+            "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC9tableView_21numberOfRowsInSectionSiSo07UITableG0C_SitF",
+            "moduleName": "PayUUPIKit",
+            "objc_name": "tableView:numberOfRowsInSection:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "tableView",
+            "printedName": "tableView(_:cellForRowAt:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UITableViewCell",
+                "printedName": "UIKit.UITableViewCell",
+                "usr": "c:objc(cs)UITableViewCell"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITableView",
+                "printedName": "UIKit.UITableView",
+                "usr": "c:objc(cs)UITableView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IndexPath",
+                "printedName": "Foundation.IndexPath",
+                "usr": "s:10Foundation9IndexPathV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PayUUPIKit@objc(cs)PayCollectPaymentVC(im)tableView:cellForRowAtIndexPath:",
+            "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC9tableView_12cellForRowAtSo07UITableG4CellCSo0lG0C_10Foundation9IndexPathVtF",
+            "moduleName": "PayUUPIKit",
+            "objc_name": "tableView:cellForRowAtIndexPath:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "numberOfSections",
+            "printedName": "numberOfSections(in:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITableView",
+                "printedName": "UIKit.UITableView",
+                "usr": "c:objc(cs)UITableView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PayUUPIKit@objc(cs)PayCollectPaymentVC(im)numberOfSectionsInTableView:",
+            "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC16numberOfSections2inSiSo11UITableViewC_tF",
+            "moduleName": "PayUUPIKit",
+            "objc_name": "numberOfSectionsInTableView:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "tableView",
+            "printedName": "tableView(_:didSelectRowAt:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UITableView",
+                "printedName": "UIKit.UITableView",
+                "usr": "c:objc(cs)UITableView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IndexPath",
+                "printedName": "Foundation.IndexPath",
+                "usr": "s:10Foundation9IndexPathV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PayUUPIKit@objc(cs)PayCollectPaymentVC(im)tableView:didSelectRowAtIndexPath:",
+            "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC9tableView_14didSelectRowAtySo07UITableG0C_10Foundation9IndexPathVtF",
+            "moduleName": "PayUUPIKit",
+            "objc_name": "tableView:didSelectRowAtIndexPath:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PayUUPIKit@objc(cs)PayCollectPaymentVC",
+        "mangledName": "$s10PayUUPIKit0A16CollectPaymentVCC",
+        "moduleName": "PayUUPIKit",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIViewController",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PayUUPI",
+        "printedName": "PayUUPI",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "getCollectPaymentVC",
+            "printedName": "getCollectPaymentVC()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayCollectPaymentVC",
+                "printedName": "PayUUPIKit.PayCollectPaymentVC",
+                "usr": "c:@M@PayUUPIKit@objc(cs)PayCollectPaymentVC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PayUUPIKit@objc(cs)PayUUPI(cm)getCollectPaymentVC",
+            "mangledName": "$s10PayUUPIKit0A4UUPIC19getCollectPaymentVCAA0aefG0CyFZ",
+            "moduleName": "PayUUPIKit",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayUUPI",
+                "printedName": "PayUUPIKit.PayUUPI",
+                "usr": "c:@M@PayUUPIKit@objc(cs)PayUUPI"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PayUUPIKit@objc(cs)PayUUPI(im)init",
+            "mangledName": "$s10PayUUPIKit0A4UUPICACycfc",
+            "moduleName": "PayUUPIKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PayUUPIKit@objc(cs)PayUUPI",
+        "mangledName": "$s10PayUUPIKit0A4UUPIC",
+        "moduleName": "PayUUPIKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PayUUPICoreKit",
+        "printedName": "PayUUPICoreKit",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit"
+      },
+      {
+        "kind": "Import",
+        "name": "PayULoggerKit",
+        "printedName": "PayULoggerKit",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit"
+      },
+      {
+        "kind": "Import",
+        "name": "PayUParamsKit",
+        "printedName": "PayUParamsKit",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit"
+      },
+      {
+        "kind": "Import",
+        "name": "DeveloperToolsSupport",
+        "printedName": "DeveloperToolsSupport",
+        "declKind": "Import",
+        "moduleName": "PayUUPIKit"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/PayUUPIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 269,
+      "length": 4,
+      "value": "39.0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "FloatLiteral",
+      "offset": 232,
+      "length": 4,
+      "value": "40.0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "FloatLiteral",
+      "offset": 279,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "Array",
+      "offset": 1136,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1149,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "StringLiteral",
+      "offset": 1160,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "StringLiteral",
+      "offset": 1447,
+      "length": 16,
+      "value": "\"SuggestionCell\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1708,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1717,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1728,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1738,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2597,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2620,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2690,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2983,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3038,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "StringLiteral",
+      "offset": 392,
+      "length": 16,
+      "value": "\"PayUUPIKit.PayUDropDownView\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4183,
+      "length": 3,
+      "value": "192"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4187,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4199,
+      "length": 3,
+      "value": "192"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4203,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4214,
+      "length": 3,
+      "value": "192"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4218,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "FloatLiteral",
+      "offset": 4230,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "StringLiteral",
+      "offset": 7178,
+      "length": 16,
+      "value": "\"SuggestionCell\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "StringLiteral",
+      "offset": 7238,
+      "length": 3,
+      "value": "\"@\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "StringLiteral",
+      "offset": 8062,
+      "length": 15,
+      "value": "\"Avenir-Medium\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8085,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8225,
+      "length": 3,
+      "value": "192"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8229,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8241,
+      "length": 3,
+      "value": "192"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8245,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8256,
+      "length": 3,
+      "value": "192"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8260,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUDropDownView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8272,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Extensions\/PayUUIButtonExtension.swift",
+      "kind": "FloatLiteral",
+      "offset": 297,
+      "length": 5,
+      "value": "0.125"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Extensions\/PayUUIButtonExtension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 311,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Extensions\/PayUUIButtonExtension.swift",
+      "kind": "FloatLiteral",
+      "offset": 408,
+      "length": 4,
+      "value": "0.94"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Extensions\/PayUUIButtonExtension.swift",
+      "kind": "FloatLiteral",
+      "offset": 417,
+      "length": 4,
+      "value": "0.94"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Extensions\/PayUUIButtonExtension.swift",
+      "kind": "FloatLiteral",
+      "offset": 494,
+      "length": 5,
+      "value": "0.125"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Extensions\/PayUUIButtonExtension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 508,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectListNetworkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 522,
+      "length": 69,
+      "value": "\"Payment Params not available in Collect List Screen. Invalid State.\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectListNetworkManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 654,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectListNetworkManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 685,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectListNetworkManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 728,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectListNetworkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1720,
+      "length": 84,
+      "value": "\"Error in fetching Apps and their handles due to: \""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectListNetworkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1790,
+      "length": 1,
+      "value": "\". Retrying...\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectListNetworkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2366,
+      "length": 9,
+      "value": "\"Unknown\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectListNetworkManager.swift",
+      "kind": "Array",
+      "offset": 2386,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectListNetworkManager.swift",
+      "kind": "Array",
+      "offset": 2761,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 312,
+      "length": 12,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 312,
+      "length": 12,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 815,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "Array",
+      "offset": 1015,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1263,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1934,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "StringLiteral",
+      "offset": 2892,
+      "length": 25,
+      "value": "\"Connection model is nil\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3072,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3562,
+      "length": 2,
+      "value": "85"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3692,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4357,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4366,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4397,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4675,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4741,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5082,
+      "length": 3,
+      "value": "153"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5086,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5098,
+      "length": 3,
+      "value": "153"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5102,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5113,
+      "length": 3,
+      "value": "153"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5117,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5129,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5496,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "StringLiteral",
+      "offset": 5630,
+      "length": 12,
+      "value": "\"backButton\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5919,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "StringLiteral",
+      "offset": 6590,
+      "length": 14,
+      "value": "\"Avenir-Light\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6612,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "StringLiteral",
+      "offset": 6804,
+      "length": 14,
+      "value": "\"Avenir-Light\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6826,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "StringLiteral",
+      "offset": 6948,
+      "length": 6,
+      "value": "\"Pay \""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "StringLiteral",
+      "offset": 7041,
+      "length": 14,
+      "value": "\"₹\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "StringLiteral",
+      "offset": 7054,
+      "length": 32,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "FloatLiteral",
+      "offset": 7357,
+      "length": 3,
+      "value": "0.2"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7422,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7433,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7483,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "StringLiteral",
+      "offset": 8553,
+      "length": 9,
+      "value": "\"tapped_\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "StringLiteral",
+      "offset": 8646,
+      "length": 14,
+      "value": "\"gpay_collect\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "StringLiteral",
+      "offset": 8712,
+      "length": 11,
+      "value": "\"gpay_omni\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "StringLiteral",
+      "offset": 8774,
+      "length": 17,
+      "value": "\"phonepe_collect\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "StringLiteral",
+      "offset": 8839,
+      "length": 14,
+      "value": "\"bhim_collect\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "StringLiteral",
+      "offset": 8902,
+      "length": 15,
+      "value": "\"paytm_collect\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "StringLiteral",
+      "offset": 8968,
+      "length": 13,
+      "value": "\"new_collect\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "StringLiteral",
+      "offset": 9025,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9294,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "StringLiteral",
+      "offset": 10967,
+      "length": 15,
+      "value": "\"CollapsedCell\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "StringLiteral",
+      "offset": 11365,
+      "length": 14,
+      "value": "\"ExpandedCell\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11642,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "Array",
+      "offset": 11932,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "StringLiteral",
+      "offset": 15994,
+      "length": 27,
+      "value": "\"Intenet if not available!\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "StringLiteral",
+      "offset": 16696,
+      "length": 55,
+      "value": "\"onEnteringVPA not implemented. Cannot proceed further\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "StringLiteral",
+      "offset": 17247,
+      "length": 25,
+      "value": "\"Error occured: \""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectPaymentVC.swift",
+      "kind": "StringLiteral",
+      "offset": 17271,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/PayUUPI.swift",
+      "kind": "StringLiteral",
+      "offset": 399,
+      "length": 17,
+      "value": "\"PayUCollectFlow\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/PayUUPI.swift",
+      "kind": "StringLiteral",
+      "offset": 512,
+      "length": 19,
+      "value": "\"PayUCollectListVC\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 279,
+      "length": 17,
+      "value": "\"upi_sdk_version\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 325,
+      "length": 13,
+      "value": "\"user_action\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 444,
+      "length": 12,
+      "value": "\"tapped_upi\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 487,
+      "length": 22,
+      "value": "\"tapped_gpay_fallback\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 539,
+      "length": 21,
+      "value": "\"tapped_gpay_collect\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 587,
+      "length": 18,
+      "value": "\"tapped_gpay_omni\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 636,
+      "length": 22,
+      "value": "\"tapped_paytm_collect\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 691,
+      "length": 23,
+      "value": "\"tapped_phonpe_collect\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 744,
+      "length": 21,
+      "value": "\"tapped_bhim_collect\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 793,
+      "length": 19,
+      "value": "\"tapped_verify_vpa\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 838,
+      "length": 16,
+      "value": "\"tapped_proceed\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 444,
+      "length": 12,
+      "value": "\"tapped_upi\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 487,
+      "length": 22,
+      "value": "\"tapped_gpay_fallback\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 539,
+      "length": 21,
+      "value": "\"tapped_gpay_collect\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 587,
+      "length": 18,
+      "value": "\"tapped_gpay_omni\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 636,
+      "length": 22,
+      "value": "\"tapped_paytm_collect\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 691,
+      "length": 23,
+      "value": "\"tapped_phonpe_collect\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 744,
+      "length": 21,
+      "value": "\"tapped_bhim_collect\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 793,
+      "length": 19,
+      "value": "\"tapped_verify_vpa\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/Analytics\/PayUUPIAnalyticsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 838,
+      "length": 16,
+      "value": "\"tapped_proceed\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 2070,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 2422,
+      "length": 3,
+      "value": "\"@\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 2181,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3573,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 3901,
+      "length": 20,
+      "value": "\"Error: \""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 3920,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 4108,
+      "length": 49,
+      "value": "\"VPA could not be verified: \""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 4156,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "FloatLiteral",
+      "offset": 4468,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "FloatLiteral",
+      "offset": 4474,
+      "length": 4,
+      "value": "0.35"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 5347,
+      "length": 58,
+      "value": "\"Option \""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 5369,
+      "length": 6,
+      "value": "\" cannot be used for collect payment\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5784,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "FloatLiteral",
+      "offset": 6791,
+      "length": 3,
+      "value": "0.2"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6980,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7204,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7236,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7267,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7409,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7485,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7539,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7581,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7723,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7755,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7786,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8500,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8588,
+      "length": 3,
+      "value": "999"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8721,
+      "length": 3,
+      "value": "999"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8811,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8924,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8982,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 9038,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9205,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9279,
+      "length": 3,
+      "value": "192"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9283,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9295,
+      "length": 3,
+      "value": "192"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9299,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9310,
+      "length": 3,
+      "value": "192"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9314,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9326,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9388,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 10111,
+      "length": 15,
+      "value": "\"Mobile number\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 10176,
+      "length": 22,
+      "value": "\"Registered with GPay\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 10247,
+      "length": 12,
+      "value": "\"iconMobile\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 10323,
+      "length": 15,
+      "value": "\"Mobile number\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10478,
+      "length": 3,
+      "value": "999"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 10637,
+      "length": 8,
+      "value": "\"UPI ID\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 10693,
+      "length": 9,
+      "value": "\"iconUPI\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 10766,
+      "length": 34,
+      "value": "\"VPA associated with your UPI App\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 10909,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 10943,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11443,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11550,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 11585,
+      "length": 15,
+      "value": "\"Avenir-Medium\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11608,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11652,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11951,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12116,
+      "length": 3,
+      "value": "192"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12120,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12132,
+      "length": 3,
+      "value": "192"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12136,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12147,
+      "length": 3,
+      "value": "192"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12151,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12163,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12448,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12493,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12587,
+      "length": 3,
+      "value": "251"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12650,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12743,
+      "length": 3,
+      "value": "249"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12851,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 12917,
+      "length": 15,
+      "value": "\"Avenir-Medium\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12940,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 13166,
+      "length": 3,
+      "value": "\"@\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 13177,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13458,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 13988,
+      "length": 6,
+      "value": "\"UPI \""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 14150,
+      "length": 8,
+      "value": "\"UPI ID\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 14289,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 15799,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 16144,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 16486,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 16614,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 16787,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 17036,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 17280,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 17512,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 17743,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "Dictionary",
+      "offset": 17804,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 17834,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 17942,
+      "length": 15,
+      "value": "\"Avenir-Medium\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 17965,
+      "length": 2,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18027,
+      "length": 2,
+      "value": "84"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18030,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18042,
+      "length": 3,
+      "value": "157"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18046,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18057,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18059,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18071,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 18237,
+      "length": 15,
+      "value": "\"Avenir-Medium\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18260,
+      "length": 2,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 18352,
+      "length": 16,
+      "value": "\"Invalid UPI ID\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 18494,
+      "length": 15,
+      "value": "\"Avenir-Medium\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18517,
+      "length": 2,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 18609,
+      "length": 36,
+      "value": "\"Please enter a valid mobile number\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 18772,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 19033,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "Dictionary",
+      "offset": 19298,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 19414,
+      "length": 15,
+      "value": "\"Avenir-Medium\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 19437,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 19499,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 19501,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 19513,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 19515,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 19526,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 19528,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "FloatLiteral",
+      "offset": 19540,
+      "length": 4,
+      "value": "0.35"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 19619,
+      "length": 8,
+      "value": "\"Verify\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 19776,
+      "length": 15,
+      "value": "\"Avenir-Medium\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 19799,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 19861,
+      "length": 2,
+      "value": "74"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 19864,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 19876,
+      "length": 3,
+      "value": "144"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 19880,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 19891,
+      "length": 3,
+      "value": "226"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 19895,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 19907,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 19984,
+      "length": 8,
+      "value": "\"Verify\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 20140,
+      "length": 15,
+      "value": "\"Avenir-Medium\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20163,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20225,
+      "length": 2,
+      "value": "84"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20228,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20240,
+      "length": 3,
+      "value": "157"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20244,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20255,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20257,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20269,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 20345,
+      "length": 11,
+      "value": "\"Verified \""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 20527,
+      "length": 15,
+      "value": "\"iconGreenTIck\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 20858,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 20865,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 21127,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 21464,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 21548,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 21689,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 21717,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 21766,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 21878,
+      "length": 3,
+      "value": "\"@\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 21903,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 21953,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 22110,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 22183,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 22322,
+      "length": 12,
+      "value": "\" (\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 22332,
+      "length": 1,
+      "value": "\")\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "StringLiteral",
+      "offset": 22424,
+      "length": 15,
+      "value": "\"Avenir-Medium\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 22447,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 22505,
+      "length": 3,
+      "value": "204"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 22509,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 22521,
+      "length": 3,
+      "value": "204"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 22525,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 22536,
+      "length": 3,
+      "value": "204"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 22540,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios-bfl\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View And IB files\/PayUUPICollectExpandedCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 22552,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Library\/Developer\/Xcode\/DerivedData\/UPI-cqdvwsfsvpmrjsfbeyoodfwkmaqc\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUUPIKit\/IntermediateBuildFilesPath\/PayUUPIKit.build\/Release-iphonesimulator\/PayUUPIKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 737,
+      "length": 14,
+      "value": "\"GpayExpanded\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Library\/Developer\/Xcode\/DerivedData\/UPI-cqdvwsfsvpmrjsfbeyoodfwkmaqc\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUUPIKit\/IntermediateBuildFilesPath\/PayUUPIKit.build\/Release-iphonesimulator\/PayUUPIKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 881,
+      "length": 12,
+      "value": "\"backButton\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Library\/Developer\/Xcode\/DerivedData\/UPI-cqdvwsfsvpmrjsfbeyoodfwkmaqc\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUUPIKit\/IntermediateBuildFilesPath\/PayUUPIKit.build\/Release-iphonesimulator\/PayUUPIKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1013,
+      "length": 7,
+      "value": "\"close\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Library\/Developer\/Xcode\/DerivedData\/UPI-cqdvwsfsvpmrjsfbeyoodfwkmaqc\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUUPIKit\/IntermediateBuildFilesPath\/PayUUPIKit.build\/Release-iphonesimulator\/PayUUPIKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1164,
+      "length": 19,
+      "value": "\"iconDownwardArrow\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Library\/Developer\/Xcode\/DerivedData\/UPI-cqdvwsfsvpmrjsfbeyoodfwkmaqc\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUUPIKit\/IntermediateBuildFilesPath\/PayUUPIKit.build\/Release-iphonesimulator\/PayUUPIKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1319,
+      "length": 15,
+      "value": "\"iconGreenTIck\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Library\/Developer\/Xcode\/DerivedData\/UPI-cqdvwsfsvpmrjsfbeyoodfwkmaqc\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUUPIKit\/IntermediateBuildFilesPath\/PayUUPIKit.build\/Release-iphonesimulator\/PayUUPIKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1464,
+      "length": 12,
+      "value": "\"iconMobile\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Library\/Developer\/Xcode\/DerivedData\/UPI-cqdvwsfsvpmrjsfbeyoodfwkmaqc\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUUPIKit\/IntermediateBuildFilesPath\/PayUUPIKit.build\/Release-iphonesimulator\/PayUUPIKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1600,
+      "length": 9,
+      "value": "\"iconUPI\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Library\/Developer\/Xcode\/DerivedData\/UPI-cqdvwsfsvpmrjsfbeyoodfwkmaqc\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUUPIKit\/IntermediateBuildFilesPath\/PayUUPIKit.build\/Release-iphonesimulator\/PayUUPIKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1753,
+      "length": 19,
+      "value": "\"rightPointedArrow\""
+    }
+  ]
+}

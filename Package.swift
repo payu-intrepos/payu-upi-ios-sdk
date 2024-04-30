@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "PayUIndia-UPIKit",
-    platforms: [.iOS(.v11)],
+    platforms: [.iOS(.v12)],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
@@ -23,7 +23,7 @@ let package = Package(
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-        .package(name: "PayUIndia-PayUParams",url: "https://github.com/payu-intrepos/payu-params-iOS.git", from: "4.4.2"),
+        .package(name: "PayUIndia-PayUParams",url: "https://github.com/payu-intrepos/payu-params-iOS.git", from: "4.4.3"),
     ],
     targets: [
         .binaryTarget(name: "PayULoggerKit", path: "./Dependencies/PayULoggerKit.xcframework"),

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                = "PayUIndia-Logger"
-  s.version             = "4.0.0"
+  s.version             = "4.0.1"
   s.license             = "MIT"
   s.homepage            = "https://app.gitbook.com/@payumobile/s/sdk-integration/v/master/ios/upi-standalone-ios"
   s.author              = { "PayUbiz" => "contact@payu.in"  }
@@ -12,6 +12,6 @@ Pod::Spec.new do |s|
                             :tag => "#{s.name}_#{s.version}"
                           }
   
-  s.ios.deployment_target = "10.0"
+  s.ios.deployment_target = "12.0"
   s.vendored_frameworks = 'Dependencies/PayULoggerKit.xcframework'
 end
