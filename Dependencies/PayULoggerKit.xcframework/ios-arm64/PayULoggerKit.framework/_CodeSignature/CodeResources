@@ -14,27 +14,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		EyO/WaG0Do58I6t1uSkzI+uCpa8=
+		WLDG1+rvF0wozsgf6jsMAYZNJSw=
 		</data>
 		<key>Modules/PayULoggerKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		ZGnbx9fglo8VpQ7TkVWHDd0uiw0=
+		lGRI4aTHpZp9ALR5pufMvV8Du9I=
 		</data>
 		<key>Modules/PayULoggerKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		sAj7M2mJffimvZ4PvA0KoVu1doI=
+		dryVV1+v8FGecU9m9WUwklJUzc0=
 		</data>
 		<key>Modules/PayULoggerKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		c9CDcrtj4b4qOFmrqzZGW8IRH2E=
+		QO9VT24x/h10u0FGgLfwjD2gv60=
 		</data>
 		<key>Modules/PayULoggerKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		sAj7M2mJffimvZ4PvA0KoVu1doI=
+		dryVV1+v8FGecU9m9WUwklJUzc0=
 		</data>
 		<key>Modules/PayULoggerKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		YhCPLUOptZccJlZ4y+tZG69m4Us=
+		B5UQf2MgNMXvoednN0ri0jwId4Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -65,35 +65,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tnoqZfIX0/Haim4luHaVOSOKeYtzncFDpb8VYjD6Yns=
+			eP4ays9pnyAGqE0p94XoAfFGE2CQ2ze6zjn69r9ODeI=
 			</data>
 		</dict>
 		<key>Modules/PayULoggerKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zdmkP0S6Uz3DQsBrTDruaX5FkJcCf0cfjvZhXoEgTyY=
+			OtKZN+D0+BSK8ktW+7YGqT/Pu5sbAwQDxFExmIay/iA=
 			</data>
 		</dict>
 		<key>Modules/PayULoggerKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dz5kNaTP1386rs7NKVlzATCQj8wSgyds9rxPD2z9UKg=
+			QQym7JFShADjja+ItU6iae+BvQ4UV0pzpVLn8RYRxzA=
 			</data>
 		</dict>
 		<key>Modules/PayULoggerKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zdmkP0S6Uz3DQsBrTDruaX5FkJcCf0cfjvZhXoEgTyY=
+			OtKZN+D0+BSK8ktW+7YGqT/Pu5sbAwQDxFExmIay/iA=
 			</data>
 		</dict>
 		<key>Modules/PayULoggerKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			W8hWs53S5R8hpYnrjEZNGZd39QPvvSdcEivX5QaCgvA=
+			QNPT9padizeCPKY6chtAnRx9kcnWmwmUKE5HXty1DTY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

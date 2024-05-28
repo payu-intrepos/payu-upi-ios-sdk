@@ -3,12 +3,12 @@
 
 import PackageDescription
 
-let VERSION_PARAM_KIT: PackageDescription.Version = "5.4.1"
-let VERSION_COMMON_UI: PackageDescription.Version = "1.2.1"
+let VERSION_PARAM_KIT: PackageDescription.Version = "6.0.0"
+let VERSION_COMMON_UI: PackageDescription.Version = "2.0.0"
 
 let package = Package(
     name: "PayUIndia-UPIKit",
-    platforms: [.iOS(.v12)],
+    platforms: [.iOS(.v13)],
     products: [
         .library(
             name: "PayUIndia-Logger",
