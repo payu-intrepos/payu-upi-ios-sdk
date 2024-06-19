@@ -92,7 +92,7 @@ public typealias PayUItemTypeInPaymentHandlesAPI = [Swift.String : [Swift.String
   public class func getDataForGPayOmniPayment(withPaymentParams params: PayUParamsKit.PayUPaymentParam, completion: @escaping (Swift.Result<PayUUPICoreKit.PayUPureS2SModel, PayUParamsKit.PayUError>) -> Swift.Void)
   public class func getDataForGpayCollectPayment(withPaymentParams params: PayUParamsKit.PayUPaymentParam, completion: @escaping (Swift.Result<PayUUPICoreKit.PayUPureS2SModel, PayUParamsKit.PayUError>) -> Swift.Void)
   public class func getDataForUPICollectPayment(withPaymentParams params: PayUParamsKit.PayUPaymentParam, completion: @escaping (Swift.Result<PayUUPICoreKit.PayUPureS2SModel, PayUParamsKit.PayUError>) -> Swift.Void)
-  public class func getUPIHandles(withPaymentParams params: PayUParamsKit.PayUPaymentParam, completion: @escaping (Swift.Result<[PayUUPICoreKit.PayUItemTypeInPaymentHandlesAPI], PayUParamsKit.PayUError>) -> Swift.Void)
+  public class func getUPIHandles(withPaymentParams params: PayUParamsKit.PayUPaymentParam, paymentCode: Swift.String?, completion: @escaping (Swift.Result<[PayUUPICoreKit.PayUItemTypeInPaymentHandlesAPI], PayUParamsKit.PayUError>) -> Swift.Void)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -510,7 +510,8 @@ extension PayUUPICoreKit.PayUSocketEngineWebsocket {
 }
 @objc @objcMembers public class PayUSupportedIntentApp : ObjectiveC.NSObject {
   @objc final public let name: Swift.String, scheme: Swift.String
-  @objc public init(name: Swift.String, scheme: Swift.String)
+  @objc final public let paymentCode: Swift.String?
+  @objc public init(name: Swift.String, scheme: Swift.String, paymentCode: Swift.String? = nil)
   @objc public static func isEqual(lhs: PayUUPICoreKit.PayUSupportedIntentApp, rhs: PayUUPICoreKit.PayUSupportedIntentApp) -> Swift.Bool
   @objc deinit
 }

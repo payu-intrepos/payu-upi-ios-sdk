@@ -1093,7 +1093,8 @@ SWIFT_CLASS("_TtC14PayUUPICoreKit22PayUSupportedIntentApp")
 @interface PayUSupportedIntentApp : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull name;
 @property (nonatomic, readonly, copy) NSString * _Nonnull scheme;
-- (nonnull instancetype)initWithName:(NSString * _Nonnull)name scheme:(NSString * _Nonnull)scheme OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly, copy) NSString * _Nullable paymentCode;
+- (nonnull instancetype)initWithName:(NSString * _Nonnull)name scheme:(NSString * _Nonnull)scheme paymentCode:(NSString * _Nullable)paymentCode OBJC_DESIGNATED_INITIALIZER;
 + (BOOL)isEqualWithLhs:(PayUSupportedIntentApp * _Nonnull)lhs rhs:(PayUSupportedIntentApp * _Nonnull)rhs SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");

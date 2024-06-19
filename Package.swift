@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let VERSION_PARAM_KIT: PackageDescription.Version = "6.0.0"
+let VERSION_PARAM_KIT: PackageDescription.Version = "6.1.0"
 let VERSION_COMMON_UI: PackageDescription.Version = "2.0.0"
 
 let package = Package(

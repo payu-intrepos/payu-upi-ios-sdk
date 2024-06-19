@@ -1611,35 +1611,42 @@
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectListNetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1720,
+      "offset": 813,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectListNetworkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1737,
       "length": 84,
       "value": "\"Error in fetching Apps and their handles due to: \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectListNetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1790,
+      "offset": 1807,
       "length": 1,
       "value": "\". Retrying...\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectListNetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 2366,
+      "offset": 2383,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectListNetworkManager.swift",
       "kind": "Array",
-      "offset": 2386,
+      "offset": 2403,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPI\/PayUUPIKit\/UPI Collect List\/View Controllers\/PayUCollectListNetworkManager.swift",
       "kind": "Array",
-      "offset": 2761,
+      "offset": 2778,
       "length": 2,
       "value": "[]"
     },

@@ -3117,7 +3117,7 @@
           {
             "kind": "Function",
             "name": "getUPIHandles",
-            "printedName": "getUPIHandles(withPaymentParams:completion:)",
+            "printedName": "getUPIHandles(withPaymentParams:paymentCode:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3129,6 +3129,20 @@
                 "name": "PayUPaymentParam",
                 "printedName": "PayUParamsKit.PayUPaymentParam",
                 "usr": "c:@M@PayUParamsKit@objc(cs)PayUPaymentParam"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeFunc",
@@ -3194,8 +3208,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:14PayUUPICoreKit0A4UAPIC13getUPIHandles17withPaymentParams10completiony0a7UParamsC00A13UPaymentParamC_ys6ResultOySaySDySSSaySSGGGAG0A6UErrorCGctFZ",
-            "mangledName": "$s14PayUUPICoreKit0A4UAPIC13getUPIHandles17withPaymentParams10completiony0a7UParamsC00A13UPaymentParamC_ys6ResultOySaySDySSSaySSGGGAG0A6UErrorCGctFZ",
+            "usr": "s:14PayUUPICoreKit0A4UAPIC13getUPIHandles17withPaymentParams11paymentCode10completiony0a7UParamsC00A13UPaymentParamC_SSSgys6ResultOySaySDySSSaySSGGGAH0A6UErrorCGctFZ",
+            "mangledName": "$s14PayUUPICoreKit0A4UAPIC13getUPIHandles17withPaymentParams11paymentCode10completiony0a7UParamsC00A13UPaymentParamC_SSSgys6ResultOySaySDySSSaySSGGGAH0A6UErrorCGctFZ",
             "moduleName": "PayUUPICoreKit",
             "static": true,
             "declAttributes": [
@@ -20011,9 +20025,75 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "paymentCode",
+            "printedName": "paymentCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUUPICoreKit@objc(cs)PayUSupportedIntentApp(py)paymentCode",
+            "mangledName": "$s14PayUUPICoreKit0A19USupportedIntentAppC11paymentCodeSSSgvp",
+            "moduleName": "PayUUPICoreKit",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUUPICoreKit@objc(cs)PayUSupportedIntentApp(im)paymentCode",
+                "mangledName": "$s14PayUUPICoreKit0A19USupportedIntentAppC11paymentCodeSSSgvg",
+                "moduleName": "PayUUPICoreKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(name:scheme:)",
+            "printedName": "init(name:scheme:paymentCode:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -20032,11 +20112,26 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@PayUUPICoreKit@objc(cs)PayUSupportedIntentApp(im)initWithName:scheme:",
-            "mangledName": "$s14PayUUPICoreKit0A19USupportedIntentAppC4name6schemeACSS_SStcfc",
+            "usr": "c:@M@PayUUPICoreKit@objc(cs)PayUSupportedIntentApp(im)initWithName:scheme:paymentCode:",
+            "mangledName": "$s14PayUUPICoreKit0A19USupportedIntentAppC4name6scheme11paymentCodeACSS_S2SSgtcfc",
             "moduleName": "PayUUPICoreKit",
             "declAttributes": [
               "AccessControl",
@@ -46841,8 +46936,8 @@
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
       "offset": 915,
-      "length": 9,
-      "value": "\"credPay\""
+      "length": 6,
+      "value": "\"cred\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
@@ -46854,499 +46949,534 @@
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "Array",
-      "offset": 3810,
+      "offset": 3807,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
-      "offset": 3978,
+      "offset": 3975,
       "length": 9,
       "value": "\"PhonePe\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
-      "offset": 4015,
+      "offset": 4012,
       "length": 12,
       "value": "\"Google Pay\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
-      "offset": 4056,
+      "offset": 4053,
       "length": 7,
       "value": "\"Paytm\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
-      "offset": 4091,
+      "offset": 4088,
       "length": 6,
       "value": "\"Bhim\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
-      "offset": 4128,
+      "offset": 4125,
       "length": 6,
       "value": "\"Cred\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
-      "offset": 4166,
+      "offset": 4163,
       "length": 21,
       "value": "\"Google Pay (Mobile)\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
-      "offset": 4218,
+      "offset": 4215,
       "length": 12,
       "value": "\"New UPI ID\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
-      "offset": 4255,
+      "offset": 4252,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
-      "offset": 4364,
+      "offset": 4361,
       "length": 9,
       "value": "\"phonepe\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
-      "offset": 4401,
+      "offset": 4398,
       "length": 6,
       "value": "\"gpay\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
-      "offset": 4436,
+      "offset": 4433,
       "length": 7,
       "value": "\"paytm\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
-      "offset": 4471,
+      "offset": 4468,
       "length": 6,
       "value": "\"bhim\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
-      "offset": 4508,
-      "length": 9,
-      "value": "\"credPay\""
+      "offset": 4505,
+      "length": 6,
+      "value": "\"cred\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
-      "offset": 4549,
+      "offset": 4543,
       "length": 10,
       "value": "\"gpayOmni\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
-      "offset": 4590,
+      "offset": 4584,
       "length": 5,
       "value": "\"new\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
-      "offset": 4626,
+      "offset": 4620,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
-      "offset": 4763,
+      "offset": 4757,
       "length": 12,
       "value": "\"Google Pay\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
-      "offset": 4806,
+      "offset": 4800,
       "length": 9,
       "value": "\"PhonePe\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
-      "offset": 4843,
+      "offset": 4837,
       "length": 6,
       "value": "\"Bhim\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
-      "offset": 4878,
+      "offset": 4872,
       "length": 7,
       "value": "\"Paytm\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
-      "offset": 4916,
+      "offset": 4910,
       "length": 6,
       "value": "\"Cred\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
-      "offset": 4963,
+      "offset": 4957,
       "length": 10,
       "value": "\"your UPI\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
-      "offset": 5198,
+      "offset": 5192,
       "length": 13,
       "value": "\"iconPhonepe\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
-      "offset": 5305,
+      "offset": 5299,
       "length": 10,
       "value": "\"iconGpay\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
-      "offset": 5413,
+      "offset": 5407,
       "length": 10,
       "value": "\"iconGpay\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
-      "offset": 5518,
+      "offset": 5512,
       "length": 11,
       "value": "\"iconPaytm\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
-      "offset": 5623,
+      "offset": 5617,
       "length": 10,
       "value": "\"iconBhim\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
-      "offset": 5730,
+      "offset": 5724,
       "length": 10,
       "value": "\"iconCred\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
-      "offset": 5837,
+      "offset": 5831,
       "length": 10,
       "value": "\"iconPlus\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
-      "offset": 5944,
+      "offset": 5938,
       "length": 9,
       "value": "\"iconUPI\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "Array",
-      "offset": 6205,
+      "offset": 6199,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "Array",
-      "offset": 6244,
+      "offset": 6238,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "StringLiteral",
-      "offset": 6415,
+      "offset": 6409,
       "length": 7,
       "value": "\".+@.+\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "BooleanLiteral",
-      "offset": 6547,
+      "offset": 6541,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "BooleanLiteral",
-      "offset": 6577,
+      "offset": 6571,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "BooleanLiteral",
-      "offset": 6803,
+      "offset": 6797,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "BooleanLiteral",
-      "offset": 6844,
+      "offset": 6838,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "BooleanLiteral",
-      "offset": 6887,
+      "offset": 6881,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "BooleanLiteral",
-      "offset": 6928,
+      "offset": 6922,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "BooleanLiteral",
-      "offset": 6975,
+      "offset": 6969,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "BooleanLiteral",
-      "offset": 7024,
+      "offset": 7018,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "BooleanLiteral",
-      "offset": 7071,
+      "offset": 7065,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
       "kind": "BooleanLiteral",
-      "offset": 7100,
+      "offset": 7094,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Networking\/Endpoints\/PayUSecureEndPoint.swift",
       "kind": "StringLiteral",
-      "offset": 877,
+      "offset": 899,
       "length": 16,
       "value": "\"upi\/upiHandles\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Networking\/Endpoints\/PayUSecureEndPoint.swift",
       "kind": "StringLiteral",
-      "offset": 930,
+      "offset": 952,
       "length": 10,
       "value": "\"_payment\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Networking\/Endpoints\/PayUSecureEndPoint.swift",
       "kind": "StringLiteral",
-      "offset": 1407,
+      "offset": 1429,
       "length": 10,
       "value": "\"bankCode\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Networking\/Endpoints\/PayUSecureEndPoint.swift",
       "kind": "StringLiteral",
-      "offset": 1421,
+      "offset": 1443,
       "length": 9,
       "value": "\"TEZOMNI\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Networking\/Endpoints\/PayUSecureEndPoint.swift",
       "kind": "StringLiteral",
-      "offset": 1454,
+      "offset": 1476,
+      "length": 12,
+      "value": "\"upiappname\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Networking\/Endpoints\/PayUSecureEndPoint.swift",
+      "kind": "StringLiteral",
+      "offset": 1492,
+      "length": 11,
+      "value": "\"googlepay\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Networking\/Endpoints\/PayUSecureEndPoint.swift",
+      "kind": "StringLiteral",
+      "offset": 1527,
       "length": 15,
       "value": "\"sdk_flow_type\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Networking\/Endpoints\/PayUSecureEndPoint.swift",
       "kind": "StringLiteral",
-      "offset": 1473,
+      "offset": 1546,
       "length": 17,
       "value": "\"tezomni_collect\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Networking\/Endpoints\/PayUSecureEndPoint.swift",
       "kind": "StringLiteral",
-      "offset": 1514,
+      "offset": 1587,
       "length": 11,
       "value": "\"vpa_phone\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Networking\/Endpoints\/PayUSecureEndPoint.swift",
       "kind": "StringLiteral",
-      "offset": 1551,
+      "offset": 1624,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Networking\/Endpoints\/PayUSecureEndPoint.swift",
       "kind": "StringLiteral",
-      "offset": 2069,
+      "offset": 2142,
       "length": 10,
       "value": "\"bankCode\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Networking\/Endpoints\/PayUSecureEndPoint.swift",
       "kind": "StringLiteral",
-      "offset": 2094,
+      "offset": 2167,
       "length": 8,
       "value": "\"INTTPV\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Networking\/Endpoints\/PayUSecureEndPoint.swift",
       "kind": "StringLiteral",
-      "offset": 2105,
+      "offset": 2178,
       "length": 8,
       "value": "\"INTENT\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Networking\/Endpoints\/PayUSecureEndPoint.swift",
       "kind": "StringLiteral",
-      "offset": 2146,
+      "offset": 2219,
       "length": 12,
-      "value": "\"upiAppName\""
+      "value": "\"upiappname\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Networking\/Endpoints\/PayUSecureEndPoint.swift",
       "kind": "StringLiteral",
-      "offset": 2790,
+      "offset": 2882,
       "length": 10,
       "value": "\"bankCode\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Networking\/Endpoints\/PayUSecureEndPoint.swift",
       "kind": "StringLiteral",
-      "offset": 2815,
+      "offset": 2907,
       "length": 8,
       "value": "\"UPITPV\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Networking\/Endpoints\/PayUSecureEndPoint.swift",
       "kind": "StringLiteral",
-      "offset": 2826,
+      "offset": 2918,
       "length": 5,
       "value": "\"UPI\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Networking\/Endpoints\/PayUSecureEndPoint.swift",
       "kind": "StringLiteral",
-      "offset": 2861,
+      "offset": 2953,
       "length": 5,
       "value": "\"vpa\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Networking\/Endpoints\/PayUSecureEndPoint.swift",
       "kind": "StringLiteral",
-      "offset": 2892,
+      "offset": 2984,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Networking\/Endpoints\/PayUSecureEndPoint.swift",
       "kind": "StringLiteral",
-      "offset": 2924,
+      "offset": 3016,
       "length": 15,
       "value": "\"sdk_flow_type\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Networking\/Endpoints\/PayUSecureEndPoint.swift",
       "kind": "StringLiteral",
-      "offset": 2943,
+      "offset": 3035,
       "length": 13,
       "value": "\"upi_collect\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Networking\/Endpoints\/PayUSecureEndPoint.swift",
       "kind": "BooleanLiteral",
-      "offset": 3308,
+      "offset": 3400,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Networking\/Endpoints\/PayUSecureEndPoint.swift",
       "kind": "StringLiteral",
-      "offset": 3519,
+      "offset": 3611,
       "length": 10,
       "value": "\"bankCode\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Networking\/Endpoints\/PayUSecureEndPoint.swift",
       "kind": "StringLiteral",
-      "offset": 3533,
+      "offset": 3625,
       "length": 5,
       "value": "\"TEZ\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Networking\/Endpoints\/PayUSecureEndPoint.swift",
       "kind": "StringLiteral",
-      "offset": 3703,
+      "offset": 3660,
+      "length": 12,
+      "value": "\"upiappname\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Networking\/Endpoints\/PayUSecureEndPoint.swift",
+      "kind": "StringLiteral",
+      "offset": 3676,
+      "length": 11,
+      "value": "\"googlepay\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Networking\/Endpoints\/PayUSecureEndPoint.swift",
+      "kind": "StringLiteral",
+      "offset": 3851,
       "length": 5,
       "value": "\"vpa\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Networking\/Endpoints\/PayUSecureEndPoint.swift",
       "kind": "StringLiteral",
-      "offset": 3734,
+      "offset": 3882,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Networking\/Endpoints\/PayUSecureEndPoint.swift",
       "kind": "StringLiteral",
-      "offset": 3766,
+      "offset": 3914,
       "length": 15,
       "value": "\"sdk_flow_type\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Networking\/Endpoints\/PayUSecureEndPoint.swift",
       "kind": "StringLiteral",
-      "offset": 3785,
+      "offset": 3933,
       "length": 13,
       "value": "\"tez_collect\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Networking\/Endpoints\/PayUSecureEndPoint.swift",
       "kind": "StringLiteral",
-      "offset": 4126,
+      "offset": 4287,
       "length": 13,
       "value": "\"merchantKey\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Networking\/Endpoints\/PayUSecureEndPoint.swift",
+      "kind": "StringLiteral",
+      "offset": 4343,
+      "length": 12,
+      "value": "\"upiappname\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Model\/PayUPureS2SModel.swift",
@@ -50319,30 +50449,65 @@
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2880,
+      "offset": 2804,
+      "length": 11,
+      "value": "\"googlepay\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 2906,
       "length": 16,
       "value": "\"phonepe:\/\/pay?\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2985,
+      "offset": 2937,
+      "length": 9,
+      "value": "\"phonepe\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 3035,
       "length": 18,
       "value": "\"paytm:\/\/upi\/pay?\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
       "kind": "StringLiteral",
-      "offset": 3091,
+      "offset": 3068,
+      "length": 7,
+      "value": "\"paytm\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 3163,
       "length": 17,
       "value": "\"bhim:\/\/upi\/pay?\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
       "kind": "StringLiteral",
-      "offset": 3196,
-      "length": 20,
-      "value": "\"credpay:\/\/upi\/pay?\""
+      "offset": 3195,
+      "length": 6,
+      "value": "\"bhim\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 3289,
+      "length": 17,
+      "value": "\"cred:\/\/upi\/pay?\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 3321,
+      "length": 6,
+      "value": "\"cred\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Analytics\/PayUAnalyticsModels.swift",
@@ -52922,57 +53087,85 @@
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Managers\/PayUThirdPartyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 571,
+      "length": 5,
+      "value": "\"%40\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Managers\/PayUThirdPartyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 584,
+      "length": 3,
+      "value": "\"@\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Managers\/PayUThirdPartyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 614,
+      "length": 9,
+      "value": "\"credpay\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Managers\/PayUThirdPartyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 631,
+      "length": 6,
+      "value": "\"cred\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Managers\/PayUThirdPartyManager.swift",
       "kind": "Dictionary",
-      "offset": 545,
+      "offset": 693,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Managers\/PayUThirdPartyManager.swift",
       "kind": "StringLiteral",
-      "offset": 651,
+      "offset": 799,
       "length": 28,
       "value": "\"Successfully opened \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Managers\/PayUThirdPartyManager.swift",
       "kind": "StringLiteral",
-      "offset": 678,
+      "offset": 826,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Managers\/PayUThirdPartyManager.swift",
       "kind": "StringLiteral",
-      "offset": 740,
+      "offset": 888,
       "length": 114,
       "value": "\"Could not open the app, make sure you have \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Managers\/PayUThirdPartyManager.swift",
       "kind": "StringLiteral",
-      "offset": 790,
+      "offset": 938,
       "length": 9,
       "value": "\" installed and it's scheme '\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Managers\/PayUThirdPartyManager.swift",
       "kind": "StringLiteral",
-      "offset": 824,
+      "offset": 972,
       "length": 31,
       "value": "\"' is added to your info.plist\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Managers\/PayUThirdPartyManager.swift",
       "kind": "StringLiteral",
-      "offset": 1373,
+      "offset": 1521,
       "length": 49,
       "value": "\"URL could not be created to initate the payment\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Managers\/PayUThirdPartyManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1455,
+      "offset": 1603,
       "length": 5,
       "value": "false"
     },
