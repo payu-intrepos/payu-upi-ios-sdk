@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/PayULoggerKit-Swift.h</key>
 		<data>
-		5ScJ1T2RXQ7/YH+ijCrBALWGZqs=
+		HfUcA6wlq3SaPTGVa5jdcS96H2w=
 		</data>
 		<key>Headers/PayULoggerKit.h</key>
 		<data>
@@ -14,47 +14,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Cic2tGJiVSehig6Q58eIMq/alwo=
+		68aTZ6LYlEurc5zLza1fUWbPVJ0=
 		</data>
 		<key>Modules/PayULoggerKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		lGRI4aTHpZp9ALR5pufMvV8Du9I=
+		J4SQxoRMxaqPjfOdDDTFwnBQJKQ=
 		</data>
 		<key>Modules/PayULoggerKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		JOD0icYPw7m/AiECmnn5pnvw86A=
+		ysjn1OrbXY4xWSKaOFidbBnY558=
 		</data>
 		<key>Modules/PayULoggerKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		3MjUSF4FpPmjKZYgsVGM6c21J6U=
+		Pc6o9hHalZY86t6uYVXBFwPWH8I=
 		</data>
 		<key>Modules/PayULoggerKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		JOD0icYPw7m/AiECmnn5pnvw86A=
+		ysjn1OrbXY4xWSKaOFidbBnY558=
 		</data>
 		<key>Modules/PayULoggerKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		FpmSXScB6kJSSpozhueeWO2jyFg=
+		tMLrUjgpj73cQdxsW2YjmaTeLFI=
 		</data>
 		<key>Modules/PayULoggerKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		lGRI4aTHpZp9ALR5pufMvV8Du9I=
+		J4SQxoRMxaqPjfOdDDTFwnBQJKQ=
 		</data>
 		<key>Modules/PayULoggerKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		UgjEQf02q8Abw5IUgUrquW0mlZ8=
+		r7bu0IdT9CQTHgpXFOGBE8YeeP0=
 		</data>
 		<key>Modules/PayULoggerKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		7fYDn6p0xbMAWZL1YGTTyu1yI6s=
+		Wn/X9e0wGb6FFrh91XdrMz0HtJc=
 		</data>
 		<key>Modules/PayULoggerKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		UgjEQf02q8Abw5IUgUrquW0mlZ8=
+		r7bu0IdT9CQTHgpXFOGBE8YeeP0=
 		</data>
 		<key>Modules/PayULoggerKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		XbB9dvskfUkUqm7TOOTcvEY3jcs=
+		MO+gP++pC8W/umYyD6p38VllYp0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GUj1rXAX/m3H7m1ebNVsg2tYpu2y4qifsDUib/M7dxc=
+			h9l9NQMQTrN8CDDws6oiexG5O15/Penb6Wsm6k6wGkk=
 			</data>
 		</dict>
 		<key>Headers/PayULoggerKit.h</key>
@@ -85,70 +85,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eP4ays9pnyAGqE0p94XoAfFGE2CQ2ze6zjn69r9ODeI=
+			YOQg9yJ/TKOh/7s3aL5q8jjSpr64c+CtezMv0rHgfcs=
 			</data>
 		</dict>
 		<key>Modules/PayULoggerKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uhCCXRTkjkNZ+VA7RnR0KrnLBRcXcrDbdVmoP/sYrfM=
+			d+jkuVdmO04sE3kyiNozXN7bWwqxlFgUg3UtYVMljlI=
 			</data>
 		</dict>
 		<key>Modules/PayULoggerKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8efzEfr1e5wc9I6pj98fqelz7PBVwgWid32dvtQTmT4=
+			5sbYXLmdlFnGUuTLAdA1ArGwDuphchMHLN+St6EeIl4=
 			</data>
 		</dict>
 		<key>Modules/PayULoggerKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uhCCXRTkjkNZ+VA7RnR0KrnLBRcXcrDbdVmoP/sYrfM=
+			d+jkuVdmO04sE3kyiNozXN7bWwqxlFgUg3UtYVMljlI=
 			</data>
 		</dict>
 		<key>Modules/PayULoggerKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IlcPe6HZmssHjs1CgYIcTPk5an4ER5I/ozreY7jWU0I=
+			YOjt6GzPzIQkKc04nt002VgYXCF5a7k0zt0dcy5PMM4=
 			</data>
 		</dict>
 		<key>Modules/PayULoggerKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eP4ays9pnyAGqE0p94XoAfFGE2CQ2ze6zjn69r9ODeI=
+			YOQg9yJ/TKOh/7s3aL5q8jjSpr64c+CtezMv0rHgfcs=
 			</data>
 		</dict>
 		<key>Modules/PayULoggerKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MgaafL8v2jsPUgsAt4NEMK4H97665ZUJypSAEy74OZs=
+			Z7Y/8vsrHAyrwU1i+I+1yJk2lcydE2Ro2Zo6zpzjdSY=
 			</data>
 		</dict>
 		<key>Modules/PayULoggerKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9D/5pT4LE1TT3u9P9ZKOd2aHvKkob+YwVhZJQsTsUUk=
+			ST17adwS7ofIXVnbSZvmFwwRYNxcNvtJxiidGgZA2ik=
 			</data>
 		</dict>
 		<key>Modules/PayULoggerKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MgaafL8v2jsPUgsAt4NEMK4H97665ZUJypSAEy74OZs=
+			Z7Y/8vsrHAyrwU1i+I+1yJk2lcydE2Ro2Zo6zpzjdSY=
 			</data>
 		</dict>
 		<key>Modules/PayULoggerKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ke8mi9llPplZeC7fgGmBogjzqCwBbHkUlM0hEw4kylM=
+			80zLj4nEqQrBm34DttbhyiCpqUUlljN/3p7l9zYlwW0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

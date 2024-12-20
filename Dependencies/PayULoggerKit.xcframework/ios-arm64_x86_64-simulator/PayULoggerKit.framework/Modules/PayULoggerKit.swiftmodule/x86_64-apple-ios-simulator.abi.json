@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "PayULoggerKit",
+    "printedName": "PayULoggerKit",
     "children": [
       {
         "kind": "Import",
@@ -66,6 +66,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
           {
             "kind": "Conformance",
             "name": "RawRepresentable",
@@ -287,6 +301,20 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -592,158 +620,48 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
       "kind": "IntegerLiteral",
       "offset": 745,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
       "kind": "IntegerLiteral",
       "offset": 756,
       "length": 5,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
       "kind": "IntegerLiteral",
       "offset": 771,
       "length": 7,
       "value": "2"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 745,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 756,
-      "length": 5,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 771,
-      "length": 7,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 745,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 756,
-      "length": 5,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 771,
-      "length": 7,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
-      "kind": "StringLiteral",
-      "offset": 1777,
-      "length": 74,
-      "value": "\"[\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
-      "kind": "StringLiteral",
-      "offset": 1816,
-      "length": 1,
-      "value": "\"]:\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
-      "kind": "StringLiteral",
-      "offset": 1825,
-      "length": 1,
-      "value": "\" \""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
-      "kind": "StringLiteral",
-      "offset": 1837,
-      "length": 2,
-      "value": "\" -> \""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
-      "kind": "StringLiteral",
-      "offset": 1850,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
-      "kind": "StringLiteral",
-      "offset": 2423,
-      "length": 74,
-      "value": "\"[\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
-      "kind": "StringLiteral",
-      "offset": 2462,
-      "length": 1,
-      "value": "\"]:\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
-      "kind": "StringLiteral",
-      "offset": 2471,
-      "length": 1,
-      "value": "\" \""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
-      "kind": "StringLiteral",
-      "offset": 2483,
-      "length": 2,
-      "value": "\" -> \""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
-      "kind": "StringLiteral",
-      "offset": 2496,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
-      "kind": "StringLiteral",
-      "offset": 2798,
-      "length": 3,
-      "value": "\"\/\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayULogger\/PayULoggerKit\/PayULogger.swift",
-      "kind": "StringLiteral",
-      "offset": 2839,
-      "length": 2,
-      "value": "\"\""
     }
   ]
 }

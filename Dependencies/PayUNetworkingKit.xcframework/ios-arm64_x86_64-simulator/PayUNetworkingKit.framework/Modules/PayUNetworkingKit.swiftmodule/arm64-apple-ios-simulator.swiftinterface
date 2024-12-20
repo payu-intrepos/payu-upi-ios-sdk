@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUNetworkingKit
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PayUNetworkingKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import Foundation
 import PayULoggerKit
 @_exported import PayUNetworkingKit
@@ -58,7 +58,7 @@ extension PayUNetworkingKit.PayUEndPointType {
   }
 }
 extension UIKit.UIDevice {
-  @_Concurrency.MainActor(unsafe) public var payuModelName: Swift.String {
+  @_Concurrency.MainActor @preconcurrency public var payuModelName: Swift.String {
     get
   }
 }
