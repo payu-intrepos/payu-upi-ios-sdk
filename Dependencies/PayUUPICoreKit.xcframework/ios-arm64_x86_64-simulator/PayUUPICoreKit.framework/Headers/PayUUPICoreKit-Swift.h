@@ -1140,6 +1140,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PayUUPICore 
 + (PayUUPICore * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic) enum NetworkEnvironment environment;
 @property (nonatomic, readonly) BOOL showUserCancellationDialogue;
+@property (nonatomic) BOOL isProtectedScreen;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @property (nonatomic, copy) void (^ _Nullable backPressed)(void);
@@ -2380,6 +2381,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PayUUPICore 
 + (PayUUPICore * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic) enum NetworkEnvironment environment;
 @property (nonatomic, readonly) BOOL showUserCancellationDialogue;
+@property (nonatomic) BOOL isProtectedScreen;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @property (nonatomic, copy) void (^ _Nullable backPressed)(void);

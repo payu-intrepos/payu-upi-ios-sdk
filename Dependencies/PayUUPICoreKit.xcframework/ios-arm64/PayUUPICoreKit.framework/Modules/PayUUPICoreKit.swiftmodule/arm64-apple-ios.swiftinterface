@@ -296,6 +296,10 @@ public typealias PayUResponseType = Swift.Result<[Swift.String : Any], PayUParam
     set
   }
   @objc final public let showUserCancellationDialogue: Swift.Bool
+  @objc public var isProtectedScreen: Swift.Bool {
+    @objc get
+    @objc set
+  }
   public var paymentCompletion: ((PayUUPICoreKit.PayUResponseType) -> Swift.Void)?
   @objc public var backPressed: (() -> Swift.Void)?
   public var onEnteringVPA: ((_ vpa: Swift.String, _ completion: @escaping ((_ result: Swift.Result<PayUParamsKit.PayUPaymentParam, PayUParamsKit.PayUError>) -> Swift.Void)) -> Swift.Void)?

@@ -10161,13 +10161,20 @@
       },
       {
         "kind": "Import",
-        "name": "PayULoggerKit",
-        "printedName": "PayULoggerKit",
+        "name": "PayUCommonUI",
+        "printedName": "PayUCommonUI",
         "declKind": "Import",
         "moduleName": "PayUUPICoreKit",
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "PayULoggerKit",
+        "printedName": "PayULoggerKit",
+        "declKind": "Import",
+        "moduleName": "PayUUPICoreKit"
       },
       {
         "kind": "Import",
@@ -11173,6 +11180,99 @@
                   "ObjC"
                 ],
                 "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isProtectedScreen",
+            "printedName": "isProtectedScreen",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUUPICoreKit@objc(cs)PayUUPICore(py)isProtectedScreen",
+            "mangledName": "$s14PayUUPICoreKit0aB0C17isProtectedScreenSbvp",
+            "moduleName": "PayUUPICoreKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUUPICoreKit@objc(cs)PayUUPICore(im)isProtectedScreen",
+                "mangledName": "$s14PayUUPICoreKit0aB0C17isProtectedScreenSbvg",
+                "moduleName": "PayUUPICoreKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUUPICoreKit@objc(cs)PayUUPICore(im)setIsProtectedScreen:",
+                "mangledName": "$s14PayUUPICoreKit0aB0C17isProtectedScreenSbvs",
+                "moduleName": "PayUUPICoreKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PayUUPICoreKit0aB0C17isProtectedScreenSbvM",
+                "mangledName": "$s14PayUUPICoreKit0aB0C17isProtectedScreenSbvM",
+                "moduleName": "PayUUPICoreKit",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -46606,121 +46706,128 @@
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/PayUUPICore.swift",
       "kind": "StringLiteral",
-      "offset": 329,
+      "offset": 349,
       "length": 64,
       "value": "\"Merchant key is a alphanumeric string with minimum length of 6\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/PayUUPICore.swift",
       "kind": "StringLiteral",
-      "offset": 425,
+      "offset": 445,
       "length": 35,
       "value": "\"Amount less than 1 is not allowed\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/PayUUPICore.swift",
       "kind": "StringLiteral",
-      "offset": 497,
+      "offset": 517,
       "length": 30,
       "value": "\"Product info cannot be empty\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/PayUUPICore.swift",
       "kind": "StringLiteral",
-      "offset": 562,
+      "offset": 582,
       "length": 28,
       "value": "\"First name cannot be empty\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/PayUUPICore.swift",
       "kind": "StringLiteral",
-      "offset": 621,
+      "offset": 641,
       "length": 15,
       "value": "\"Invalid email\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/PayUUPICore.swift",
       "kind": "StringLiteral",
-      "offset": 675,
+      "offset": 695,
       "length": 32,
       "value": "\"Transaction ID cannot be empty\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/PayUUPICore.swift",
       "kind": "StringLiteral",
-      "offset": 737,
+      "offset": 757,
       "length": 21,
       "value": "\"Invalid Success URL\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/PayUUPICore.swift",
       "kind": "StringLiteral",
-      "offset": 788,
+      "offset": 808,
       "length": 21,
       "value": "\"Invalid Failure URL\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/PayUUPICore.swift",
       "kind": "StringLiteral",
-      "offset": 839,
+      "offset": 859,
       "length": 22,
       "value": "\"Hash cannot be empty\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/PayUUPICore.swift",
       "kind": "StringLiteral",
-      "offset": 890,
+      "offset": 910,
       "length": 41,
       "value": "\"Invalid Virtul Payment Identifier (VPA)\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/PayUUPICore.swift",
       "kind": "StringLiteral",
-      "offset": 1025,
+      "offset": 1045,
       "length": 48,
       "value": "\"URL for socket connection could not be created\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/PayUUPICore.swift",
       "kind": "StringLiteral",
-      "offset": 1112,
+      "offset": 1132,
       "length": 36,
       "value": "\"Error in decoding payment response\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/PayUUPICore.swift",
       "kind": "StringLiteral",
-      "offset": 1189,
+      "offset": 1209,
       "length": 39,
       "value": "\"Data could not be fetched for the API\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/PayUUPICore.swift",
       "kind": "StringLiteral",
-      "offset": 1276,
+      "offset": 1296,
       "length": 41,
       "value": "\"Transaction cancelled due to back press\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/PayUUPICore.swift",
       "kind": "StringLiteral",
-      "offset": 1358,
+      "offset": 1378,
       "length": 22,
       "value": "\"Something went wrong\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/PayUUPICore.swift",
       "kind": "StringLiteral",
-      "offset": 1425,
+      "offset": 1445,
       "length": 31,
       "value": "\"Could not connect to internet\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/PayUUPICore.swift",
       "kind": "BooleanLiteral",
-      "offset": 1949,
+      "offset": 1969,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/PayUUPICore.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2016,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUPaymentApp.swift",
@@ -47054,14 +47161,14 @@
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUUPICoreUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 4394,
+      "offset": 5128,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUUPICoreUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 4425,
+      "offset": 5159,
       "length": 5,
       "value": "false"
     },
