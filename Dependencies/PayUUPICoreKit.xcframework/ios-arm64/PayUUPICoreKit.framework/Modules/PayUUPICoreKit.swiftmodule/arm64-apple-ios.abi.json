@@ -19590,7 +19590,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Dictionary",
-                "printedName": "[Swift.String : Swift.String]",
+                "printedName": "[Swift.String : Any]",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -19600,9 +19600,8 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
                   }
                 ],
                 "usr": "s:SD"
@@ -19616,7 +19615,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@M@PayUUPICoreKit@objc(cs)PayUUPICoreUtils(cm)getMandatoryParamsForUnderscorePaymentFromParams:",
-            "mangledName": "$s14PayUUPICoreKit0aB5UtilsC38getMandatoryParamsForUnderscorePayment04fromG0SDyS2SG0a7UParamsC00A13UPaymentParamC_tFZ",
+            "mangledName": "$s14PayUUPICoreKit0aB5UtilsC38getMandatoryParamsForUnderscorePayment04fromG0SDySSypG0a7UParamsC00A13UPaymentParamC_tFZ",
             "moduleName": "PayUUPICoreKit",
             "static": true,
             "declAttributes": [
@@ -19633,7 +19632,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Dictionary",
-                "printedName": "[Swift.String : Swift.String]",
+                "printedName": "[Swift.String : Any]",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -19643,9 +19642,8 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
                   }
                 ],
                 "usr": "s:SD"
@@ -19659,7 +19657,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@M@PayUUPICoreKit@objc(cs)PayUUPICoreUtils(cm)getMandatoryTPVParamsForUnderscorePaymentFromParams:",
-            "mangledName": "$s14PayUUPICoreKit0aB5UtilsC41getMandatoryTPVParamsForUnderscorePayment10fromParamsSDyS2SG0a7UParamsC00A13UPaymentParamC_tFZ",
+            "mangledName": "$s14PayUUPICoreKit0aB5UtilsC41getMandatoryTPVParamsForUnderscorePayment10fromParamsSDySSypG0a7UParamsC00A13UPaymentParamC_tFZ",
             "moduleName": "PayUUPICoreKit",
             "static": true,
             "declAttributes": [
@@ -29696,6 +29694,53 @@
                     "declKind": "Accessor",
                     "usr": "s:14PayUUPICoreKit0A12UUPIConstantO4keysO7versionSSvgZ",
                     "mangledName": "$s14PayUUPICoreKit0A12UUPIConstantO4keysO7versionSSvgZ",
+                    "moduleName": "PayUUPICoreKit",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "isPreAuthTxn",
+                "printedName": "isPreAuthTxn",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14PayUUPICoreKit0A12UUPIConstantO4keysO12isPreAuthTxnSSvpZ",
+                "mangledName": "$s14PayUUPICoreKit0A12UUPIConstantO4keysO12isPreAuthTxnSSvpZ",
+                "moduleName": "PayUUPICoreKit",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14PayUUPICoreKit0A12UUPIConstantO4keysO12isPreAuthTxnSSvgZ",
+                    "mangledName": "$s14PayUUPICoreKit0A12UUPIConstantO4keysO12isPreAuthTxnSSvgZ",
                     "moduleName": "PayUUPICoreKit",
                     "static": true,
                     "implicit": true,
@@ -42343,6 +42388,51 @@
           },
           {
             "kind": "Conformance",
+            "name": "DataProtocol",
+            "printedName": "DataProtocol",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Regions",
+                "printedName": "Regions",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CollectionOfOne",
+                    "printedName": "Swift.CollectionOfOne<[Swift.UInt8]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.UInt8]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UInt8",
+                            "printedName": "Swift.UInt8",
+                            "usr": "s:s5UInt8V"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:s15CollectionOfOneV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation12DataProtocolP",
+            "mangledName": "$s10Foundation12DataProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MutableDataProtocol",
+            "printedName": "MutableDataProtocol",
+            "usr": "s:10Foundation19MutableDataProtocolP",
+            "mangledName": "$s10Foundation19MutableDataProtocolP"
+          },
+          {
+            "kind": "Conformance",
             "name": "ContiguousBytes",
             "printedName": "ContiguousBytes",
             "usr": "s:10Foundation15ContiguousBytesP",
@@ -42389,51 +42479,6 @@
             ],
             "usr": "s:10Foundation26DecodableWithConfigurationP",
             "mangledName": "$s10Foundation26DecodableWithConfigurationP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "DataProtocol",
-            "printedName": "DataProtocol",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Regions",
-                "printedName": "Regions",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CollectionOfOne",
-                    "printedName": "Swift.CollectionOfOne<[Swift.UInt8]>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[Swift.UInt8]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "UInt8",
-                            "printedName": "Swift.UInt8",
-                            "usr": "s:s5UInt8V"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "usr": "s:s15CollectionOfOneV"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:10Foundation12DataProtocolP",
-            "mangledName": "$s10Foundation12DataProtocolP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "MutableDataProtocol",
-            "printedName": "MutableDataProtocol",
-            "usr": "s:10Foundation19MutableDataProtocolP",
-            "mangledName": "$s10Foundation19MutableDataProtocolP"
           }
         ]
       },
@@ -45070,6 +45115,41 @@
           },
           {
             "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
             "name": "ReferenceConvertible",
             "printedName": "ReferenceConvertible",
             "children": [
@@ -45111,41 +45191,6 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomReflectable",
-            "printedName": "CustomReflectable",
-            "usr": "s:s17CustomReflectableP",
-            "mangledName": "$ss17CustomReflectableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
           },
           {
             "kind": "Conformance",
@@ -47161,14 +47206,21 @@
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUUPICoreUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 5128,
+      "offset": 5359,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUUPICoreUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 5159,
+      "offset": 5390,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUUPICoreUtils.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5422,
       "length": 5,
       "value": "false"
     },
@@ -47962,6 +48014,13 @@
       "offset": 2475,
       "length": 9,
       "value": "\"version\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 2526,
+      "length": 14,
+      "value": "\"isPreAuthTxn\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Analytics\/PayUAnalyticsModels.swift",
