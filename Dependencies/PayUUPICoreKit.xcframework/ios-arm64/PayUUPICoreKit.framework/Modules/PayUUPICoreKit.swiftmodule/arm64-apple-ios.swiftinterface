@@ -732,6 +732,7 @@ public enum PayUUPIConstant {
     public static let payment_end_date: Swift.String
     public static let payment_start_date: Swift.String
     public static let billing_rule: Swift.String
+    public static let billing_date: Swift.String
     public static let billing_limit: Swift.String
     public static let is_free_trial: Swift.String
     public static let billing_interval: Swift.String
