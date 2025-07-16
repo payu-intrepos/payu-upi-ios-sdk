@@ -28811,6 +28811,523 @@
               },
               {
                 "kind": "Var",
+                "name": "plan",
+                "printedName": "plan",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14PayUUPICoreKit0A12UUPIConstantO4keysO4planSSvpZ",
+                "mangledName": "$s14PayUUPICoreKit0A12UUPIConstantO4keysO4planSSvpZ",
+                "moduleName": "PayUUPICoreKit",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14PayUUPICoreKit0A12UUPIConstantO4keysO4planSSvgZ",
+                    "mangledName": "$s14PayUUPICoreKit0A12UUPIConstantO4keysO4planSSvgZ",
+                    "moduleName": "PayUUPICoreKit",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "folio",
+                "printedName": "folio",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14PayUUPICoreKit0A12UUPIConstantO4keysO5folioSSvpZ",
+                "mangledName": "$s14PayUUPICoreKit0A12UUPIConstantO4keysO5folioSSvpZ",
+                "moduleName": "PayUUPICoreKit",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14PayUUPICoreKit0A12UUPIConstantO4keysO5folioSSvgZ",
+                    "mangledName": "$s14PayUUPICoreKit0A12UUPIConstantO4keysO5folioSSvgZ",
+                    "moduleName": "PayUUPICoreKit",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "option",
+                "printedName": "option",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14PayUUPICoreKit0A12UUPIConstantO4keysO6optionSSvpZ",
+                "mangledName": "$s14PayUUPICoreKit0A12UUPIConstantO4keysO6optionSSvpZ",
+                "moduleName": "PayUUPICoreKit",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14PayUUPICoreKit0A12UUPIConstantO4keysO6optionSSvgZ",
+                    "mangledName": "$s14PayUUPICoreKit0A12UUPIConstantO4keysO6optionSSvgZ",
+                    "moduleName": "PayUUPICoreKit",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "type",
+                "printedName": "type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14PayUUPICoreKit0A12UUPIConstantO4keysO4typeSSvpZ",
+                "mangledName": "$s14PayUUPICoreKit0A12UUPIConstantO4keysO4typeSSvpZ",
+                "moduleName": "PayUUPICoreKit",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14PayUUPICoreKit0A12UUPIConstantO4keysO4typeSSvgZ",
+                    "mangledName": "$s14PayUUPICoreKit0A12UUPIConstantO4keysO4typeSSvgZ",
+                    "moduleName": "PayUUPICoreKit",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "scheme",
+                "printedName": "scheme",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14PayUUPICoreKit0A12UUPIConstantO4keysO6schemeSSvpZ",
+                "mangledName": "$s14PayUUPICoreKit0A12UUPIConstantO4keysO6schemeSSvpZ",
+                "moduleName": "PayUUPICoreKit",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14PayUUPICoreKit0A12UUPIConstantO4keysO6schemeSSvgZ",
+                    "mangledName": "$s14PayUUPICoreKit0A12UUPIConstantO4keysO6schemeSSvgZ",
+                    "moduleName": "PayUUPICoreKit",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "mfAMCCode",
+                "printedName": "mfAMCCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14PayUUPICoreKit0A12UUPIConstantO4keysO9mfAMCCodeSSvpZ",
+                "mangledName": "$s14PayUUPICoreKit0A12UUPIConstantO4keysO9mfAMCCodeSSvpZ",
+                "moduleName": "PayUUPICoreKit",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14PayUUPICoreKit0A12UUPIConstantO4keysO9mfAMCCodeSSvgZ",
+                    "mangledName": "$s14PayUUPICoreKit0A12UUPIConstantO4keysO9mfAMCCodeSSvgZ",
+                    "moduleName": "PayUUPICoreKit",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "receipt",
+                "printedName": "receipt",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14PayUUPICoreKit0A12UUPIConstantO4keysO7receiptSSvpZ",
+                "mangledName": "$s14PayUUPICoreKit0A12UUPIConstantO4keysO7receiptSSvpZ",
+                "moduleName": "PayUUPICoreKit",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14PayUUPICoreKit0A12UUPIConstantO4keysO7receiptSSvgZ",
+                    "mangledName": "$s14PayUUPICoreKit0A12UUPIConstantO4keysO7receiptSSvgZ",
+                    "moduleName": "PayUUPICoreKit",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "mfMemberID",
+                "printedName": "mfMemberID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14PayUUPICoreKit0A12UUPIConstantO4keysO10mfMemberIDSSvpZ",
+                "mangledName": "$s14PayUUPICoreKit0A12UUPIConstantO4keysO10mfMemberIDSSvpZ",
+                "moduleName": "PayUUPICoreKit",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14PayUUPICoreKit0A12UUPIConstantO4keysO10mfMemberIDSSvgZ",
+                    "mangledName": "$s14PayUUPICoreKit0A12UUPIConstantO4keysO10mfMemberIDSSvgZ",
+                    "moduleName": "PayUUPICoreKit",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "mfUserID",
+                "printedName": "mfUserID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14PayUUPICoreKit0A12UUPIConstantO4keysO8mfUserIDSSvpZ",
+                "mangledName": "$s14PayUUPICoreKit0A12UUPIConstantO4keysO8mfUserIDSSvpZ",
+                "moduleName": "PayUUPICoreKit",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14PayUUPICoreKit0A12UUPIConstantO4keysO8mfUserIDSSvgZ",
+                    "mangledName": "$s14PayUUPICoreKit0A12UUPIConstantO4keysO8mfUserIDSSvgZ",
+                    "moduleName": "PayUUPICoreKit",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "mfPartner",
+                "printedName": "mfPartner",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14PayUUPICoreKit0A12UUPIConstantO4keysO9mfPartnerSSvpZ",
+                "mangledName": "$s14PayUUPICoreKit0A12UUPIConstantO4keysO9mfPartnerSSvpZ",
+                "moduleName": "PayUUPICoreKit",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14PayUUPICoreKit0A12UUPIConstantO4keysO9mfPartnerSSvgZ",
+                    "mangledName": "$s14PayUUPICoreKit0A12UUPIConstantO4keysO9mfPartnerSSvgZ",
+                    "moduleName": "PayUUPICoreKit",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "mfInvestmentType",
+                "printedName": "mfInvestmentType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14PayUUPICoreKit0A12UUPIConstantO4keysO16mfInvestmentTypeSSvpZ",
+                "mangledName": "$s14PayUUPICoreKit0A12UUPIConstantO4keysO16mfInvestmentTypeSSvpZ",
+                "moduleName": "PayUUPICoreKit",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14PayUUPICoreKit0A12UUPIConstantO4keysO16mfInvestmentTypeSSvgZ",
+                    "mangledName": "$s14PayUUPICoreKit0A12UUPIConstantO4keysO16mfInvestmentTypeSSvgZ",
+                    "moduleName": "PayUUPICoreKit",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
                 "name": "billing_date",
                 "printedName": "billing_date",
                 "children": [
@@ -29789,6 +30306,53 @@
                     "declKind": "Accessor",
                     "usr": "s:14PayUUPICoreKit0A12UUPIConstantO4keysO12isPreAuthTxnSSvgZ",
                     "mangledName": "$s14PayUUPICoreKit0A12UUPIConstantO4keysO12isPreAuthTxnSSvgZ",
+                    "moduleName": "PayUUPICoreKit",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "products",
+                "printedName": "products",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14PayUUPICoreKit0A12UUPIConstantO4keysO8productsSSvpZ",
+                "mangledName": "$s14PayUUPICoreKit0A12UUPIConstantO4keysO8productsSSvpZ",
+                "moduleName": "PayUUPICoreKit",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14PayUUPICoreKit0A12UUPIConstantO4keysO8productsSSvgZ",
+                    "mangledName": "$s14PayUUPICoreKit0A12UUPIConstantO4keysO8productsSSvgZ",
                     "moduleName": "PayUUPICoreKit",
                     "static": true,
                     "implicit": true,
@@ -47254,21 +47818,21 @@
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUUPICoreUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 7459,
+      "offset": 7665,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUUPICoreUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 7490,
+      "offset": 7696,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Utils\/PayUUPICoreUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 7522,
+      "offset": 7728,
       "length": 5,
       "value": "false"
     },
@@ -47933,149 +48497,233 @@
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1504,
+      "offset": 1496,
+      "length": 6,
+      "value": "\"plan\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1537,
+      "length": 7,
+      "value": "\"folio\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1580,
+      "length": 8,
+      "value": "\"option\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1622,
+      "length": 6,
+      "value": "\"type\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1664,
+      "length": 8,
+      "value": "\"scheme\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1711,
+      "length": 11,
+      "value": "\"mfAMCCode\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1759,
+      "length": 9,
+      "value": "\"receipt\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1808,
+      "length": 12,
+      "value": "\"mfMemberID\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1858,
+      "length": 10,
+      "value": "\"mfUserID\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1907,
+      "length": 11,
+      "value": "\"mfPartner\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1964,
+      "length": 18,
+      "value": "\"mfInvestmentType\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 2024,
       "length": 14,
       "value": "\"billing_date\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1561,
+      "offset": 2081,
       "length": 15,
       "value": "\"billing_limit\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1619,
+      "offset": 2139,
       "length": 15,
       "value": "\"is_free_trial\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1680,
+      "offset": 2200,
       "length": 18,
       "value": "\"billing_interval\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1754,
+      "offset": 2274,
       "length": 28,
       "value": "\"beneficiary_account_number\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1828,
+      "offset": 2348,
       "length": 18,
       "value": "\"beneficiary_ifsc\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1883,
+      "offset": 2403,
       "length": 9,
       "value": "\"payment\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1934,
+      "offset": 2454,
       "length": 14,
       "value": "\"validate_vpa\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1987,
+      "offset": 2507,
       "length": 11,
       "value": "\"bank_code\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2031,
+      "offset": 2551,
       "length": 5,
       "value": "\"vpa\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2085,
+      "offset": 2605,
       "length": 21,
       "value": "\"payu_payment_params\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2145,
+      "offset": 2665,
       "length": 11,
       "value": "\"si_params\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2196,
+      "offset": 2716,
       "length": 12,
       "value": "\"si_details\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2244,
+      "offset": 2764,
       "length": 8,
       "value": "\"hashes\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2292,
+      "offset": 2812,
       "length": 12,
       "value": "\"intent_app\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2341,
+      "offset": 2861,
       "length": 9,
       "value": "\"sdkName\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2392,
+      "offset": 2912,
       "length": 14,
       "value": "\"resourceName\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2444,
+      "offset": 2964,
       "length": 10,
       "value": "\"platform\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2488,
+      "offset": 3008,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2531,
+      "offset": 3051,
       "length": 9,
       "value": "\"version\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2582,
+      "offset": 3102,
       "length": 14,
       "value": "\"isPreAuthTxn\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 3154,
+      "length": 10,
+      "value": "\"products\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Analytics\/PayUAnalyticsModels.swift",

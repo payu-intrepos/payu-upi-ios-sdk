@@ -732,6 +732,17 @@ public enum PayUUPIConstant {
     public static let payment_end_date: Swift.String
     public static let payment_start_date: Swift.String
     public static let billing_rule: Swift.String
+    public static let plan: Swift.String
+    public static let folio: Swift.String
+    public static let option: Swift.String
+    public static let type: Swift.String
+    public static let scheme: Swift.String
+    public static let mfAMCCode: Swift.String
+    public static let receipt: Swift.String
+    public static let mfMemberID: Swift.String
+    public static let mfUserID: Swift.String
+    public static let mfPartner: Swift.String
+    public static let mfInvestmentType: Swift.String
     public static let billing_date: Swift.String
     public static let billing_limit: Swift.String
     public static let is_free_trial: Swift.String
@@ -753,6 +764,7 @@ public enum PayUUPIConstant {
     public static let name: Swift.String
     public static let version: Swift.String
     public static let isPreAuthTxn: Swift.String
+    public static let products: Swift.String
   }
 }
 @objc public enum PayUPaymentStatusType : Swift.Int {
