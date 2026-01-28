@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PayUUPICoreKit
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayUUPICoreKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
 import CommonCrypto
 import CoreFoundation
 import DeveloperToolsSupport
@@ -149,14 +149,14 @@ public struct PayUSSLSettings {
   public let cipherSuites: [Security.SSLCipherSuite]?
 }
 public protocol PayUWSStream {
-  func connect(url: Foundation.URL, port: Swift.Int, timeout: Foundation.TimeInterval, ssl: PayUUPICoreKit.PayUSSLSettings, completion: @escaping (((any Swift.Error)?) -> Swift.Void))
+  func connect(url: Foundation.URL, port: Swift.Int, timeout: Foundation.TimeInterval, ssl: PayUUPICoreKit.PayUSSLSettings, completion: @escaping ((any Swift.Error)?) -> Swift.Void)
   func write(data: Foundation.Data) -> Swift.Int
   func cleanup()
   func sslTrust() -> (trust: Security.SecTrust?, domain: Swift.String?)
 }
 @objc @_inheritsConvenienceInitializers public class PayUFoundationStream : ObjectiveC.NSObject, PayUUPICoreKit.PayUWSStream, Foundation.StreamDelegate {
   public var enableSOCKSProxy: Swift.Bool
-  public func connect(url: Foundation.URL, port: Swift.Int, timeout: Foundation.TimeInterval, ssl: PayUUPICoreKit.PayUSSLSettings, completion: @escaping (((any Swift.Error)?) -> Swift.Void))
+  public func connect(url: Foundation.URL, port: Swift.Int, timeout: Foundation.TimeInterval, ssl: PayUUPICoreKit.PayUSSLSettings, completion: @escaping ((any Swift.Error)?) -> Swift.Void)
   public func write(data: Foundation.Data) -> Swift.Int
   public func cleanup()
   public func sslTrust() -> (trust: Security.SecTrust?, domain: Swift.String?)
@@ -302,7 +302,7 @@ public typealias PayUResponseType = Swift.Result<[Swift.String : Any], PayUParam
   }
   public var paymentCompletion: ((PayUUPICoreKit.PayUResponseType) -> Swift.Void)?
   @objc public var backPressed: (() -> Swift.Void)?
-  public var onEnteringVPA: ((_ vpa: Swift.String, _ completion: @escaping ((_ result: Swift.Result<PayUParamsKit.PayUPaymentParam, PayUParamsKit.PayUError>) -> Swift.Void)) -> Swift.Void)?
+  public var onEnteringVPA: ((_ vpa: Swift.String, _ completion: @escaping (_ result: Swift.Result<PayUParamsKit.PayUPaymentParam, PayUParamsKit.PayUError>) -> Swift.Void) -> Swift.Void)?
   @objc public var upiSdkVersion: Swift.String?
   @objc public var txnStartTime: Foundation.Date?
   @objc public class func getInstalledAppsList(forUpiOptions options: PayUUPICoreKit.PayUUPIPaymentOptions) -> [PayUUPICoreKit.PayUSupportedIntentApp]
@@ -840,8 +840,8 @@ extension PayUUPICoreKit.PayUPaymentResponseHandler {
   }
   @objc dynamic public func finishTransaction()
   @objc dynamic public func finishTransaction(isMerchantCancelling: Swift.Bool)
-  @objc dynamic public func cancelTransaction(completion: @escaping ((PayUUPICoreKit.PayUPaymentStatus) -> Swift.Void))
-  @objc dynamic public func checkPaymentStatus(forcefully: Swift.Bool, completion: @escaping ((PayUUPICoreKit.PayUPaymentStatus) -> Swift.Void))
+  @objc dynamic public func cancelTransaction(completion: @escaping (PayUUPICoreKit.PayUPaymentStatus) -> Swift.Void)
+  @objc dynamic public func checkPaymentStatus(forcefully: Swift.Bool, completion: @escaping (PayUUPICoreKit.PayUPaymentStatus) -> Swift.Void)
 }
 extension PayUUPICoreKit.PayUPaymentResponseHandler {
   @objc dynamic public func consumePaymentStatus(_ status: PayUUPICoreKit.PayUPaymentStatus, forVerificationMode mode: PayUUPICoreKit.PayUPaymentVerificationMode)
@@ -1001,7 +1001,7 @@ public struct PayUSocketPacket : Swift.CustomStringConvertible {
   @objc public func write(_ msg: Swift.String, withType type: PayUUPICoreKit.PayUSocketEnginePacketType, withData data: [Foundation.Data], completion: (() -> Swift.Void)? = nil)
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PayUThirdPartyManager : ObjectiveC.NSObject {
-  @objc public class func makePayment(withApp app: PayUUPICoreKit.PayUSupportedIntentApp, withIntentModel model: PayUUPICoreKit.PayUPureS2SModel, appSwitchingStatus: @escaping ((Swift.Bool) -> Swift.Void))
+  @objc public class func makePayment(withApp app: PayUUPICoreKit.PayUSupportedIntentApp, withIntentModel model: PayUUPICoreKit.PayUPureS2SModel, appSwitchingStatus: @escaping (Swift.Bool) -> Swift.Void)
   @objc override dynamic public init()
   @objc deinit
 }
