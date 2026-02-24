@@ -306,7 +306,7 @@ public typealias PayUResponseType = Swift.Result<[Swift.String : Any], PayUParam
   @objc public var upiSdkVersion: Swift.String?
   @objc public var txnStartTime: Foundation.Date?
   @objc public class func getInstalledAppsList(forUpiOptions options: PayUUPICoreKit.PayUUPIPaymentOptions) -> [PayUUPICoreKit.PayUSupportedIntentApp]
-  @objc public class func getURI(forApp app: PayUUPICoreKit.PayUSupportedIntentApp, fromModel model: PayUUPICoreKit.PayUPureS2SModel) -> Foundation.URL?
+  @objc public class func getURI(forApp app: PayUUPICoreKit.PayUSupportedIntentApp, fromModel model: PayUUPICoreKit.PayUPureS2SModel, isSITxn: Swift.Bool) -> Foundation.URL?
   @objc public class func getPayUCollectLoaderScreen() -> PayUUPICoreKit.PayULoaderUPIAuthorisation
   @objc public class func getPayUIntentPLoaderScreen() -> PayUUPICoreKit.PayULoaderIntentPayment
   @objc public class func getScheme(ofApp appName: Swift.String, withAllUpiOptions options: PayUUPICoreKit.PayUUPIPaymentOptions) -> Swift.String
@@ -514,8 +514,8 @@ extension PayUUPICoreKit.PayUSocketEngineWebsocket {
 }
 @objc @objcMembers public class PayUSupportedIntentApp : ObjectiveC.NSObject {
   @objc final public let name: Swift.String, scheme: Swift.String
-  @objc final public let paymentCode: Swift.String?
-  @objc public init(name: Swift.String, scheme: Swift.String, paymentCode: Swift.String? = nil)
+  @objc final public let paymentCode: Swift.String?, mandateSchema: Swift.String?
+  @objc public init(name: Swift.String, scheme: Swift.String, paymentCode: Swift.String? = nil, mandateSchema: Swift.String? = nil)
   @objc public static func isEqual(lhs: PayUUPICoreKit.PayUSupportedIntentApp, rhs: PayUUPICoreKit.PayUSupportedIntentApp) -> Swift.Bool
   @objc deinit
 }
@@ -1001,7 +1001,7 @@ public struct PayUSocketPacket : Swift.CustomStringConvertible {
   @objc public func write(_ msg: Swift.String, withType type: PayUUPICoreKit.PayUSocketEnginePacketType, withData data: [Foundation.Data], completion: (() -> Swift.Void)? = nil)
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PayUThirdPartyManager : ObjectiveC.NSObject {
-  @objc public class func makePayment(withApp app: PayUUPICoreKit.PayUSupportedIntentApp, withIntentModel model: PayUUPICoreKit.PayUPureS2SModel, appSwitchingStatus: @escaping (Swift.Bool) -> Swift.Void)
+  @objc public class func makePayment(withApp app: PayUUPICoreKit.PayUSupportedIntentApp, withIntentModel model: PayUUPICoreKit.PayUPureS2SModel, isSITxn: Swift.Bool, appSwitchingStatus: @escaping (Swift.Bool) -> Swift.Void)
   @objc override dynamic public init()
   @objc deinit
 }

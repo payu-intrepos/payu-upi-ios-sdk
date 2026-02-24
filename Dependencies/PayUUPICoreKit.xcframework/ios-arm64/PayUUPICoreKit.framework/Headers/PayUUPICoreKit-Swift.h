@@ -1063,7 +1063,8 @@ SWIFT_CLASS("_TtC14PayUUPICoreKit22PayUSupportedIntentApp")
 @property (nonatomic, readonly, copy) NSString * _Nonnull name;
 @property (nonatomic, readonly, copy) NSString * _Nonnull scheme;
 @property (nonatomic, readonly, copy) NSString * _Nullable paymentCode;
-- (nonnull instancetype)initWithName:(NSString * _Nonnull)name scheme:(NSString * _Nonnull)scheme paymentCode:(NSString * _Nullable)paymentCode OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly, copy) NSString * _Nullable mandateSchema;
+- (nonnull instancetype)initWithName:(NSString * _Nonnull)name scheme:(NSString * _Nonnull)scheme paymentCode:(NSString * _Nullable)paymentCode mandateSchema:(NSString * _Nullable)mandateSchema OBJC_DESIGNATED_INITIALIZER;
 + (BOOL)isEqualWithLhs:(PayUSupportedIntentApp * _Nonnull)lhs rhs:(PayUSupportedIntentApp * _Nonnull)rhs SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1071,7 +1072,7 @@ SWIFT_CLASS("_TtC14PayUUPICoreKit22PayUSupportedIntentApp")
 
 SWIFT_CLASS("_TtC14PayUUPICoreKit21PayUThirdPartyManager")
 @interface PayUThirdPartyManager : NSObject
-+ (void)makePaymentWithApp:(PayUSupportedIntentApp * _Nonnull)app withIntentModel:(PayUPureS2SModel * _Nonnull)model appSwitchingStatus:(void (^ _Nonnull)(BOOL))appSwitchingStatus;
++ (void)makePaymentWithApp:(PayUSupportedIntentApp * _Nonnull)app withIntentModel:(PayUPureS2SModel * _Nonnull)model isSITxn:(BOOL)isSITxn appSwitchingStatus:(void (^ _Nonnull)(BOOL))appSwitchingStatus;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1103,7 +1104,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PayUUPICore 
 @property (nonatomic, copy) NSString * _Nullable upiSdkVersion;
 @property (nonatomic, copy) NSDate * _Nullable txnStartTime;
 + (NSArray<PayUSupportedIntentApp *> * _Nonnull)getInstalledAppsListForUpiOptions:(PayUUPIPaymentOptions * _Nonnull)options SWIFT_WARN_UNUSED_RESULT;
-+ (NSURL * _Nullable)getURIForApp:(PayUSupportedIntentApp * _Nonnull)app fromModel:(PayUPureS2SModel * _Nonnull)model SWIFT_WARN_UNUSED_RESULT;
++ (NSURL * _Nullable)getURIForApp:(PayUSupportedIntentApp * _Nonnull)app fromModel:(PayUPureS2SModel * _Nonnull)model isSITxn:(BOOL)isSITxn SWIFT_WARN_UNUSED_RESULT;
 + (PayULoaderUPIAuthorisation * _Nonnull)getPayUCollectLoaderScreen SWIFT_WARN_UNUSED_RESULT;
 + (PayULoaderIntentPayment * _Nonnull)getPayUIntentPLoaderScreen SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)getSchemeOfApp:(NSString * _Nonnull)appName withAllUpiOptions:(PayUUPIPaymentOptions * _Nonnull)options SWIFT_WARN_UNUSED_RESULT;

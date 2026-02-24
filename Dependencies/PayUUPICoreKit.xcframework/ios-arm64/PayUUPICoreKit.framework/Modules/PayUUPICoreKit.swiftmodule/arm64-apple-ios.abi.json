@@ -12192,7 +12192,7 @@
           {
             "kind": "Function",
             "name": "getURI",
-            "printedName": "getURI(forApp:fromModel:)",
+            "printedName": "getURI(forApp:fromModel:isSITxn:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -12219,11 +12219,17 @@
                 "name": "PayUPureS2SModel",
                 "printedName": "PayUUPICoreKit.PayUPureS2SModel",
                 "usr": "c:@M@PayUUPICoreKit@objc(cs)PayUPureS2SModel"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@PayUUPICoreKit@objc(cs)PayUUPICore(cm)getURIForApp:fromModel:",
-            "mangledName": "$s14PayUUPICoreKit0aB0C6getURI6forApp9fromModel10Foundation3URLVSgAA0a16USupportedIntentG0C_AA0A13UPureS2SModelCtFZ",
+            "usr": "c:@M@PayUUPICoreKit@objc(cs)PayUUPICore(cm)getURIForApp:fromModel:isSITxn:",
+            "mangledName": "$s14PayUUPICoreKit0aB0C6getURI6forApp9fromModel7isSITxn10Foundation3URLVSgAA0a16USupportedIntentG0C_AA0A13UPureS2SModelCSbtFZ",
             "moduleName": "PayUUPICoreKit",
             "static": true,
             "declAttributes": [
@@ -20773,9 +20779,75 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "mandateSchema",
+            "printedName": "mandateSchema",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUUPICoreKit@objc(cs)PayUSupportedIntentApp(py)mandateSchema",
+            "mangledName": "$s14PayUUPICoreKit0A19USupportedIntentAppC13mandateSchemaSSSgvp",
+            "moduleName": "PayUUPICoreKit",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUUPICoreKit@objc(cs)PayUSupportedIntentApp(im)mandateSchema",
+                "mangledName": "$s14PayUUPICoreKit0A19USupportedIntentAppC13mandateSchemaSSSgvg",
+                "moduleName": "PayUUPICoreKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(name:scheme:paymentCode:)",
+            "printedName": "init(name:scheme:paymentCode:mandateSchema:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -20809,11 +20881,26 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@PayUUPICoreKit@objc(cs)PayUSupportedIntentApp(im)initWithName:scheme:paymentCode:",
-            "mangledName": "$s14PayUUPICoreKit0A19USupportedIntentAppC4name6scheme11paymentCodeACSS_S2SSgtcfc",
+            "usr": "c:@M@PayUUPICoreKit@objc(cs)PayUSupportedIntentApp(im)initWithName:scheme:paymentCode:mandateSchema:",
+            "mangledName": "$s14PayUUPICoreKit0A19USupportedIntentAppC4name6scheme11paymentCode13mandateSchemaACSS_S2SSgAHtcfc",
             "moduleName": "PayUUPICoreKit",
             "declAttributes": [
               "AccessControl",
@@ -38333,7 +38420,7 @@
           {
             "kind": "Function",
             "name": "makePayment",
-            "printedName": "makePayment(withApp:withIntentModel:appSwitchingStatus:)",
+            "printedName": "makePayment(withApp:withIntentModel:isSITxn:appSwitchingStatus:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -38351,6 +38438,12 @@
                 "name": "PayUPureS2SModel",
                 "printedName": "PayUUPICoreKit.PayUPureS2SModel",
                 "usr": "c:@M@PayUUPICoreKit@objc(cs)PayUPureS2SModel"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               },
               {
                 "kind": "TypeFunc",
@@ -38372,8 +38465,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@PayUUPICoreKit@objc(cs)PayUThirdPartyManager(cm)makePaymentWithApp:withIntentModel:appSwitchingStatus:",
-            "mangledName": "$s14PayUUPICoreKit0A18UThirdPartyManagerC11makePayment7withApp0I11IntentModel18appSwitchingStatusyAA0a10USupportedkJ0C_AA0A13UPureS2SModelCySbctFZ",
+            "usr": "c:@M@PayUUPICoreKit@objc(cs)PayUThirdPartyManager(cm)makePaymentWithApp:withIntentModel:isSITxn:appSwitchingStatus:",
+            "mangledName": "$s14PayUUPICoreKit0A18UThirdPartyManagerC11makePayment7withApp0I11IntentModel7isSITxn18appSwitchingStatusyAA0a10USupportedkJ0C_AA0A13UPureS2SModelCSbySbctFZ",
             "moduleName": "PayUUPICoreKit",
             "static": true,
             "declAttributes": [
@@ -48724,6 +48817,62 @@
       "offset": 3154,
       "length": 10,
       "value": "\"products\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 3222,
+      "length": 6,
+      "value": "\"skus\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 3253,
+      "length": 7,
+      "value": "\"skuId\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 3287,
+      "length": 9,
+      "value": "\"skuName\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 3327,
+      "length": 10,
+      "value": "\"quantity\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 3366,
+      "length": 11,
+      "value": "\"skuAmount\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 3409,
+      "length": 11,
+      "value": "\"offerKeys\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 3451,
+      "length": 11,
+      "value": "\"offer_key\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/HybridFiles\/PayUUPIConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 3495,
+      "length": 12,
+      "value": "\"skuDetails\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/UPI SDK\/Framework_Projects\/PayUUPICore\/PayUUPICoreKit\/Analytics\/PayUAnalyticsModels.swift",
