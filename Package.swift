@@ -4,7 +4,7 @@
 import PackageDescription
 
 let VERSION_PARAM_KIT: PackageDescription.Version = "7.2.0"
-let VERSION_COMMON_UI: PackageDescription.Version = "2.2.0"
+let VERSION_COMMON_UI: PackageDescription.Version = "2.3.3"
 
 let package = Package(
     name: "PayUIndia-UPIKit",

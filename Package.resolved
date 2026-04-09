@@ -24,8 +24,8 @@
         "repositoryURL": "https://github.com/payu-intrepos/PayUCommonUI-iOS",
         "state": {
           "branch": null,
-          "revision": "2e57bc9d05af8f8d5d402cb6df68d944e48ffe71",
-          "version": "2.2.0"
+          "revision": "3c3b67d5a3284bfdb5d7ff0aa8422edd713bac32",
+          "version": "2.3.3"
         }
       },
       {
@@ -33,8 +33,8 @@
         "repositoryURL": "https://github.com/payu-intrepos/PayUCrashReporter-iOS.git",
         "state": {
           "branch": null,
-          "revision": "454760775aaa4a9cf9d9a3ec8aec2fdf276ad664",
-          "version": "4.0.1"
+          "revision": "bd8e6c99af9221077d71aea531446e14bdb6a1fa",
+          "version": "4.0.3"
         }
       }
     ]

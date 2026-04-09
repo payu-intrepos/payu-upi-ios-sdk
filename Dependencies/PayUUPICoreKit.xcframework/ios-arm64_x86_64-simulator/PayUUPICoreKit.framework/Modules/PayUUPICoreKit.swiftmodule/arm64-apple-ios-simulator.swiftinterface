@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayUUPICoreKit
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import CommonCrypto
 import CoreFoundation
 import DeveloperToolsSupport
@@ -20,9 +20,15 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class PayULoaderUPIAuthorisation : PayUUPICoreKit.PayULoaderBaseVC {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLoad()
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency override public func connectionEstablished(withTxnTimeRemaining timeRemaining: Swift.Int?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers final public class PayUSocketAnyEvent : ObjectiveC.NSObject {
@@ -34,13 +40,21 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @objc public protocol PayUSocketEngineSpec {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc var client: (any PayUUPICoreKit.PayUSocketEngineClient)? { get set }
+  #endif
   @objc var closed: Swift.Bool { get }
   @objc var connected: Swift.Bool { get }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc var connectParams: [Swift.String : Any]? { get set }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc var cookies: [Foundation.HTTPCookie]? { get }
+  #endif
   @objc var engineQueue: Dispatch.DispatchQueue { get }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc var extraHeaders: [Swift.String : Swift.String]? { get set }
+  #endif
   @objc var fastUpgrade: Swift.Bool { get }
   @objc var forcePolling: Swift.Bool { get }
   @objc var forceWebsockets: Swift.Bool { get }
@@ -50,7 +64,9 @@ import _SwiftConcurrencyShims
   @objc var socketPath: Swift.String { get }
   @objc var urlPolling: Foundation.URL { get }
   @objc var urlWebSocket: Foundation.URL { get }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc var ws: PayUUPICoreKit.PayUWebSocket? { get }
+  #endif
   @objc func connect()
   @objc func didError(reason: Swift.String)
   @objc func disconnect(reason: Swift.String)
@@ -58,7 +74,9 @@ import _SwiftConcurrencyShims
   @objc func flushWaitingForPostToWebSocket()
   @objc func parseEngineData(_ data: Foundation.Data)
   @objc func parseEngineMessage(_ message: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func write(_ msg: Swift.String, withType type: PayUUPICoreKit.PayUSocketEnginePacketType, withData data: [Foundation.Data], completion: (() -> Swift.Void)?)
+  #endif
 }
 @objc public protocol PayUSocketEngineClient {
   @objc func engineDidError(reason: Swift.String)
@@ -78,21 +96,39 @@ public typealias PayUItemTypeInPaymentHandlesAPI = [Swift.String : [Swift.String
   case mobileDev
   case sdkTest
   case bizcheckouttest
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PayUAPI : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   public class func getUPIPaymentOptions(withPaymentParams params: PayUParamsKit.PayUPaymentParam, completion: @escaping (Swift.Result<PayUUPICoreKit.PayUUPIPaymentOptions, PayUParamsKit.PayUError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public class func validateVPA(withPaymentParams params: PayUParamsKit.PayUPaymentParam, completion: @escaping (Swift.Result<PayUUPICoreKit.PayUValidateVPAModel, PayUParamsKit.PayUError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public class func getDataForIntentPayment(withPaymentParams params: PayUParamsKit.PayUPaymentParam, supportedApp: PayUUPICoreKit.PayUSupportedIntentApp, completion: @escaping (Swift.Result<PayUUPICoreKit.PayUPureS2SModel, PayUParamsKit.PayUError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public class func getDataForGpayIntentPayment(withPaymentParams params: PayUParamsKit.PayUPaymentParam, supportedApp: PayUUPICoreKit.PayUSupportedIntentApp, completion: @escaping (Swift.Result<PayUUPICoreKit.PayUPureS2SModel, PayUParamsKit.PayUError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public class func getDataForGPayOmniPayment(withPaymentParams params: PayUParamsKit.PayUPaymentParam, completion: @escaping (Swift.Result<PayUUPICoreKit.PayUPureS2SModel, PayUParamsKit.PayUError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public class func getDataForGpayCollectPayment(withPaymentParams params: PayUParamsKit.PayUPaymentParam, completion: @escaping (Swift.Result<PayUUPICoreKit.PayUPureS2SModel, PayUParamsKit.PayUError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public class func getDataForUPICollectPayment(withPaymentParams params: PayUParamsKit.PayUPaymentParam, completion: @escaping (Swift.Result<PayUUPICoreKit.PayUPureS2SModel, PayUParamsKit.PayUError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public class func getUPIHandles(withPaymentParams params: PayUParamsKit.PayUPaymentParam, paymentCode: Swift.String?, completion: @escaping (Swift.Result<[PayUUPICoreKit.PayUItemTypeInPaymentHandlesAPI], PayUParamsKit.PayUError>) -> Swift.Void)
+  #endif
   @objc override dynamic public init()
   @objc deinit
 }
@@ -105,7 +141,9 @@ public enum PayUCloseCode : Swift.UInt16 {
   case encoding
   case policyViolated
   case messageTooBig
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.UInt16)
+  #endif
   public typealias RawValue = Swift.UInt16
   public var rawValue: Swift.UInt16 {
     get
@@ -131,16 +169,30 @@ public struct PayUWSError : Swift.Error {
   public let code: Swift.Int
 }
 public protocol PayUWebSocketClient : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   var delegate: (any PayUUPICoreKit.PayUWebSocketDelegate)? { get set }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var pongDelegate: (any PayUUPICoreKit.PayUWebSocketPongDelegate)? { get set }
+  #endif
   var disableSSLCertValidation: Swift.Bool { get set }
+  #if compiler(>=5.3) && $NonescapableTypes
   var desiredTrustHostname: Swift.String? { get set }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var enabledSSLCipherSuites: [Security.SSLCipherSuite]? { get set }
+  #endif
   var isConnected: Swift.Bool { get }
   func connect()
+  #if compiler(>=5.3) && $NonescapableTypes
   func disconnect(forceTimeout: Foundation.TimeInterval?, closeCode: Swift.UInt16)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func write(string: Swift.String, completion: (() -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func write(data: Foundation.Data, completion: (() -> Swift.Void)?)
+  #endif
 }
 public struct PayUSSLSettings {
   public let useSSL: Swift.Bool
@@ -149,32 +201,46 @@ public struct PayUSSLSettings {
   public let cipherSuites: [Security.SSLCipherSuite]?
 }
 public protocol PayUWSStream {
+  #if compiler(>=5.3) && $NonescapableTypes
   func connect(url: Foundation.URL, port: Swift.Int, timeout: Foundation.TimeInterval, ssl: PayUUPICoreKit.PayUSSLSettings, completion: @escaping ((any Swift.Error)?) -> Swift.Void)
+  #endif
   func write(data: Foundation.Data) -> Swift.Int
   func cleanup()
+  #if compiler(>=5.3) && $NonescapableTypes
   func sslTrust() -> (trust: Security.SecTrust?, domain: Swift.String?)
+  #endif
 }
 @objc @_inheritsConvenienceInitializers public class PayUFoundationStream : ObjectiveC.NSObject, PayUUPICoreKit.PayUWSStream, Foundation.StreamDelegate {
   public var enableSOCKSProxy: Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   public func connect(url: Foundation.URL, port: Swift.Int, timeout: Foundation.TimeInterval, ssl: PayUUPICoreKit.PayUSSLSettings, completion: @escaping ((any Swift.Error)?) -> Swift.Void)
+  #endif
   public func write(data: Foundation.Data) -> Swift.Int
   public func cleanup()
+  #if compiler(>=5.3) && $NonescapableTypes
   public func sslTrust() -> (trust: Security.SecTrust?, domain: Swift.String?)
+  #endif
   @objc override dynamic public init()
   @objc deinit
 }
 public protocol PayUWebSocketDelegate : AnyObject {
   func websocketDidConnect(socket: any PayUUPICoreKit.PayUWebSocketClient)
+  #if compiler(>=5.3) && $NonescapableTypes
   func websocketDidDisconnect(socket: any PayUUPICoreKit.PayUWebSocketClient, error: (any Swift.Error)?)
+  #endif
   func websocketDidReceiveMessage(socket: any PayUUPICoreKit.PayUWebSocketClient, text: Swift.String)
   func websocketDidReceiveData(socket: any PayUUPICoreKit.PayUWebSocketClient, data: Foundation.Data)
 }
 public protocol PayUWebSocketPongDelegate : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   func websocketDidReceivePong(socket: any PayUUPICoreKit.PayUWebSocketClient, data: Foundation.Data?)
+  #endif
 }
 public protocol PayUWebSocketAdvancedDelegate : AnyObject {
   func websocketDidConnect(socket: PayUUPICoreKit.PayUWebSocket)
+  #if compiler(>=5.3) && $NonescapableTypes
   func websocketDidDisconnect(socket: PayUUPICoreKit.PayUWebSocket, error: (any Swift.Error)?)
+  #endif
   func websocketDidReceiveMessage(socket: PayUUPICoreKit.PayUWebSocket, text: Swift.String, response: PayUUPICoreKit.PayUWebSocket.WSResponse)
   func websocketDidReceiveData(socket: PayUUPICoreKit.PayUWebSocket, data: Foundation.Data, response: PayUUPICoreKit.PayUWebSocket.WSResponse)
   func websocketHttpUpgrade(socket: PayUUPICoreKit.PayUWebSocket, request: Swift.String)
@@ -188,7 +254,9 @@ public protocol PayUWebSocketAdvancedDelegate : AnyObject {
     case connectionClose
     case ping
     case pong
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.UInt8)
+    #endif
     public typealias RawValue = Swift.UInt8
     public var rawValue: Swift.UInt8 {
       get
@@ -223,11 +291,19 @@ public protocol PayUWebSocketAdvancedDelegate : AnyObject {
     get
   }
   public var respondToPingWithPong: Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(request: Foundation.URLRequest, protocols: [Swift.String]? = nil, stream: any PayUUPICoreKit.PayUWSStream = PayUFoundationStream())
+  #endif
   public func connect()
+  #if compiler(>=5.3) && $NonescapableTypes
   public func disconnect(forceTimeout: Foundation.TimeInterval? = nil, closeCode: Swift.UInt16 = PayUCloseCode.normal.rawValue)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func write(string: Swift.String, completion: (() -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func write(data: Foundation.Data, completion: (() -> Swift.Void)? = nil)
+  #endif
   @objc deinit
 }
 public protocol PayUSocketIOData {
@@ -306,7 +382,9 @@ public typealias PayUResponseType = Swift.Result<[Swift.String : Any], PayUParam
   @objc public var upiSdkVersion: Swift.String?
   @objc public var txnStartTime: Foundation.Date?
   @objc public class func getInstalledAppsList(forUpiOptions options: PayUUPICoreKit.PayUUPIPaymentOptions) -> [PayUUPICoreKit.PayUSupportedIntentApp]
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public class func getURI(forApp app: PayUUPICoreKit.PayUSupportedIntentApp, fromModel model: PayUUPICoreKit.PayUPureS2SModel, isSITxn: Swift.Bool) -> Foundation.URL?
+  #endif
   @objc public class func getPayUCollectLoaderScreen() -> PayUUPICoreKit.PayULoaderUPIAuthorisation
   @objc public class func getPayUIntentPLoaderScreen() -> PayUUPICoreKit.PayULoaderIntentPayment
   @objc public class func getScheme(ofApp appName: Swift.String, withAllUpiOptions options: PayUUPICoreKit.PayUUPIPaymentOptions) -> Swift.String
@@ -321,8 +399,12 @@ public typealias PayUResponseType = Swift.Result<[Swift.String : Any], PayUParam
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLoad()
   @_Concurrency.MainActor @preconcurrency open func showActivityIndicator()
   @_Concurrency.MainActor @preconcurrency open func hideActivityIndicator()
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
 @objc final public class PayUSocketAckEmitter : ObjectiveC.NSObject {
@@ -333,18 +415,26 @@ public typealias PayUResponseType = Swift.Result<[Swift.String : Any], PayUParam
   @objc deinit
 }
 public protocol PayUSocketIOClientSpec : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   var anyHandler: ((PayUUPICoreKit.PayUSocketAnyEvent) -> Swift.Void)? { get }
+  #endif
   var handlers: [PayUUPICoreKit.PayUSocketEventHandler] { get }
+  #if compiler(>=5.3) && $NonescapableTypes
   var manager: (any PayUUPICoreKit.PayUSocketManagerSpec)? { get }
+  #endif
   var nsp: Swift.String { get }
   var status: PayUUPICoreKit.PayUSocketIOStatus { get }
   func connect()
+  #if compiler(>=5.3) && $NonescapableTypes
   func connect(timeoutAfter: Swift.Double, withHandler handler: (() -> Swift.Void)?)
+  #endif
   func didConnect(toNamespace namespace: Swift.String)
   func didDisconnect(reason: Swift.String)
   func didError(reason: Swift.String)
   func disconnect()
+  #if compiler(>=5.3) && $NonescapableTypes
   func emit(_ event: Swift.String, _ items: any PayUUPICoreKit.PayUSocketIOData..., completion: (() -> Swift.Void)?)
+  #endif
   func emitAck(_ ack: Swift.Int, with items: [Any])
   func handleAck(_ ack: Swift.Int, data: [Any])
   func handleClientEvent(_ event: PayUUPICoreKit.PayUSocketClientEvent, data: [Any])
@@ -370,7 +460,9 @@ public enum PayUSocketClientEvent : Swift.String {
   case reconnectAttempt
   case statusChange
   case websocketUpgrade
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -385,7 +477,9 @@ public enum PayUSocketClientEvent : Swift.String {
   case gpayOmni
   case newType
   case unknown
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -410,7 +504,9 @@ public enum PayUSocketClientEvent : Swift.String {
   @objc deinit
 }
 extension PayUUPICoreKit.PayUPaymentApp {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func from(collectApp: PayUUPICoreKit.PayUSupportedCollectApp) -> PayUUPICoreKit.PayUPaymentApp?
+  #endif
 }
 extension PayUUPICoreKit.PayUPaymentApp {
   @objc dynamic public var checkoutDisplayName: Swift.String {
@@ -473,15 +569,21 @@ public struct PayUSocketEventHandler {
   @objc deinit
 }
 public protocol PayUSocketEngineWebsocket : PayUUPICoreKit.PayUSocketEngineSpec {
+  #if compiler(>=5.3) && $NonescapableTypes
   func sendWebSocketMessage(_ str: Swift.String, withType type: PayUUPICoreKit.PayUSocketEnginePacketType, withData datas: [Foundation.Data], completion: (() -> Swift.Void)?)
+  #endif
 }
 extension PayUUPICoreKit.PayUSocketEngineWebsocket {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func sendWebSocketMessage(_ str: Swift.String, withType type: PayUUPICoreKit.PayUSocketEnginePacketType, withData data: [Foundation.Data], completion: (() -> Swift.Void)?)
+  #endif
 }
 @objc @objcMembers public class PayUSupportedCollectApp : ObjectiveC.NSObject {
   @objc final public let name: Swift.String
   @objc final public let handles: [Swift.String]
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init?(withItem item: PayUUPICoreKit.PayUItemTypeInPaymentHandlesAPI)
+  #endif
   @objc public init(appName: Swift.String, handles: [Swift.String])
   @objc deinit
 }
@@ -515,7 +617,9 @@ extension PayUUPICoreKit.PayUSocketEngineWebsocket {
 @objc @objcMembers public class PayUSupportedIntentApp : ObjectiveC.NSObject {
   @objc final public let name: Swift.String, scheme: Swift.String
   @objc final public let paymentCode: Swift.String?, mandateSchema: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(name: Swift.String, scheme: Swift.String, paymentCode: Swift.String? = nil, mandateSchema: Swift.String? = nil)
+  #endif
   @objc public static func isEqual(lhs: PayUUPICoreKit.PayUSupportedIntentApp, rhs: PayUUPICoreKit.PayUSupportedIntentApp) -> Swift.Bool
   @objc deinit
 }
@@ -525,14 +629,21 @@ extension PayUUPICoreKit.PayUSocketEngineWebsocket {
   @objc @_Concurrency.MainActor @preconcurrency public var paymentApp: PayUUPICoreKit.PayUSupportedIntentApp!
   @objc @_Concurrency.MainActor @preconcurrency public var bypassCanOpenAppChecks: Swift.Bool
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class PayUUPIHybridIntentHandler : ObjectiveC.NSObject {
   public func initiateIntentPayment(withApp app: PayUUPICoreKit.PayUSupportedIntentApp, paymentParams params: PayUParamsKit.PayUPaymentParam, fromVC: UIKit.UIViewController)
   public func getIntentApps() -> [Swift.String]
+  public func getSupportedIntentApps(isForSI: Swift.Bool = false) -> [PayUUPICoreKit.PayUSupportedIntentApp]
+  #if compiler(>=5.3) && $NonescapableTypes
   public func validatePaymentParam(paramDict: Foundation.NSDictionary) -> (paymentParam: PayUParamsKit.PayUPaymentParam?, intentApp: PayUUPICoreKit.PayUSupportedIntentApp?, error: [Swift.String : Swift.String]?)
+  #endif
   @objc override dynamic public init()
   @objc deinit
 }
@@ -544,7 +655,9 @@ extension PayUUPICoreKit.PayUSocketEngineWebsocket {
   case message
   case upgrade
   case noop
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -554,9 +667,15 @@ extension PayUUPICoreKit.PayUSocketEngineWebsocket {
   @_Concurrency.MainActor @preconcurrency public var paymentApp: PayUUPICoreKit.PayUPaymentApp?
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor @preconcurrency public func setupBackButton(withTitle title: Swift.String, color: UIKit.UIColor)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func connectionEstablished(withTxnTimeRemaining timeRemaining: Swift.Int?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
 @objc @objcMembers public class PayUValidateVPAModel : ObjectiveC.NSObject, Swift.Codable {
@@ -598,9 +717,11 @@ public struct PayUSocketIOClientConfiguration : Swift.ExpressibleByArrayLiteral,
   public var count: PayUUPICoreKit.PayUSocketIOClientConfiguration.Index.Stride {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var first: PayUUPICoreKit.PayUSocketIOClientConfiguration.Element? {
     get
   }
+  #endif
   public subscript(position: PayUUPICoreKit.PayUSocketIOClientConfiguration.Index) -> PayUUPICoreKit.PayUSocketIOClientConfiguration.Element {
     get
     set
@@ -622,16 +743,22 @@ public protocol PayUConfigSettable {
 public protocol PayUSocketEnginePollable : PayUUPICoreKit.PayUSocketEngineSpec {
   var invalidated: Swift.Bool { get }
   var postWait: [PayUUPICoreKit.PayUPost] { get set }
+  #if compiler(>=5.3) && $NonescapableTypes
   var session: Foundation.URLSession? { get }
+  #endif
   var waitingForPoll: Swift.Bool { get set }
   var waitingForPost: Swift.Bool { get set }
   func doPoll()
+  #if compiler(>=5.3) && $NonescapableTypes
   func sendPollMessage(_ message: Swift.String, withType type: PayUUPICoreKit.PayUSocketEnginePacketType, withData datas: [Foundation.Data], completion: (() -> Swift.Void)?)
+  #endif
   func stopPolling()
 }
 extension PayUUPICoreKit.PayUSocketEnginePollable {
   public func doPoll()
+  #if compiler(>=5.3) && $NonescapableTypes
   public func sendPollMessage(_ message: Swift.String, withType type: PayUUPICoreKit.PayUSocketEnginePacketType, withData datas: [Foundation.Data], completion: (() -> Swift.Void)? = nil)
+  #endif
   public func stopPolling()
 }
 @objc public class PayUSocketIOClient : ObjectiveC.NSObject, PayUUPICoreKit.PayUSocketIOClientSpec {
@@ -654,12 +781,18 @@ extension PayUUPICoreKit.PayUSocketEnginePollable {
   @objc public init(manager: any PayUUPICoreKit.PayUSocketManagerSpec, nsp: Swift.String)
   @objc deinit
   @objc public func connect()
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func connect(timeoutAfter: Swift.Double, withHandler handler: (() -> Swift.Void)?)
+  #endif
   public func didConnect(toNamespace namespace: Swift.String)
   public func didDisconnect(reason: Swift.String)
   @objc public func disconnect()
+  #if compiler(>=5.3) && $NonescapableTypes
   public func emit(_ event: Swift.String, _ items: any PayUUPICoreKit.PayUSocketIOData..., completion: (() -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func emit(_ event: Swift.String, with items: [Any], completion: (() -> Swift.Void)? = nil)
+  #endif
   public func emitAck(_ ack: Swift.Int, with items: [Any])
   @objc public func handleAck(_ ack: Swift.Int, data: [Any])
   public func handleClientEvent(_ event: PayUUPICoreKit.PayUSocketClientEvent, data: [Any])
@@ -681,7 +814,9 @@ extension Foundation.NSRegularExpression {
 @objc public enum PayUPaymentVerificationMode : Swift.Int {
   case socket
   case http
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -699,7 +834,9 @@ public enum PayUCoreAPI : Swift.String {
   case verifyTxn
   case finishTxn
   case cancelTxn
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -771,7 +908,9 @@ public enum PayUUPIConstant {
   case pending
   case error
   case complete
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -782,19 +921,31 @@ public enum PayUUPIConstant {
   final public let error: PayUParamsKit.PayUError?
   final public let response: Swift.Result<[Swift.String : Any], PayUParamsKit.PayUError>?
   @objc public class func pending() -> PayUUPICoreKit.PayUPaymentStatus
+  #if compiler(>=5.3) && $NonescapableTypes
   public class func error(_ error: PayUParamsKit.PayUError?) -> PayUUPICoreKit.PayUPaymentStatus
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public class func complete(withResponse response: Swift.Result<[Swift.String : Any], PayUParamsKit.PayUError>?) -> PayUUPICoreKit.PayUPaymentStatus
+  #endif
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class PayUUPIHybridCollectHandler : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func validatePaymentParam(paramDict: Foundation.NSDictionary) -> (param: PayUParamsKit.PayUPaymentParam?, error: [Swift.String : Swift.String]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func handlePureS2SResult(_ result: Swift.Result<PayUUPICoreKit.PayUPureS2SModel, PayUParamsKit.PayUError>, forApi api: PayUUPICoreKit.PayUCoreAPI, fromVC: UIKit.UIViewController)
+  #endif
   @objc override dynamic public init()
   @objc deinit
 }
 public protocol PayUSocketParsable : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   func parseBinaryData(_ data: Foundation.Data) -> PayUUPICoreKit.PayUSocketPacket?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func parseSocketMessage(_ message: Swift.String) -> PayUUPICoreKit.PayUSocketPacket?
+  #endif
 }
 public enum PayUSocketParsableError : Swift.Error {
   case invalidDataArray
@@ -810,8 +961,12 @@ public protocol PayUSocketDataBufferable : AnyObject {
   var waitingPackets: [PayUUPICoreKit.PayUSocketPacket] { get set }
 }
 extension PayUUPICoreKit.PayUSocketParsable where Self : PayUUPICoreKit.PayUSocketDataBufferable, Self : PayUUPICoreKit.PayUSocketManagerSpec {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func parseSocketMessage(_ message: Swift.String) -> PayUUPICoreKit.PayUSocketPacket?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func parseBinaryData(_ data: Foundation.Data) -> PayUUPICoreKit.PayUSocketPacket?
+  #endif
 }
 @objc @objcMembers public class PayUPaymentResponseHandler : ObjectiveC.NSObject {
   public var responseCallback: ((PayUUPICoreKit.PayUResponseType, PayUUPICoreKit.PayUPaymentVerificationMode) -> Swift.Void)?
@@ -857,7 +1012,9 @@ extension PayUUPICoreKit.PayUPaymentResponseHandler {
   public var description: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -998,7 +1155,9 @@ public struct PayUSocketPacket : Swift.CustomStringConvertible {
   @objc public func parseEngineData(_ data: Foundation.Data)
   @objc public func parseEngineMessage(_ message: Swift.String)
   public func setConfigs(_ config: PayUUPICoreKit.PayUSocketIOClientConfiguration)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func write(_ msg: Swift.String, withType type: PayUUPICoreKit.PayUSocketEnginePacketType, withData data: [Foundation.Data], completion: (() -> Swift.Void)? = nil)
+  #endif
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PayUThirdPartyManager : ObjectiveC.NSObject {
   @objc public class func makePayment(withApp app: PayUUPICoreKit.PayUSupportedIntentApp, withIntentModel model: PayUUPICoreKit.PayUPureS2SModel, isSITxn: Swift.Bool, appSwitchingStatus: @escaping (Swift.Bool) -> Swift.Void)
@@ -1012,10 +1171,18 @@ public struct PayUSocketPacket : Swift.CustomStringConvertible {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class PayUHybridUtils : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   public class func stringValue(_ dict: [Swift.String : Any?]?, key: Swift.String) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public class func anyValue(_ dict: [Swift.String : Any?]?, key: Swift.String) -> Any?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public class func paymentParamDictFrom(param: Foundation.NSDictionary?) -> [Swift.String : Any?]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public class func siParamDictFrom(param: Foundation.NSDictionary?) -> [Swift.String : Any?]?
+  #endif
   public class func stringResponse(for response: [Swift.String : Any]) -> Swift.String
   @objc override dynamic public init()
   @objc deinit
@@ -1033,30 +1200,42 @@ public struct PayUSocketPacket : Swift.CustomStringConvertible {
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PayUActivityIndicator : ObjectiveC.NSObject {
   @objc public func setupActivityIndicatorOn(view: UIKit.UIView, alpha: CoreFoundation.CGFloat)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func startOn(_ view: UIKit.UIView, _ alpha: CoreFoundation.CGFloat? = nil)
+  #endif
   @objc public func stop()
   @objc override dynamic public init()
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class PayUHybridVpaAPIHandler : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func validateVPA(paramDict: Foundation.NSDictionary, callback: @escaping (Swift.String?, [Swift.String : Swift.String]?) -> Swift.Void)
+  #endif
   @objc override dynamic public init()
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PayUPersistentStore : ObjectiveC.NSObject {
   @objc public class func saveRemainingTxnSecsBeforeMovingToBackground(_ seconds: Swift.Int, txnUniqueId: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   public class func getRemainingTxnSecsBeforeMovingToBackground(forTxnUniqueId id: Swift.String) -> Swift.Int?
+  #endif
   @objc public class func removeRemainingTxnSecsBeforeMovingToBackground()
   @objc public class func saveBackgroundEnteringTimeStamp(_ dateTime: Foundation.Date, txnUniqueId: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public class func getBackgroundEnteringTimeStamp(forTxnUniqueId id: Swift.String) -> Foundation.Date?
+  #endif
   @objc public class func removeBackgroundEnteringTimeStamp()
   @objc public class func saveSocketConnectionModel(_ model: PayUUPICoreKit.PayUPureS2SModel)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public class func getSocketConnectionModel() -> PayUUPICoreKit.PayUPureS2SModel?
+  #endif
   @objc override dynamic public init()
   @objc deinit
 }
 @objc public protocol PayUSocketManagerSpec : PayUUPICoreKit.PayUSocketEngineClient {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc var engine: (any PayUUPICoreKit.PayUSocketEngineSpec)? { get set }
+  #endif
   @objc var forceNew: Swift.Bool { get set }
   @objc var handleQueue: Dispatch.DispatchQueue { get set }
   @objc var nsps: [Swift.String : PayUUPICoreKit.PayUSocketIOClient] { get set }
@@ -1072,7 +1251,9 @@ public struct PayUSocketPacket : Swift.CustomStringConvertible {
   @objc func disconnectSocket(_ socket: PayUUPICoreKit.PayUSocketIOClient)
 }
 @objc @objcMembers public class PayUTxnVerificationInfo : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(urlStr: Swift.String, mihpayid: Swift.String, token: Swift.String?, returnUrlStr: Swift.String?)
+  #endif
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PayUAnalyticsEvent : ObjectiveC.NSObject {
@@ -1101,8 +1282,12 @@ public enum PayUHybridError {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
   @objc deinit
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
 }
 extension PayUUPICoreKit.NetworkEnvironment : Swift.Equatable {}
 extension PayUUPICoreKit.NetworkEnvironment : Swift.Hashable {}
