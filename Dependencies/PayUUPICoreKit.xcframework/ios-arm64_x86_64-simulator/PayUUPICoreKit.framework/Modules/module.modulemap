@@ -7,5 +7,4 @@ framework module PayUUPICoreKit {
 
 module PayUUPICoreKit.Swift {
   header "PayUUPICoreKit-Swift.h"
-  requires objc
 }
